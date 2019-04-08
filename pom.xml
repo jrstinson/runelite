@@ -77,7 +77,7 @@
 
 	<ciManagement>
 		<system>Travis CI</system>
-		<url>https://travis-ci.org/runelite/runelite</url>
+		<url>https://travis-ci.org/jrstinson/runelite</url>
 	</ciManagement>
 
 	<repositories>
