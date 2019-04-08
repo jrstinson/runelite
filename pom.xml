@@ -230,6 +230,14 @@
 					<sourceDirectory>${project.build.sourceDirectory}</sourceDirectory>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.eluder.coveralls</groupId>
+				<artifactId>coveralls-maven-plugin</artifactId>
+				<version>4.3.0</version>
+				<configuration>
+					<repoToken>EXh0XGJeg422T5eRV5iKWvEFejbHlWyn6</repoToken>
+				</configuration>
+			</plugin>
 		</plugins>
 		<pluginManagement>
 			<plugins>
