@@ -238,6 +238,11 @@
 					<repoToken>EXh0XGJeg422T5eRV5iKWvEFejbHlWyn6</repoToken>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.4-SNAPSHOT</version>
+			</plugin>
 		</plugins>
 		<pluginManagement>
 			<plugins>
