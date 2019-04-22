@@ -1,3 +1,3 @@
 #!/bin/bash
 
-mvn clean test coveralls:report
+mvn clean install --settings travis/settings.xml coveralls:report
