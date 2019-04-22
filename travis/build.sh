@@ -1,3 +1,3 @@
 #!/bin/bash
 
-mvn clean install jacoco
+mvn clean install jacoco:report
