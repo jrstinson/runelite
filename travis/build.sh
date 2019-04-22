@@ -1,3 +1,3 @@
 #!/bin/bash
 
-mvn clean install jacoco:report
+mvn clean jacoco:prepare-agent install jacoco:report
