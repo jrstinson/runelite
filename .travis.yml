@@ -9,7 +9,7 @@ jdk:
 install: true
 script: ./travis/build.sh
 after_success:
-  - mvn clean test jacoco:report coveralls:report
+  - mvn clean test coveralls:report
 notifications:
   irc:
     channels:
