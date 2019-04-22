@@ -7,9 +7,9 @@ cache:
 jdk:
   - oraclejdk8
 install: true
-script: ./mvnw clean install
+script: ./travis/build.sh
 after_success:
-  - mvn clean test jacoco:report coveralls:report
+  - mvn clean test coveralls:report
 notifications:
   irc:
     channels:
