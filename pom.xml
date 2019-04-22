@@ -181,7 +181,7 @@
 				<version>2.18</version>
 				<configuration>
 					<enableAssertions>true</enableAssertions>
-					<argLine>-Xmx512m</argLine>
+					<argLine>${argLine} -Xmx512m</argLine>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -244,7 +244,7 @@
 				<version>0.7.6.201602180812</version>
 				<executions>
 					<execution>
-						<id>jacoco-initialize</id>
+						<id>default-prepare-agent</id>
 						<goals>
 							<goal>prepare-agent</goal>
 						</goals>
