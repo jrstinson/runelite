@@ -1,0 +1,475 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>FindBugs Report</title>
+<style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+		</style>
+</head>
+<body>
+<h1>FindBugs Report</h1>
+<p>Produced using <a href="http://findbugs.sourceforge.net">FindBugs</a>3.0.1.</p>
+<p>Project: 
+			runelite-parent[runelite-api]</p>
+<h2>Metrics</h2>
+<p>73359 lines of code analyzed,
+	in 263 classes, 
+	in 11 packages.</p>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Metric</th>
+<th align="right">Total</th>
+<th align="right">Density*</th>
+</tr>
+<tr class="tablerow0">
+<td>High Priority Warnings</td>
+<td align="right"/>
+<td align="right">NaN</td>
+</tr>
+<tr class="tablerow1">
+<td>Medium Priority Warnings</td>
+<td align="right">17</td>
+<td align="right">0.23</td>
+</tr>
+<tr class="$totalClass">
+<td>
+<b>Total Warnings</b>
+</td>
+<td align="right">
+<b>17</b>
+</td>
+<td align="right">
+<b>0.23</b>
+</td>
+</tr>
+</table>
+<p>
+<i>(* Defects per Thousand lines of non-commenting source statements)</i>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h2>Summary</h2>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Warning Type</th>
+<th align="right">Number</th>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+</td>
+<td align="right">8</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_STYLE">Dodgy code Warnings</a>
+</td>
+<td align="right">9</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<b>Total</b>
+</td>
+<td align="right">
+<b>17</b>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h1>Warnings</h1>
+<p>Click on each warning link to see a full description of the issue, and
+	    details of how to resolve it.</p>
+<h2>
+<a name="Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.api.events.CommandExecuted.getArguments() may expose internal representation by returning CommandExecuted.arguments<br/>
+<br/>
+<br/>In file CommandExecuted.java,
+					
+						line 54<br/>In class net.runelite.api.events.CommandExecuted<br/>In method net.runelite.api.events.CommandExecuted.getArguments()<br/>Field net.runelite.api.events.CommandExecuted.arguments<br/>At CommandExecuted.java:[line 54]<br/>At CommandExecuted.java:[line 54]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.api.events.MenuOpened.getMenuEntries() may expose internal representation by returning MenuOpened.menuEntries<br/>
+<br/>
+<br/>In file MenuOpened.java,
+					
+						line 42<br/>In class net.runelite.api.events.MenuOpened<br/>In method net.runelite.api.events.MenuOpened.getMenuEntries()<br/>Field net.runelite.api.events.MenuOpened.menuEntries<br/>At MenuOpened.java:[line 42]<br/>At MenuOpened.java:[line 42]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.api.events.WorldListLoad.getWorlds() may expose internal representation by returning WorldListLoad.worlds<br/>
+<br/>
+<br/>In file WorldListLoad.java,
+					
+						line 36<br/>In class net.runelite.api.events.WorldListLoad<br/>In method net.runelite.api.events.WorldListLoad.getWorlds()<br/>Field net.runelite.api.events.WorldListLoad.worlds<br/>At WorldListLoad.java:[line 36]<br/>At WorldListLoad.java:[line 36]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>new net.runelite.api.events.CommandExecuted(String, String[]) may expose internal representation by storing an externally mutable object into CommandExecuted.arguments<br/>
+<br/>
+<br/>In file CommandExecuted.java,
+					
+						line 44<br/>In class net.runelite.api.events.CommandExecuted<br/>In method new net.runelite.api.events.CommandExecuted(String, String[])<br/>Field net.runelite.api.events.CommandExecuted.arguments<br/>Local variable named arguments<br/>At CommandExecuted.java:[line 44]<br/>At CommandExecuted.java:[line 44]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.api.events.MenuOpened.setMenuEntries(MenuEntry[]) may expose internal representation by storing an externally mutable object into MenuOpened.menuEntries<br/>
+<br/>
+<br/>In file MenuOpened.java,
+					
+						line 33<br/>In class net.runelite.api.events.MenuOpened<br/>In method net.runelite.api.events.MenuOpened.setMenuEntries(MenuEntry[])<br/>Field net.runelite.api.events.MenuOpened.menuEntries<br/>Local variable named menuEntries<br/>At MenuOpened.java:[line 33]<br/>At MenuOpened.java:[line 33]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>new net.runelite.api.events.WorldListLoad(World[]) may expose internal representation by storing an externally mutable object into WorldListLoad.worlds<br/>
+<br/>
+<br/>In file WorldListLoad.java,
+					
+						line 33<br/>In class net.runelite.api.events.WorldListLoad<br/>In method new net.runelite.api.events.WorldListLoad(World[])<br/>Field net.runelite.api.events.WorldListLoad.worlds<br/>Local variable named worlds<br/>At WorldListLoad.java:[line 33]<br/>At WorldListLoad.java:[line 33]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#MS_MUTABLE_ARRAY">Field is a mutable array</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.api.Perspective.COSINE is a mutable array<br/>
+<br/>
+<br/>In file Perspective.java,
+					
+						line 61<br/>In class net.runelite.api.Perspective<br/>Field net.runelite.api.Perspective.COSINE<br/>At Perspective.java:[line 61]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#MS_MUTABLE_ARRAY">Field is a mutable array</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.api.Perspective.SINE is a mutable array<br/>
+<br/>
+<br/>In file Perspective.java,
+					
+						line 60<br/>In class net.runelite.api.Perspective<br/>Field net.runelite.api.Perspective.SINE<br/>At Perspective.java:[line 60]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_STYLE">Dodgy code Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Dead store to xp in net.runelite.api.ExperienceTest.testGetXpForHighLevel()<br/>
+<br/>
+<br/>In file ExperienceTest.java,
+					
+						line 51<br/>In class net.runelite.api.ExperienceTest<br/>In method net.runelite.api.ExperienceTest.testGetXpForHighLevel()<br/>Local variable named xp<br/>At ExperienceTest.java:[line 51]<br/>At ExperienceTest.java:[line 51]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Dead store to xp in net.runelite.api.ExperienceTest.testGetXpForLowLevel()<br/>
+<br/>
+<br/>In file ExperienceTest.java,
+					
+						line 57<br/>In class net.runelite.api.ExperienceTest<br/>In method net.runelite.api.ExperienceTest.testGetXpForLowLevel()<br/>Local variable named xp<br/>At ExperienceTest.java:[line 57]<br/>At ExperienceTest.java:[line 57]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Dead store to rotation in net.runelite.api.InstanceTemplates.findMatch(int)<br/>
+<br/>
+<br/>In file InstanceTemplates.java,
+					
+						line 94<br/>In class net.runelite.api.InstanceTemplates<br/>In method net.runelite.api.InstanceTemplates.findMatch(int)<br/>Local variable named rotation<br/>At InstanceTemplates.java:[line 94]<br/>At InstanceTemplates.java:[line 94]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ICAST_IDIV_CAST_TO_DOUBLE">Integral division result cast to double or float</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Integral division result cast to double or float in net.runelite.api.Experience.getCombatLevelPrecise(int, int, int, int, int, int, int)<br/>
+<br/>
+<br/>In file Experience.java,
+					
+						line 149<br/>In class net.runelite.api.Experience<br/>In method net.runelite.api.Experience.getCombatLevelPrecise(int, int, int, int, int, int, int)<br/>At Experience.java:[line 149]<br/>At Experience.java:[line 149]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of geometry, which is known to be non-null in net.runelite.api.Perspective.get2DGeometry(Client, List, LocalPoint)<br/>
+<br/>
+<br/>In file Perspective.java,
+					
+						line 612<br/>In class net.runelite.api.Perspective<br/>In method net.runelite.api.Perspective.get2DGeometry(Client, List, LocalPoint)<br/>Value loaded from geometry<br/>Return value of new java.awt.geom.Area() of type void<br/>Redundant null check at Perspective.java:[line 612]<br/>Redundant null check at Perspective.java:[line 612]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of widgetItems, which is known to be non-null in net.runelite.api.queries.BankItemQuery.result(Client)<br/>
+<br/>
+<br/>In file BankItemQuery.java,
+					
+						line 45<br/>In class net.runelite.api.queries.BankItemQuery<br/>In method net.runelite.api.queries.BankItemQuery.result(Client)<br/>Value loaded from widgetItems<br/>Return value of net.runelite.api.queries.BankItemQuery.getBankItems(Client) of type java.util.Collection<br/>Redundant null check at BankItemQuery.java:[line 45]<br/>Redundant null check at BankItemQuery.java:[line 45]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of widgetItems, which is known to be non-null in net.runelite.api.queries.EquipmentItemQuery.result(Client)<br/>
+<br/>
+<br/>In file EquipmentItemQuery.java,
+					
+						line 67<br/>In class net.runelite.api.queries.EquipmentItemQuery<br/>In method net.runelite.api.queries.EquipmentItemQuery.result(Client)<br/>Value loaded from widgetItems<br/>Return value of net.runelite.api.queries.EquipmentItemQuery.getEquippedItems(Client) of type java.util.Collection<br/>Redundant null check at EquipmentItemQuery.java:[line 67]<br/>Redundant null check at EquipmentItemQuery.java:[line 67]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of widgetItems, which is known to be non-null in net.runelite.api.queries.InventoryWidgetItemQuery.result(Client)<br/>
+<br/>
+<br/>In file InventoryWidgetItemQuery.java,
+					
+						line 54<br/>In class net.runelite.api.queries.InventoryWidgetItemQuery<br/>In method net.runelite.api.queries.InventoryWidgetItemQuery.result(Client)<br/>Value loaded from widgetItems<br/>Return value of net.runelite.api.queries.InventoryWidgetItemQuery.getInventoryItems(Client) of type java.util.Collection<br/>Redundant null check at InventoryWidgetItemQuery.java:[line 54]<br/>Redundant null check at InventoryWidgetItemQuery.java:[line 54]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of widgetItems, which is known to be non-null in net.runelite.api.queries.ShopItemQuery.result(Client)<br/>
+<br/>
+<br/>In file ShopItemQuery.java,
+					
+						line 43<br/>In class net.runelite.api.queries.ShopItemQuery<br/>In method net.runelite.api.queries.ShopItemQuery.result(Client)<br/>Value loaded from widgetItems<br/>Return value of net.runelite.api.queries.ShopItemQuery.getShopItems(Client) of type java.util.Collection<br/>Redundant null check at ShopItemQuery.java:[line 43]<br/>Redundant null check at ShopItemQuery.java:[line 43]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h1>
+<a name="Details">Warning Types</a>
+</h1>
+<h2>
+<a name="DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+</h2>
+
+<p>
+This instruction assigns a value to a local variable,
+but the value is not read or used in any subsequent instruction.
+Often, this indicates an error, because the value computed is never
+used.
+</p>
+<p>
+Note that Sun's javac compiler often generates dead stores for
+final local variables.  Because FindBugs is a bytecode-based tool,
+there is no easy way to eliminate these false positives.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</h2>
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+</h2>
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="ICAST_IDIV_CAST_TO_DOUBLE">Integral division result cast to double or float</a>
+</h2>
+
+<p>
+This code casts the result of an integral division (e.g., int or long division)
+operation to double or
+float.
+Doing division on integers truncates the result
+to the integer value closest to zero.  The fact that the result
+was cast to double suggests that this precision should have been retained.
+What was probably meant was to cast one or both of the operands to
+double <em>before</em> performing the division.  Here is an example:
+</p>
+<blockquote>
+<pre>
+int x = 2;
+int y = 5;
+// Wrong: yields result 0.0
+double value1 =  x / y;
+
+// Right: yields result 0.4
+double value2 =  x / (double) y;
+</pre>
+</blockquote>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="MS_MUTABLE_ARRAY">Field is a mutable array</a>
+</h2>
+
+<p> A final static field references an array
+   and can be accessed by malicious code or
+        by accident from another package.
+   This code can freely modify the contents of the array.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</h2>
+
+<p> This method contains a redundant check of a known non-null value against
+the constant null.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+</body>
+</html>

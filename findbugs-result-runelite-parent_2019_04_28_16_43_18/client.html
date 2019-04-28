@@ -1,0 +1,3117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>FindBugs Report</title>
+<style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+		</style>
+</head>
+<body>
+<h1>FindBugs Report</h1>
+<p>Produced using <a href="http://findbugs.sourceforge.net">FindBugs</a>3.0.1.</p>
+<p>Project: 
+			runelite-parent[client]</p>
+<h2>Metrics</h2>
+<p>57876 lines of code analyzed,
+	in 1134 classes, 
+	in 179 packages.</p>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Metric</th>
+<th align="right">Total</th>
+<th align="right">Density*</th>
+</tr>
+<tr class="tablerow0">
+<td>High Priority Warnings</td>
+<td align="right">23</td>
+<td align="right">0.40</td>
+</tr>
+<tr class="tablerow1">
+<td>Medium Priority Warnings</td>
+<td align="right">144</td>
+<td align="right">2.49</td>
+</tr>
+<tr class="$totalClass">
+<td>
+<b>Total Warnings</b>
+</td>
+<td align="right">
+<b>167</b>
+</td>
+<td align="right">
+<b>2.89</b>
+</td>
+</tr>
+</table>
+<p>
+<i>(* Defects per Thousand lines of non-commenting source statements)</i>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h2>Summary</h2>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Warning Type</th>
+<th align="right">Number</th>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+</td>
+<td align="right">13</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+</td>
+<td align="right">1</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_EXPERIMENTAL">Experimental Warnings</a>
+</td>
+<td align="right">1</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_I18N">Internationalization Warnings</a>
+</td>
+<td align="right">16</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+</td>
+<td align="right">20</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_MT_CORRECTNESS">Multithreaded correctness Warnings</a>
+</td>
+<td align="right">5</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_PERFORMANCE">Performance Warnings</a>
+</td>
+<td align="right">10</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_STYLE">Dodgy code Warnings</a>
+</td>
+<td align="right">101</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<b>Total</b>
+</td>
+<td align="right">
+<b>167</b>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h1>Warnings</h1>
+<p>Click on each warning link to see a full description of the issue, and
+	    details of how to resolve it.</p>
+<h2>
+<a name="Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_EXIT">Method invokes System.exit(...)</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.rs.ClientLoader.load() invokes System.exit(...), which shuts down the entire virtual machine<br/>
+<br/>
+<br/>In file ClientLoader.java,
+					
+						line 214<br/>In class net.runelite.client.rs.ClientLoader<br/>In method net.runelite.client.rs.ClientLoader.load()<br/>At ClientLoader.java:[line 214]<br/>At ClientLoader.java:[line 214]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ME_ENUM_FIELD_SETTER">Public enum method unconditionally sets its field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.runepouch.Runes.setImage(BufferedImage) unconditionally sets the field image<br/>
+<br/>
+<br/>In file Runes.java,
+					
+						line 85<br/>In class net.runelite.client.plugins.runepouch.Runes<br/>In method net.runelite.client.plugins.runepouch.Runes.setImage(BufferedImage)<br/>Field net.runelite.client.plugins.runepouch.Runes.image<br/>At Runes.java:[line 85]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#NM_SAME_SIMPLE_NAME_AS_INTERFACE">Class names shouldn't shadow simple name of implemented interface</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>The class name net.runelite.client.input.KeyListener shadows the simple name of implemented interface java.awt.event.KeyListener<br/>
+<br/>
+<br/>In file KeyListener.java,
+					
+						lines 
+						    to <br/>In class net.runelite.client.input.KeyListener<br/>In class java.awt.event.KeyListener<br/>In KeyListener.java</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#OS_OPEN_STREAM">Method may fail to close stream</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.config.ConfigManager.loadFromFile() may fail to close stream<br/>
+<br/>
+<br/>In file ConfigManager.java,
+					
+						line 193<br/>In class net.runelite.client.config.ConfigManager<br/>In method net.runelite.client.config.ConfigManager.loadFromFile()<br/>Need to close java.io.Reader <br/>At ConfigManager.java:[line 193]<br/>At ConfigManager.java:[line 193]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#OS_OPEN_STREAM">Method may fail to close stream</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.config.ConfigManager.saveToFile() may fail to close stream<br/>
+<br/>
+<br/>In file ConfigManager.java,
+					
+						line 244<br/>In class net.runelite.client.config.ConfigManager<br/>In method net.runelite.client.config.ConfigManager.saveToFile()<br/>Need to close java.io.Writer <br/>At ConfigManager.java:[line 244]<br/>At ConfigManager.java:[line 244]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#OS_OPEN_STREAM">Method may fail to close stream</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.rs.ClientLoader.load() may fail to close stream<br/>
+<br/>
+<br/>In file ClientLoader.java,
+					
+						line 93<br/>In class net.runelite.client.rs.ClientLoader<br/>In method net.runelite.client.rs.ClientLoader.load()<br/>Need to close java.io.InputStream <br/>At ClientLoader.java:[line 93]<br/>At ClientLoader.java:[line 93]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exceptional return value of java.io.File.delete() ignored in net.runelite.client.account.SessionManager.deleteSession()<br/>
+<br/>
+<br/>In file SessionManager.java,
+					
+						line 127<br/>In class net.runelite.client.account.SessionManager<br/>In method net.runelite.client.account.SessionManager.deleteSession()<br/>Called method java.io.File.delete()<br/>At SessionManager.java:[line 127]<br/>At SessionManager.java:[line 127]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exceptional return value of java.io.File.mkdirs() ignored in net.runelite.client.config.ConfigManager.saveToFile()<br/>
+<br/>
+<br/>In file ConfigManager.java,
+					
+						line 236<br/>In class net.runelite.client.config.ConfigManager<br/>In method net.runelite.client.config.ConfigManager.saveToFile()<br/>Called method java.io.File.mkdirs()<br/>At ConfigManager.java:[line 236]<br/>At ConfigManager.java:[line 236]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exceptional return value of java.io.File.mkdirs() ignored in net.runelite.client.plugins.screenshot.ScreenshotPlugin.startUp()<br/>
+<br/>
+<br/>In file ScreenshotPlugin.java,
+					
+						line 209<br/>In class net.runelite.client.plugins.screenshot.ScreenshotPlugin<br/>In method net.runelite.client.plugins.screenshot.ScreenshotPlugin.startUp()<br/>Called method java.io.File.mkdirs()<br/>At ScreenshotPlugin.java:[line 209]<br/>At ScreenshotPlugin.java:[line 209]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exceptional return value of java.io.File.mkdirs() ignored in net.runelite.client.plugins.screenshot.ScreenshotPlugin.takeScreenshot(String, Image)<br/>
+<br/>
+<br/>In file ScreenshotPlugin.java,
+					
+						line 625<br/>In class net.runelite.client.plugins.screenshot.ScreenshotPlugin<br/>In method net.runelite.client.plugins.screenshot.ScreenshotPlugin.takeScreenshot(String, Image)<br/>Called method java.io.File.mkdirs()<br/>At ScreenshotPlugin.java:[line 625]<br/>At ScreenshotPlugin.java:[line 625]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exceptional return value of java.io.File.mkdirs() ignored in net.runelite.client.RuneLite.main(String[])<br/>
+<br/>
+<br/>In file RuneLite.java,
+					
+						line 201<br/>In class net.runelite.client.RuneLite<br/>In method net.runelite.client.RuneLite.main(String[])<br/>Called method java.io.File.mkdirs()<br/>At RuneLite.java:[line 201]<br/>At RuneLite.java:[line 201]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SE_BAD_FIELD">Non-transient non-serializable instance field in serializable class</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Class net.runelite.client.plugins.statusbars.Viewport defines non-transient non-serializable instance field offsetLeft<br/>
+<br/>
+<br/>In file Viewport.java,
+					
+						lines 
+						    to <br/>In class net.runelite.client.plugins.statusbars.Viewport<br/>Field net.runelite.client.plugins.statusbars.Viewport.offsetLeft<br/>Actual type net.runelite.api.Point<br/>In Viewport.java</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SE_BAD_FIELD">Non-transient non-serializable instance field in serializable class</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Class net.runelite.client.plugins.statusbars.Viewport defines non-transient non-serializable instance field offsetRight<br/>
+<br/>
+<br/>In file Viewport.java,
+					
+						lines 
+						    to <br/>In class net.runelite.client.plugins.statusbars.Viewport<br/>Field net.runelite.client.plugins.statusbars.Viewport.offsetRight<br/>Actual type net.runelite.api.Point<br/>In Viewport.java</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_CORRECTNESS">Correctness Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#UWF_UNWRITTEN_FIELD">Unwritten field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unwritten field: net.runelite.client.plugins.skillcalculator.beans.SkillDataBonus.name<br/>
+<br/>
+<br/>In file SkillDataBonus.java,
+					
+						line 32<br/>In class net.runelite.client.plugins.skillcalculator.beans.SkillDataBonus<br/>Field net.runelite.client.plugins.skillcalculator.beans.SkillDataBonus.name<br/>At SkillDataBonus.java:[line 32]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_EXPERIMENTAL">Experimental Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE">Method may fail to clean up stream or resource on checked exception</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.skillcalculator.CacheSkillData.getSkillData(String) may fail to clean up java.io.InputStream on checked exception<br/>
+<br/>
+<br/>In file CacheSkillData.java,
+					
+						line 45<br/>In class net.runelite.client.plugins.skillcalculator.CacheSkillData<br/>In method net.runelite.client.plugins.skillcalculator.CacheSkillData.getSkillData(String)<br/>Reference type java.io.InputStream<br/>1 instances of obligation remaining<br/>Obligation to clean up resource created at CacheSkillData.java:[line 45] is not discharged<br/>Path continues at CacheSkillData.java:[line 46]<br/>Remaining obligations: {InputStream x 1}</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_I18N">Internationalization Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.client.account.SessionManager.loadSession(): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file SessionManager.java,
+					
+						line 85<br/>In class net.runelite.client.account.SessionManager<br/>In method net.runelite.client.account.SessionManager.loadSession()<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At SessionManager.java:[line 85]<br/>At SessionManager.java:[line 85]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.client.account.SessionManager.saveSession(): new java.io.FileWriter(File)<br/>
+<br/>
+<br/>In file SessionManager.java,
+					
+						line 113<br/>In class net.runelite.client.account.SessionManager<br/>In method net.runelite.client.account.SessionManager.saveSession()<br/>Called method new java.io.FileWriter(File)<br/>At SessionManager.java:[line 113]<br/>At SessionManager.java:[line 113]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.client.game.ItemVariationMapping.&lt;static initializer for ItemVariationMapping&gt;(): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file ItemVariationMapping.java,
+					
+						line 52<br/>In class net.runelite.client.game.ItemVariationMapping<br/>In method net.runelite.client.game.ItemVariationMapping.&lt;static initializer for ItemVariationMapping&gt;()<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At ItemVariationMapping.java:[line 52]<br/>At ItemVariationMapping.java:[line 52]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in new net.runelite.client.game.NPCManager(): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file NPCManager.java,
+					
+						line 51<br/>In class net.runelite.client.game.NPCManager<br/>In method new net.runelite.client.game.NPCManager()<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At NPCManager.java:[line 51]<br/>At NPCManager.java:[line 51]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.client.plugins.gpu.GLUtil.glGetProgramInfoLog(GL4, int): new String(byte[])<br/>
+<br/>
+<br/>In file GLUtil.java,
+					
+						line 70<br/>In class net.runelite.client.plugins.gpu.GLUtil<br/>In method net.runelite.client.plugins.gpu.GLUtil.glGetProgramInfoLog(GL4, int)<br/>Called method new String(byte[])<br/>At GLUtil.java:[line 70]<br/>At GLUtil.java:[line 70]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.client.plugins.gpu.GLUtil.glGetShaderInfoLog(GL4, int): new String(byte[])<br/>
+<br/>
+<br/>In file GLUtil.java,
+					
+						line 63<br/>In class net.runelite.client.plugins.gpu.GLUtil<br/>In method net.runelite.client.plugins.gpu.GLUtil.glGetShaderInfoLog(GL4, int)<br/>Called method new String(byte[])<br/>At GLUtil.java:[line 63]<br/>At GLUtil.java:[line 63]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.client.plugins.gpu.GLUtil.inputStreamToString(InputStream): new java.util.Scanner(InputStream)<br/>
+<br/>
+<br/>In file GLUtil.java,
+					
+						line 201<br/>In class net.runelite.client.plugins.gpu.GLUtil<br/>In method net.runelite.client.plugins.gpu.GLUtil.inputStreamToString(InputStream)<br/>Called method new java.util.Scanner(InputStream)<br/>At GLUtil.java:[line 201]<br/>At GLUtil.java:[line 201]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.client.plugins.grandexchange.GrandExchangePlugin.loadGELimits(): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file GrandExchangePlugin.java,
+					
+						line 363<br/>In class net.runelite.client.plugins.grandexchange.GrandExchangePlugin<br/>In method net.runelite.client.plugins.grandexchange.GrandExchangePlugin.loadGELimits()<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At GrandExchangePlugin.java:[line 363]<br/>At GrandExchangePlugin.java:[line 363]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.client.plugins.screenshot.ScreenshotPlugin$2.onResponse(Call, Response): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file ScreenshotPlugin.java,
+					
+						line 678<br/>In class net.runelite.client.plugins.screenshot.ScreenshotPlugin$2<br/>In method net.runelite.client.plugins.screenshot.ScreenshotPlugin$2.onResponse(Call, Response)<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At ScreenshotPlugin.java:[line 678]<br/>At ScreenshotPlugin.java:[line 678]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.client.plugins.skillcalculator.CacheSkillData.getSkillData(String): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file CacheSkillData.java,
+					
+						line 46<br/>In class net.runelite.client.plugins.skillcalculator.CacheSkillData<br/>In method net.runelite.client.plugins.skillcalculator.CacheSkillData.getSkillData(String)<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At CacheSkillData.java:[line 46]<br/>At CacheSkillData.java:[line 46]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in new net.runelite.client.plugins.skybox.Skybox(InputStream, String): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file Skybox.java,
+					
+						line 90<br/>In class net.runelite.client.plugins.skybox.Skybox<br/>In method new net.runelite.client.plugins.skybox.Skybox(InputStream, String)<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At Skybox.java:[line 90]<br/>At Skybox.java:[line 90]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.client.plugins.twitch.irc.TwitchIRCClient.run(): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file TwitchIRCClient.java,
+					
+						line 89<br/>In class net.runelite.client.plugins.twitch.irc.TwitchIRCClient<br/>In method net.runelite.client.plugins.twitch.irc.TwitchIRCClient.run()<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At TwitchIRCClient.java:[line 89]<br/>At TwitchIRCClient.java:[line 89]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.client.plugins.twitch.irc.TwitchIRCClient.run(): new java.io.PrintWriter(OutputStream)<br/>
+<br/>
+<br/>In file TwitchIRCClient.java,
+					
+						line 90<br/>In class net.runelite.client.plugins.twitch.irc.TwitchIRCClient<br/>In method net.runelite.client.plugins.twitch.irc.TwitchIRCClient.run()<br/>Called method new java.io.PrintWriter(OutputStream)<br/>At TwitchIRCClient.java:[line 90]<br/>At TwitchIRCClient.java:[line 90]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.client.rs.ClientConfigLoader.fetch(): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file ClientConfigLoader.java,
+					
+						line 60<br/>In class net.runelite.client.rs.ClientConfigLoader<br/>In method net.runelite.client.rs.ClientConfigLoader.fetch()<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At ClientConfigLoader.java:[line 60]<br/>At ClientConfigLoader.java:[line 60]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.client.rs.ClientLoader.load(): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file ClientLoader.java,
+					
+						line 126<br/>In class net.runelite.client.rs.ClientLoader<br/>In method net.runelite.client.rs.ClientLoader.load()<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At ClientLoader.java:[line 126]<br/>At ClientLoader.java:[line 126]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.client.SessionClient.open(): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file SessionClient.java,
+					
+						line 55<br/>In class net.runelite.client.SessionClient<br/>In method net.runelite.client.SessionClient.open()<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At SessionClient.java:[line 55]<br/>At SessionClient.java:[line 55]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DP_CREATE_CLASSLOADER_INSIDE_DO_PRIVILEGED">Classloaders should only be created inside doPrivileged block</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.rs.ClientLoader.load() creates a net.runelite.client.rs.ClientLoader$2 classloader, which should be performed within a doPrivileged block<br/>
+<br/>
+<br/>In file ClientLoader.java,
+					
+						line 181<br/>In class net.runelite.client.rs.ClientLoader<br/>In method net.runelite.client.rs.ClientLoader.load()<br/>In class net.runelite.client.rs.ClientLoader$2<br/>At ClientLoader.java:[line 181]<br/>At ClientLoader.java:[line 181]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.blastmine.BlastMineRockType.getObjectIds() may expose internal representation by returning BlastMineRockType.objectIds<br/>
+<br/>
+<br/>In file BlastMineRockType.java,
+					
+						line 53<br/>In class net.runelite.client.plugins.blastmine.BlastMineRockType<br/>In method net.runelite.client.plugins.blastmine.BlastMineRockType.getObjectIds()<br/>Field net.runelite.client.plugins.blastmine.BlastMineRockType.objectIds<br/>At BlastMineRockType.java:[line 53]<br/>At BlastMineRockType.java:[line 53]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.cluescrolls.clues.EmoteClue.getItemRequirements() may expose internal representation by returning EmoteClue.itemRequirements<br/>
+<br/>
+<br/>In file EmoteClue.java,
+					
+						line 206<br/>In class net.runelite.client.plugins.cluescrolls.clues.EmoteClue<br/>In method net.runelite.client.plugins.cluescrolls.clues.EmoteClue.getItemRequirements()<br/>Field net.runelite.client.plugins.cluescrolls.clues.EmoteClue.itemRequirements<br/>At EmoteClue.java:[line 206]<br/>At EmoteClue.java:[line 206]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.cluescrolls.ClueScrollPlugin.getEquippedItems() may expose internal representation by returning ClueScrollPlugin.equippedItems<br/>
+<br/>
+<br/>In file ClueScrollPlugin.java,
+					
+						line 110<br/>In class net.runelite.client.plugins.cluescrolls.ClueScrollPlugin<br/>In method net.runelite.client.plugins.cluescrolls.ClueScrollPlugin.getEquippedItems()<br/>Field net.runelite.client.plugins.cluescrolls.ClueScrollPlugin.equippedItems<br/>At ClueScrollPlugin.java:[line 110]<br/>At ClueScrollPlugin.java:[line 110]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.cluescrolls.ClueScrollPlugin.getInventoryItems() may expose internal representation by returning ClueScrollPlugin.inventoryItems<br/>
+<br/>
+<br/>In file ClueScrollPlugin.java,
+					
+						line 113<br/>In class net.runelite.client.plugins.cluescrolls.ClueScrollPlugin<br/>In method net.runelite.client.plugins.cluescrolls.ClueScrollPlugin.getInventoryItems()<br/>Field net.runelite.client.plugins.cluescrolls.ClueScrollPlugin.inventoryItems<br/>At ClueScrollPlugin.java:[line 113]<br/>At ClueScrollPlugin.java:[line 113]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.itemstats.StatsChanges.getStatChanges() may expose internal representation by returning StatsChanges.statChanges<br/>
+<br/>
+<br/>In file StatsChanges.java,
+					
+						line 40<br/>In class net.runelite.client.plugins.itemstats.StatsChanges<br/>In method net.runelite.client.plugins.itemstats.StatsChanges.getStatChanges()<br/>Field net.runelite.client.plugins.itemstats.StatsChanges.statChanges<br/>At StatsChanges.java:[line 40]<br/>At StatsChanges.java:[line 40]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.poh.PohIcons.getIds() may expose internal representation by returning PohIcons.Ids<br/>
+<br/>
+<br/>In file PohIcons.java,
+					
+						line 90<br/>In class net.runelite.client.plugins.poh.PohIcons<br/>In method net.runelite.client.plugins.poh.PohIcons.getIds()<br/>Field net.runelite.client.plugins.poh.PohIcons.Ids<br/>At PohIcons.java:[line 90]<br/>At PohIcons.java:[line 90]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.puzzlesolver.solver.PuzzleSwapPattern.getPoints() may expose internal representation by returning PuzzleSwapPattern.points<br/>
+<br/>
+<br/>In file PuzzleSwapPattern.java,
+					
+						line 52<br/>In class net.runelite.client.plugins.puzzlesolver.solver.PuzzleSwapPattern<br/>In method net.runelite.client.plugins.puzzlesolver.solver.PuzzleSwapPattern.getPoints()<br/>Field net.runelite.client.plugins.puzzlesolver.solver.PuzzleSwapPattern.points<br/>At PuzzleSwapPattern.java:[line 52]<br/>At PuzzleSwapPattern.java:[line 52]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.raids.Raid.getRooms() may expose internal representation by returning Raid.rooms<br/>
+<br/>
+<br/>In file Raid.java,
+					
+						line 37<br/>In class net.runelite.client.plugins.raids.Raid<br/>In method net.runelite.client.plugins.raids.Raid.getRooms()<br/>Field net.runelite.client.plugins.raids.Raid.rooms<br/>At Raid.java:[line 37]<br/>At Raid.java:[line 37]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.skillcalculator.beans.SkillData.getActions() may expose internal representation by returning SkillData.actions<br/>
+<br/>
+<br/>In file SkillData.java,
+					
+						line 32<br/>In class net.runelite.client.plugins.skillcalculator.beans.SkillData<br/>In method net.runelite.client.plugins.skillcalculator.beans.SkillData.getActions()<br/>Field net.runelite.client.plugins.skillcalculator.beans.SkillData.actions<br/>At SkillData.java:[line 32]<br/>At SkillData.java:[line 32]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.skillcalculator.beans.SkillData.getBonuses() may expose internal representation by returning SkillData.bonuses<br/>
+<br/>
+<br/>In file SkillData.java,
+					
+						line 33<br/>In class net.runelite.client.plugins.skillcalculator.beans.SkillData<br/>In method net.runelite.client.plugins.skillcalculator.beans.SkillData.getBonuses()<br/>Field net.runelite.client.plugins.skillcalculator.beans.SkillData.bonuses<br/>At SkillData.java:[line 33]<br/>At SkillData.java:[line 33]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.timetracking.farming.FarmingRegion.getPatches() may expose internal representation by returning FarmingRegion.patches<br/>
+<br/>
+<br/>In file FarmingRegion.java,
+					
+						line 36<br/>In class net.runelite.client.plugins.timetracking.farming.FarmingRegion<br/>In method net.runelite.client.plugins.timetracking.farming.FarmingRegion.getPatches()<br/>Field net.runelite.client.plugins.timetracking.farming.FarmingRegion.patches<br/>At FarmingRegion.java:[line 36]<br/>At FarmingRegion.java:[line 36]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.timetracking.farming.FarmingRegion.getVarbits() may expose internal representation by returning FarmingRegion.varbits<br/>
+<br/>
+<br/>In file FarmingRegion.java,
+					
+						line 37<br/>In class net.runelite.client.plugins.timetracking.farming.FarmingRegion<br/>In method net.runelite.client.plugins.timetracking.farming.FarmingRegion.getVarbits()<br/>Field net.runelite.client.plugins.timetracking.farming.FarmingRegion.varbits<br/>At FarmingRegion.java:[line 37]<br/>At FarmingRegion.java:[line 37]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.tithefarm.TitheFarmPlantType.getObjectIds() may expose internal representation by returning TitheFarmPlantType.objectIds<br/>
+<br/>
+<br/>In file TitheFarmPlantType.java,
+					
+						line 60<br/>In class net.runelite.client.plugins.tithefarm.TitheFarmPlantType<br/>In method net.runelite.client.plugins.tithefarm.TitheFarmPlantType.getObjectIds()<br/>Field net.runelite.client.plugins.tithefarm.TitheFarmPlantType.objectIds<br/>At TitheFarmPlantType.java:[line 60]<br/>At TitheFarmPlantType.java:[line 60]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>new net.runelite.client.plugins.itemstats.Combo(int, SingleEffect[]) may expose internal representation by storing an externally mutable object into Combo.calcs<br/>
+<br/>
+<br/>In file Combo.java,
+					
+						line 42<br/>In class net.runelite.client.plugins.itemstats.Combo<br/>In method new net.runelite.client.plugins.itemstats.Combo(int, SingleEffect[])<br/>Field net.runelite.client.plugins.itemstats.Combo.calcs<br/>Local variable named calcs<br/>At Combo.java:[line 42]<br/>At Combo.java:[line 42]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.itemstats.StatsChanges.setStatChanges(StatChange[]) may expose internal representation by storing an externally mutable object into StatsChanges.statChanges<br/>
+<br/>
+<br/>In file StatsChanges.java,
+					
+						line 41<br/>In class net.runelite.client.plugins.itemstats.StatsChanges<br/>In method net.runelite.client.plugins.itemstats.StatsChanges.setStatChanges(StatChange[])<br/>Field net.runelite.client.plugins.itemstats.StatsChanges.statChanges<br/>Local variable named statChanges<br/>At StatsChanges.java:[line 41]<br/>At StatsChanges.java:[line 41]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>new net.runelite.client.plugins.puzzlesolver.solver.PuzzleState(int[]) may expose internal representation by storing an externally mutable object into PuzzleState.pieces<br/>
+<br/>
+<br/>In file PuzzleState.java,
+					
+						line 56<br/>In class net.runelite.client.plugins.puzzlesolver.solver.PuzzleState<br/>In method new net.runelite.client.plugins.puzzlesolver.solver.PuzzleState(int[])<br/>Field net.runelite.client.plugins.puzzlesolver.solver.PuzzleState.pieces<br/>Local variable named pieces<br/>At PuzzleState.java:[line 56]<br/>At PuzzleState.java:[line 56]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.ui.overlay.components.TooltipComponent.setModIcons(IndexedSprite[]) may expose internal representation by storing an externally mutable object into TooltipComponent.modIcons<br/>
+<br/>
+<br/>In file TooltipComponent.java,
+					
+						line 38<br/>In class net.runelite.client.ui.overlay.components.TooltipComponent<br/>In method net.runelite.client.ui.overlay.components.TooltipComponent.setModIcons(IndexedSprite[])<br/>Field net.runelite.client.ui.overlay.components.TooltipComponent.modIcons<br/>Local variable named modIcons<br/>At TooltipComponent.java:[line 38]<br/>At TooltipComponent.java:[line 38]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#MS_PKGPROTECT">Field should be package protected</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.demonicgorilla.DemonicGorilla.ALL_REGULAR_ATTACK_STYLES should be package protected<br/>
+<br/>
+<br/>In file DemonicGorilla.java,
+					
+						line 48<br/>In class net.runelite.client.plugins.demonicgorilla.DemonicGorilla<br/>Field net.runelite.client.plugins.demonicgorilla.DemonicGorilla.ALL_REGULAR_ATTACK_STYLES<br/>At DemonicGorilla.java:[line 48]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#MS_PKGPROTECT">Field should be package protected</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.timetracking.Tab.FARMING_TABS should be package protected<br/>
+<br/>
+<br/>In file Tab.java,
+					
+						line 48<br/>In class net.runelite.client.plugins.timetracking.Tab<br/>Field net.runelite.client.plugins.timetracking.Tab.FARMING_TABS<br/>At Tab.java:[line 48]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_MT_CORRECTNESS">Multithreaded correctness Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#IS2_INCONSISTENT_SYNC">Inconsistent synchronization</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Inconsistent synchronization of net.runelite.client.eventbus.EventBus.subscribers; locked 87% of time<br/>
+<br/>
+<br/>In file EventBus.java,
+					
+						line 214<br/>In class net.runelite.client.eventbus.EventBus<br/>Field net.runelite.client.eventbus.EventBus.subscribers<br/>Synchronized 87% of the time<br/>Unsynchronized access at EventBus.java:[line 214]<br/>Synchronized access at EventBus.java:[line 179]<br/>Synchronized access at EventBus.java:[line 185]<br/>Synchronized access at EventBus.java:[line 203]<br/>Synchronized access at EventBus.java:[line 103]<br/>Synchronized access at EventBus.java:[line 105]<br/>Synchronized access at EventBus.java:[line 169]<br/>Synchronized access at EventBus.java:[line 130]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#STCAL_INVOKE_ON_STATIC_DATE_FORMAT_INSTANCE">Call to static DateFormat</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Call to method of static java.text.DateFormat in net.runelite.client.plugins.screenshot.ScreenshotOverlay.render(Graphics2D)<br/>
+<br/>
+<br/>In file ScreenshotOverlay.java,
+					
+						line 89<br/>In class net.runelite.client.plugins.screenshot.ScreenshotOverlay<br/>In method net.runelite.client.plugins.screenshot.ScreenshotOverlay.render(Graphics2D)<br/>Called method java.text.SimpleDateFormat.format(Date)<br/>Field net.runelite.client.plugins.screenshot.ScreenshotOverlay.DATE_FORMAT<br/>At ScreenshotOverlay.java:[line 89]<br/>At ScreenshotOverlay.java:[line 89]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#IS2_INCONSISTENT_SYNC">Inconsistent synchronization</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Inconsistent synchronization of net.runelite.client.config.ConfigManager.propertiesFile; locked 75% of time<br/>
+<br/>
+<br/>In file ConfigManager.java,
+					
+						line 109<br/>In class net.runelite.client.config.ConfigManager<br/>Field net.runelite.client.config.ConfigManager.propertiesFile<br/>Synchronized 75% of the time<br/>Unsynchronized access at ConfigManager.java:[line 109]<br/>Synchronized access at ConfigManager.java:[line 236]<br/>Synchronized access at ConfigManager.java:[line 238]<br/>Synchronized access at ConfigManager.java:[line 191]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#IS2_INCONSISTENT_SYNC">Inconsistent synchronization</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Inconsistent synchronization of net.runelite.client.plugins.instancemap.InstanceMapOverlay.viewedPlane; locked 70% of time<br/>
+<br/>
+<br/>In file InstanceMapOverlay.java,
+					
+						line 208<br/>In class net.runelite.client.plugins.instancemap.InstanceMapOverlay<br/>Field net.runelite.client.plugins.instancemap.InstanceMapOverlay.viewedPlane<br/>Synchronized 70% of the time<br/>Unsynchronized access at InstanceMapOverlay.java:[line 208]<br/>Unsynchronized access at InstanceMapOverlay.java:[line 171]<br/>Unsynchronized access at InstanceMapOverlay.java:[line 189]<br/>Synchronized access at InstanceMapOverlay.java:[line 133]<br/>Synchronized access at InstanceMapOverlay.java:[line 138]<br/>Synchronized access at InstanceMapOverlay.java:[line 138]<br/>Synchronized access at InstanceMapOverlay.java:[line 123]<br/>Synchronized access at InstanceMapOverlay.java:[line 147]<br/>Synchronized access at InstanceMapOverlay.java:[line 152]<br/>Synchronized access at InstanceMapOverlay.java:[line 152]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#STCAL_INVOKE_ON_STATIC_DATE_FORMAT_INSTANCE">Call to static DateFormat</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Call to method of static java.text.DateFormat in net.runelite.client.plugins.reportbutton.ReportButtonPlugin.getDate()<br/>
+<br/>
+<br/>In file ReportButtonPlugin.java,
+					
+						line 199<br/>In class net.runelite.client.plugins.reportbutton.ReportButtonPlugin<br/>In method net.runelite.client.plugins.reportbutton.ReportButtonPlugin.getDate()<br/>Called method java.text.SimpleDateFormat.format(Date)<br/>Field net.runelite.client.plugins.reportbutton.ReportButtonPlugin.DATE_FORMAT<br/>At ReportButtonPlugin.java:[line 199]<br/>At ReportButtonPlugin.java:[line 199]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_PERFORMANCE">Performance Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_FOR_PARSING">Boxing/unboxing to parse a primitive</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Boxing/unboxing to parse a primitive net.runelite.client.plugins.banktags.tabs.TabInterface.handleNewTab(ScriptEvent)<br/>
+<br/>
+<br/>In file TabInterface.java,
+					
+						line 299<br/>In class net.runelite.client.plugins.banktags.tabs.TabInterface<br/>In method net.runelite.client.plugins.banktags.tabs.TabInterface.handleNewTab(ScriptEvent)<br/>Called method Integer.intValue()<br/>Should call Integer.parseInt(String) instead<br/>At TabInterface.java:[line 299]<br/>At TabInterface.java:[line 299]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_FOR_PARSING">Boxing/unboxing to parse a primitive</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Boxing/unboxing to parse a primitive net.runelite.client.plugins.cannon.CannonPlugin.onChatMessage(ChatMessage)<br/>
+<br/>
+<br/>In file CannonPlugin.java,
+					
+						line 317<br/>In class net.runelite.client.plugins.cannon.CannonPlugin<br/>In method net.runelite.client.plugins.cannon.CannonPlugin.onChatMessage(ChatMessage)<br/>Called method Integer.intValue()<br/>Should call Integer.parseInt(String) instead<br/>At CannonPlugin.java:[line 317]<br/>At CannonPlugin.java:[line 317]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_FOR_PARSING">Boxing/unboxing to parse a primitive</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Boxing/unboxing to parse a primitive net.runelite.client.plugins.discord.DiscordPlugin.onDiscordUserInfo(DiscordUserInfo)<br/>
+<br/>
+<br/>In file DiscordPlugin.java,
+					
+						line 265<br/>In class net.runelite.client.plugins.discord.DiscordPlugin<br/>In method net.runelite.client.plugins.discord.DiscordPlugin.onDiscordUserInfo(DiscordUserInfo)<br/>Called method Integer.intValue()<br/>Should call Integer.parseInt(String) instead<br/>At DiscordPlugin.java:[line 265]<br/>At DiscordPlugin.java:[line 265]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_NUMBER_CTOR">Method invokes inefficient Number constructor; use static valueOf instead</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.timetracking.clocks.StopwatchTest.givenRunningStopwatch_whenCreatingStopwatch_thenCanUseLaps() invokes inefficient new Long(long) constructor; use Long.valueOf(long) instead<br/>
+<br/>
+<br/>In file StopwatchTest.java,
+					
+						line 45<br/>In class net.runelite.client.plugins.timetracking.clocks.StopwatchTest<br/>In method net.runelite.client.plugins.timetracking.clocks.StopwatchTest.givenRunningStopwatch_whenCreatingStopwatch_thenCanUseLaps()<br/>Called method new Long(long)<br/>Should call Long.valueOf(long) instead<br/>At StopwatchTest.java:[line 45]<br/>At StopwatchTest.java:[line 45]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Should net.runelite.client.chat.ChatMessageBuilderTest$MessageBuilderTest be a _static_ inner class?<br/>
+<br/>
+<br/>In file ChatMessageBuilderTest.java,
+					
+						line 15<br/>In class net.runelite.client.chat.ChatMessageBuilderTest$MessageBuilderTest<br/>At ChatMessageBuilderTest.java:[line 15]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Should net.runelite.client.chat.ChatMessageBuilderTest$MessageBuilderTestB be a _static_ inner class?<br/>
+<br/>
+<br/>In file ChatMessageBuilderTest.java,
+					
+						line 19<br/>In class net.runelite.client.chat.ChatMessageBuilderTest$MessageBuilderTestB<br/>At ChatMessageBuilderTest.java:[line 19]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Should net.runelite.client.plugins.config.ConfigPanel$FixedWidthPanel be a _static_ inner class?<br/>
+<br/>
+<br/>In file ConfigPanel.java,
+					
+						lines 698
+						    to 703<br/>In class net.runelite.client.plugins.config.ConfigPanel$FixedWidthPanel<br/>At ConfigPanel.java:[lines 698-703]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Should net.runelite.client.plugins.discord.DiscordState$EventWithTime be a _static_ inner class?<br/>
+<br/>
+<br/>In file DiscordState.java,
+					
+						lines 47
+						    to 52<br/>In class net.runelite.client.plugins.discord.DiscordState$EventWithTime<br/>At DiscordState.java:[lines 47-52]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Should net.runelite.client.ui.overlay.OverlayManagerTest$TestOverlay be a _static_ inner class?<br/>
+<br/>
+<br/>In file OverlayManagerTest.java,
+					
+						lines 41
+						    to 49<br/>In class net.runelite.client.ui.overlay.OverlayManagerTest$TestOverlay<br/>At OverlayManagerTest.java:[lines 41-49]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#WMI_WRONG_MAP_ITERATOR">Inefficient use of keySet iterator instead of entrySet iterator</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.cluescrolls.clues.HotColdClue.makeOverlayHint(PanelComponent, ClueScrollPlugin) makes inefficient use of keySet iterator instead of entrySet iterator<br/>
+<br/>
+<br/>In file HotColdClue.java,
+					
+						line 150<br/>In class net.runelite.client.plugins.cluescrolls.clues.HotColdClue<br/>In method net.runelite.client.plugins.cluescrolls.clues.HotColdClue.makeOverlayHint(PanelComponent, ClueScrollPlugin)<br/>At HotColdClue.java:[line 150]<br/>At HotColdClue.java:[line 150]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_STYLE">Dodgy code Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Dead store to sut in net.runelite.client.plugins.timetracking.clocks.TimerTest.whenCreatingTimer_thenCanCreateTimer()<br/>
+<br/>
+<br/>In file TimerTest.java,
+					
+						line 13<br/>In class net.runelite.client.plugins.timetracking.clocks.TimerTest<br/>In method net.runelite.client.plugins.timetracking.clocks.TimerTest.whenCreatingTimer_thenCanCreateTimer()<br/>Local variable named sut<br/>At TimerTest.java:[line 13]<br/>At TimerTest.java:[line 13]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#FE_FLOATING_POINT_EQUALITY">Test for floating point equality</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Test for floating point equality in net.runelite.client.ui.overlay.infobox.InfoBoxManager.updateInfoBoxImage(InfoBox)<br/>
+<br/>
+<br/>In file InfoBoxManager.java,
+					
+						line 140<br/>In class net.runelite.client.ui.overlay.infobox.InfoBoxManager<br/>In method net.runelite.client.ui.overlay.infobox.InfoBoxManager.updateInfoBoxImage(InfoBox)<br/>At InfoBoxManager.java:[line 140]<br/>Another occurrence at InfoBoxManager.java:[line 140]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Dead store to cx in net.runelite.client.plugins.skybox.Skybox.getColorForPoint(double, double, int, int, int, double, Skybox$ChunkMapper)<br/>
+<br/>
+<br/>In file Skybox.java,
+					
+						line 379<br/>In class net.runelite.client.plugins.skybox.Skybox<br/>In method net.runelite.client.plugins.skybox.Skybox.getColorForPoint(double, double, int, int, int, double, Skybox$ChunkMapper)<br/>Local variable named cx<br/>At Skybox.java:[line 379]<br/>At Skybox.java:[line 379]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Dead store to cy in net.runelite.client.plugins.skybox.Skybox.getColorForPoint(double, double, int, int, int, double, Skybox$ChunkMapper)<br/>
+<br/>
+<br/>In file Skybox.java,
+					
+						line 380<br/>In class net.runelite.client.plugins.skybox.Skybox<br/>In method net.runelite.client.plugins.skybox.Skybox.getColorForPoint(double, double, int, int, int, double, Skybox$ChunkMapper)<br/>Local variable named cy<br/>At Skybox.java:[line 380]<br/>At Skybox.java:[line 380]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Dead store to object in net.runelite.client.plugins.tearsofguthix.TearsOfGuthixPlugin.onDecorativeObjectSpawned(DecorativeObjectSpawned)<br/>
+<br/>
+<br/>In file TearsOfGuthixPlugin.java,
+					
+						line 92<br/>In class net.runelite.client.plugins.tearsofguthix.TearsOfGuthixPlugin<br/>In method net.runelite.client.plugins.tearsofguthix.TearsOfGuthixPlugin.onDecorativeObjectSpawned(DecorativeObjectSpawned)<br/>Local variable named object<br/>At TearsOfGuthixPlugin.java:[line 92]<br/>At TearsOfGuthixPlugin.java:[line 92]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Dead store to exponent in net.runelite.client.plugins.zoom.ZoomPlugin.onScriptCallbackEvent(ScriptCallbackEvent)<br/>
+<br/>
+<br/>In file ZoomPlugin.java,
+					
+						line 110<br/>In class net.runelite.client.plugins.zoom.ZoomPlugin<br/>In method net.runelite.client.plugins.zoom.ZoomPlugin.onScriptCallbackEvent(ScriptCallbackEvent)<br/>Local variable named exponent<br/>At ZoomPlugin.java:[line 110]<br/>At ZoomPlugin.java:[line 110]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#EQ_DOESNT_OVERRIDE_EQUALS">Class doesn't override equals in superclass</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.cluescrolls.ClueScrollWorldMapPoint doesn't override net.runelite.client.ui.overlay.worldmap.WorldMapPoint.equals(Object)<br/>
+<br/>
+<br/>In file ClueScrollWorldMapPoint.java,
+					
+						line 1<br/>In class net.runelite.client.plugins.cluescrolls.ClueScrollWorldMapPoint<br/>At ClueScrollWorldMapPoint.java:[line 1]<br/>Did you intend to override net.runelite.client.ui.overlay.worldmap.WorldMapPoint.equals(Object)</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#EQ_DOESNT_OVERRIDE_EQUALS">Class doesn't override equals in superclass</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.deathindicator.DeathWorldMapPoint doesn't override net.runelite.client.ui.overlay.worldmap.WorldMapPoint.equals(Object)<br/>
+<br/>
+<br/>In file DeathWorldMapPoint.java,
+					
+						line 1<br/>In class net.runelite.client.plugins.deathindicator.DeathWorldMapPoint<br/>At DeathWorldMapPoint.java:[line 1]<br/>Did you intend to override net.runelite.client.ui.overlay.worldmap.WorldMapPoint.equals(Object)</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#EQ_DOESNT_OVERRIDE_EQUALS">Class doesn't override equals in superclass</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.client.plugins.party.PartyWorldMapPoint doesn't override net.runelite.client.ui.overlay.worldmap.WorldMapPoint.equals(Object)<br/>
+<br/>
+<br/>In file PartyWorldMapPoint.java,
+					
+						line 1<br/>In class net.runelite.client.plugins.party.PartyWorldMapPoint<br/>At PartyWorldMapPoint.java:[line 1]<br/>Did you intend to override net.runelite.client.ui.overlay.worldmap.WorldMapPoint.equals(Object)</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ICAST_INTEGER_MULTIPLY_CAST_TO_LONG">Result of integer multiplication cast to long</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Result of integer multiplication cast to long in net.runelite.client.plugins.cluescrolls.ClueScrollPlugin.coordinatesToWorldPoint(int, int, int, int)<br/>
+<br/>
+<br/>In file ClueScrollPlugin.java,
+					
+						line 558<br/>In class net.runelite.client.plugins.cluescrolls.ClueScrollPlugin<br/>In method net.runelite.client.plugins.cluescrolls.ClueScrollPlugin.coordinatesToWorldPoint(int, int, int, int)<br/>At ClueScrollPlugin.java:[line 558]<br/>At ClueScrollPlugin.java:[line 558]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ICAST_IDIV_CAST_TO_DOUBLE">Integral division result cast to double or float</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Integral division result cast to double or float in net.runelite.client.plugins.combatlevel.CombatLevelOverlay.getLevelsUntilTooltip()<br/>
+<br/>
+<br/>In file CombatLevelOverlay.java,
+					
+						line 102<br/>In class net.runelite.client.plugins.combatlevel.CombatLevelOverlay<br/>In method net.runelite.client.plugins.combatlevel.CombatLevelOverlay.getLevelsUntilTooltip()<br/>At CombatLevelOverlay.java:[line 102]<br/>At CombatLevelOverlay.java:[line 102]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ICAST_IDIV_CAST_TO_DOUBLE">Integral division result cast to double or float</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Integral division result cast to double or float in net.runelite.client.plugins.combatlevel.CombatLevelPluginTest.getBaseValues()<br/>
+<br/>
+<br/>In file CombatLevelPluginTest.java,
+					
+						line 76<br/>In class net.runelite.client.plugins.combatlevel.CombatLevelPluginTest<br/>In method net.runelite.client.plugins.combatlevel.CombatLevelPluginTest.getBaseValues()<br/>At CombatLevelPluginTest.java:[line 76]<br/>At CombatLevelPluginTest.java:[line 76]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ICAST_IDIV_CAST_TO_DOUBLE">Integral division result cast to double or float</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Integral division result cast to double or float in net.runelite.client.plugins.dailytaskindicators.DailyTasksPlugin.onGameTick(GameTick)<br/>
+<br/>
+<br/>In file DailyTasksPlugin.java,
+					
+						line 115<br/>In class net.runelite.client.plugins.dailytaskindicators.DailyTasksPlugin<br/>In method net.runelite.client.plugins.dailytaskindicators.DailyTasksPlugin.onGameTick(GameTick)<br/>At DailyTasksPlugin.java:[line 115]<br/>At DailyTasksPlugin.java:[line 115]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ICAST_INTEGER_MULTIPLY_CAST_TO_LONG">Result of integer multiplication cast to long</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Result of integer multiplication cast to long in net.runelite.client.plugins.itemprices.ItemPricesOverlay.stackValueText(int, int, int)<br/>
+<br/>
+<br/>In file ItemPricesOverlay.java,
+					
+						line 221<br/>In class net.runelite.client.plugins.itemprices.ItemPricesOverlay<br/>In method net.runelite.client.plugins.itemprices.ItemPricesOverlay.stackValueText(int, int, int)<br/>At ItemPricesOverlay.java:[line 221]<br/>At ItemPricesOverlay.java:[line 221]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ICAST_INTEGER_MULTIPLY_CAST_TO_LONG">Result of integer multiplication cast to long</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Result of integer multiplication cast to long in net.runelite.client.plugins.poison.PoisonPlugin.onVarbitChanged(VarbitChanged)<br/>
+<br/>
+<br/>In file PoisonPlugin.java,
+					
+						line 142<br/>In class net.runelite.client.plugins.poison.PoisonPlugin<br/>In method net.runelite.client.plugins.poison.PoisonPlugin.onVarbitChanged(VarbitChanged)<br/>At PoisonPlugin.java:[line 142]<br/>At PoisonPlugin.java:[line 142]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ICAST_IDIV_CAST_TO_DOUBLE">Integral division result cast to double or float</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Integral division result cast to double or float in net.runelite.client.plugins.regenmeter.RegenMeterOverlay.render(Graphics2D)<br/>
+<br/>
+<br/>In file RegenMeterOverlay.java,
+					
+						line 93<br/>In class net.runelite.client.plugins.regenmeter.RegenMeterOverlay<br/>In method net.runelite.client.plugins.regenmeter.RegenMeterOverlay.render(Graphics2D)<br/>At RegenMeterOverlay.java:[line 93]<br/>At RegenMeterOverlay.java:[line 93]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ICAST_IDIV_CAST_TO_DOUBLE">Integral division result cast to double or float</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Integral division result cast to double or float in net.runelite.client.plugins.regenmeter.RegenMeterOverlay.renderRegen(Graphics2D, WidgetInfo, double, Color)<br/>
+<br/>
+<br/>In file RegenMeterOverlay.java,
+					
+						line 115<br/>In class net.runelite.client.plugins.regenmeter.RegenMeterOverlay<br/>In method net.runelite.client.plugins.regenmeter.RegenMeterOverlay.renderRegen(Graphics2D, WidgetInfo, double, Color)<br/>At RegenMeterOverlay.java:[line 115]<br/>At RegenMeterOverlay.java:[line 115]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ICAST_IDIV_CAST_TO_DOUBLE">Integral division result cast to double or float</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Integral division result cast to double or float in net.runelite.client.plugins.slayer.TargetWeaknessOverlay.calculateHealth(NPC)<br/>
+<br/>
+<br/>In file TargetWeaknessOverlay.java,
+					
+						line 120<br/>In class net.runelite.client.plugins.slayer.TargetWeaknessOverlay<br/>In method net.runelite.client.plugins.slayer.TargetWeaknessOverlay.calculateHealth(NPC)<br/>At TargetWeaknessOverlay.java:[line 120]<br/>At TargetWeaknessOverlay.java:[line 120]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ICAST_IDIV_CAST_TO_DOUBLE">Integral division result cast to double or float</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Integral division result cast to double or float in net.runelite.client.ui.components.ThinProgressBar.getPercentage()<br/>
+<br/>
+<br/>In file ThinProgressBar.java,
+					
+						line 57<br/>In class net.runelite.client.ui.components.ThinProgressBar<br/>In method net.runelite.client.ui.components.ThinProgressBar.getPercentage()<br/>At ThinProgressBar.java:[line 57]<br/>At ThinProgressBar.java:[line 57]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#IM_AVERAGE_COMPUTATION_COULD_OVERFLOW">Computation of average could overflow</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Computation of average could overflow in net.runelite.client.plugins.itemstats.RangeStatBoost.effect(Client)<br/>
+<br/>
+<br/>In file RangeStatBoost.java,
+					
+						line 54<br/>In class net.runelite.client.plugins.itemstats.RangeStatBoost<br/>In method net.runelite.client.plugins.itemstats.RangeStatBoost.effect(Client)<br/>At RangeStatBoost.java:[line 54]<br/>At RangeStatBoost.java:[line 54]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD">Read of unwritten public or protected field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Read of unwritten public or protected field roundTripTime in net.runelite.client.plugins.worldhopper.ping.Ping.windowsPing(World)<br/>
+<br/>
+<br/>In file Ping.java,
+					
+						line 85<br/>In class net.runelite.client.plugins.worldhopper.ping.Ping<br/>In method net.runelite.client.plugins.worldhopper.ping.Ping.windowsPing(World)<br/>Field net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.roundTripTime<br/>At Ping.java:[line 85]<br/>At Ping.java:[line 85]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of command, which is known to be non-null in net.runelite.client.chat.ChatCommandManager.onChatMessage(ChatMessage)<br/>
+<br/>
+<br/>In file ChatCommandManager.java,
+					
+						line 110<br/>In class net.runelite.client.chat.ChatCommandManager<br/>In method net.runelite.client.chat.ChatCommandManager.onChatMessage(ChatMessage)<br/>Value loaded from command<br/>Return value of net.runelite.client.chat.ChatCommandManager.extractCommand(String) of type String<br/>Redundant null check at ChatCommandManager.java:[line 110]<br/>Redundant null check at ChatCommandManager.java:[line 110]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of command, which is known to be non-null in net.runelite.client.chat.ChatCommandManager.onChatboxInput(ChatboxInput)<br/>
+<br/>
+<br/>In file ChatCommandManager.java,
+					
+						line 141<br/>In class net.runelite.client.chat.ChatCommandManager<br/>In method net.runelite.client.chat.ChatCommandManager.onChatboxInput(ChatboxInput)<br/>Value loaded from command<br/>Return value of net.runelite.client.chat.ChatCommandManager.extractCommand(String) of type String<br/>Redundant null check at ChatCommandManager.java:[line 141]<br/>Redundant null check at ChatCommandManager.java:[line 141]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of command, which is known to be non-null in net.runelite.client.chat.ChatCommandManager.onPrivateMessageInput(PrivateMessageInput)<br/>
+<br/>
+<br/>In file ChatCommandManager.java,
+					
+						line 167<br/>In class net.runelite.client.chat.ChatCommandManager<br/>In method net.runelite.client.chat.ChatCommandManager.onPrivateMessageInput(PrivateMessageInput)<br/>Value loaded from command<br/>Return value of net.runelite.client.chat.ChatCommandManager.extractCommand(String) of type String<br/>Redundant null check at ChatCommandManager.java:[line 167]<br/>Redundant null check at ChatCommandManager.java:[line 167]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of skillRequirements, which is known to be non-null in net.runelite.client.plugins.achievementdiary.DiaryRequirementsPlugin.showDiaryRequirements()<br/>
+<br/>
+<br/>In file DiaryRequirementsPlugin.java,
+					
+						line 125<br/>In class net.runelite.client.plugins.achievementdiary.DiaryRequirementsPlugin<br/>In method net.runelite.client.plugins.achievementdiary.DiaryRequirementsPlugin.showDiaryRequirements()<br/>Value loaded from skillRequirements<br/>Return value of net.runelite.client.plugins.achievementdiary.DiaryRequirementsPlugin.buildRequirements(Collection) of type java.util.Map<br/>Redundant null check at DiaryRequirementsPlugin.java:[line 125]<br/>Redundant null check at DiaryRequirementsPlugin.java:[line 125]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of interacting, which is known to be non-null in net.runelite.client.plugins.demonicgorilla.DemonicGorillaPlugin.checkGorillaAttacks()<br/>
+<br/>
+<br/>In file DemonicGorillaPlugin.java,
+					
+						line 376<br/>In class net.runelite.client.plugins.demonicgorilla.DemonicGorillaPlugin<br/>In method net.runelite.client.plugins.demonicgorilla.DemonicGorillaPlugin.checkGorillaAttacks()<br/>Value loaded from interacting<br/>Return value of net.runelite.api.NPC.getInteracting() of type net.runelite.api.Actor<br/>Redundant null check at DemonicGorillaPlugin.java:[line 376]<br/>Redundant null check at DemonicGorillaPlugin.java:[line 376]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of mp, which is known to be non-null in net.runelite.client.plugins.demonicgorilla.DemonicGorillaPlugin.checkGorillaAttacks()<br/>
+<br/>
+<br/>In file DemonicGorillaPlugin.java,
+					
+						line 456<br/>In class net.runelite.client.plugins.demonicgorilla.DemonicGorillaPlugin<br/>In method net.runelite.client.plugins.demonicgorilla.DemonicGorillaPlugin.checkGorillaAttacks()<br/>Value loaded from mp<br/>Return value of java.util.Map.get(Object) of type Object<br/>Redundant null check at DemonicGorillaPlugin.java:[line 456]<br/>Redundant null check at DemonicGorillaPlugin.java:[line 456]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Return value of java.util.concurrent.ScheduledExecutorService.scheduleWithFixedDelay(Runnable, long, long, TimeUnit) ignored, but method has no side effect<br/>
+<br/>
+<br/>In file ConfigManager.java,
+					
+						line 93<br/>In class net.runelite.client.config.ConfigManager<br/>In method new net.runelite.client.config.ConfigManager(ScheduledExecutorService)<br/>Called method java.util.concurrent.ScheduledExecutorService.scheduleWithFixedDelay(Runnable, long, long, TimeUnit)<br/>At ConfigManager.java:[line 93]<br/>At ConfigManager.java:[line 93]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Return value of java.util.concurrent.ScheduledExecutorService.scheduleAtFixedRate(Runnable, long, long, TimeUnit) ignored, but method has no side effect<br/>
+<br/>
+<br/>In file DiscordService.java,
+					
+						line 110<br/>In class net.runelite.client.discord.DiscordService<br/>In method net.runelite.client.discord.DiscordService.init()<br/>Called method java.util.concurrent.ScheduledExecutorService.scheduleAtFixedRate(Runnable, long, long, TimeUnit)<br/>At DiscordService.java:[line 110]<br/>At DiscordService.java:[line 110]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Return value of java.util.concurrent.ScheduledExecutorService.scheduleWithFixedDelay(Runnable, long, long, TimeUnit) ignored, but method has no side effect<br/>
+<br/>
+<br/>In file ItemManager.java,
+					
+						line 162<br/>In class net.runelite.client.game.ItemManager<br/>In method new net.runelite.client.game.ItemManager(Client, ScheduledExecutorService, ClientThread)<br/>Called method java.util.concurrent.ScheduledExecutorService.scheduleWithFixedDelay(Runnable, long, long, TimeUnit)<br/>At ItemManager.java:[line 162]<br/>At ItemManager.java:[line 162]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Return value of Stopwatch.getElapsed() ignored, but method has no side effect<br/>
+<br/>
+<br/>In file StopwatchTest.java,
+					
+						line 47<br/>In class net.runelite.client.plugins.timetracking.clocks.StopwatchTest<br/>In method net.runelite.client.plugins.timetracking.clocks.StopwatchTest.givenRunningStopwatch_whenCreatingStopwatch_thenCanUseLaps()<br/>Called method net.runelite.client.plugins.timetracking.clocks.Stopwatch.getElapsed()<br/>At StopwatchTest.java:[line 47]<br/>At StopwatchTest.java:[line 47]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.chat.ChatMessageManager.onChatMessage(ChatMessage) where default case is missing<br/>
+<br/>
+<br/>In file ChatMessageManager.java,
+					
+						lines 115
+						    to 141<br/>In class net.runelite.client.chat.ChatMessageManager<br/>In method net.runelite.client.chat.ChatMessageManager.onChatMessage(ChatMessage)<br/>At ChatMessageManager.java:[lines 115-141]<br/>At ChatMessageManager.java:[lines 115-141]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.chat.CommandManager.onScriptCallbackEvent(ScriptCallbackEvent) where default case is missing<br/>
+<br/>
+<br/>In file CommandManager.java,
+					
+						lines 86
+						    to 95<br/>In class net.runelite.client.chat.CommandManager<br/>In method net.runelite.client.chat.CommandManager.onScriptCallbackEvent(ScriptCallbackEvent)<br/>At CommandManager.java:[lines 86-95]<br/>At CommandManager.java:[lines 86-95]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_FALLTHROUGH">Switch statement found where one case falls through to the next case</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.game.ChatboxInputManager.onScriptCallbackEvent(ScriptCallbackEvent) where one case falls through to the next case<br/>
+<br/>
+<br/>In file ChatboxInputManager.java,
+					
+						lines 122
+						    to 125<br/>In class net.runelite.client.game.ChatboxInputManager<br/>In method net.runelite.client.game.ChatboxInputManager.onScriptCallbackEvent(ScriptCallbackEvent)<br/>At ChatboxInputManager.java:[lines 122-125]<br/>At ChatboxInputManager.java:[lines 122-125]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.game.LootManager.getDropLocation(NPC, WorldPoint) where default case is missing<br/>
+<br/>
+<br/>In file LootManager.java,
+					
+						lines 265
+						    to 313<br/>In class net.runelite.client.game.LootManager<br/>In method net.runelite.client.game.LootManager.getDropLocation(NPC, WorldPoint)<br/>At LootManager.java:[lines 265-313]<br/>At LootManager.java:[lines 265-313]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.agility.AgilityPlugin.onGameStateChanged(GameStateChanged) where default case is missing<br/>
+<br/>
+<br/>In file AgilityPlugin.java,
+					
+						lines 144
+						    to 160<br/>In class net.runelite.client.plugins.agility.AgilityPlugin<br/>In method net.runelite.client.plugins.agility.AgilityPlugin.onGameStateChanged(GameStateChanged)<br/>At AgilityPlugin.java:[lines 144-160]<br/>At AgilityPlugin.java:[lines 144-160]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.attackstyles.AttackStylesPlugin.onConfigChanged(ConfigChanged) where default case is missing<br/>
+<br/>
+<br/>In file AttackStylesPlugin.java,
+					
+						lines 226
+						    to 244<br/>In class net.runelite.client.plugins.attackstyles.AttackStylesPlugin<br/>In method net.runelite.client.plugins.attackstyles.AttackStylesPlugin.onConfigChanged(ConfigChanged)<br/>At AttackStylesPlugin.java:[lines 226-244]<br/>At AttackStylesPlugin.java:[lines 226-244]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.banktags.BankTagsPlugin.onScriptCallbackEvent(ScriptCallbackEvent) where default case is missing<br/>
+<br/>
+<br/>In file BankTagsPlugin.java,
+					
+						lines 170
+						    to 207<br/>In class net.runelite.client.plugins.banktags.BankTagsPlugin<br/>In method net.runelite.client.plugins.banktags.BankTagsPlugin.onScriptCallbackEvent(ScriptCallbackEvent)<br/>At BankTagsPlugin.java:[lines 170-207]<br/>At BankTagsPlugin.java:[lines 170-207]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.banktags.tabs.TabInterface.handleNewTab(ScriptEvent) where default case is missing<br/>
+<br/>
+<br/>In file TabInterface.java,
+					
+						lines 266
+						    to 316<br/>In class net.runelite.client.plugins.banktags.tabs.TabInterface<br/>In method net.runelite.client.plugins.banktags.tabs.TabInterface.handleNewTab(ScriptEvent)<br/>At TabInterface.java:[lines 266-316]<br/>At TabInterface.java:[lines 266-316]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.banktags.tabs.TabInterface.handleTagTab(ScriptEvent) where default case is missing<br/>
+<br/>
+<br/>In file TabInterface.java,
+					
+						lines 323
+						    to 374<br/>In class net.runelite.client.plugins.banktags.tabs.TabInterface<br/>In method net.runelite.client.plugins.banktags.tabs.TabInterface.handleTagTab(ScriptEvent)<br/>At TabInterface.java:[lines 323-374]<br/>At TabInterface.java:[lines 323-374]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.barbarianassault.BarbarianAssaultPlugin.onGameTick(GameTick) where default case is missing<br/>
+<br/>
+<br/>In file BarbarianAssaultPlugin.java,
+					
+						lines 155
+						    to 167<br/>In class net.runelite.client.plugins.barbarianassault.BarbarianAssaultPlugin<br/>In method net.runelite.client.plugins.barbarianassault.BarbarianAssaultPlugin.onGameTick(GameTick)<br/>At BarbarianAssaultPlugin.java:[lines 155-167]<br/>At BarbarianAssaultPlugin.java:[lines 155-167]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.blastfurnace.BlastFurnacePlugin.onGameObjectDespawned(GameObjectDespawned) where default case is missing<br/>
+<br/>
+<br/>In file BlastFurnacePlugin.java,
+					
+						lines 117
+						    to 124<br/>In class net.runelite.client.plugins.blastfurnace.BlastFurnacePlugin<br/>In method net.runelite.client.plugins.blastfurnace.BlastFurnacePlugin.onGameObjectDespawned(GameObjectDespawned)<br/>At BlastFurnacePlugin.java:[lines 117-124]<br/>At BlastFurnacePlugin.java:[lines 117-124]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.blastfurnace.BlastFurnacePlugin.onGameObjectSpawned(GameObjectSpawned) where default case is missing<br/>
+<br/>
+<br/>In file BlastFurnacePlugin.java,
+					
+						lines 100
+						    to 107<br/>In class net.runelite.client.plugins.blastfurnace.BlastFurnacePlugin<br/>In method net.runelite.client.plugins.blastfurnace.BlastFurnacePlugin.onGameObjectSpawned(GameObjectSpawned)<br/>At BlastFurnacePlugin.java:[lines 100-107]<br/>At BlastFurnacePlugin.java:[lines 100-107]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.blastmine.BlastMineRockOverlay.render(Graphics2D) where default case is missing<br/>
+<br/>
+<br/>In file BlastMineRockOverlay.java,
+					
+						lines 105
+						    to 118<br/>In class net.runelite.client.plugins.blastmine.BlastMineRockOverlay<br/>In method net.runelite.client.plugins.blastmine.BlastMineRockOverlay.render(Graphics2D)<br/>At BlastMineRockOverlay.java:[lines 105-118]<br/>At BlastMineRockOverlay.java:[lines 105-118]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.boosts.BoostsPlugin.onGameStateChanged(GameStateChanged) where default case is missing<br/>
+<br/>
+<br/>In file BoostsPlugin.java,
+					
+						lines 147
+						    to 153<br/>In class net.runelite.client.plugins.boosts.BoostsPlugin<br/>In method net.runelite.client.plugins.boosts.BoostsPlugin.onGameStateChanged(GameStateChanged)<br/>At BoostsPlugin.java:[lines 147-153]<br/>At BoostsPlugin.java:[lines 147-153]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.cannon.CannonPlugin.onItemContainerChanged(ItemContainerChanged) where default case is missing<br/>
+<br/>
+<br/>In file CannonPlugin.java,
+					
+						lines 171
+						    to 183<br/>In class net.runelite.client.plugins.cannon.CannonPlugin<br/>In method net.runelite.client.plugins.cannon.CannonPlugin.onItemContainerChanged(ItemContainerChanged)<br/>At CannonPlugin.java:[lines 171-183]<br/>At CannonPlugin.java:[lines 171-183]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.chatcommands.ChatKeyboardListener.keyPressed(KeyEvent) where default case is missing<br/>
+<br/>
+<br/>In file ChatKeyboardListener.java,
+					
+						lines 62
+						    to 94<br/>In class net.runelite.client.plugins.chatcommands.ChatKeyboardListener<br/>In method net.runelite.client.plugins.chatcommands.ChatKeyboardListener.keyPressed(KeyEvent)<br/>At ChatKeyboardListener.java:[lines 62-94]<br/>At ChatKeyboardListener.java:[lines 62-94]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.chatnotifications.ChatNotificationsPlugin.onGameStateChanged(GameStateChanged) where default case is missing<br/>
+<br/>
+<br/>In file ChatNotificationsPlugin.java,
+					
+						lines 94
+						    to 98<br/>In class net.runelite.client.plugins.chatnotifications.ChatNotificationsPlugin<br/>In method net.runelite.client.plugins.chatnotifications.ChatNotificationsPlugin.onGameStateChanged(GameStateChanged)<br/>At ChatNotificationsPlugin.java:[lines 94-98]<br/>At ChatNotificationsPlugin.java:[lines 94-98]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.cluescrolls.clues.HotColdClue.updatePossibleArea(WorldPoint, String, String) where default case is missing<br/>
+<br/>
+<br/>In file HotColdClue.java,
+					
+						lines 295
+						    to 325<br/>In class net.runelite.client.plugins.cluescrolls.clues.HotColdClue<br/>In method net.runelite.client.plugins.cluescrolls.clues.HotColdClue.updatePossibleArea(WorldPoint, String, String)<br/>At HotColdClue.java:[lines 295-325]<br/>At HotColdClue.java:[lines 295-325]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.corp.CorpPlugin.onNpcSpawned(NpcSpawned) where default case is missing<br/>
+<br/>
+<br/>In file CorpPlugin.java,
+					
+						lines 143
+						    to 153<br/>In class net.runelite.client.plugins.corp.CorpPlugin<br/>In method net.runelite.client.plugins.corp.CorpPlugin.onNpcSpawned(NpcSpawned)<br/>At CorpPlugin.java:[lines 143-153]<br/>At CorpPlugin.java:[lines 143-153]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.discord.DiscordPlugin.onGameStateChanged(GameStateChanged) where default case is missing<br/>
+<br/>
+<br/>In file DiscordPlugin.java,
+					
+						lines 154
+						    to 166<br/>In class net.runelite.client.plugins.discord.DiscordPlugin<br/>In method net.runelite.client.plugins.discord.DiscordPlugin.onGameStateChanged(GameStateChanged)<br/>At DiscordPlugin.java:[lines 154-166]<br/>At DiscordPlugin.java:[lines 154-166]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.examine.ExaminePlugin.submitExamine(PendingExamine, String) where default case is missing<br/>
+<br/>
+<br/>In file ExaminePlugin.java,
+					
+						lines 394
+						    to 403<br/>In class net.runelite.client.plugins.examine.ExaminePlugin<br/>In method net.runelite.client.plugins.examine.ExaminePlugin.submitExamine(PendingExamine, String)<br/>At ExaminePlugin.java:[lines 394-403]<br/>At ExaminePlugin.java:[lines 394-403]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.experiencedrop.XpDropPlugin.onWidgetHiddenChanged(WidgetHiddenChanged) where default case is missing<br/>
+<br/>
+<br/>In file XpDropPlugin.java,
+					
+						lines 120
+						    to 132<br/>In class net.runelite.client.plugins.experiencedrop.XpDropPlugin<br/>In method net.runelite.client.plugins.experiencedrop.XpDropPlugin.onWidgetHiddenChanged(WidgetHiddenChanged)<br/>At XpDropPlugin.java:[lines 120-132]<br/>At XpDropPlugin.java:[lines 120-132]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.grandexchange.GrandExchangePlugin.onMenuEntryAdded(MenuEntryAdded) where default case is missing<br/>
+<br/>
+<br/>In file GrandExchangePlugin.java,
+					
+						lines 255
+						    to 269<br/>In class net.runelite.client.plugins.grandexchange.GrandExchangePlugin<br/>In method net.runelite.client.plugins.grandexchange.GrandExchangePlugin.onMenuEntryAdded(MenuEntryAdded)<br/>At GrandExchangePlugin.java:[lines 255-269]<br/>At GrandExchangePlugin.java:[lines 255-269]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.grandexchange.GrandExchangePlugin.onWidgetLoaded(WidgetLoaded) where default case is missing<br/>
+<br/>
+<br/>In file GrandExchangePlugin.java,
+					
+						lines 285
+						    to 296<br/>In class net.runelite.client.plugins.grandexchange.GrandExchangePlugin<br/>In method net.runelite.client.plugins.grandexchange.GrandExchangePlugin.onWidgetLoaded(WidgetLoaded)<br/>At GrandExchangePlugin.java:[lines 285-296]<br/>At GrandExchangePlugin.java:[lines 285-296]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.hunter.HunterPlugin.onGameObjectSpawned(GameObjectSpawned) where default case is missing<br/>
+<br/>
+<br/>In file HunterPlugin.java,
+					
+						lines 167
+						    to 173<br/>In class net.runelite.client.plugins.hunter.HunterPlugin<br/>In method net.runelite.client.plugins.hunter.HunterPlugin.onGameObjectSpawned(GameObjectSpawned)<br/>At HunterPlugin.java:[lines 167-173]<br/>At HunterPlugin.java:[lines 167-173]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.idlenotifier.IdleNotifierPlugin.onGameStateChanged(GameStateChanged) where default case is missing<br/>
+<br/>
+<br/>In file IdleNotifierPlugin.java,
+					
+						lines 293
+						    to 308<br/>In class net.runelite.client.plugins.idlenotifier.IdleNotifierPlugin<br/>In method net.runelite.client.plugins.idlenotifier.IdleNotifierPlugin.onGameStateChanged(GameStateChanged)<br/>At IdleNotifierPlugin.java:[lines 293-308]<br/>At IdleNotifierPlugin.java:[lines 293-308]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.kourendlibrary.Bookcase.getLocationString() where default case is missing<br/>
+<br/>
+<br/>In file Bookcase.java,
+					
+						lines 111
+						    to 120<br/>In class net.runelite.client.plugins.kourendlibrary.Bookcase<br/>In method net.runelite.client.plugins.kourendlibrary.Bookcase.getLocationString()<br/>At Bookcase.java:[lines 111-120]<br/>At Bookcase.java:[lines 111-120]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.loottracker.LootTrackerPlugin.onChatMessage(ChatMessage) where default case is missing<br/>
+<br/>
+<br/>In file LootTrackerPlugin.java,
+					
+						lines 371
+						    to 386<br/>In class net.runelite.client.plugins.loottracker.LootTrackerPlugin<br/>In method net.runelite.client.plugins.loottracker.LootTrackerPlugin.onChatMessage(ChatMessage)<br/>At LootTrackerPlugin.java:[lines 371-386]<br/>At LootTrackerPlugin.java:[lines 371-386]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.menuentryswapper.MenuEntrySwapperPlugin.onMenuEntryAdded(MenuEntryAdded) where default case is missing<br/>
+<br/>
+<br/>In file MenuEntrySwapperPlugin.java,
+					
+						lines 446
+						    to 455<br/>In class net.runelite.client.plugins.menuentryswapper.MenuEntrySwapperPlugin<br/>In method net.runelite.client.plugins.menuentryswapper.MenuEntrySwapperPlugin.onMenuEntryAdded(MenuEntryAdded)<br/>At MenuEntrySwapperPlugin.java:[lines 446-455]<br/>At MenuEntrySwapperPlugin.java:[lines 446-455]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.motherlode.MotherlodePlugin.onChatMessage(ChatMessage) where default case is missing<br/>
+<br/>
+<br/>In file MotherlodePlugin.java,
+					
+						lines 227
+						    to 246<br/>In class net.runelite.client.plugins.motherlode.MotherlodePlugin<br/>In method net.runelite.client.plugins.motherlode.MotherlodePlugin.onChatMessage(ChatMessage)<br/>At MotherlodePlugin.java:[lines 227-246]<br/>At MotherlodePlugin.java:[lines 227-246]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.npchighlight.NpcIndicatorsPlugin.getWorldLocationBehind(NPC) where default case is missing<br/>
+<br/>
+<br/>In file NpcIndicatorsPlugin.java,
+					
+						lines 376
+						    to 404<br/>In class net.runelite.client.plugins.npchighlight.NpcIndicatorsPlugin<br/>In method net.runelite.client.plugins.npchighlight.NpcIndicatorsPlugin.getWorldLocationBehind(NPC)<br/>At NpcIndicatorsPlugin.java:[lines 376-404]<br/>At NpcIndicatorsPlugin.java:[lines 376-404]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.npchighlight.NpcSceneOverlay.renderNpcOverlay(Graphics2D, NPC, String, Color) where default case is missing<br/>
+<br/>
+<br/>In file NpcSceneOverlay.java,
+					
+						lines 148
+						    to 173<br/>In class net.runelite.client.plugins.npchighlight.NpcSceneOverlay<br/>In method net.runelite.client.plugins.npchighlight.NpcSceneOverlay.renderNpcOverlay(Graphics2D, NPC, String, Color)<br/>At NpcSceneOverlay.java:[lines 148-173]<br/>At NpcSceneOverlay.java:[lines 148-173]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.pestcontrol.Game.fall(String) where default case is missing<br/>
+<br/>
+<br/>In file Game.java,
+					
+						lines 56
+						    to 68<br/>In class net.runelite.client.plugins.pestcontrol.Game<br/>In method net.runelite.client.plugins.pestcontrol.Game.fall(String)<br/>At Game.java:[lines 56-68]<br/>At Game.java:[lines 56-68]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.raids.Raid.toRoomString() where default case is missing<br/>
+<br/>
+<br/>In file Raid.java,
+					
+						lines 152
+						    to 174<br/>In class net.runelite.client.plugins.raids.Raid<br/>In method net.runelite.client.plugins.raids.Raid.toRoomString()<br/>At Raid.java:[lines 152-174]<br/>At Raid.java:[lines 152-174]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.raids.RaidsOverlay.render(Graphics2D) where default case is missing<br/>
+<br/>
+<br/>In file RaidsOverlay.java,
+					
+						lines 121
+						    to 153<br/>In class net.runelite.client.plugins.raids.RaidsOverlay<br/>In method net.runelite.client.plugins.raids.RaidsOverlay.render(Graphics2D)<br/>At RaidsOverlay.java:[lines 121-153]<br/>At RaidsOverlay.java:[lines 121-153]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.reportbutton.ReportButtonPlugin.onGameStateChanged(GameStateChanged) where default case is missing<br/>
+<br/>
+<br/>In file ReportButtonPlugin.java,
+					
+						lines 106
+						    to 117<br/>In class net.runelite.client.plugins.reportbutton.ReportButtonPlugin<br/>In method net.runelite.client.plugins.reportbutton.ReportButtonPlugin.onGameStateChanged(GameStateChanged)<br/>At ReportButtonPlugin.java:[lines 106-117]<br/>At ReportButtonPlugin.java:[lines 106-117]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_FALLTHROUGH">Switch statement found where one case falls through to the next case</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in new net.runelite.client.plugins.skybox.Skybox(Reader, String) where one case falls through to the next case<br/>
+<br/>
+<br/>In file Skybox.java,
+					
+						lines 219
+						    to 224<br/>In class net.runelite.client.plugins.skybox.Skybox<br/>In method new net.runelite.client.plugins.skybox.Skybox(Reader, String)<br/>At Skybox.java:[lines 219-224]<br/>At Skybox.java:[lines 219-224]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.slayer.SlayerPlugin.onGameStateChanged(GameStateChanged) where default case is missing<br/>
+<br/>
+<br/>In file SlayerPlugin.java,
+					
+						lines 256
+						    to 276<br/>In class net.runelite.client.plugins.slayer.SlayerPlugin<br/>In method net.runelite.client.plugins.slayer.SlayerPlugin.onGameStateChanged(GameStateChanged)<br/>At SlayerPlugin.java:[lines 256-276]<br/>At SlayerPlugin.java:[lines 256-276]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.tearsofguthix.TearsOfGuthixPlugin.onGameStateChanged(GameStateChanged) where default case is missing<br/>
+<br/>
+<br/>In file TearsOfGuthixPlugin.java,
+					
+						lines 80
+						    to 85<br/>In class net.runelite.client.plugins.tearsofguthix.TearsOfGuthixPlugin<br/>In method net.runelite.client.plugins.tearsofguthix.TearsOfGuthixPlugin.onGameStateChanged(GameStateChanged)<br/>At TearsOfGuthixPlugin.java:[lines 80-85]<br/>At TearsOfGuthixPlugin.java:[lines 80-85]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.timers.TimersPlugin.onAnimationChanged(AnimationChanged) where default case is missing<br/>
+<br/>
+<br/>In file TimersPlugin.java,
+					
+						lines 664
+						    to 680<br/>In class net.runelite.client.plugins.timers.TimersPlugin<br/>In method net.runelite.client.plugins.timers.TimersPlugin.onAnimationChanged(AnimationChanged)<br/>At TimersPlugin.java:[lines 664-680]<br/>At TimersPlugin.java:[lines 664-680]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.timers.TimersPlugin.onGameStateChanged(GameStateChanged) where default case is missing<br/>
+<br/>
+<br/>In file TimersPlugin.java,
+					
+						lines 642
+						    to 649<br/>In class net.runelite.client.plugins.timers.TimersPlugin<br/>In method net.runelite.client.plugins.timers.TimersPlugin.onGameStateChanged(GameStateChanged)<br/>At TimersPlugin.java:[lines 642-649]<br/>At TimersPlugin.java:[lines 642-649]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.twitch.irc.TwitchIRCClient.run() where default case is missing<br/>
+<br/>
+<br/>In file TwitchIRCClient.java,
+					
+						lines 114
+						    to 127<br/>In class net.runelite.client.plugins.twitch.irc.TwitchIRCClient<br/>In method net.runelite.client.plugins.twitch.irc.TwitchIRCClient.run()<br/>At TwitchIRCClient.java:[lines 114-127]<br/>At TwitchIRCClient.java:[lines 114-127]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.virtuallevels.VirtualLevelsPlugin.onScriptCallbackEvent(ScriptCallbackEvent) where default case is missing<br/>
+<br/>
+<br/>In file VirtualLevelsPlugin.java,
+					
+						lines 81
+						    to 108<br/>In class net.runelite.client.plugins.virtuallevels.VirtualLevelsPlugin<br/>In method net.runelite.client.plugins.virtuallevels.VirtualLevelsPlugin.onScriptCallbackEvent(ScriptCallbackEvent)<br/>At VirtualLevelsPlugin.java:[lines 81-108]<br/>At VirtualLevelsPlugin.java:[lines 81-108]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.wasdcamera.WASDCameraListener.keyPressed(KeyEvent) where default case is missing<br/>
+<br/>
+<br/>In file WASDCameraListener.java,
+					
+						lines 93
+						    to 100<br/>In class net.runelite.client.plugins.wasdcamera.WASDCameraListener<br/>In method net.runelite.client.plugins.wasdcamera.WASDCameraListener.keyPressed(KeyEvent)<br/>At WASDCameraListener.java:[lines 93-100]<br/>At WASDCameraListener.java:[lines 93-100]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.wasdcamera.WASDCameraPlugin.onScriptCallbackEvent(ScriptCallbackEvent) where default case is missing<br/>
+<br/>
+<br/>In file WASDCameraPlugin.java,
+					
+						lines 137
+						    to 154<br/>In class net.runelite.client.plugins.wasdcamera.WASDCameraPlugin<br/>In method net.runelite.client.plugins.wasdcamera.WASDCameraPlugin.onScriptCallbackEvent(ScriptCallbackEvent)<br/>At WASDCameraPlugin.java:[lines 137-154]<br/>At WASDCameraPlugin.java:[lines 137-154]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.wintertodt.WintertodtPlugin.onAnimationChanged(AnimationChanged) where default case is missing<br/>
+<br/>
+<br/>In file WintertodtPlugin.java,
+					
+						lines 368
+						    to 396<br/>In class net.runelite.client.plugins.wintertodt.WintertodtPlugin<br/>In method net.runelite.client.plugins.wintertodt.WintertodtPlugin.onAnimationChanged(AnimationChanged)<br/>At WintertodtPlugin.java:[lines 368-396]<br/>At WintertodtPlugin.java:[lines 368-396]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.wintertodt.WintertodtPlugin.onChatMessage(ChatMessage) where default case is missing<br/>
+<br/>
+<br/>In file WintertodtPlugin.java,
+					
+						lines 302
+						    to 317<br/>In class net.runelite.client.plugins.wintertodt.WintertodtPlugin<br/>In method net.runelite.client.plugins.wintertodt.WintertodtPlugin.onChatMessage(ChatMessage)<br/>At WintertodtPlugin.java:[lines 302-317]<br/>At WintertodtPlugin.java:[lines 302-317]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.wintertodt.WintertodtPlugin.onItemContainerChanged(ItemContainerChanged) where default case is missing<br/>
+<br/>
+<br/>In file WintertodtPlugin.java,
+					
+						lines 423
+						    to 429<br/>In class net.runelite.client.plugins.wintertodt.WintertodtPlugin<br/>In method net.runelite.client.plugins.wintertodt.WintertodtPlugin.onItemContainerChanged(ItemContainerChanged)<br/>At WintertodtPlugin.java:[lines 423-429]<br/>At WintertodtPlugin.java:[lines 423-429]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.worldhopper.WorldHopperPlugin.onConfigChanged(ConfigChanged) where default case is missing<br/>
+<br/>
+<br/>In file WorldHopperPlugin.java,
+					
+						lines 234
+						    to 253<br/>In class net.runelite.client.plugins.worldhopper.WorldHopperPlugin<br/>In method net.runelite.client.plugins.worldhopper.WorldHopperPlugin.onConfigChanged(ConfigChanged)<br/>At WorldHopperPlugin.java:[lines 234-253]<br/>At WorldHopperPlugin.java:[lines 234-253]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.plugins.xpglobes.XpGlobesPlugin.onGameStateChanged(GameStateChanged) where default case is missing<br/>
+<br/>
+<br/>In file XpGlobesPlugin.java,
+					
+						lines 178
+						    to 182<br/>In class net.runelite.client.plugins.xpglobes.XpGlobesPlugin<br/>In method net.runelite.client.plugins.xpglobes.XpGlobesPlugin.onGameStateChanged(GameStateChanged)<br/>At XpGlobesPlugin.java:[lines 178-182]<br/>At XpGlobesPlugin.java:[lines 178-182]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_FALLTHROUGH">Switch statement found where one case falls through to the next case</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.ui.overlay.OverlayUtil.transformPosition(OverlayPosition, Dimension) where one case falls through to the next case<br/>
+<br/>
+<br/>In file OverlayUtil.java,
+					
+						lines 240
+						    to 244<br/>In class net.runelite.client.ui.overlay.OverlayUtil<br/>In method net.runelite.client.ui.overlay.OverlayUtil.transformPosition(OverlayPosition, Dimension)<br/>At OverlayUtil.java:[lines 240-244]<br/>At OverlayUtil.java:[lines 240-244]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.ui.overlay.OverlayUtil.padPosition(OverlayPosition, Dimension, int) where default case is missing<br/>
+<br/>
+<br/>In file OverlayUtil.java,
+					
+						lines 195
+						    to 215<br/>In class net.runelite.client.ui.overlay.OverlayUtil<br/>In method net.runelite.client.ui.overlay.OverlayUtil.padPosition(OverlayPosition, Dimension, int)<br/>At OverlayUtil.java:[lines 195-215]<br/>At OverlayUtil.java:[lines 195-215]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.client.ui.overlay.OverlayUtil.transformPosition(OverlayPosition, Dimension) where default case is missing<br/>
+<br/>
+<br/>In file OverlayUtil.java,
+					
+						lines 226
+						    to 244<br/>In class net.runelite.client.ui.overlay.OverlayUtil<br/>In method net.runelite.client.ui.overlay.OverlayUtil.transformPosition(OverlayPosition, Dimension)<br/>At OverlayUtil.java:[lines 226-244]<br/>At OverlayUtil.java:[lines 226-244]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#UC_USELESS_OBJECT">Useless object created</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Useless object stored in variable accountSession of method net.runelite.client.config.ConfigManagerTest.testGetConfig()<br/>
+<br/>
+<br/>In file ConfigManagerTest.java,
+					
+						line 71<br/>In class net.runelite.client.config.ConfigManagerTest<br/>In method net.runelite.client.config.ConfigManagerTest.testGetConfig()<br/>Value accountSession<br/>Type net.runelite.client.account.AccountSession<br/>At ConfigManagerTest.java:[line 71]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#UC_USELESS_OBJECT">Useless object created</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Useless object stored in variable accountSession of method net.runelite.client.config.ConfigManagerTest.testGetConfigDefault()<br/>
+<br/>
+<br/>In file ConfigManagerTest.java,
+					
+						line 83<br/>In class net.runelite.client.config.ConfigManagerTest<br/>In method net.runelite.client.config.ConfigManagerTest.testGetConfigDefault()<br/>Value accountSession<br/>Type net.runelite.client.account.AccountSession<br/>At ConfigManagerTest.java:[line 83]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#UC_USELESS_OBJECT">Useless object created</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Useless object stored in variable accountSession of method net.runelite.client.config.ConfigManagerTest.testGetConfigDescriptor()<br/>
+<br/>
+<br/>In file ConfigManagerTest.java,
+					
+						line 105<br/>In class net.runelite.client.config.ConfigManagerTest<br/>In method net.runelite.client.config.ConfigManagerTest.testGetConfigDescriptor()<br/>Value accountSession<br/>Type net.runelite.client.account.AccountSession<br/>At ConfigManagerTest.java:[line 105]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#UC_USELESS_OBJECT">Useless object created</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Useless object stored in variable accountSession of method net.runelite.client.config.ConfigManagerTest.testSetConfig()<br/>
+<br/>
+<br/>In file ConfigManagerTest.java,
+					
+						line 93<br/>In class net.runelite.client.config.ConfigManagerTest<br/>In method net.runelite.client.config.ConfigManagerTest.testSetConfig()<br/>Value accountSession<br/>Type net.runelite.client.account.AccountSession<br/>At ConfigManagerTest.java:[line 93]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#UC_USELESS_CONDITION">Condition has no effect</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Useless condition: it's known that distX &lt;= -1 at this point<br/>
+<br/>
+<br/>In file IDAStarMM.java,
+					
+						line 242<br/>In class net.runelite.client.plugins.puzzlesolver.solver.pathfinding.IDAStarMM<br/>In method net.runelite.client.plugins.puzzlesolver.solver.pathfinding.IDAStarMM.moveTowardsVal(int, int, int, boolean)<br/>Value distX &lt;= -1<br/>At IDAStarMM.java:[line 242]<br/>At IDAStarMM.java:[line 242]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#UC_USELESS_CONDITION">Condition has no effect</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Useless condition: it's known that distY &lt;= -1 at this point<br/>
+<br/>
+<br/>In file IDAStarMM.java,
+					
+						line 216<br/>In class net.runelite.client.plugins.puzzlesolver.solver.pathfinding.IDAStarMM<br/>In method net.runelite.client.plugins.puzzlesolver.solver.pathfinding.IDAStarMM.moveTowardsVal(int, int, int, boolean)<br/>Value distY &lt;= -1<br/>At IDAStarMM.java:[line 216]<br/>At IDAStarMM.java:[line 216]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD">Unused public or protected field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unused public or protected field: net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.address<br/>
+<br/>
+<br/>In file IcmpEchoReply.java,
+					
+						lines 
+						    to <br/>In class net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply<br/>Field net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.address<br/>In IcmpEchoReply.java</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD">Unused public or protected field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unused public or protected field: net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.data<br/>
+<br/>
+<br/>In file IcmpEchoReply.java,
+					
+						lines 
+						    to <br/>In class net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply<br/>Field net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.data<br/>In IcmpEchoReply.java</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD">Unused public or protected field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unused public or protected field: net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.dataSize<br/>
+<br/>
+<br/>In file IcmpEchoReply.java,
+					
+						lines 
+						    to <br/>In class net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply<br/>Field net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.dataSize<br/>In IcmpEchoReply.java</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD">Unused public or protected field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unused public or protected field: net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.flags<br/>
+<br/>
+<br/>In file IcmpEchoReply.java,
+					
+						lines 
+						    to <br/>In class net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply<br/>Field net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.flags<br/>In IcmpEchoReply.java</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD">Unused public or protected field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unused public or protected field: net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.optionsData<br/>
+<br/>
+<br/>In file IcmpEchoReply.java,
+					
+						lines 
+						    to <br/>In class net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply<br/>Field net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.optionsData<br/>In IcmpEchoReply.java</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD">Unused public or protected field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unused public or protected field: net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.optionsSize<br/>
+<br/>
+<br/>In file IcmpEchoReply.java,
+					
+						lines 
+						    to <br/>In class net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply<br/>Field net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.optionsSize<br/>In IcmpEchoReply.java</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD">Unused public or protected field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unused public or protected field: net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.reserved<br/>
+<br/>
+<br/>In file IcmpEchoReply.java,
+					
+						lines 
+						    to <br/>In class net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply<br/>Field net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.reserved<br/>In IcmpEchoReply.java</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD">Unused public or protected field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unused public or protected field: net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.status<br/>
+<br/>
+<br/>In file IcmpEchoReply.java,
+					
+						lines 
+						    to <br/>In class net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply<br/>Field net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.status<br/>In IcmpEchoReply.java</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD">Unused public or protected field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unused public or protected field: net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.tos<br/>
+<br/>
+<br/>In file IcmpEchoReply.java,
+					
+						lines 
+						    to <br/>In class net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply<br/>Field net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.tos<br/>In IcmpEchoReply.java</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD">Unused public or protected field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unused public or protected field: net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.ttl<br/>
+<br/>
+<br/>In file IcmpEchoReply.java,
+					
+						lines 
+						    to <br/>In class net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply<br/>Field net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.ttl<br/>In IcmpEchoReply.java</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD">Unwritten public or protected field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unwritten public or protected field: net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.roundTripTime<br/>
+<br/>
+<br/>In file Ping.java,
+					
+						line 85<br/>In class net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply<br/>Field net.runelite.client.plugins.worldhopper.ping.IcmpEchoReply.roundTripTime<br/>At Ping.java:[line 85]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h1>
+<a name="Details">Warning Types</a>
+</h1>
+<h2>
+<a name="DM_BOXED_PRIMITIVE_FOR_PARSING">Boxing/unboxing to parse a primitive</a>
+</h2>
+
+  <p>A boxed primitive is created from a String, just to extract the unboxed primitive value.
+  It is more efficient to just call the static parseXXX method.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="DM_NUMBER_CTOR">Method invokes inefficient Number constructor; use static valueOf instead</a>
+</h2>
+      
+      <p>
+      Using <code>new Integer(int)</code> is guaranteed to always result in a new object whereas
+      <code>Integer.valueOf(int)</code> allows caching of values to be done by the compiler, class library, or JVM.
+      Using of cached values avoids object allocation and the code will be faster.
+      </p>
+      <p>
+      Values between -128 and 127 are guaranteed to have corresponding cached instances
+      and using <code>valueOf</code> is approximately 3.5 times faster than using constructor.
+      For values outside the constant range the performance of both styles is the same.
+      </p>
+      <p>
+      Unless the class must be compatible with JVMs predating Java 1.5,
+      use either autoboxing or the <code>valueOf()</code> method when creating instances of
+      <code>Long</code>, <code>Integer</code>, <code>Short</code>, <code>Character</code>, and <code>Byte</code>.
+      </p>
+      
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+</h2>
+
+<p>
+This instruction assigns a value to a local variable,
+but the value is not read or used in any subsequent instruction.
+Often, this indicates an error, because the value computed is never
+used.
+</p>
+<p>
+Note that Sun's javac compiler often generates dead stores for
+final local variables.  Because FindBugs is a bytecode-based tool,
+there is no easy way to eliminate these false positives.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="DM_EXIT">Method invokes System.exit(...)</a>
+</h2>
+
+  <p> Invoking System.exit shuts down the entire Java virtual machine. This
+   should only been done when it is appropriate. Such calls make it
+   hard or impossible for your code to be invoked by other code.
+   Consider throwing a RuntimeException instead.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</h2>
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="DP_CREATE_CLASSLOADER_INSIDE_DO_PRIVILEGED">Classloaders should only be created inside doPrivileged block</a>
+</h2>
+
+  <p> This code creates a classloader,  which needs permission if a security manage is installed.
+  If this code might be invoked by code that does not
+  have security permissions, then the classloader creation needs to occur inside a doPrivileged block.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</h2>
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+</h2>
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="EQ_DOESNT_OVERRIDE_EQUALS">Class doesn't override equals in superclass</a>
+</h2>
+
+  <p> This class extends a class that defines an equals method and adds fields, but doesn't
+define an equals method itself. Thus, equality on instances of this class will
+ignore the identity of the subclass and the added fields. Be sure this is what is intended,
+and that you don't need to override the equals method. Even if you don't need to override
+the equals method, consider overriding it anyway to document the fact
+that the equals method for the subclass just return the result of
+invoking super.equals(o).
+  </p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="FE_FLOATING_POINT_EQUALITY">Test for floating point equality</a>
+</h2>
+   
+    <p>
+    This operation compares two floating point values for equality.
+    Because floating point calculations may involve rounding,
+   calculated float and double values may not be accurate.
+    For values that must be precise, such as monetary values,
+   consider using a fixed-precision type such as BigDecimal.
+    For values that need not be precise, consider comparing for equality
+    within some range, for example:
+    <code>if ( Math.abs(x - y) &lt; .0000001 )</code>.
+   See the Java Language Specification, section 4.2.4.
+    </p>
+    
+     
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="ICAST_IDIV_CAST_TO_DOUBLE">Integral division result cast to double or float</a>
+</h2>
+
+<p>
+This code casts the result of an integral division (e.g., int or long division)
+operation to double or
+float.
+Doing division on integers truncates the result
+to the integer value closest to zero.  The fact that the result
+was cast to double suggests that this precision should have been retained.
+What was probably meant was to cast one or both of the operands to
+double <em>before</em> performing the division.  Here is an example:
+</p>
+<blockquote>
+<pre>
+int x = 2;
+int y = 5;
+// Wrong: yields result 0.0
+double value1 =  x / y;
+
+// Right: yields result 0.4
+double value2 =  x / (double) y;
+</pre>
+</blockquote>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="ICAST_INTEGER_MULTIPLY_CAST_TO_LONG">Result of integer multiplication cast to long</a>
+</h2>
+
+<p>
+This code performs integer multiply and then converts the result to a long,
+as in:</p>
+<pre>
+    long convertDaysToMilliseconds(int days) { return 1000*3600*24*days; }
+</pre>
+<p>
+If the multiplication is done using long arithmetic, you can avoid
+the possibility that the result will overflow. For example, you
+could fix the above code to:</p>
+<pre>
+    long convertDaysToMilliseconds(int days) { return 1000L*3600*24*days; }
+</pre>
+or
+<pre>
+    static final long MILLISECONDS_PER_DAY = 24L*3600*1000;
+    long convertDaysToMilliseconds(int days) { return days * MILLISECONDS_PER_DAY; }
+</pre>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="IM_AVERAGE_COMPUTATION_COULD_OVERFLOW">Computation of average could overflow</a>
+</h2>
+
+<p>The code computes the average of two integers using either division or signed right shift,
+and then uses the result as the index of an array.
+If the values being averaged are very large, this can overflow (resulting in the computation
+of a negative average).  Assuming that the result is intended to be nonnegative, you
+can use an unsigned right shift instead. In other words, rather that using <code>(low+high)/2</code>,
+use <code>(low+high) &gt;&gt;&gt; 1</code>
+</p>
+<p>This bug exists in many earlier implementations of binary search and merge sort.
+Martin Buchholz <a href="http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6412541">found and fixed it</a>
+in the JDK libraries, and Joshua Bloch
+<a href="http://googleresearch.blogspot.com/2006/06/extra-extra-read-all-about-it-nearly.html">widely
+publicized the bug pattern</a>.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="IS2_INCONSISTENT_SYNC">Inconsistent synchronization</a>
+</h2>
+
+  <p> The fields of this class appear to be accessed inconsistently with respect
+  to synchronization.&nbsp; This bug report indicates that the bug pattern detector
+  judged that
+  </p>
+  <ul>
+  <li> The class contains a mix of locked and unlocked accesses,</li>
+  <li> The class is <b>not</b> annotated as javax.annotation.concurrent.NotThreadSafe,</li>
+  <li> At least one locked access was performed by one of the class's own methods, and</li>
+  <li> The number of unsynchronized field accesses (reads and writes) was no more than
+       one third of all accesses, with writes being weighed twice as high as reads</li>
+  </ul>
+
+  <p> A typical bug matching this bug pattern is forgetting to synchronize
+  one of the methods in a class that is intended to be thread-safe.</p>
+
+  <p> You can select the nodes labeled "Unsynchronized access" to show the
+  code locations where the detector believed that a field was accessed
+  without synchronization.</p>
+
+  <p> Note that there are various sources of inaccuracy in this detector;
+  for example, the detector cannot statically detect all situations in which
+  a lock is held.&nbsp; Also, even when the detector is accurate in
+  distinguishing locked vs. unlocked accesses, the code in question may still
+  be correct.</p>
+
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="ME_ENUM_FIELD_SETTER">Public enum method unconditionally sets its field</a>
+</h2>
+
+  <p>This public method declared in public enum unconditionally sets enum field, thus this field can be changed by malicious code 
+  or by accident from another package. Though mutable enum fields may be used for lazy initialization, it's a bad practice to expose them to the outer world.
+  Consider removing this method or declaring it package-private.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="MS_PKGPROTECT">Field should be package protected</a>
+</h2>
+
+  <p> A mutable static field could be changed by malicious code or
+   by accident.
+   The field could be made package protected to avoid
+   this vulnerability.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="NM_SAME_SIMPLE_NAME_AS_INTERFACE">Class names shouldn't shadow simple name of implemented interface</a>
+</h2>
+
+  <p> This class/interface has a simple name that is identical to that of an implemented/extended interface, except
+that the interface is in a different package (e.g., <code>alpha.Foo</code> extends <code>beta.Foo</code>).
+This can be exceptionally confusing, create lots of situations in which you have to look at import statements
+to resolve references and creates many
+opportunities to accidentally define methods that do not override methods in their superclasses.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD">Read of unwritten public or protected field</a>
+</h2>
+
+  <p> The program is dereferencing a public or protected
+field that does not seem to ever have a non-null value written to it.
+Unless the field is initialized via some mechanism not seen by the analysis,
+dereferencing this value will generate a null pointer exception.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE">Method may fail to clean up stream or resource on checked exception</a>
+</h2>
+          
+          <p>
+          This method may fail to clean up (close, dispose of) a stream,
+          database object, or other
+          resource requiring an explicit cleanup operation.
+          </p>
+
+          <p>
+          In general, if a method opens a stream or other resource,
+          the method should use a try/finally block to ensure that
+          the stream or resource is cleaned up before the method
+          returns.
+          </p>
+
+          <p>
+          This bug pattern is essentially the same as the
+          OS_OPEN_STREAM and ODR_OPEN_DATABASE_RESOURCE
+          bug patterns, but is based on a different
+          (and hopefully better) static analysis technique.
+          We are interested is getting feedback about the
+          usefulness of this bug pattern.
+          To send feedback, either:
+          </p>
+          <ul>
+            <li>send email to findbugs@cs.umd.edu</li>
+            <li>file a bug report: <a href="http://findbugs.sourceforge.net/reportingBugs.html">http://findbugs.sourceforge.net/reportingBugs.html</a></li>
+          </ul>
+
+          <p>
+          In particular,
+          the false-positive suppression heuristics for this
+          bug pattern have not been extensively tuned, so
+          reports about false positives are helpful to us.
+          </p>
+
+          <p>
+          See Weimer and Necula, <i>Finding and Preventing Run-Time Error Handling Mistakes</i>, for
+          a description of the analysis technique.
+          </p>
+          
+      
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="OS_OPEN_STREAM">Method may fail to close stream</a>
+</h2>
+
+<p> The method creates an IO stream object, does not assign it to any
+fields, pass it to other methods that might close it,
+or return it, and does not appear to close
+the stream on all paths out of the method.&nbsp; This may result in
+a file descriptor leak.&nbsp; It is generally a good
+idea to use a <code>finally</code> block to ensure that streams are
+closed.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</h2>
+
+<p> This method contains a redundant check of a known non-null value against
+the constant null.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</h2>
+
+   <p> This method returns a value that is not checked. The return value should be checked
+since it can indicate an unusual or unexpected function execution. For
+example, the <code>File.delete()</code> method returns false
+if the file could not be successfully deleted (rather than
+throwing an Exception).
+If you don't check the result, you won't notice if the method invocation
+signals unexpected behavior by returning an atypical return value.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+</h2>
+
+<p>This code calls a method and ignores the return value. However our analysis shows that
+the method (including its implementations in subclasses if any) does not produce any effect 
+other than return value. Thus this call can be removed.
+</p>
+<p>We are trying to reduce the false positives as much as possible, but in some cases this warning might be wrong.
+Common false-positive cases include:</p>
+<p>- The method is designed to be overridden and produce a side effect in other projects which are out of the scope of the analysis.</p>
+<p>- The method is called to trigger the class loading which may have a side effect.</p>
+<p>- The method is called just to get some exception.</p>
+<p>If you feel that our assumption is incorrect, you can use a @CheckReturnValue annotation
+to instruct FindBugs that ignoring the return value of this method is acceptable.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="SE_BAD_FIELD">Non-transient non-serializable instance field in serializable class</a>
+</h2>
+
+<p> This Serializable class defines a non-primitive instance field which is neither transient,
+Serializable, or <code>java.lang.Object</code>, and does not appear to implement
+the <code>Externalizable</code> interface or the
+<code>readObject()</code> and <code>writeObject()</code> methods.&nbsp;
+Objects of this class will not be deserialized correctly if a non-Serializable
+object is stored in this field.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</h2>
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="SF_SWITCH_FALLTHROUGH">Switch statement found where one case falls through to the next case</a>
+</h2>
+
+  <p> This method contains a switch statement where one case branch will fall through to the next case.
+  Usually you need to end this case with a break or return.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+</h2>
+
+  <p> This class is an inner class, but does not use its embedded reference
+  to the object which created it.&nbsp; This reference makes the instances
+  of the class larger, and may keep the reference to the creator object
+  alive longer than necessary.&nbsp; If possible, the class should be
+   made static.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="STCAL_INVOKE_ON_STATIC_DATE_FORMAT_INSTANCE">Call to static DateFormat</a>
+</h2>
+
+<p>As the JavaDoc states, DateFormats are inherently unsafe for multithreaded use.
+The detector has found a call to an instance of DateFormat that has been obtained via a static
+field. This looks suspicous.</p>
+<p>For more information on this see <a href="http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6231579">Sun Bug #6231579</a>
+and <a href="http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6178997">Sun Bug #6178997</a>.</p>
+
+
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="UC_USELESS_CONDITION">Condition has no effect</a>
+</h2>
+
+<p>This condition always produces the same result as the value of the involved variable was narrowed before. 
+Probably something else was meant or condition can be removed.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="UC_USELESS_OBJECT">Useless object created</a>
+</h2>
+
+<p>Our analysis shows that this object is useless. 
+It's created and modified, but its value never go outside of the method or produce any side-effect.
+Either there is a mistake and object was intended to be used or it can be removed.</p>
+<p>This analysis rarely produces false-positives. Common false-positive cases include:</p>
+<p>- This object used to implicitly throw some obscure exception.</p>
+<p>- This object used as a stub to generalize the code.</p>
+<p>- This object used to hold strong references to weak/soft-referenced objects.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD">Unused public or protected field</a>
+</h2>
+
+  <p> This field is never used.&nbsp;
+The field is public or protected, so perhaps
+    it is intended to be used with classes not seen as part of the analysis. If not,
+consider removing it from the class.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="UWF_UNWRITTEN_FIELD">Unwritten field</a>
+</h2>
+
+  <p> This field is never written.&nbsp; All reads of it will return the default
+value. Check for errors (should it have been initialized?), or remove it if it is useless.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD">Unwritten public or protected field</a>
+</h2>
+
+  <p> No writes were seen to this public/protected field.&nbsp; All reads of it will return the default
+value. Check for errors (should it have been initialized?), or remove it if it is useless.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="WMI_WRONG_MAP_ITERATOR">Inefficient use of keySet iterator instead of entrySet iterator</a>
+</h2>
+
+<p> This method accesses the value of a Map entry, using a key that was retrieved from
+a keySet iterator. It is more efficient to use an iterator on the entrySet of the map, to avoid the
+Map.get(key) lookup.</p>
+
+        
+<p>
+<br/>
+<br/>
+</p>
+</body>
+</html>

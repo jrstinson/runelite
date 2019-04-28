@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://findbugs.sourceforge.net/xsl/default.xsl"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1556483793851" analysisTimestamp="1556483793496" release="">
+  <Project projectName="runelite-parent[protocol]">
+    <Jar>D:\School\runelite\runelite\protocol\target\classes\net\runelite\protocol\handshake\HandshakeDecoder$1.class</Jar>
+    <Jar>D:\School\runelite\runelite\protocol\target\classes\net\runelite\protocol\handshake\HandshakeDecoder.class</Jar>
+    <Jar>D:\School\runelite\runelite\protocol\target\classes\net\runelite\protocol\handshake\HandshakeResponseEncoder.class</Jar>
+    <Jar>D:\School\runelite\runelite\protocol\target\classes\net\runelite\protocol\handshake\LoginHandshakeEncoder.class</Jar>
+    <Jar>D:\School\runelite\runelite\protocol\target\classes\net\runelite\protocol\handshake\UpdateHandshakeEncoder.class</Jar>
+    <Jar>D:\School\runelite\runelite\protocol\target\classes\net\runelite\protocol\update\decoders\ArchiveRequestDecoder.class</Jar>
+    <Jar>D:\School\runelite\runelite\protocol\target\classes\net\runelite\protocol\update\decoders\ArchiveResponseDecoder.class</Jar>
+    <Jar>D:\School\runelite\runelite\protocol\target\classes\net\runelite\protocol\update\decoders\EncryptionDecoder.class</Jar>
+    <Jar>D:\School\runelite\runelite\protocol\target\classes\net\runelite\protocol\update\decoders\HandshakeResponseDecoder.class</Jar>
+    <Jar>D:\School\runelite\runelite\protocol\target\classes\net\runelite\protocol\update\decoders\LoggedInDecoder.class</Jar>
+    <Jar>D:\School\runelite\runelite\protocol\target\classes\net\runelite\protocol\update\decoders\LoggedOutDecoder.class</Jar>
+    <Jar>D:\School\runelite\runelite\protocol\target\classes\net\runelite\protocol\update\decoders\UpdateOpcodes.class</Jar>
+    <Jar>D:\School\runelite\runelite\protocol\target\classes\net\runelite\protocol\update\encoders\ArchiveRequestEncoder.class</Jar>
+    <Jar>D:\School\runelite\runelite\protocol\target\classes\net\runelite\protocol\update\encoders\ArchiveResponseEncoder.class</Jar>
+    <Jar>D:\School\runelite\runelite\protocol\target\classes\net\runelite\protocol\update\encoders\EncryptionEncoder.class</Jar>
+    <Jar>D:\School\runelite\runelite\protocol\target\classes\net\runelite\protocol\update\encoders\XorEncoder.class</Jar>
+    <Jar>D:\School\runelite\runelite\protocol\target\test-classes\net\runelite\protocol\update\encoders\ArchiveResponseEncoderTest.class</Jar>
+    <Jar>D:\School\runelite\runelite\protocol\target\test-classes\net\runelite\protocol\update\encoders\XorEncoderTest.class</Jar>
+    <AuxClasspathEntry>D:/School/runelite/runelite/protocol/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/protocol/target/test-classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/protocol-api/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/http-api/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/http-api/target/test-classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/runelite-api/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/runelite-api/target/test-classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/cache/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/cache/target/test-classes</AuxClasspathEntry>
+    <SrcDir>D:/School/runelite/runelite/protocol/src/main/java</SrcDir>
+    <SrcDir>D:/School/runelite/runelite/protocol/src/test/java</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 28 Apr 2019 16:35:52 -0400" total_classes="18" referenced_classes="46" total_bugs="0" total_size="288" num_packages="3" java_version="1.8.0_112-release" vm_version="25.112-b6" cpu_seconds="141.11" clock_seconds="406.06" peak_mbytes="747.73" alloc_mbytes="494.94" gc_seconds="1.28">
+    <FileStats path="net/runelite/protocol/handshake/HandshakeDecoder.java" bugCount="0" size="31"/>
+    <FileStats path="net/runelite/protocol/handshake/HandshakeResponseEncoder.java" bugCount="0" size="8"/>
+    <FileStats path="net/runelite/protocol/handshake/LoginHandshakeEncoder.java" bugCount="0" size="7"/>
+    <FileStats path="net/runelite/protocol/handshake/UpdateHandshakeEncoder.java" bugCount="0" size="8"/>
+    <FileStats path="net/runelite/protocol/update/decoders/ArchiveRequestDecoder.java" bugCount="0" size="17"/>
+    <FileStats path="net/runelite/protocol/update/decoders/ArchiveResponseDecoder.java" bugCount="0" size="62"/>
+    <FileStats path="net/runelite/protocol/update/decoders/EncryptionDecoder.java" bugCount="0" size="14"/>
+    <FileStats path="net/runelite/protocol/update/decoders/HandshakeResponseDecoder.java" bugCount="0" size="9"/>
+    <FileStats path="net/runelite/protocol/update/decoders/LoggedInDecoder.java" bugCount="0" size="9"/>
+    <FileStats path="net/runelite/protocol/update/decoders/LoggedOutDecoder.java" bugCount="0" size="9"/>
+    <FileStats path="net/runelite/protocol/update/decoders/UpdateOpcodes.java" bugCount="0" size="8"/>
+    <FileStats path="net/runelite/protocol/update/encoders/ArchiveRequestEncoder.java" bugCount="0" size="9"/>
+    <FileStats path="net/runelite/protocol/update/encoders/ArchiveResponseEncoder.java" bugCount="0" size="29"/>
+    <FileStats path="net/runelite/protocol/update/encoders/ArchiveResponseEncoderTest.java" bugCount="0" size="28"/>
+    <FileStats path="net/runelite/protocol/update/encoders/EncryptionEncoder.java" bugCount="0" size="9"/>
+    <FileStats path="net/runelite/protocol/update/encoders/XorEncoder.java" bugCount="0" size="17"/>
+    <FileStats path="net/runelite/protocol/update/encoders/XorEncoderTest.java" bugCount="0" size="14"/>
+    <PackageStats package="net.runelite.protocol.handshake" total_bugs="0" total_types="5" total_size="54">
+      <ClassStats class="net.runelite.protocol.handshake.HandshakeDecoder" sourceFile="HandshakeDecoder.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="net.runelite.protocol.handshake.HandshakeDecoder$1" sourceFile="HandshakeDecoder.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="net.runelite.protocol.handshake.HandshakeResponseEncoder" sourceFile="HandshakeResponseEncoder.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.runelite.protocol.handshake.LoginHandshakeEncoder" sourceFile="LoginHandshakeEncoder.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="net.runelite.protocol.handshake.UpdateHandshakeEncoder" sourceFile="UpdateHandshakeEncoder.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.runelite.protocol.update.decoders" total_bugs="0" total_types="7" total_size="128">
+      <ClassStats class="net.runelite.protocol.update.decoders.ArchiveRequestDecoder" sourceFile="ArchiveRequestDecoder.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="net.runelite.protocol.update.decoders.ArchiveResponseDecoder" sourceFile="ArchiveResponseDecoder.java" interface="false" size="62" bugs="0"/>
+      <ClassStats class="net.runelite.protocol.update.decoders.EncryptionDecoder" sourceFile="EncryptionDecoder.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="net.runelite.protocol.update.decoders.HandshakeResponseDecoder" sourceFile="HandshakeResponseDecoder.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.runelite.protocol.update.decoders.LoggedInDecoder" sourceFile="LoggedInDecoder.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.runelite.protocol.update.decoders.LoggedOutDecoder" sourceFile="LoggedOutDecoder.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.runelite.protocol.update.decoders.UpdateOpcodes" sourceFile="UpdateOpcodes.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.runelite.protocol.update.encoders" total_bugs="0" total_types="6" total_size="106">
+      <ClassStats class="net.runelite.protocol.update.encoders.ArchiveRequestEncoder" sourceFile="ArchiveRequestEncoder.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.runelite.protocol.update.encoders.ArchiveResponseEncoder" sourceFile="ArchiveResponseEncoder.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="net.runelite.protocol.update.encoders.ArchiveResponseEncoderTest" sourceFile="ArchiveResponseEncoderTest.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="net.runelite.protocol.update.encoders.EncryptionEncoder" sourceFile="EncryptionEncoder.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.runelite.protocol.update.encoders.XorEncoder" sourceFile="XorEncoder.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="net.runelite.protocol.update.encoders.XorEncoderTest" sourceFile="XorEncoderTest.java" interface="false" size="14" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="140" invocations="2" avgMicrosecondsPerInvocation="70404" maxMicrosecondsPerInvocation="135006" standardDeviationMircosecondsPerInvocation="64602"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="79" invocations="404" avgMicrosecondsPerInvocation="197" maxMicrosecondsPerInvocation="6826" standardDeviationMircosecondsPerInvocation="560"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="40" invocations="406" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="206" standardDeviationMircosecondsPerInvocation="17"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

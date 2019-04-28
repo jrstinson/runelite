@@ -1,0 +1,891 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>FindBugs Report</title>
+<style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+		</style>
+</head>
+<body>
+<h1>FindBugs Report</h1>
+<p>Produced using <a href="http://findbugs.sourceforge.net">FindBugs</a>3.0.1.</p>
+<p>Project: 
+			runelite-parent[mixins]</p>
+<h2>Metrics</h2>
+<p>3651 lines of code analyzed,
+	in 73 classes, 
+	in 2 packages.</p>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Metric</th>
+<th align="right">Total</th>
+<th align="right">Density*</th>
+</tr>
+<tr class="tablerow0">
+<td>High Priority Warnings</td>
+<td align="right">28</td>
+<td align="right">7.67</td>
+</tr>
+<tr class="tablerow1">
+<td>Medium Priority Warnings</td>
+<td align="right">13</td>
+<td align="right">3.56</td>
+</tr>
+<tr class="$totalClass">
+<td>
+<b>Total Warnings</b>
+</td>
+<td align="right">
+<b>41</b>
+</td>
+<td align="right">
+<b>11.23</b>
+</td>
+</tr>
+</table>
+<p>
+<i>(* Defects per Thousand lines of non-commenting source statements)</i>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h2>Summary</h2>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Warning Type</th>
+<th align="right">Number</th>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+</td>
+<td align="right">1</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_EXPERIMENTAL">Experimental Warnings</a>
+</td>
+<td align="right">1</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_I18N">Internationalization Warnings</a>
+</td>
+<td align="right">1</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+</td>
+<td align="right">4</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_PERFORMANCE">Performance Warnings</a>
+</td>
+<td align="right">1</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_STYLE">Dodgy code Warnings</a>
+</td>
+<td align="right">33</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<b>Total</b>
+</td>
+<td align="right">
+<b>41</b>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h1>Warnings</h1>
+<p>Click on each warning link to see a full description of the issue, and
+	    details of how to resolve it.</p>
+<h2>
+<a name="Warnings_CORRECTNESS">Correctness Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#EC_UNRELATED_TYPES_USING_POINTER_EQUALITY">Using pointer equality to compare different types</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Using pointer equality to compare a net.runelite.rs.api.RSPlayer with a RSActorMixin in net.runelite.mixins.RSActorMixin.setCombatInfo(int, int, int, int, int, int)<br/>
+<br/>
+<br/>In file RSActorMixin.java,
+					
+						line 250<br/>In class net.runelite.mixins.RSActorMixin<br/>In method net.runelite.mixins.RSActorMixin.setCombatInfo(int, int, int, int, int, int)<br/>Actual type net.runelite.rs.api.RSPlayer<br/>Expected net.runelite.mixins.RSActorMixin<br/>Return value of net.runelite.rs.api.RSClient.getLocalPlayer() of type net.runelite.rs.api.RSPlayer<br/>Value loaded from this<br/>At RSActorMixin.java:[line 250]<br/>At RSActorMixin.java:[line 250]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_EXPERIMENTAL">Experimental Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#OBL_UNSATISFIED_OBLIGATION">Method may fail to clean up stream or resource</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.mixins.RSIndexDataBaseMixin.rl$getConfigData(int, int) may fail to clean up java.io.InputStream<br/>
+<br/>
+<br/>In file RSIndexDataBaseMixin.java,
+					
+						line 78<br/>In class net.runelite.mixins.RSIndexDataBaseMixin<br/>In method net.runelite.mixins.RSIndexDataBaseMixin.rl$getConfigData(int, int)<br/>Reference type java.io.InputStream<br/>2 instances of obligation remaining<br/>Obligation to clean up resource created at RSIndexDataBaseMixin.java:[line 78] is not discharged<br/>Path continues at RSIndexDataBaseMixin.java:[line 79]<br/>Path continues at RSIndexDataBaseMixin.java:[line 85]<br/>Obligation to clean up resource created at RSIndexDataBaseMixin.java:[line 85] is not discharged<br/>Path continues at RSIndexDataBaseMixin.java:[line 86]<br/>Path continues at RSIndexDataBaseMixin.java:[line 88]<br/>Path continues at RSIndexDataBaseMixin.java:[line 90]<br/>Path continues at RSIndexDataBaseMixin.java:[line 91]<br/>Remaining obligations: {InputStream x 2}</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_I18N">Internationalization Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.mixins.RSIndexDataBaseMixin.rl$getConfigData(int, int): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file RSIndexDataBaseMixin.java,
+					
+						line 119<br/>In class net.runelite.mixins.RSIndexDataBaseMixin<br/>In method net.runelite.mixins.RSIndexDataBaseMixin.rl$getConfigData(int, int)<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At RSIndexDataBaseMixin.java:[line 119]<br/>At RSIndexDataBaseMixin.java:[line 119]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.mixins.RSModelMixin.getFaceTextureUCoordinates() may expose internal representation by returning RSModelMixin.rl$faceTextureUCoordinates<br/>
+<br/>
+<br/>In file RSModelMixin.java,
+					
+						line 415<br/>In class net.runelite.mixins.RSModelMixin<br/>In method net.runelite.mixins.RSModelMixin.getFaceTextureUCoordinates()<br/>Field net.runelite.mixins.RSModelMixin.rl$faceTextureUCoordinates<br/>At RSModelMixin.java:[line 415]<br/>At RSModelMixin.java:[line 415]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.mixins.RSModelMixin.getFaceTextureVCoordinates() may expose internal representation by returning RSModelMixin.rl$faceTextureVCoordinates<br/>
+<br/>
+<br/>In file RSModelMixin.java,
+					
+						line 429<br/>In class net.runelite.mixins.RSModelMixin<br/>In method net.runelite.mixins.RSModelMixin.getFaceTextureVCoordinates()<br/>Field net.runelite.mixins.RSModelMixin.rl$faceTextureVCoordinates<br/>At RSModelMixin.java:[line 429]<br/>At RSModelMixin.java:[line 429]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.mixins.RSModelMixin.setFaceTextureUCoordinates(float[][]) may expose internal representation by storing an externally mutable object into RSModelMixin.rl$faceTextureUCoordinates<br/>
+<br/>
+<br/>In file RSModelMixin.java,
+					
+						line 422<br/>In class net.runelite.mixins.RSModelMixin<br/>In method net.runelite.mixins.RSModelMixin.setFaceTextureUCoordinates(float[][])<br/>Field net.runelite.mixins.RSModelMixin.rl$faceTextureUCoordinates<br/>Local variable named faceTextureUCoordinates<br/>At RSModelMixin.java:[line 422]<br/>At RSModelMixin.java:[line 422]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.mixins.RSModelMixin.setFaceTextureVCoordinates(float[][]) may expose internal representation by storing an externally mutable object into RSModelMixin.rl$faceTextureVCoordinates<br/>
+<br/>
+<br/>In file RSModelMixin.java,
+					
+						line 436<br/>In class net.runelite.mixins.RSModelMixin<br/>In method net.runelite.mixins.RSModelMixin.setFaceTextureVCoordinates(float[][])<br/>Field net.runelite.mixins.RSModelMixin.rl$faceTextureVCoordinates<br/>Local variable named faceTextureVCoordinates<br/>At RSModelMixin.java:[line 436]<br/>At RSModelMixin.java:[line 436]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_PERFORMANCE">Performance Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_NEXTINT_VIA_NEXTDOUBLE">Use the nextInt method of Random rather than nextDouble to generate a random integer</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.mixins.MinimapMixin.drawInstanceMap(int) uses the nextDouble method of Random to generate a random integer; using nextInt is more efficient<br/>
+<br/>
+<br/>In file MinimapMixin.java,
+					
+						line 73<br/>In class net.runelite.mixins.MinimapMixin<br/>In method net.runelite.mixins.MinimapMixin.drawInstanceMap(int)<br/>At MinimapMixin.java:[line 73]<br/>At MinimapMixin.java:[line 73]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_STYLE">Dodgy code Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.hideAttackers from instance method net.runelite.mixins.EntityHiderBridgeMixin.setAttackersHidden(boolean)<br/>
+<br/>
+<br/>In file EntityHiderBridgeMixin.java,
+					
+						line 134<br/>In class net.runelite.mixins.EntityHiderBridgeMixin<br/>In method net.runelite.mixins.EntityHiderBridgeMixin.setAttackersHidden(boolean)<br/>Field net.runelite.mixins.EntityHiderBridgeMixin.hideAttackers<br/>At EntityHiderBridgeMixin.java:[line 134]<br/>At EntityHiderBridgeMixin.java:[line 134]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.hideClanMates from instance method net.runelite.mixins.EntityHiderBridgeMixin.setClanMatesHidden(boolean)<br/>
+<br/>
+<br/>In file EntityHiderBridgeMixin.java,
+					
+						line 99<br/>In class net.runelite.mixins.EntityHiderBridgeMixin<br/>In method net.runelite.mixins.EntityHiderBridgeMixin.setClanMatesHidden(boolean)<br/>Field net.runelite.mixins.EntityHiderBridgeMixin.hideClanMates<br/>At EntityHiderBridgeMixin.java:[line 99]<br/>At EntityHiderBridgeMixin.java:[line 99]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.hideFriends from instance method net.runelite.mixins.EntityHiderBridgeMixin.setFriendsHidden(boolean)<br/>
+<br/>
+<br/>In file EntityHiderBridgeMixin.java,
+					
+						line 92<br/>In class net.runelite.mixins.EntityHiderBridgeMixin<br/>In method net.runelite.mixins.EntityHiderBridgeMixin.setFriendsHidden(boolean)<br/>Field net.runelite.mixins.EntityHiderBridgeMixin.hideFriends<br/>At EntityHiderBridgeMixin.java:[line 92]<br/>At EntityHiderBridgeMixin.java:[line 92]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.isHidingEntities from instance method net.runelite.mixins.EntityHiderBridgeMixin.setIsHidingEntities(boolean)<br/>
+<br/>
+<br/>In file EntityHiderBridgeMixin.java,
+					
+						line 71<br/>In class net.runelite.mixins.EntityHiderBridgeMixin<br/>In method net.runelite.mixins.EntityHiderBridgeMixin.setIsHidingEntities(boolean)<br/>Field net.runelite.mixins.EntityHiderBridgeMixin.isHidingEntities<br/>At EntityHiderBridgeMixin.java:[line 71]<br/>At EntityHiderBridgeMixin.java:[line 71]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.hideLocalPlayer from instance method net.runelite.mixins.EntityHiderBridgeMixin.setLocalPlayerHidden(boolean)<br/>
+<br/>
+<br/>In file EntityHiderBridgeMixin.java,
+					
+						line 106<br/>In class net.runelite.mixins.EntityHiderBridgeMixin<br/>In method net.runelite.mixins.EntityHiderBridgeMixin.setLocalPlayerHidden(boolean)<br/>Field net.runelite.mixins.EntityHiderBridgeMixin.hideLocalPlayer<br/>At EntityHiderBridgeMixin.java:[line 106]<br/>At EntityHiderBridgeMixin.java:[line 106]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.hideLocalPlayer2D from instance method net.runelite.mixins.EntityHiderBridgeMixin.setLocalPlayerHidden2D(boolean)<br/>
+<br/>
+<br/>In file EntityHiderBridgeMixin.java,
+					
+						line 113<br/>In class net.runelite.mixins.EntityHiderBridgeMixin<br/>In method net.runelite.mixins.EntityHiderBridgeMixin.setLocalPlayerHidden2D(boolean)<br/>Field net.runelite.mixins.EntityHiderBridgeMixin.hideLocalPlayer2D<br/>At EntityHiderBridgeMixin.java:[line 113]<br/>At EntityHiderBridgeMixin.java:[line 113]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.hideNPCs from instance method net.runelite.mixins.EntityHiderBridgeMixin.setNPCsHidden(boolean)<br/>
+<br/>
+<br/>In file EntityHiderBridgeMixin.java,
+					
+						line 120<br/>In class net.runelite.mixins.EntityHiderBridgeMixin<br/>In method net.runelite.mixins.EntityHiderBridgeMixin.setNPCsHidden(boolean)<br/>Field net.runelite.mixins.EntityHiderBridgeMixin.hideNPCs<br/>At EntityHiderBridgeMixin.java:[line 120]<br/>At EntityHiderBridgeMixin.java:[line 120]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.hideNPCs2D from instance method net.runelite.mixins.EntityHiderBridgeMixin.setNPCsHidden2D(boolean)<br/>
+<br/>
+<br/>In file EntityHiderBridgeMixin.java,
+					
+						line 127<br/>In class net.runelite.mixins.EntityHiderBridgeMixin<br/>In method net.runelite.mixins.EntityHiderBridgeMixin.setNPCsHidden2D(boolean)<br/>Field net.runelite.mixins.EntityHiderBridgeMixin.hideNPCs2D<br/>At EntityHiderBridgeMixin.java:[line 127]<br/>At EntityHiderBridgeMixin.java:[line 127]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.hidePlayers from instance method net.runelite.mixins.EntityHiderBridgeMixin.setPlayersHidden(boolean)<br/>
+<br/>
+<br/>In file EntityHiderBridgeMixin.java,
+					
+						line 78<br/>In class net.runelite.mixins.EntityHiderBridgeMixin<br/>In method net.runelite.mixins.EntityHiderBridgeMixin.setPlayersHidden(boolean)<br/>Field net.runelite.mixins.EntityHiderBridgeMixin.hidePlayers<br/>At EntityHiderBridgeMixin.java:[line 78]<br/>At EntityHiderBridgeMixin.java:[line 78]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.hidePlayers2D from instance method net.runelite.mixins.EntityHiderBridgeMixin.setPlayersHidden2D(boolean)<br/>
+<br/>
+<br/>In file EntityHiderBridgeMixin.java,
+					
+						line 85<br/>In class net.runelite.mixins.EntityHiderBridgeMixin<br/>In method net.runelite.mixins.EntityHiderBridgeMixin.setPlayersHidden2D(boolean)<br/>Field net.runelite.mixins.EntityHiderBridgeMixin.hidePlayers2D<br/>At EntityHiderBridgeMixin.java:[line 85]<br/>At EntityHiderBridgeMixin.java:[line 85]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.hideProjectiles from instance method net.runelite.mixins.EntityHiderBridgeMixin.setProjectilesHidden(boolean)<br/>
+<br/>
+<br/>In file EntityHiderBridgeMixin.java,
+					
+						line 141<br/>In class net.runelite.mixins.EntityHiderBridgeMixin<br/>In method net.runelite.mixins.EntityHiderBridgeMixin.setProjectilesHidden(boolean)<br/>Field net.runelite.mixins.EntityHiderBridgeMixin.hideProjectiles<br/>At EntityHiderBridgeMixin.java:[line 141]<br/>At EntityHiderBridgeMixin.java:[line 141]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.RSClientMixin.interpolateNpcAnimations from instance method net.runelite.mixins.RSClientMixin.setInterpolateNpcAnimations(boolean)<br/>
+<br/>
+<br/>In file RSClientMixin.java,
+					
+						line 232<br/>In class net.runelite.mixins.RSClientMixin<br/>In method net.runelite.mixins.RSClientMixin.setInterpolateNpcAnimations(boolean)<br/>Field net.runelite.mixins.RSClientMixin.interpolateNpcAnimations<br/>At RSClientMixin.java:[line 232]<br/>At RSClientMixin.java:[line 232]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.RSClientMixin.interpolateObjectAnimations from instance method net.runelite.mixins.RSClientMixin.setInterpolateObjectAnimations(boolean)<br/>
+<br/>
+<br/>In file RSClientMixin.java,
+					
+						line 246<br/>In class net.runelite.mixins.RSClientMixin<br/>In method net.runelite.mixins.RSClientMixin.setInterpolateObjectAnimations(boolean)<br/>Field net.runelite.mixins.RSClientMixin.interpolateObjectAnimations<br/>At RSClientMixin.java:[line 246]<br/>At RSClientMixin.java:[line 246]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.RSClientMixin.interpolatePlayerAnimations from instance method net.runelite.mixins.RSClientMixin.setInterpolatePlayerAnimations(boolean)<br/>
+<br/>
+<br/>In file RSClientMixin.java,
+					
+						line 218<br/>In class net.runelite.mixins.RSClientMixin<br/>In method net.runelite.mixins.RSClientMixin.setInterpolatePlayerAnimations(boolean)<br/>Field net.runelite.mixins.RSClientMixin.interpolatePlayerAnimations<br/>At RSClientMixin.java:[line 218]<br/>At RSClientMixin.java:[line 218]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.RSClientMixin.inventoryDragDelay from instance method net.runelite.mixins.RSClientMixin.setInventoryDragDelay(int)<br/>
+<br/>
+<br/>In file RSClientMixin.java,
+					
+						line 253<br/>In class net.runelite.mixins.RSClientMixin<br/>In method net.runelite.mixins.RSClientMixin.setInventoryDragDelay(int)<br/>Field net.runelite.mixins.RSClientMixin.inventoryDragDelay<br/>At RSClientMixin.java:[line 253]<br/>At RSClientMixin.java:[line 253]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.RSClientMixin.lastItemDespawn from instance method net.runelite.mixins.RSClientMixin.setLastItemDespawn(RSItem)<br/>
+<br/>
+<br/>In file RSClientMixin.java,
+					
+						line 1317<br/>In class net.runelite.mixins.RSClientMixin<br/>In method net.runelite.mixins.RSClientMixin.setLastItemDespawn(RSItem)<br/>Field net.runelite.mixins.RSClientMixin.lastItemDespawn<br/>At RSClientMixin.java:[line 1317]<br/>At RSClientMixin.java:[line 1317]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.RSClientMixin.oldMenuEntryCount from instance method net.runelite.mixins.RSClientMixin.setMenuEntries(MenuEntry[])<br/>
+<br/>
+<br/>In file RSClientMixin.java,
+					
+						line 595<br/>In class net.runelite.mixins.RSClientMixin<br/>In method net.runelite.mixins.RSClientMixin.setMenuEntries(MenuEntry[])<br/>Field net.runelite.mixins.RSClientMixin.oldMenuEntryCount<br/>At RSClientMixin.java:[line 595]<br/>At RSClientMixin.java:[line 595]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.RSClientMixin.skyboxColor from instance method net.runelite.mixins.RSClientMixin.setSkyboxColor(int)<br/>
+<br/>
+<br/>In file RSClientMixin.java,
+					
+						line 1405<br/>In class net.runelite.mixins.RSClientMixin<br/>In method net.runelite.mixins.RSClientMixin.setSkyboxColor(int)<br/>Field net.runelite.mixins.RSClientMixin.skyboxColor<br/>At RSClientMixin.java:[line 1405]<br/>At RSClientMixin.java:[line 1405]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.RSClientMixin.tickCount from instance method net.runelite.mixins.RSClientMixin.setTickCount(int)<br/>
+<br/>
+<br/>In file RSClientMixin.java,
+					
+						line 1214<br/>In class net.runelite.mixins.RSClientMixin<br/>In method net.runelite.mixins.RSClientMixin.setTickCount(int)<br/>Field net.runelite.mixins.RSClientMixin.tickCount<br/>At RSClientMixin.java:[line 1214]<br/>At RSClientMixin.java:[line 1214]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.RSGameCanvasMixin.shouldNotHaveFocus from instance method net.runelite.mixins.RSGameCanvasMixin.removeFocusListener(FocusListener)<br/>
+<br/>
+<br/>In file RSGameCanvasMixin.java,
+					
+						line 51<br/>In class net.runelite.mixins.RSGameCanvasMixin<br/>In method net.runelite.mixins.RSGameCanvasMixin.removeFocusListener(FocusListener)<br/>Field net.runelite.mixins.RSGameCanvasMixin.shouldNotHaveFocus<br/>At RSGameCanvasMixin.java:[line 51]<br/>At RSGameCanvasMixin.java:[line 51]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.StretchedModeMixin.cachedRealDimensions from instance method net.runelite.mixins.StretchedModeMixin.invalidateStretching(boolean)<br/>
+<br/>
+<br/>In file StretchedModeMixin.java,
+					
+						line 200<br/>In class net.runelite.mixins.StretchedModeMixin<br/>In method net.runelite.mixins.StretchedModeMixin.invalidateStretching(boolean)<br/>Field net.runelite.mixins.StretchedModeMixin.cachedRealDimensions<br/>At StretchedModeMixin.java:[line 200]<br/>At StretchedModeMixin.java:[line 200]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.StretchedModeMixin.cachedStretchedDimensions from instance method net.runelite.mixins.StretchedModeMixin.invalidateStretching(boolean)<br/>
+<br/>
+<br/>In file StretchedModeMixin.java,
+					
+						line 201<br/>In class net.runelite.mixins.StretchedModeMixin<br/>In method net.runelite.mixins.StretchedModeMixin.invalidateStretching(boolean)<br/>Field net.runelite.mixins.StretchedModeMixin.cachedStretchedDimensions<br/>At StretchedModeMixin.java:[line 201]<br/>At StretchedModeMixin.java:[line 201]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.StretchedModeMixin.scalingFactor from instance method net.runelite.mixins.StretchedModeMixin.setScalingFactor(int)<br/>
+<br/>
+<br/>In file StretchedModeMixin.java,
+					
+						line 104<br/>In class net.runelite.mixins.StretchedModeMixin<br/>In method net.runelite.mixins.StretchedModeMixin.setScalingFactor(int)<br/>Field net.runelite.mixins.StretchedModeMixin.scalingFactor<br/>At StretchedModeMixin.java:[line 104]<br/>At StretchedModeMixin.java:[line 104]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.StretchedModeMixin.stretchedEnabled from instance method net.runelite.mixins.StretchedModeMixin.setStretchedEnabled(boolean)<br/>
+<br/>
+<br/>In file StretchedModeMixin.java,
+					
+						line 69<br/>In class net.runelite.mixins.StretchedModeMixin<br/>In method net.runelite.mixins.StretchedModeMixin.setStretchedEnabled(boolean)<br/>Field net.runelite.mixins.StretchedModeMixin.stretchedEnabled<br/>At StretchedModeMixin.java:[line 69]<br/>At StretchedModeMixin.java:[line 69]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.StretchedModeMixin.stretchedFast from instance method net.runelite.mixins.StretchedModeMixin.setStretchedFast(boolean)<br/>
+<br/>
+<br/>In file StretchedModeMixin.java,
+					
+						line 83<br/>In class net.runelite.mixins.StretchedModeMixin<br/>In method net.runelite.mixins.StretchedModeMixin.setStretchedFast(boolean)<br/>Field net.runelite.mixins.StretchedModeMixin.stretchedFast<br/>At StretchedModeMixin.java:[line 83]<br/>At StretchedModeMixin.java:[line 83]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.StretchedModeMixin.stretchedIntegerScaling from instance method net.runelite.mixins.StretchedModeMixin.setStretchedIntegerScaling(boolean)<br/>
+<br/>
+<br/>In file StretchedModeMixin.java,
+					
+						line 90<br/>In class net.runelite.mixins.StretchedModeMixin<br/>In method net.runelite.mixins.StretchedModeMixin.setStretchedIntegerScaling(boolean)<br/>Field net.runelite.mixins.StretchedModeMixin.stretchedIntegerScaling<br/>At StretchedModeMixin.java:[line 90]<br/>At StretchedModeMixin.java:[line 90]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.StretchedModeMixin.stretchedKeepAspectRatio from instance method net.runelite.mixins.StretchedModeMixin.setStretchedKeepAspectRatio(boolean)<br/>
+<br/>
+<br/>In file StretchedModeMixin.java,
+					
+						line 97<br/>In class net.runelite.mixins.StretchedModeMixin<br/>In method net.runelite.mixins.StretchedModeMixin.setStretchedKeepAspectRatio(boolean)<br/>Field net.runelite.mixins.StretchedModeMixin.stretchedKeepAspectRatio<br/>At StretchedModeMixin.java:[line 97]<br/>At StretchedModeMixin.java:[line 97]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.CameraMixin.pitchRelaxEnabled from instance method net.runelite.mixins.CameraMixin.setCameraPitchRelaxerEnabled(boolean)<br/>
+<br/>
+<br/>In file CameraMixin.java,
+					
+						line 58<br/>In class net.runelite.mixins.CameraMixin<br/>In method net.runelite.mixins.CameraMixin.setCameraPitchRelaxerEnabled(boolean)<br/>Field net.runelite.mixins.CameraMixin.pitchRelaxEnabled<br/>At CameraMixin.java:[line 58]<br/>At CameraMixin.java:[line 58]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.RSSceneMixin.rl$drawDistance from instance method net.runelite.mixins.RSSceneMixin.setDrawDistance(int)<br/>
+<br/>
+<br/>In file RSSceneMixin.java,
+					
+						line 699<br/>In class net.runelite.mixins.RSSceneMixin<br/>In method net.runelite.mixins.RSSceneMixin.setDrawDistance(int)<br/>Field net.runelite.mixins.RSSceneMixin.rl$drawDistance<br/>At RSSceneMixin.java:[line 699]<br/>At RSSceneMixin.java:[line 699]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.RSSceneMixin.client from instance method net.runelite.mixins.RSSceneMixinTest.testWalkDistance()<br/>
+<br/>
+<br/>In file RSSceneMixinTest.java,
+					
+						line 47<br/>In class net.runelite.mixins.RSSceneMixinTest<br/>In method net.runelite.mixins.RSSceneMixinTest.testWalkDistance()<br/>Field net.runelite.mixins.RSSceneMixin.client<br/>At RSSceneMixinTest.java:[line 47]<br/>At RSSceneMixinTest.java:[line 47]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.RSTileMixin.lastGameObject from instance method net.runelite.mixins.RSTileMixin.gameObjectsChanged(int)<br/>
+<br/>
+<br/>In file RSTileMixin.java,
+					
+						line 238<br/>In class net.runelite.mixins.RSTileMixin<br/>In method net.runelite.mixins.RSTileMixin.gameObjectsChanged(int)<br/>Field net.runelite.mixins.RSTileMixin.lastGameObject<br/>At RSTileMixin.java:[line 238]<br/>At RSTileMixin.java:[line 238]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.RSWidgetMixin.rl$widgetLastPosChanged from instance method net.runelite.mixins.RSWidgetMixin.onPositionChanged(int)<br/>
+<br/>
+<br/>In file RSWidgetMixin.java,
+					
+						line 492<br/>In class net.runelite.mixins.RSWidgetMixin<br/>In method net.runelite.mixins.RSWidgetMixin.onPositionChanged(int)<br/>Field net.runelite.mixins.RSWidgetMixin.rl$widgetLastPosChanged<br/>At RSWidgetMixin.java:[line 492]<br/>At RSWidgetMixin.java:[line 492]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Write to static field net.runelite.mixins.StretchedModeMixin.cachedRealDimensions from instance method net.runelite.mixins.StretchedModeMixin.getRealDimensions()<br/>
+<br/>
+<br/>In file StretchedModeMixin.java,
+					
+						line 138<br/>In class net.runelite.mixins.StretchedModeMixin<br/>In method net.runelite.mixins.StretchedModeMixin.getRealDimensions()<br/>Field net.runelite.mixins.StretchedModeMixin.cachedRealDimensions<br/>At StretchedModeMixin.java:[line 138]<br/>At StretchedModeMixin.java:[line 138]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h1>
+<a name="Details">Warning Types</a>
+</h1>
+<h2>
+<a name="DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</h2>
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="DM_NEXTINT_VIA_NEXTDOUBLE">Use the nextInt method of Random rather than nextDouble to generate a random integer</a>
+</h2>
+
+  <p>If <code>r</code> is a <code>java.util.Random</code>, you can generate a random number from <code>0</code> to <code>n-1</code>
+using <code>r.nextInt(n)</code>, rather than using <code>(int)(r.nextDouble() * n)</code>.
+</p>
+<p>The argument to nextInt must be positive. If, for example, you want to generate a random
+value from -99 to 0, use <code>-r.nextInt(100)</code>.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="EC_UNRELATED_TYPES_USING_POINTER_EQUALITY">Using pointer equality to compare different types</a>
+</h2>
+
+<p> This method uses using pointer equality to compare two references that seem to be of
+different types.  The result of this comparison will always be false at runtime.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</h2>
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+</h2>
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="OBL_UNSATISFIED_OBLIGATION">Method may fail to clean up stream or resource</a>
+</h2>
+          
+          <p>
+          This method may fail to clean up (close, dispose of) a stream,
+          database object, or other
+          resource requiring an explicit cleanup operation.
+          </p>
+
+          <p>
+          In general, if a method opens a stream or other resource,
+          the method should use a try/finally block to ensure that
+          the stream or resource is cleaned up before the method
+          returns.
+          </p>
+
+          <p>
+          This bug pattern is essentially the same as the
+          OS_OPEN_STREAM and ODR_OPEN_DATABASE_RESOURCE
+          bug patterns, but is based on a different
+          (and hopefully better) static analysis technique.
+          We are interested is getting feedback about the
+          usefulness of this bug pattern.
+          To send feedback, either:
+          </p>
+          <ul>
+            <li>send email to findbugs@cs.umd.edu</li>
+            <li>file a bug report: <a href="http://findbugs.sourceforge.net/reportingBugs.html">http://findbugs.sourceforge.net/reportingBugs.html</a></li>
+          </ul>
+
+          <p>
+          In particular,
+          the false-positive suppression heuristics for this
+          bug pattern have not been extensively tuned, so
+          reports about false positives are helpful to us.
+          </p>
+
+          <p>
+          See Weimer and Necula, <i>Finding and Preventing Run-Time Error Handling Mistakes</i>, for
+          a description of the analysis technique.
+          </p>
+          
+      
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</h2>
+
+  <p> This instance method writes to a static field. This is tricky to get
+correct if multiple instances are being manipulated,
+and generally bad practice.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://findbugs.sourceforge.net/xsl/default.xsl"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1556483761461" analysisTimestamp="1556483759408" release="">
+  <Project projectName="runelite-parent[cache-client]">
+    <Jar>D:\School\runelite\runelite\cache-client\target\classes\net\runelite\cache\client\ArchiveResponseHandler.class</Jar>
+    <Jar>D:\School\runelite\runelite\cache-client\target\classes\net\runelite\cache\client\CacheClient$1.class</Jar>
+    <Jar>D:\School\runelite\runelite\cache-client\target\classes\net\runelite\cache\client\CacheClient.class</Jar>
+    <Jar>D:\School\runelite\runelite\cache-client\target\classes\net\runelite\cache\client\CacheClientHandler.class</Jar>
+    <Jar>D:\School\runelite\runelite\cache-client\target\classes\net\runelite\cache\client\ClientState.class</Jar>
+    <Jar>D:\School\runelite\runelite\cache-client\target\classes\net\runelite\cache\client\DownloadWatcher.class</Jar>
+    <Jar>D:\School\runelite\runelite\cache-client\target\classes\net\runelite\cache\client\FileResult.class</Jar>
+    <Jar>D:\School\runelite\runelite\cache-client\target\classes\net\runelite\cache\client\HandshakeResponseHandler.class</Jar>
+    <Jar>D:\School\runelite\runelite\cache-client\target\classes\net\runelite\cache\client\IndexInfo.class</Jar>
+    <Jar>D:\School\runelite\runelite\cache-client\target\classes\net\runelite\cache\client\PendingFileRequest.class</Jar>
+    <Jar>D:\School\runelite\runelite\cache-client\target\test-classes\net\runelite\cache\client\CacheClientTest.class</Jar>
+    <AuxClasspathEntry>D:/School/runelite/runelite/cache-client/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/cache-client/target/test-classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/protocol/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/protocol/target/test-classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/http-api/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/http-api/target/test-classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/protocol-api/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/cache/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/cache/target/test-classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/runelite-api/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/runelite-api/target/test-classes</AuxClasspathEntry>
+    <SrcDir>D:/School/runelite/runelite/cache-client/src/main/java</SrcDir>
+    <SrcDir>D:/School/runelite/runelite/cache-client/src/test/java</SrcDir>
+  </Project>
+  <BugInstance type="UW_UNCOND_WAIT" priority="2" rank="14" abbrev="UW" category="MT_CORRECTNESS" instanceHash="520892d1e9674864200c51803518114a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unconditional wait</ShortMessage>
+    <LongMessage>Unconditional wait in net.runelite.cache.client.CacheClient.download()</LongMessage>
+    <Class classname="net.runelite.cache.client.CacheClient" primary="true">
+      <SourceLine classname="net.runelite.cache.client.CacheClient" sourcefile="CacheClient.java" sourcepath="net/runelite/cache/client/CacheClient.java" relSourcepath="main\java\net\runelite\cache\client\CacheClient.java">
+        <Message>In CacheClient.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.cache.client.CacheClient</Message>
+    </Class>
+    <Method classname="net.runelite.cache.client.CacheClient" name="download" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.cache.client.CacheClient" start="205" end="376" startBytecode="0" endBytecode="1728" sourcefile="CacheClient.java" sourcepath="net/runelite/cache/client/CacheClient.java" relSourcepath="main\java\net\runelite\cache\client\CacheClient.java"/>
+      <Message>In method net.runelite.cache.client.CacheClient.download()</Message>
+    </Method>
+    <SourceLine classname="net.runelite.cache.client.CacheClient" primary="true" start="365" end="365" startBytecode="980" endBytecode="980" sourcefile="CacheClient.java" sourcepath="net/runelite/cache/client/CacheClient.java" relSourcepath="main\java\net\runelite\cache\client\CacheClient.java">
+      <Message>At CacheClient.java:[line 365]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" instanceHash="e83a7abfa76d842a5b5854f6dc2b494" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="440">
+    <ShortMessage>Code contains a hard coded reference to an absolute pathname</ShortMessage>
+    <LongMessage>Hard coded reference to an absolute pathname in net.runelite.cache.client.CacheClientTest.test()</LongMessage>
+    <Class classname="net.runelite.cache.client.CacheClientTest" primary="true">
+      <SourceLine classname="net.runelite.cache.client.CacheClientTest" sourcefile="CacheClientTest.java" sourcepath="net/runelite/cache/client/CacheClientTest.java" relSourcepath="test\java\net\runelite\cache\client\CacheClientTest.java">
+        <Message>In CacheClientTest.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.cache.client.CacheClientTest</Message>
+    </Class>
+    <Method classname="net.runelite.cache.client.CacheClientTest" name="test" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.cache.client.CacheClientTest" start="54" end="73" startBytecode="0" endBytecode="77" sourcefile="CacheClientTest.java" sourcepath="net/runelite/cache/client/CacheClientTest.java" relSourcepath="test\java\net\runelite\cache\client\CacheClientTest.java"/>
+      <Message>In method net.runelite.cache.client.CacheClientTest.test()</Message>
+    </Method>
+    <String value="D:\\rs\\07\\temp\\cache" role="FILE_NAME">
+      <Message>File name D:\\rs\\07\\temp\\cache</Message>
+    </String>
+    <SourceLine classname="net.runelite.cache.client.CacheClientTest" primary="true" start="54" end="54" startBytecode="10" endBytecode="10" sourcefile="CacheClientTest.java" sourcepath="net/runelite/cache/client/CacheClientTest.java" relSourcepath="test\java\net\runelite\cache\client\CacheClientTest.java">
+      <Message>At CacheClientTest.java:[line 54]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.cache.client.CacheClientTest" primary="true" start="54" end="54" startBytecode="10" endBytecode="10" sourcefile="CacheClientTest.java" sourcepath="net/runelite/cache/client/CacheClientTest.java" relSourcepath="test\java\net\runelite\cache\client\CacheClientTest.java">
+      <Message>At CacheClientTest.java:[line 54]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="e2ae81f8f1cab49d9efa2b2b951816e1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>net.runelite.cache.client.FileResult.getCompressedData() may expose internal representation by returning FileResult.compressedData</LongMessage>
+    <Class classname="net.runelite.cache.client.FileResult" primary="true">
+      <SourceLine classname="net.runelite.cache.client.FileResult" sourcefile="FileResult.java" sourcepath="net/runelite/cache/client/FileResult.java" relSourcepath="main\java\net\runelite\cache\client\FileResult.java">
+        <Message>In FileResult.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.cache.client.FileResult</Message>
+    </Class>
+    <Method classname="net.runelite.cache.client.FileResult" name="getCompressedData" signature="()[B" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.cache.client.FileResult" start="60" end="60" startBytecode="0" endBytecode="46" sourcefile="FileResult.java" sourcepath="net/runelite/cache/client/FileResult.java" relSourcepath="main\java\net\runelite\cache\client\FileResult.java"/>
+      <Message>In method net.runelite.cache.client.FileResult.getCompressedData()</Message>
+    </Method>
+    <Field classname="net.runelite.cache.client.FileResult" name="compressedData" signature="[B" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.cache.client.FileResult" sourcefile="FileResult.java" sourcepath="net/runelite/cache/client/FileResult.java" relSourcepath="main\java\net\runelite\cache\client\FileResult.java">
+        <Message>In FileResult.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.cache.client.FileResult.compressedData</Message>
+    </Field>
+    <SourceLine classname="net.runelite.cache.client.FileResult" primary="true" start="60" end="60" startBytecode="4" endBytecode="4" sourcefile="FileResult.java" sourcepath="net/runelite/cache/client/FileResult.java" relSourcepath="main\java\net\runelite\cache\client\FileResult.java">
+      <Message>At FileResult.java:[line 60]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.cache.client.FileResult" primary="true" start="60" end="60" startBytecode="4" endBytecode="4" sourcefile="FileResult.java" sourcepath="net/runelite/cache/client/FileResult.java" relSourcepath="main\java\net\runelite\cache\client\FileResult.java">
+      <Message>At FileResult.java:[line 60]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="b27fabb2510fc0e74c8cd81f777c13a2" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>net.runelite.cache.client.FileResult.getContents() may expose internal representation by returning FileResult.contents</LongMessage>
+    <Class classname="net.runelite.cache.client.FileResult" primary="true">
+      <SourceLine classname="net.runelite.cache.client.FileResult" sourcefile="FileResult.java" sourcepath="net/runelite/cache/client/FileResult.java" relSourcepath="main\java\net\runelite\cache\client\FileResult.java">
+        <Message>In FileResult.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.cache.client.FileResult</Message>
+    </Class>
+    <Method classname="net.runelite.cache.client.FileResult" name="getContents" signature="()[B" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.cache.client.FileResult" start="75" end="75" startBytecode="0" endBytecode="46" sourcefile="FileResult.java" sourcepath="net/runelite/cache/client/FileResult.java" relSourcepath="main\java\net\runelite\cache\client\FileResult.java"/>
+      <Message>In method net.runelite.cache.client.FileResult.getContents()</Message>
+    </Method>
+    <Field classname="net.runelite.cache.client.FileResult" name="contents" signature="[B" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.cache.client.FileResult" sourcefile="FileResult.java" sourcepath="net/runelite/cache/client/FileResult.java" relSourcepath="main\java\net\runelite\cache\client\FileResult.java">
+        <Message>In FileResult.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.cache.client.FileResult.contents</Message>
+    </Field>
+    <SourceLine classname="net.runelite.cache.client.FileResult" primary="true" start="75" end="75" startBytecode="4" endBytecode="4" sourcefile="FileResult.java" sourcepath="net/runelite/cache/client/FileResult.java" relSourcepath="main\java\net\runelite\cache\client\FileResult.java">
+      <Message>At FileResult.java:[line 75]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.cache.client.FileResult" primary="true" start="75" end="75" startBytecode="4" endBytecode="4" sourcefile="FileResult.java" sourcepath="net/runelite/cache/client/FileResult.java" relSourcepath="main\java\net\runelite\cache\client\FileResult.java">
+      <Message>At FileResult.java:[line 75]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="268806696e97104e5a91c969419ff837" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new net.runelite.cache.client.FileResult(int, int, byte[]) may expose internal representation by storing an externally mutable object into FileResult.compressedData</LongMessage>
+    <Class classname="net.runelite.cache.client.FileResult" primary="true">
+      <SourceLine classname="net.runelite.cache.client.FileResult" sourcefile="FileResult.java" sourcepath="net/runelite/cache/client/FileResult.java" relSourcepath="main\java\net\runelite\cache\client\FileResult.java">
+        <Message>In FileResult.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.cache.client.FileResult</Message>
+    </Class>
+    <Method classname="net.runelite.cache.client.FileResult" name="&lt;init&gt;" signature="(II[B)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.cache.client.FileResult" start="42" end="46" startBytecode="0" endBytecode="107" sourcefile="FileResult.java" sourcepath="net/runelite/cache/client/FileResult.java" relSourcepath="main\java\net\runelite\cache\client\FileResult.java"/>
+      <Message>In method new net.runelite.cache.client.FileResult(int, int, byte[])</Message>
+    </Method>
+    <Field classname="net.runelite.cache.client.FileResult" name="compressedData" signature="[B" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.cache.client.FileResult" sourcefile="FileResult.java" sourcepath="net/runelite/cache/client/FileResult.java" relSourcepath="main\java\net\runelite\cache\client\FileResult.java">
+        <Message>In FileResult.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.cache.client.FileResult.compressedData</Message>
+    </Field>
+    <LocalVariable name="compressedData" register="3" pc="16" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named compressedData</Message>
+    </LocalVariable>
+    <SourceLine classname="net.runelite.cache.client.FileResult" primary="true" start="45" end="45" startBytecode="16" endBytecode="16" sourcefile="FileResult.java" sourcepath="net/runelite/cache/client/FileResult.java" relSourcepath="main\java\net\runelite\cache\client\FileResult.java">
+      <Message>At FileResult.java:[line 45]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.cache.client.FileResult" primary="true" start="45" end="45" startBytecode="16" endBytecode="16" sourcefile="FileResult.java" sourcepath="net/runelite/cache/client/FileResult.java" relSourcepath="main\java\net\runelite\cache\client\FileResult.java">
+      <Message>At FileResult.java:[line 45]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="MT_CORRECTNESS">
+    <Description>Multithreaded correctness</Description>
+  </BugCategory>
+  <BugPattern type="EI_EXPOSE_REP2" abbrev="EI2" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by incorporating reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="EI_EXPOSE_REP" abbrev="EI" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by returning reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DMI_HARDCODED_ABSOLUTE_FILENAME" abbrev="DMI" category="STYLE">
+    <ShortDescription>Code contains a hard coded reference to an absolute pathname</ShortDescription>
+    <Details><![CDATA[
+
+<p>This code constructs a File object using a hard coded to an absolute pathname
+(e.g., <code>new File("/home/dannyc/workspace/j2ee/src/share/com/sun/enterprise/deployment");</code>
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="UW_UNCOND_WAIT" abbrev="UW" category="MT_CORRECTNESS">
+    <ShortDescription>Unconditional wait</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a call to <code>java.lang.Object.wait()</code> which
+  is not guarded by conditional control flow.&nbsp; The code should
+    verify that condition it intends to wait for is not already satisfied
+    before calling wait; any previous notifications will be ignored.
+  </p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DMI" cweid="440">
+    <Description>Dubious method invocation</Description>
+  </BugCode>
+  <BugCode abbrev="UW">
+    <Description>Unconditional wait</Description>
+  </BugCode>
+  <BugCode abbrev="EI">
+    <Description>Method returning array may expose internal representation</Description>
+  </BugCode>
+  <BugCode abbrev="EI2">
+    <Description>Storing reference to mutable object</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 28 Apr 2019 16:35:56 -0400" total_classes="11" referenced_classes="73" total_bugs="5" total_size="400" num_packages="1" java_version="1.8.0_112-release" vm_version="25.112-b6" cpu_seconds="270.92" clock_seconds="440.30" peak_mbytes="748.44" alloc_mbytes="494.94" gc_seconds="3.77" priority_2="5">
+    <FileStats path="net/runelite/cache/client/ArchiveResponseHandler.java" bugCount="0" size="13"/>
+    <FileStats path="net/runelite/cache/client/CacheClient.java" bugCount="1" size="218" bugHash="9bcf9c026e456922c76be59f157c8742"/>
+    <FileStats path="net/runelite/cache/client/CacheClientHandler.java" bugCount="0" size="13"/>
+    <FileStats path="net/runelite/cache/client/CacheClientTest.java" bugCount="1" size="23" bugHash="d66fee6dd079c8ba12bb7a2eaaf007d8"/>
+    <FileStats path="net/runelite/cache/client/ClientState.java" bugCount="0" size="11"/>
+    <FileStats path="net/runelite/cache/client/DownloadWatcher.java" bugCount="0" size="2"/>
+    <FileStats path="net/runelite/cache/client/FileResult.java" bugCount="3" size="35" bugHash="21e6b7e66825a6f9f3bcf684a678faad"/>
+    <FileStats path="net/runelite/cache/client/HandshakeResponseHandler.java" bugCount="0" size="30"/>
+    <FileStats path="net/runelite/cache/client/IndexInfo.java" bugCount="0" size="39"/>
+    <FileStats path="net/runelite/cache/client/PendingFileRequest.java" bugCount="0" size="16"/>
+    <PackageStats package="net.runelite.cache.client" total_bugs="5" total_types="11" total_size="400" priority_2="5">
+      <ClassStats class="net.runelite.cache.client.ArchiveResponseHandler" sourceFile="ArchiveResponseHandler.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="net.runelite.cache.client.CacheClient" sourceFile="CacheClient.java" interface="false" size="207" bugs="1" priority_2="1"/>
+      <ClassStats class="net.runelite.cache.client.CacheClient$1" sourceFile="CacheClient.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="net.runelite.cache.client.CacheClientHandler" sourceFile="CacheClientHandler.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="net.runelite.cache.client.CacheClientTest" sourceFile="CacheClientTest.java" interface="false" size="23" bugs="1" priority_2="1"/>
+      <ClassStats class="net.runelite.cache.client.ClientState" sourceFile="ClientState.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="net.runelite.cache.client.DownloadWatcher" sourceFile="DownloadWatcher.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.runelite.cache.client.FileResult" sourceFile="FileResult.java" interface="false" size="35" bugs="3" priority_2="3"/>
+      <ClassStats class="net.runelite.cache.client.HandshakeResponseHandler" sourceFile="HandshakeResponseHandler.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="net.runelite.cache.client.IndexInfo" sourceFile="IndexInfo.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="net.runelite.cache.client.PendingFileRequest" sourceFile="PendingFileRequest.java" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="962" invocations="2" avgMicrosecondsPerInvocation="481419" maxMicrosecondsPerInvocation="847544" standardDeviationMircosecondsPerInvocation="366125"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="161" invocations="544" avgMicrosecondsPerInvocation="297" maxMicrosecondsPerInvocation="15070" standardDeviationMircosecondsPerInvocation="919"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="109" invocations="546" avgMicrosecondsPerInvocation="199" maxMicrosecondsPerInvocation="5071" standardDeviationMircosecondsPerInvocation="229"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="68" invocations="73" avgMicrosecondsPerInvocation="936" maxMicrosecondsPerInvocation="10554" standardDeviationMircosecondsPerInvocation="1862"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="46" invocations="73" avgMicrosecondsPerInvocation="636" maxMicrosecondsPerInvocation="5938" standardDeviationMircosecondsPerInvocation="1136"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="45" invocations="184" avgMicrosecondsPerInvocation="245" maxMicrosecondsPerInvocation="7291" standardDeviationMircosecondsPerInvocation="671"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="42" invocations="59" avgMicrosecondsPerInvocation="724" maxMicrosecondsPerInvocation="15488" standardDeviationMircosecondsPerInvocation="2151"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="37" invocations="60" avgMicrosecondsPerInvocation="627" maxMicrosecondsPerInvocation="30301" standardDeviationMircosecondsPerInvocation="3870"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="37" invocations="64" avgMicrosecondsPerInvocation="586" maxMicrosecondsPerInvocation="12367" standardDeviationMircosecondsPerInvocation="1850"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="32" invocations="62" avgMicrosecondsPerInvocation="522" maxMicrosecondsPerInvocation="8436" standardDeviationMircosecondsPerInvocation="1357"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

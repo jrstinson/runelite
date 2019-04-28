@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>FindBugs Report</title>
+<style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+		</style>
+</head>
+<body>
+<h1>FindBugs Report</h1>
+<p>Produced using <a href="http://findbugs.sourceforge.net">FindBugs</a>3.0.1.</p>
+<p>Project: 
+			runelite-parent[http-api]</p>
+<h2>Metrics</h2>
+<p>2266 lines of code analyzed,
+	in 73 classes, 
+	in 17 packages.</p>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Metric</th>
+<th align="right">Total</th>
+<th align="right">Density*</th>
+</tr>
+<tr class="tablerow0">
+<td>High Priority Warnings</td>
+<td align="right">15</td>
+<td align="right">6.62</td>
+</tr>
+<tr class="tablerow1">
+<td>Medium Priority Warnings</td>
+<td align="right">2</td>
+<td align="right">0.88</td>
+</tr>
+<tr class="$totalClass">
+<td>
+<b>Total Warnings</b>
+</td>
+<td align="right">
+<b>17</b>
+</td>
+<td align="right">
+<b>7.50</b>
+</td>
+</tr>
+</table>
+<p>
+<i>(* Defects per Thousand lines of non-commenting source statements)</i>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h2>Summary</h2>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Warning Type</th>
+<th align="right">Number</th>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_I18N">Internationalization Warnings</a>
+</td>
+<td align="right">14</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+</td>
+<td align="right">3</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<b>Total</b>
+</td>
+<td align="right">
+<b>17</b>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h1>Warnings</h1>
+<p>Click on each warning link to see a full description of the issue, and
+	    details of how to resolve it.</p>
+<h2>
+<a name="Warnings_I18N">Internationalization Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.http.api.account.AccountClient.login(): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file AccountClient.java,
+					
+						line 71<br/>In class net.runelite.http.api.account.AccountClient<br/>In method net.runelite.http.api.account.AccountClient.login()<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At AccountClient.java:[line 71]<br/>At AccountClient.java:[line 71]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.http.api.chat.ChatClient.getTask(String): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file ChatClient.java,
+					
+						line 168<br/>In class net.runelite.http.api.chat.ChatClient<br/>In method net.runelite.http.api.chat.ChatClient.getTask(String)<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At ChatClient.java:[line 168]<br/>At ChatClient.java:[line 168]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.http.api.config.ConfigClient.get(): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file ConfigClient.java,
+					
+						line 72<br/>In class net.runelite.http.api.config.ConfigClient<br/>In method net.runelite.http.api.config.ConfigClient.get()<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At ConfigClient.java:[line 72]<br/>At ConfigClient.java:[line 72]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.http.api.feed.FeedClient.lookupFeed(): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file FeedClient.java,
+					
+						line 63<br/>In class net.runelite.http.api.feed.FeedClient<br/>In method net.runelite.http.api.feed.FeedClient.lookupFeed()<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At FeedClient.java:[line 63]<br/>At FeedClient.java:[line 63]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.http.api.item.ItemClient.getPrices(): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file ItemClient.java,
+					
+						line 199<br/>In class net.runelite.http.api.item.ItemClient<br/>In method net.runelite.http.api.item.ItemClient.getPrices()<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At ItemClient.java:[line 199]<br/>At ItemClient.java:[line 199]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.http.api.item.ItemClient.getStats(): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file ItemClient.java,
+					
+						line 233<br/>In class net.runelite.http.api.item.ItemClient<br/>In method net.runelite.http.api.item.ItemClient.getStats()<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At ItemClient.java:[line 233]<br/>At ItemClient.java:[line 233]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.http.api.item.ItemClient.lookupItemPrice(int): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file ItemClient.java,
+					
+						line 71<br/>In class net.runelite.http.api.item.ItemClient<br/>In method net.runelite.http.api.item.ItemClient.lookupItemPrice(int)<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At ItemClient.java:[line 71]<br/>At ItemClient.java:[line 71]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.http.api.item.ItemClient.lookupItemPrice(Integer[]): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file ItemClient.java,
+					
+						line 107<br/>In class net.runelite.http.api.item.ItemClient<br/>In method net.runelite.http.api.item.ItemClient.lookupItemPrice(Integer[])<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At ItemClient.java:[line 107]<br/>At ItemClient.java:[line 107]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.http.api.item.ItemClient.search(String): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file ItemClient.java,
+					
+						line 168<br/>In class net.runelite.http.api.item.ItemClient<br/>In method net.runelite.http.api.item.ItemClient.search(String)<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At ItemClient.java:[line 168]<br/>At ItemClient.java:[line 168]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.http.api.loottracker.LootTrackerClient.get(): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file LootTrackerClient.java,
+					
+						line 106<br/>In class net.runelite.http.api.loottracker.LootTrackerClient<br/>In method net.runelite.http.api.loottracker.LootTrackerClient.get()<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At LootTrackerClient.java:[line 106]<br/>At LootTrackerClient.java:[line 106]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.http.api.osbuddy.GrandExchangeClient.lookupItem(int): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file GrandExchangeClient.java,
+					
+						line 62<br/>In class net.runelite.http.api.osbuddy.GrandExchangeClient<br/>In method net.runelite.http.api.osbuddy.GrandExchangeClient.lookupItem(int)<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At GrandExchangeClient.java:[line 62]<br/>At GrandExchangeClient.java:[line 62]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.http.api.worlds.WorldClient.lookupWorlds(): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file WorldClient.java,
+					
+						line 65<br/>In class net.runelite.http.api.worlds.WorldClient<br/>In method net.runelite.http.api.worlds.WorldClient.lookupWorlds()<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At WorldClient.java:[line 65]<br/>At WorldClient.java:[line 65]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.http.api.xtea.XteaClient.get(): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file XteaClient.java,
+					
+						line 105<br/>In class net.runelite.http.api.xtea.XteaClient<br/>In method net.runelite.http.api.xtea.XteaClient.get()<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At XteaClient.java:[line 105]<br/>At XteaClient.java:[line 105]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.http.api.xtea.XteaClient.get(int): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file XteaClient.java,
+					
+						line 128<br/>In class net.runelite.http.api.xtea.XteaClient<br/>In method net.runelite.http.api.xtea.XteaClient.get(int)<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At XteaClient.java:[line 128]<br/>At XteaClient.java:[line 128]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#MS_SHOULD_BE_FINAL">Field isn't final but should be</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>net.runelite.http.api.RuneLiteAPI.userAgent isn't final but should be<br/>
+<br/>
+<br/>In file RuneLiteAPI.java,
+					
+						line 69<br/>In class net.runelite.http.api.RuneLiteAPI<br/>Field net.runelite.http.api.RuneLiteAPI.userAgent<br/>At RuneLiteAPI.java:[line 69]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.http.api.xtea.XteaKey.getKeys() may expose internal representation by returning XteaKey.keys<br/>
+<br/>
+<br/>In file XteaKey.java,
+					
+						line 44<br/>In class net.runelite.http.api.xtea.XteaKey<br/>In method net.runelite.http.api.xtea.XteaKey.getKeys()<br/>Field net.runelite.http.api.xtea.XteaKey.keys<br/>At XteaKey.java:[line 44]<br/>At XteaKey.java:[line 44]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.http.api.xtea.XteaKey.setKeys(int[]) may expose internal representation by storing an externally mutable object into XteaKey.keys<br/>
+<br/>
+<br/>In file XteaKey.java,
+					
+						line 49<br/>In class net.runelite.http.api.xtea.XteaKey<br/>In method net.runelite.http.api.xtea.XteaKey.setKeys(int[])<br/>Field net.runelite.http.api.xtea.XteaKey.keys<br/>Local variable named keys<br/>At XteaKey.java:[line 49]<br/>At XteaKey.java:[line 49]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h1>
+<a name="Details">Warning Types</a>
+</h1>
+<h2>
+<a name="DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</h2>
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</h2>
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+</h2>
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="MS_SHOULD_BE_FINAL">Field isn't final but should be</a>
+</h2>
+
+   <p>
+This static field public but not final, and
+could be changed by malicious code or
+        by accident from another package.
+        The field could be made final to avoid
+        this vulnerability.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+</body>
+</html>

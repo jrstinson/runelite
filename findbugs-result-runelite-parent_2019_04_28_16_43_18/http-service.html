@@ -1,0 +1,519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>FindBugs Report</title>
+<style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+		</style>
+</head>
+<body>
+<h1>FindBugs Report</h1>
+<p>Produced using <a href="http://findbugs.sourceforge.net">FindBugs</a>3.0.1.</p>
+<p>Project: 
+			runelite-parent[http-service]</p>
+<h2>Metrics</h2>
+<p>3075 lines of code analyzed,
+	in 90 classes, 
+	in 26 packages.</p>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Metric</th>
+<th align="right">Total</th>
+<th align="right">Density*</th>
+</tr>
+<tr class="tablerow0">
+<td>High Priority Warnings</td>
+<td align="right">4</td>
+<td align="right">1.30</td>
+</tr>
+<tr class="tablerow1">
+<td>Medium Priority Warnings</td>
+<td align="right">13</td>
+<td align="right">4.23</td>
+</tr>
+<tr class="$totalClass">
+<td>
+<b>Total Warnings</b>
+</td>
+<td align="right">
+<b>17</b>
+</td>
+<td align="right">
+<b>5.53</b>
+</td>
+</tr>
+</table>
+<p>
+<i>(* Defects per Thousand lines of non-commenting source statements)</i>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h2>Summary</h2>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Warning Type</th>
+<th align="right">Number</th>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+</td>
+<td align="right">2</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_I18N">Internationalization Warnings</a>
+</td>
+<td align="right">4</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+</td>
+<td align="right">6</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_MT_CORRECTNESS">Multithreaded correctness Warnings</a>
+</td>
+<td align="right">2</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_STYLE">Dodgy code Warnings</a>
+</td>
+<td align="right">3</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<b>Total</b>
+</td>
+<td align="right">
+<b>17</b>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h1>Warnings</h1>
+<p>Click on each warning link to see a full description of the issue, and
+	    details of how to resolve it.</p>
+<h2>
+<a name="Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exceptional return value of java.util.concurrent.BlockingQueue.offer(Object) ignored in new net.runelite.http.service.util.redis.RedisPool(int, String)<br/>
+<br/>
+<br/>In file RedisPool.java,
+					
+						line 45<br/>In class net.runelite.http.service.util.redis.RedisPool<br/>In method new net.runelite.http.service.util.redis.RedisPool(int, String)<br/>Called method java.util.concurrent.BlockingQueue.offer(Object)<br/>At RedisPool.java:[line 45]<br/>At RedisPool.java:[line 45]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exceptional return value of java.util.concurrent.BlockingQueue.offer(Object) ignored in net.runelite.http.service.util.redis.RedisPool$PooledJedis.close()<br/>
+<br/>
+<br/>In file RedisPool.java,
+					
+						line 77<br/>In class net.runelite.http.service.util.redis.RedisPool$PooledJedis<br/>In method net.runelite.http.service.util.redis.RedisPool$PooledJedis.close()<br/>Called method java.util.concurrent.BlockingQueue.offer(Object)<br/>At RedisPool.java:[line 77]<br/>At RedisPool.java:[line 77]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_I18N">Internationalization Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.http.service.feed.twitter.TwitterService.getTweets(boolean): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file TwitterService.java,
+					
+						line 116<br/>In class net.runelite.http.service.feed.twitter.TwitterService<br/>In method net.runelite.http.service.feed.twitter.TwitterService.getTweets(boolean)<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At TwitterService.java:[line 116]<br/>At TwitterService.java:[line 116]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.http.service.feed.twitter.TwitterService.updateToken(): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file TwitterService.java,
+					
+						line 153<br/>In class net.runelite.http.service.feed.twitter.TwitterService<br/>In method net.runelite.http.service.feed.twitter.TwitterService.updateToken()<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At TwitterService.java:[line 153]<br/>At TwitterService.java:[line 153]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.http.service.feed.twitter.TwitterService.updateToken(): String.getBytes()<br/>
+<br/>
+<br/>In file TwitterService.java,
+					
+						line 137<br/>In class net.runelite.http.service.feed.twitter.TwitterService<br/>In method net.runelite.http.service.feed.twitter.TwitterService.updateToken()<br/>Called method String.getBytes()<br/>At TwitterService.java:[line 137]<br/>At TwitterService.java:[line 137]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in net.runelite.http.service.item.ItemService.fetchJson(Request, Class): new java.io.InputStreamReader(InputStream)<br/>
+<br/>
+<br/>In file ItemService.java,
+					
+						line 384<br/>In class net.runelite.http.service.item.ItemService<br/>In method net.runelite.http.service.item.ItemService.fetchJson(Request, Class)<br/>Called method new java.io.InputStreamReader(InputStream)<br/>At ItemService.java:[line 384]<br/>At ItemService.java:[line 384]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.http.service.cache.beans.ArchiveEntry.getHash() may expose internal representation by returning ArchiveEntry.hash<br/>
+<br/>
+<br/>In file ArchiveEntry.java,
+					
+						line 37<br/>In class net.runelite.http.service.cache.beans.ArchiveEntry<br/>In method net.runelite.http.service.cache.beans.ArchiveEntry.getHash()<br/>Field net.runelite.http.service.cache.beans.ArchiveEntry.hash<br/>At ArchiveEntry.java:[line 37]<br/>At ArchiveEntry.java:[line 37]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.http.service.item.ItemEntry.getIcon() may expose internal representation by returning ItemEntry.icon<br/>
+<br/>
+<br/>In file ItemEntry.java,
+					
+						line 39<br/>In class net.runelite.http.service.item.ItemEntry<br/>In method net.runelite.http.service.item.ItemEntry.getIcon()<br/>Field net.runelite.http.service.item.ItemEntry.icon<br/>At ItemEntry.java:[line 39]<br/>At ItemEntry.java:[line 39]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.http.service.item.ItemEntry.getIcon_large() may expose internal representation by returning ItemEntry.icon_large<br/>
+<br/>
+<br/>In file ItemEntry.java,
+					
+						line 40<br/>In class net.runelite.http.service.item.ItemEntry<br/>In method net.runelite.http.service.item.ItemEntry.getIcon_large()<br/>Field net.runelite.http.service.item.ItemEntry.icon_large<br/>At ItemEntry.java:[line 40]<br/>At ItemEntry.java:[line 40]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.http.service.cache.beans.ArchiveEntry.setHash(byte[]) may expose internal representation by storing an externally mutable object into ArchiveEntry.hash<br/>
+<br/>
+<br/>In file ArchiveEntry.java,
+					
+						line 29<br/>In class net.runelite.http.service.cache.beans.ArchiveEntry<br/>In method net.runelite.http.service.cache.beans.ArchiveEntry.setHash(byte[])<br/>Field net.runelite.http.service.cache.beans.ArchiveEntry.hash<br/>Local variable named hash<br/>At ArchiveEntry.java:[line 29]<br/>At ArchiveEntry.java:[line 29]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.http.service.item.ItemEntry.setIcon(byte[]) may expose internal representation by storing an externally mutable object into ItemEntry.icon<br/>
+<br/>
+<br/>In file ItemEntry.java,
+					
+						line 32<br/>In class net.runelite.http.service.item.ItemEntry<br/>In method net.runelite.http.service.item.ItemEntry.setIcon(byte[])<br/>Field net.runelite.http.service.item.ItemEntry.icon<br/>Local variable named icon<br/>At ItemEntry.java:[line 32]<br/>At ItemEntry.java:[line 32]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>net.runelite.http.service.item.ItemEntry.setIcon_large(byte[]) may expose internal representation by storing an externally mutable object into ItemEntry.icon_large<br/>
+<br/>
+<br/>In file ItemEntry.java,
+					
+						line 32<br/>In class net.runelite.http.service.item.ItemEntry<br/>In method net.runelite.http.service.item.ItemEntry.setIcon_large(byte[])<br/>Field net.runelite.http.service.item.ItemEntry.icon_large<br/>Local variable named icon_large<br/>At ItemEntry.java:[line 32]<br/>At ItemEntry.java:[line 32]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_MT_CORRECTNESS">Multithreaded correctness Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#STCAL_INVOKE_ON_STATIC_DATE_FORMAT_INSTANCE">Call to static DateFormat</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Call to method of static java.text.DateFormat in net.runelite.http.service.feed.blog.BlogService.getBlogPosts()<br/>
+<br/>
+<br/>In file BlogService.java,
+					
+						line 108<br/>In class net.runelite.http.service.feed.blog.BlogService<br/>In method net.runelite.http.service.feed.blog.BlogService.getBlogPosts()<br/>Called method java.text.SimpleDateFormat.parse(String)<br/>Field net.runelite.http.service.feed.blog.BlogService.DATE_FORMAT<br/>At BlogService.java:[line 108]<br/>At BlogService.java:[line 108]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#STCAL_INVOKE_ON_STATIC_DATE_FORMAT_INSTANCE">Call to static DateFormat</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Call to method of static java.text.DateFormat in net.runelite.http.service.feed.osrsnews.OSRSNewsService.getNews()<br/>
+<br/>
+<br/>In file OSRSNewsService.java,
+					
+						line 108<br/>In class net.runelite.http.service.feed.osrsnews.OSRSNewsService<br/>In method net.runelite.http.service.feed.osrsnews.OSRSNewsService.getNews()<br/>Called method java.text.SimpleDateFormat.parse(String)<br/>Field net.runelite.http.service.feed.osrsnews.OSRSNewsService.PUB_DATE_FORMAT<br/>At OSRSNewsService.java:[line 108]<br/>At OSRSNewsService.java:[line 108]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_STYLE">Dodgy code Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.http.service.feed.blog.BlogService.getBlogPosts() where default case is missing<br/>
+<br/>
+<br/>In file BlogService.java,
+					
+						lines 96
+						    to 108<br/>In class net.runelite.http.service.feed.blog.BlogService<br/>In method net.runelite.http.service.feed.blog.BlogService.getBlogPosts()<br/>At BlogService.java:[lines 96-108]<br/>At BlogService.java:[lines 96-108]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.http.service.feed.osrsnews.OSRSNewsService.getNews() where default case is missing<br/>
+<br/>
+<br/>In file OSRSNewsService.java,
+					
+						lines 96
+						    to 108<br/>In class net.runelite.http.service.feed.osrsnews.OSRSNewsService<br/>In method net.runelite.http.service.feed.osrsnews.OSRSNewsService.getNews()<br/>At OSRSNewsService.java:[lines 96-108]<br/>At OSRSNewsService.java:[lines 96-108]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in net.runelite.http.service.hiscore.HiscoreController.lookup(HiscoreEndpoint, String) where default case is missing<br/>
+<br/>
+<br/>In file HiscoreController.java,
+					
+						lines 59
+						    to 65<br/>In class net.runelite.http.service.hiscore.HiscoreController<br/>In method net.runelite.http.service.hiscore.HiscoreController.lookup(HiscoreEndpoint, String)<br/>At HiscoreController.java:[lines 59-65]<br/>At HiscoreController.java:[lines 59-65]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h1>
+<a name="Details">Warning Types</a>
+</h1>
+<h2>
+<a name="DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</h2>
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</h2>
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+</h2>
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</h2>
+
+   <p> This method returns a value that is not checked. The return value should be checked
+since it can indicate an unusual or unexpected function execution. For
+example, the <code>File.delete()</code> method returns false
+if the file could not be successfully deleted (rather than
+throwing an Exception).
+If you don't check the result, you won't notice if the method invocation
+signals unexpected behavior by returning an atypical return value.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</h2>
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="STCAL_INVOKE_ON_STATIC_DATE_FORMAT_INSTANCE">Call to static DateFormat</a>
+</h2>
+
+<p>As the JavaDoc states, DateFormats are inherently unsafe for multithreaded use.
+The detector has found a call to an instance of DateFormat that has been obtained via a static
+field. This looks suspicous.</p>
+<p>For more information on this see <a href="http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6231579">Sun Bug #6231579</a>
+and <a href="http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6178997">Sun Bug #6178997</a>.</p>
+
+
+<p>
+<br/>
+<br/>
+</p>
+</body>
+</html>
