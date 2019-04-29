@@ -12,27 +12,27 @@ public class ItemStackTest {
 
     @Test
     public void whenCreatingItemStack_thenItemStackCreated() {
-        ItemStack stack = new ItemStack(1, 10, LocalPoint.fromScene(500, 500));
-        Assert.assertNotNull(stack);
+        ItemStack sut = new ItemStack(1, 10, LocalPoint.fromScene(500, 500));
+        Assert.assertNotNull(sut);
     }
 
     @Test
     public void givenQuantity10_whenCreatingItemStack_thenGetQuantityReturns10() {
-        ItemStack stack = new ItemStack(1, 10, LocalPoint.fromScene(500, 500));
-        assertEquals(stack.getQuantity(), 10);
+        ItemStack sut = new ItemStack(1, 10, LocalPoint.fromScene(500, 500));
+        assertEquals(sut.getQuantity(), 10);
     }
 
     @Test
     public void givenLocation_whenCreatingItemStack_thenGetLocationReturnsLocation() {
-        ItemStack stack = new ItemStack(1, 10, LocalPoint.fromScene(500, 500));
-        assertEquals(stack.getLocation(), LocalPoint.fromScene(500, 500));
+        ItemStack sut = new ItemStack(1, 10, LocalPoint.fromScene(500, 500));
+        assertEquals(sut.getLocation(), LocalPoint.fromScene(500, 500));
     }
 
     @Test
     public void givenUnequalItemStacks_whenCreatingItemStack_thenEqualsReturnsFalse() {
-        ItemStack stack = new ItemStack(1, 10, LocalPoint.fromScene(500, 500));
-        ItemStack stack2 = new ItemStack(15, 10, LocalPoint.fromScene(500, 500));
-        Assert.assertNotEquals(stack, stack2);
+        ItemStack sut = new ItemStack(1, 10, LocalPoint.fromScene(500, 500));
+        ItemStack sut2 = new ItemStack(15, 10, LocalPoint.fromScene(500, 500));
+        Assert.assertNotEquals(sut, sut2);
     }
 
 

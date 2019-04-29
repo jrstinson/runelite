@@ -59,16 +59,4 @@ public class TimerTest {
         assertEquals(sut.getRemaining(), 5800);
 
     }
-
-    @Test
-    public void getRemaining() {
-    }
-
-    @Test
-    public void setDuration() {
-    }
-
-    @Test
-    public void setRemaining() {
-    }
 }
