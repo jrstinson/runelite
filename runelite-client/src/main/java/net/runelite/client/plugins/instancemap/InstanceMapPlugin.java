@@ -48,7 +48,7 @@ public class InstanceMapPlugin extends Plugin
 	private final WidgetMenuOption openMapOption = new WidgetMenuOption("Show", "Instance Map", WidgetInfo.WORLD_MAP_OPTION);
 
 	@Inject
-	private InstanceMapInputListener inputListener;
+	private InstanceMapInputListenerRL inputListener;
 
 	@Inject
 	private OverlayManager overlayManager;
@@ -68,7 +68,7 @@ public class InstanceMapPlugin extends Plugin
 	@Override
 	public void configure(Binder binder)
 	{
-		binder.bind(InstanceMapInputListener.class);
+		binder.bind(InstanceMapInputListenerRL.class);
 	}
 
 	private void addCustomOptions()

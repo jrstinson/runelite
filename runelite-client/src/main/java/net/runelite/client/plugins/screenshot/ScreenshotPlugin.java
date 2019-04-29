@@ -94,7 +94,7 @@ import net.runelite.client.ui.ClientUI;
 import net.runelite.client.ui.DrawManager;
 import net.runelite.client.ui.NavigationButton;
 import net.runelite.client.ui.overlay.OverlayManager;
-import net.runelite.client.util.HotkeyListener;
+import net.runelite.client.util.HotkeyListenerRL;
 import net.runelite.client.util.ImageUtil;
 import net.runelite.client.util.Text;
 import net.runelite.http.api.RuneLiteAPI;
@@ -187,7 +187,7 @@ public class ScreenshotPlugin extends Plugin
 
 	private NavigationButton titleBarButton;
 
-	private final HotkeyListener hotkeyListener = new HotkeyListener(() -> config.hotkey())
+	private final HotkeyListenerRL hotkeyListener = new HotkeyListenerRL(() -> config.hotkey())
 	{
 		@Override
 		public void hotkeyPressed()

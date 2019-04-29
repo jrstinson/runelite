@@ -39,10 +39,10 @@ import net.runelite.api.widgets.Widget;
 import net.runelite.api.widgets.WidgetPositionMode;
 import net.runelite.api.widgets.WidgetSizeMode;
 import net.runelite.api.widgets.WidgetTextAlignment;
-import net.runelite.client.input.KeyListener;
+import net.runelite.client.input.RLKeyListener;
 
 @Slf4j
-public class ChatboxTextMenuInput extends ChatboxInput implements KeyListener
+public class ChatboxTextMenuInput extends ChatboxInput implements RLKeyListener
 {
 	@Data
 	@AllArgsConstructor

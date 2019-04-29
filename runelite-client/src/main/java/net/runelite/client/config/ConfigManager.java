@@ -229,6 +229,7 @@ public class ConfigManager
 		{
 			log.warn("Error posting config events", ex);
 		}
+		properties.clear();
 	}
 
 	private synchronized void saveToFile() throws IOException
@@ -246,6 +247,7 @@ public class ConfigManager
 			finally
 			{
 				lock.release();
+				properties.clear();
 			}
 		}
 	}

@@ -39,7 +39,7 @@ import net.runelite.api.events.GameStateChanged;
 import net.runelite.api.events.SessionOpen;
 import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.Subscribe;
-import net.runelite.client.input.KeyListener;
+import net.runelite.client.input.RLKeyListener;
 import net.runelite.client.input.KeyManager;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
@@ -50,7 +50,7 @@ import net.runelite.client.util.OSType;
 	description = "Provides various enhancements for login screen"
 )
 @Slf4j
-public class LoginScreenPlugin extends Plugin implements KeyListener
+public class LoginScreenPlugin extends Plugin implements RLKeyListener
 {
 	private static final int MAX_USERNAME_LENGTH = 254;
 	private static final int MAX_PASSWORD_LENGTH = 20;

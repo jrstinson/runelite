@@ -83,7 +83,7 @@ public class GroundMarkerPlugin extends Plugin
 	private Client client;
 
 	@Inject
-	private GroundMarkerInputListener inputListener;
+	private GroundMarkerInputListenerRL inputListener;
 
 	@Inject
 	private ConfigManager configManager;

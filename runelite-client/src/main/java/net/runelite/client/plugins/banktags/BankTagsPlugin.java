@@ -61,7 +61,7 @@ import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.game.ItemManager;
 import net.runelite.client.game.chatbox.ChatboxPanelManager;
-import net.runelite.client.input.KeyListener;
+import net.runelite.client.input.RLKeyListener;
 import net.runelite.client.input.KeyManager;
 import net.runelite.client.input.MouseManager;
 import net.runelite.client.input.MouseWheelListener;
@@ -80,7 +80,7 @@ import net.runelite.client.util.Text;
 	tags = {"searching", "tagging"}
 )
 @PluginDependency(ClueScrollPlugin.class)
-public class BankTagsPlugin extends Plugin implements MouseWheelListener, KeyListener
+public class BankTagsPlugin extends Plugin implements MouseWheelListener, RLKeyListener
 {
 	public static final String CONFIG_GROUP = "banktags";
 	public static final String TAG_SEARCH = "tag:";

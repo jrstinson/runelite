@@ -31,10 +31,10 @@ import net.runelite.api.Client;
 import net.runelite.api.ScriptID;
 import net.runelite.api.VarClientStr;
 import net.runelite.client.callback.ClientThread;
-import net.runelite.client.input.KeyListener;
+import net.runelite.client.input.RLKeyListener;
 
 @Singleton
-public class ChatKeyboardListener implements KeyListener
+public class ChatKeyboardListenerRL implements RLKeyListener
 {
 	@Inject
 	private ChatCommandsConfig chatCommandsConfig;

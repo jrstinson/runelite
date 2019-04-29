@@ -130,7 +130,7 @@ public class GroundItemsPlugin extends Plugin
 	private List<String> highlightedItemsList = new CopyOnWriteArrayList<>();
 
 	@Inject
-	private GroundItemInputListener inputListener;
+	private GroundItemInputListenerRL inputListener;
 
 	@Inject
 	private MouseManager mouseManager;

@@ -105,7 +105,7 @@ public class MenuEntrySwapperPlugin extends Plugin
 	private MenuEntrySwapperConfig config;
 
 	@Inject
-	private ShiftClickInputListener inputListener;
+	private ShiftClickInputListenerRL inputListener;
 
 	@Inject
 	private ConfigManager configManager;

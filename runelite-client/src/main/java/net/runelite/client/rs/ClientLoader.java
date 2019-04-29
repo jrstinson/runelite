@@ -115,6 +115,7 @@ public class ClientLoader
 
 						zipFile.put(metadata.getName(), buffer.toByteArray());
 					}
+					jis.close();
 				}
 			}
 

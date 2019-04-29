@@ -42,11 +42,8 @@ import net.runelite.api.widgets.WidgetInfo;
 import net.runelite.client.callback.ClientThread;
 import net.runelite.client.eventbus.EventBus;
 import net.runelite.client.eventbus.Subscribe;
-import net.runelite.client.input.KeyListener;
-import net.runelite.client.input.KeyManager;
-import net.runelite.client.input.MouseListener;
-import net.runelite.client.input.MouseManager;
-import net.runelite.client.input.MouseWheelListener;
+import net.runelite.client.input.*;
+import net.runelite.client.input.RLKeyListener;
 
 @Singleton
 @Slf4j
@@ -100,9 +97,9 @@ public class ChatboxPanelManager
 		client.runScript(ScriptID.CLEAR_CHATBOX_PANEL);
 
 		eventBus.register(input);
-		if (input instanceof KeyListener)
+		if (input instanceof RLKeyListener)
 		{
-			keyManager.registerKeyListener((KeyListener) input);
+			keyManager.registerKeyListener((RLKeyListener) input);
 		}
 		if (input instanceof MouseListener)
 		{
@@ -171,9 +168,9 @@ public class ChatboxPanelManager
 		}
 
 		eventBus.unregister(currentInput);
-		if (currentInput instanceof KeyListener)
+		if (currentInput instanceof RLKeyListener)
 		{
-			keyManager.unregisterKeyListener((KeyListener) currentInput);
+			keyManager.unregisterKeyListener((RLKeyListener) currentInput);
 		}
 		if (currentInput instanceof MouseListener)
 		{

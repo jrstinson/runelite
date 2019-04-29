@@ -31,7 +31,7 @@ import net.runelite.api.Client;
 import net.runelite.api.events.FocusChanged;
 import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.Subscribe;
-import net.runelite.client.input.KeyListener;
+import net.runelite.client.input.RLKeyListener;
 import net.runelite.client.input.KeyManager;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
@@ -41,7 +41,7 @@ import net.runelite.client.plugins.PluginDescriptor;
 	description = "Prevent dragging an item for a specified delay",
 	tags = {"antidrag", "delay", "inventory", "items"}
 )
-public class AntiDragPlugin extends Plugin implements KeyListener
+public class AntiDragPlugin extends Plugin implements RLKeyListener
 {
 	private static final int DEFAULT_DELAY = 5;
 

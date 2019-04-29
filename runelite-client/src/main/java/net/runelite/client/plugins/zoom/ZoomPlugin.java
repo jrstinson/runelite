@@ -35,7 +35,7 @@ import net.runelite.api.events.FocusChanged;
 import net.runelite.api.events.ScriptCallbackEvent;
 import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.Subscribe;
-import net.runelite.client.input.KeyListener;
+import net.runelite.client.input.RLKeyListener;
 import net.runelite.client.input.KeyManager;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
@@ -46,7 +46,7 @@ import net.runelite.client.plugins.PluginDescriptor;
 	tags = {"limit", "vertical"},
 	enabledByDefault = false
 )
-public class ZoomPlugin extends Plugin implements KeyListener
+public class ZoomPlugin extends Plugin implements RLKeyListener
 {
 	/**
 	 * The largest (most zoomed in) value that can be used without the client crashing.

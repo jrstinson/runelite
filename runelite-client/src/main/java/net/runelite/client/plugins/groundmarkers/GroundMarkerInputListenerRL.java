@@ -27,16 +27,16 @@ package net.runelite.client.plugins.groundmarkers;
 
 import java.awt.event.KeyEvent;
 import javax.inject.Inject;
-import net.runelite.client.input.KeyListener;
+import net.runelite.client.input.RLKeyListener;
 
-public class GroundMarkerInputListener implements KeyListener
+public class GroundMarkerInputListenerRL implements RLKeyListener
 {
 	private static final int HOTKEY = KeyEvent.VK_SHIFT;
 
 	private final GroundMarkerPlugin plugin;
 
 	@Inject
-	private GroundMarkerInputListener(GroundMarkerPlugin plugin)
+	private GroundMarkerInputListenerRL(GroundMarkerPlugin plugin)
 	{
 		this.plugin = plugin;
 	}

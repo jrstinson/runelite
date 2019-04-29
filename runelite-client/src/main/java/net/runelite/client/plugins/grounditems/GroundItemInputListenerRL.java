@@ -31,10 +31,10 @@ import java.time.Duration;
 import java.time.Instant;
 import javax.inject.Inject;
 import javax.swing.SwingUtilities;
-import net.runelite.client.input.KeyListener;
+import net.runelite.client.input.RLKeyListener;
 import net.runelite.client.input.MouseAdapter;
 
-public class GroundItemInputListener extends MouseAdapter implements KeyListener
+public class GroundItemInputListenerRL extends MouseAdapter implements RLKeyListener
 {
 	private static final int HOTKEY = KeyEvent.VK_ALT;
 

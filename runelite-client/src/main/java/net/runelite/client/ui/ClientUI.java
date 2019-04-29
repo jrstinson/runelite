@@ -83,11 +83,8 @@ import net.runelite.client.input.MouseAdapter;
 import net.runelite.client.input.MouseListener;
 import net.runelite.client.input.MouseManager;
 import net.runelite.client.ui.skin.SubstanceRuneLiteLookAndFeel;
-import net.runelite.client.util.HotkeyListener;
-import net.runelite.client.util.ImageUtil;
-import net.runelite.client.util.OSType;
-import net.runelite.client.util.OSXUtil;
-import net.runelite.client.util.SwingUtil;
+import net.runelite.client.util.*;
+import net.runelite.client.util.HotkeyListenerRL;
 import org.pushingpixels.substance.internal.SubstanceSynapse;
 import org.pushingpixels.substance.internal.utils.SubstanceCoreUtilities;
 import org.pushingpixels.substance.internal.utils.SubstanceTitlePaneUtilities;
@@ -344,7 +341,7 @@ public class ClientUI
 			frame.add(container);
 
 			// Add key listener
-			final HotkeyListener sidebarListener = new HotkeyListener(() ->
+			final HotkeyListenerRL sidebarListener = new HotkeyListenerRL(() ->
 				new Keybind(KeyEvent.VK_F11, InputEvent.CTRL_DOWN_MASK))
 			{
 				@Override

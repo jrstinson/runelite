@@ -1832,12 +1832,12 @@
   </BugInstance>
   <BugInstance type="NM_SAME_SIMPLE_NAME_AS_INTERFACE" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" instanceHash="f3f77ad9fea9a5d29544bacc2f4fcc3d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
     <ShortMessage>Class names shouldn&apos;t shadow simple name of implemented interface</ShortMessage>
-    <LongMessage>The class name net.runelite.client.input.KeyListener shadows the simple name of implemented interface java.awt.event.KeyListener</LongMessage>
-    <Class classname="net.runelite.client.input.KeyListener" primary="true">
-      <SourceLine classname="net.runelite.client.input.KeyListener" sourcefile="KeyListener.java" sourcepath="net/runelite/client/input/KeyListener.java" relSourcepath="main\java\net\runelite\client\input\KeyListener.java">
+    <LongMessage>The class name net.runelite.client.input.RLKeyListener shadows the simple name of implemented interface java.awt.event.KeyListener</LongMessage>
+    <Class classname="net.runelite.client.input.RLKeyListener" primary="true">
+      <SourceLine classname="net.runelite.client.input.RLKeyListener" sourcefile="KeyListener.java" sourcepath="net/runelite/client/input/KeyListener.java" relSourcepath="main\java\net\runelite\client\input\KeyListener.java">
         <Message>In KeyListener.java</Message>
       </SourceLine>
-      <Message>In class net.runelite.client.input.KeyListener</Message>
+      <Message>In class net.runelite.client.input.RLKeyListener</Message>
     </Class>
     <Class classname="java.awt.event.KeyListener">
       <SourceLine classname="java.awt.event.KeyListener" sourcefile="KeyListener.java" sourcepath="java/awt/event/KeyListener.java">
@@ -1845,7 +1845,7 @@
       </SourceLine>
       <Message>In class java.awt.event.KeyListener</Message>
     </Class>
-    <SourceLine classname="net.runelite.client.input.KeyListener" sourcefile="KeyListener.java" sourcepath="net/runelite/client/input/KeyListener.java" relSourcepath="main\java\net\runelite\client\input\KeyListener.java" synthetic="true">
+    <SourceLine classname="net.runelite.client.input.RLKeyListener" sourcefile="KeyListener.java" sourcepath="net/runelite/client/input/KeyListener.java" relSourcepath="main\java\net\runelite\client\input\KeyListener.java" synthetic="true">
       <Message>In KeyListener.java</Message>
     </SourceLine>
   </BugInstance>
@@ -2178,21 +2178,21 @@
   </BugInstance>
   <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="7889dc19c6673c3429f746393596c354" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
     <ShortMessage>Switch statement found where default case is missing</ShortMessage>
-    <LongMessage>Switch statement found in net.runelite.client.plugins.chatcommands.ChatKeyboardListener.keyPressed(KeyEvent) where default case is missing</LongMessage>
-    <Class classname="net.runelite.client.plugins.chatcommands.ChatKeyboardListener" primary="true">
-      <SourceLine classname="net.runelite.client.plugins.chatcommands.ChatKeyboardListener" sourcefile="ChatKeyboardListener.java" sourcepath="net/runelite/client/plugins/chatcommands/ChatKeyboardListener.java" relSourcepath="main\java\net\runelite\client\plugins\chatcommands\ChatKeyboardListener.java">
+    <LongMessage>Switch statement found in net.runelite.client.plugins.chatcommands.ChatKeyboardListenerRL.keyPressed(KeyEvent) where default case is missing</LongMessage>
+    <Class classname="net.runelite.client.plugins.chatcommands.ChatKeyboardListenerRL" primary="true">
+      <SourceLine classname="net.runelite.client.plugins.chatcommands.ChatKeyboardListenerRL" sourcefile="ChatKeyboardListener.java" sourcepath="net/runelite/client/plugins/chatcommands/ChatKeyboardListener.java" relSourcepath="main\java\net\runelite\client\plugins\chatcommands\ChatKeyboardListener.java">
         <Message>In ChatKeyboardListener.java</Message>
       </SourceLine>
-      <Message>In class net.runelite.client.plugins.chatcommands.ChatKeyboardListener</Message>
+      <Message>In class net.runelite.client.plugins.chatcommands.ChatKeyboardListenerRL</Message>
     </Class>
-    <Method classname="net.runelite.client.plugins.chatcommands.ChatKeyboardListener" name="keyPressed" signature="(Ljava/awt/event/KeyEvent;)V" isStatic="false" primary="true">
-      <SourceLine classname="net.runelite.client.plugins.chatcommands.ChatKeyboardListener" start="57" end="101" startBytecode="0" endBytecode="331" sourcefile="ChatKeyboardListener.java" sourcepath="net/runelite/client/plugins/chatcommands/ChatKeyboardListener.java" relSourcepath="main\java\net\runelite\client\plugins\chatcommands\ChatKeyboardListener.java"/>
-      <Message>In method net.runelite.client.plugins.chatcommands.ChatKeyboardListener.keyPressed(KeyEvent)</Message>
+    <Method classname="net.runelite.client.plugins.chatcommands.ChatKeyboardListenerRL" name="keyPressed" signature="(Ljava/awt/event/KeyEvent;)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.client.plugins.chatcommands.ChatKeyboardListenerRL" start="57" end="101" startBytecode="0" endBytecode="331" sourcefile="ChatKeyboardListener.java" sourcepath="net/runelite/client/plugins/chatcommands/ChatKeyboardListener.java" relSourcepath="main\java\net\runelite\client\plugins\chatcommands\ChatKeyboardListener.java"/>
+      <Message>In method net.runelite.client.plugins.chatcommands.ChatKeyboardListenerRL.keyPressed(KeyEvent)</Message>
     </Method>
-    <SourceLine classname="net.runelite.client.plugins.chatcommands.ChatKeyboardListener" primary="true" start="62" end="94" startBytecode="24" endBytecode="150" sourcefile="ChatKeyboardListener.java" sourcepath="net/runelite/client/plugins/chatcommands/ChatKeyboardListener.java" relSourcepath="main\java\net\runelite\client\plugins\chatcommands\ChatKeyboardListener.java">
+    <SourceLine classname="net.runelite.client.plugins.chatcommands.ChatKeyboardListenerRL" primary="true" start="62" end="94" startBytecode="24" endBytecode="150" sourcefile="ChatKeyboardListener.java" sourcepath="net/runelite/client/plugins/chatcommands/ChatKeyboardListener.java" relSourcepath="main\java\net\runelite\client\plugins\chatcommands\ChatKeyboardListener.java">
       <Message>At ChatKeyboardListener.java:[lines 62-94]</Message>
     </SourceLine>
-    <SourceLine classname="net.runelite.client.plugins.chatcommands.ChatKeyboardListener" primary="true" start="62" end="94" startBytecode="24" endBytecode="150" sourcefile="ChatKeyboardListener.java" sourcepath="net/runelite/client/plugins/chatcommands/ChatKeyboardListener.java" relSourcepath="main\java\net\runelite\client\plugins\chatcommands\ChatKeyboardListener.java">
+    <SourceLine classname="net.runelite.client.plugins.chatcommands.ChatKeyboardListenerRL" primary="true" start="62" end="94" startBytecode="24" endBytecode="150" sourcefile="ChatKeyboardListener.java" sourcepath="net/runelite/client/plugins/chatcommands/ChatKeyboardListener.java" relSourcepath="main\java\net\runelite\client\plugins\chatcommands\ChatKeyboardListener.java">
       <Message>At ChatKeyboardListener.java:[lines 62-94]</Message>
     </SourceLine>
   </BugInstance>
@@ -4252,21 +4252,21 @@
   </BugInstance>
   <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="92f0fbf44a4e02b55f1709af0a5c84d1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
     <ShortMessage>Switch statement found where default case is missing</ShortMessage>
-    <LongMessage>Switch statement found in net.runelite.client.plugins.wasdcamera.WASDCameraListener.keyPressed(KeyEvent) where default case is missing</LongMessage>
-    <Class classname="net.runelite.client.plugins.wasdcamera.WASDCameraListener" primary="true">
-      <SourceLine classname="net.runelite.client.plugins.wasdcamera.WASDCameraListener" sourcefile="WASDCameraListener.java" sourcepath="net/runelite/client/plugins/wasdcamera/WASDCameraListener.java" relSourcepath="main\java\net\runelite\client\plugins\wasdcamera\WASDCameraListener.java">
+    <LongMessage>Switch statement found in net.runelite.client.plugins.wasdcamera.WASDCameraListenerRL.keyPressed(KeyEvent) where default case is missing</LongMessage>
+    <Class classname="net.runelite.client.plugins.wasdcamera.WASDCameraListenerRL" primary="true">
+      <SourceLine classname="net.runelite.client.plugins.wasdcamera.WASDCameraListenerRL" sourcefile="WASDCameraListener.java" sourcepath="net/runelite/client/plugins/wasdcamera/WASDCameraListener.java" relSourcepath="main\java\net\runelite\client\plugins\wasdcamera\WASDCameraListener.java">
         <Message>In WASDCameraListener.java</Message>
       </SourceLine>
-      <Message>In class net.runelite.client.plugins.wasdcamera.WASDCameraListener</Message>
+      <Message>In class net.runelite.client.plugins.wasdcamera.WASDCameraListenerRL</Message>
     </Class>
-    <Method classname="net.runelite.client.plugins.wasdcamera.WASDCameraListener" name="keyPressed" signature="(Ljava/awt/event/KeyEvent;)V" isStatic="false" primary="true">
-      <SourceLine classname="net.runelite.client.plugins.wasdcamera.WASDCameraListener" start="64" end="135" startBytecode="0" endBytecode="604" sourcefile="WASDCameraListener.java" sourcepath="net/runelite/client/plugins/wasdcamera/WASDCameraListener.java" relSourcepath="main\java\net\runelite\client\plugins\wasdcamera\WASDCameraListener.java"/>
-      <Message>In method net.runelite.client.plugins.wasdcamera.WASDCameraListener.keyPressed(KeyEvent)</Message>
+    <Method classname="net.runelite.client.plugins.wasdcamera.WASDCameraListenerRL" name="keyPressed" signature="(Ljava/awt/event/KeyEvent;)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.client.plugins.wasdcamera.WASDCameraListenerRL" start="64" end="135" startBytecode="0" endBytecode="604" sourcefile="WASDCameraListener.java" sourcepath="net/runelite/client/plugins/wasdcamera/WASDCameraListener.java" relSourcepath="main\java\net\runelite\client\plugins\wasdcamera\WASDCameraListener.java"/>
+      <Message>In method net.runelite.client.plugins.wasdcamera.WASDCameraListenerRL.keyPressed(KeyEvent)</Message>
     </Method>
-    <SourceLine classname="net.runelite.client.plugins.wasdcamera.WASDCameraListener" primary="true" start="93" end="100" startBytecode="228" endBytecode="284" sourcefile="WASDCameraListener.java" sourcepath="net/runelite/client/plugins/wasdcamera/WASDCameraListener.java" relSourcepath="main\java\net\runelite\client\plugins\wasdcamera\WASDCameraListener.java">
+    <SourceLine classname="net.runelite.client.plugins.wasdcamera.WASDCameraListenerRL" primary="true" start="93" end="100" startBytecode="228" endBytecode="284" sourcefile="WASDCameraListener.java" sourcepath="net/runelite/client/plugins/wasdcamera/WASDCameraListener.java" relSourcepath="main\java\net\runelite\client\plugins\wasdcamera\WASDCameraListener.java">
       <Message>At WASDCameraListener.java:[lines 93-100]</Message>
     </SourceLine>
-    <SourceLine classname="net.runelite.client.plugins.wasdcamera.WASDCameraListener" primary="true" start="93" end="100" startBytecode="228" endBytecode="284" sourcefile="WASDCameraListener.java" sourcepath="net/runelite/client/plugins/wasdcamera/WASDCameraListener.java" relSourcepath="main\java\net\runelite\client\plugins\wasdcamera\WASDCameraListener.java">
+    <SourceLine classname="net.runelite.client.plugins.wasdcamera.WASDCameraListenerRL" primary="true" start="93" end="100" startBytecode="228" endBytecode="284" sourcefile="WASDCameraListener.java" sourcepath="net/runelite/client/plugins/wasdcamera/WASDCameraListener.java" relSourcepath="main\java\net\runelite\client\plugins\wasdcamera\WASDCameraListener.java">
       <Message>At WASDCameraListener.java:[lines 93-100]</Message>
     </SourceLine>
   </BugInstance>
@@ -6574,7 +6574,7 @@ publicized the bug pattern</a>.
       <ClassStats class="net.runelite.client.game.chatbox.ChatboxTextMenuInput$Entry" sourceFile="ChatboxTextMenuInput.java" interface="false" size="18" bugs="0"/>
     </PackageStats>
     <PackageStats package="net.runelite.client.input" total_bugs="1" total_types="6" total_size="122" priority_2="1">
-      <ClassStats class="net.runelite.client.input.KeyListener" sourceFile="KeyListener.java" interface="true" size="1" bugs="1" priority_2="1"/>
+      <ClassStats class="net.runelite.client.input.RLKeyListener" sourceFile="KeyListener.java" interface="true" size="1" bugs="1" priority_2="1"/>
       <ClassStats class="net.runelite.client.input.KeyManager" sourceFile="KeyManager.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="net.runelite.client.input.MouseAdapter" sourceFile="MouseAdapter.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="net.runelite.client.input.MouseListener" sourceFile="MouseListener.java" interface="true" size="8" bugs="0"/>
@@ -6740,7 +6740,7 @@ publicized the bug pattern</a>.
       <ClassStats class="net.runelite.client.plugins.chatcommands.ChatCommandsPlugin$1" sourceFile="ChatCommandsPlugin.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="net.runelite.client.plugins.chatcommands.ChatCommandsPlugin$HiscoreLookup" sourceFile="ChatCommandsPlugin.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="net.runelite.client.plugins.chatcommands.ChatCommandsPluginTest" sourceFile="ChatCommandsPluginTest.java" interface="false" size="69" bugs="0"/>
-      <ClassStats class="net.runelite.client.plugins.chatcommands.ChatKeyboardListener" sourceFile="ChatKeyboardListener.java" interface="false" size="34" bugs="1" priority_2="1"/>
+      <ClassStats class="net.runelite.client.plugins.chatcommands.ChatKeyboardListenerRL" sourceFile="ChatKeyboardListener.java" interface="false" size="34" bugs="1" priority_2="1"/>
       <ClassStats class="net.runelite.client.plugins.chatcommands.SkillAbbreviations" sourceFile="SkillAbbreviations.java" interface="false" size="49" bugs="0"/>
     </PackageStats>
     <PackageStats package="net.runelite.client.plugins.chathistory" total_bugs="0" total_types="1" total_size="49">
@@ -6969,7 +6969,7 @@ publicized the bug pattern</a>.
     </PackageStats>
     <PackageStats package="net.runelite.client.plugins.grandexchange" total_bugs="3" total_types="13" total_size="730" priority_2="2" priority_1="1">
       <ClassStats class="net.runelite.client.plugins.grandexchange.GrandExchangeConfig" sourceFile="GrandExchangeConfig.java" interface="true" size="9" bugs="0"/>
-      <ClassStats class="net.runelite.client.plugins.grandexchange.GrandExchangeInputListener" sourceFile="GrandExchangeInputListener.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="net.runelite.client.plugins.grandexchange.GrandExchangeInputListenerRL" sourceFile="GrandExchangeInputListener.java" interface="false" size="36" bugs="0"/>
       <ClassStats class="net.runelite.client.plugins.grandexchange.GrandExchangeItemPanel" sourceFile="GrandExchangeItemPanel.java" interface="false" size="66" bugs="0"/>
       <ClassStats class="net.runelite.client.plugins.grandexchange.GrandExchangeItemPanel$1" sourceFile="GrandExchangeItemPanel.java" interface="false" size="23" bugs="0"/>
       <ClassStats class="net.runelite.client.plugins.grandexchange.GrandExchangeItems" sourceFile="GrandExchangeItems.java" interface="false" size="24" bugs="0"/>
@@ -6986,7 +6986,7 @@ publicized the bug pattern</a>.
       <ClassStats class="net.runelite.client.plugins.grounditems.GroundItem" sourceFile="GroundItem.java" interface="false" size="53" bugs="0"/>
       <ClassStats class="net.runelite.client.plugins.grounditems.GroundItem$GroundItemBuilder" sourceFile="GroundItem.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="net.runelite.client.plugins.grounditems.GroundItem$GroundItemKey" sourceFile="GroundItem.java" interface="false" size="12" bugs="0"/>
-      <ClassStats class="net.runelite.client.plugins.grounditems.GroundItemInputListener" sourceFile="GroundItemInputListener.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="net.runelite.client.plugins.grounditems.GroundItemInputListenerRL" sourceFile="GroundItemInputListener.java" interface="false" size="50" bugs="0"/>
       <ClassStats class="net.runelite.client.plugins.grounditems.GroundItemsConfig" sourceFile="GroundItemsConfig.java" interface="true" size="57" bugs="0"/>
       <ClassStats class="net.runelite.client.plugins.grounditems.GroundItemsOverlay" sourceFile="GroundItemsOverlay.java" interface="false" size="175" bugs="0"/>
       <ClassStats class="net.runelite.client.plugins.grounditems.GroundItemsPlugin" sourceFile="GroundItemsPlugin.java" interface="false" size="318" bugs="0"/>
@@ -7001,7 +7001,7 @@ publicized the bug pattern</a>.
     </PackageStats>
     <PackageStats package="net.runelite.client.plugins.groundmarkers" total_bugs="0" total_types="6" total_size="214">
       <ClassStats class="net.runelite.client.plugins.groundmarkers.GroundMarkerConfig" sourceFile="GroundMarkerConfig.java" interface="true" size="3" bugs="0"/>
-      <ClassStats class="net.runelite.client.plugins.groundmarkers.GroundMarkerInputListener" sourceFile="GroundMarkerInputListener.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="net.runelite.client.plugins.groundmarkers.GroundMarkerInputListenerRL" sourceFile="GroundMarkerInputListener.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="net.runelite.client.plugins.groundmarkers.GroundMarkerOverlay" sourceFile="GroundMarkerOverlay.java" interface="false" size="33" bugs="0"/>
       <ClassStats class="net.runelite.client.plugins.groundmarkers.GroundMarkerPlugin" sourceFile="GroundMarkerPlugin.java" interface="false" size="139" bugs="0"/>
       <ClassStats class="net.runelite.client.plugins.groundmarkers.GroundMarkerPlugin$1" sourceFile="GroundMarkerPlugin.java" interface="false" size="4" bugs="0"/>
@@ -7058,7 +7058,7 @@ publicized the bug pattern</a>.
       <ClassStats class="net.runelite.client.plugins.info.JRichTextPane" sourceFile="JRichTextPane.java" interface="false" size="38" bugs="0"/>
     </PackageStats>
     <PackageStats package="net.runelite.client.plugins.instancemap" total_bugs="1" total_types="3" total_size="217" priority_2="1">
-      <ClassStats class="net.runelite.client.plugins.instancemap.InstanceMapInputListener" sourceFile="InstanceMapInputListener.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="net.runelite.client.plugins.instancemap.InstanceMapInputListenerRL" sourceFile="InstanceMapInputListener.java" interface="false" size="48" bugs="0"/>
       <ClassStats class="net.runelite.client.plugins.instancemap.InstanceMapOverlay" sourceFile="InstanceMapOverlay.java" interface="false" size="107" bugs="1" priority_2="1"/>
       <ClassStats class="net.runelite.client.plugins.instancemap.InstanceMapPlugin" sourceFile="InstanceMapPlugin.java" interface="false" size="62" bugs="0"/>
     </PackageStats>
@@ -7180,7 +7180,7 @@ publicized the bug pattern</a>.
       <ClassStats class="net.runelite.client.plugins.menuentryswapper.MenuEntrySwapperConfig" sourceFile="MenuEntrySwapperConfig.java" interface="true" size="49" bugs="0"/>
       <ClassStats class="net.runelite.client.plugins.menuentryswapper.MenuEntrySwapperPlugin" sourceFile="MenuEntrySwapperPlugin.java" interface="false" size="300" bugs="1" priority_2="1"/>
       <ClassStats class="net.runelite.client.plugins.menuentryswapper.MenuEntrySwapperPlugin$1" sourceFile="MenuEntrySwapperPlugin.java" interface="false" size="4" bugs="0"/>
-      <ClassStats class="net.runelite.client.plugins.menuentryswapper.ShiftClickInputListener" sourceFile="ShiftClickInputListener.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="net.runelite.client.plugins.menuentryswapper.ShiftClickInputListenerRL" sourceFile="ShiftClickInputListener.java" interface="false" size="16" bugs="0"/>
     </PackageStats>
     <PackageStats package="net.runelite.client.plugins.metronome" total_bugs="0" total_types="2" total_size="25">
       <ClassStats class="net.runelite.client.plugins.metronome.MetronomePlugin" sourceFile="MetronomePlugin.java" interface="false" size="20" bugs="0"/>
@@ -7651,7 +7651,7 @@ publicized the bug pattern</a>.
     </PackageStats>
     <PackageStats package="net.runelite.client.plugins.wasdcamera" total_bugs="2" total_types="4" total_size="164" priority_2="2">
       <ClassStats class="net.runelite.client.plugins.wasdcamera.WASDCameraConfig" sourceFile="WASDCameraConfig.java" interface="true" size="9" bugs="0"/>
-      <ClassStats class="net.runelite.client.plugins.wasdcamera.WASDCameraListener" sourceFile="WASDCameraListener.java" interface="false" size="71" bugs="1" priority_2="1"/>
+      <ClassStats class="net.runelite.client.plugins.wasdcamera.WASDCameraListenerRL" sourceFile="WASDCameraListener.java" interface="false" size="71" bugs="1" priority_2="1"/>
       <ClassStats class="net.runelite.client.plugins.wasdcamera.WASDCameraPlugin" sourceFile="WASDCameraPlugin.java" interface="false" size="80" bugs="1" priority_2="1"/>
       <ClassStats class="net.runelite.client.plugins.wasdcamera.WASDCameraPlugin$1" sourceFile="WASDCameraPlugin.java" interface="false" size="4" bugs="0"/>
     </PackageStats>
@@ -7915,7 +7915,7 @@ publicized the bug pattern</a>.
       <ClassStats class="net.runelite.client.util.DeferredEventBus" sourceFile="DeferredEventBus.java" interface="false" size="24" bugs="0"/>
       <ClassStats class="net.runelite.client.util.ExecutorServiceExceptionLogger" sourceFile="ExecutorServiceExceptionLogger.java" interface="false" size="47" bugs="0"/>
       <ClassStats class="net.runelite.client.util.GameEventManager" sourceFile="GameEventManager.java" interface="false" size="85" bugs="0"/>
-      <ClassStats class="net.runelite.client.util.HotkeyListener" sourceFile="HotkeyListener.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="net.runelite.client.util.HotkeyListenerRL" sourceFile="HotkeyListener.java" interface="false" size="29" bugs="0"/>
       <ClassStats class="net.runelite.client.util.ImageUtil" sourceFile="ImageUtil.java" interface="false" size="131" bugs="0"/>
       <ClassStats class="net.runelite.client.util.ImageUtilTest" sourceFile="ImageUtilTest.java" interface="false" size="238" bugs="0"/>
       <ClassStats class="net.runelite.client.util.LinkBrowser" sourceFile="LinkBrowser.java" interface="false" size="32" bugs="0"/>

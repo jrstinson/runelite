@@ -71,7 +71,7 @@ public class WASDCameraPlugin extends Plugin
 	private KeyManager keyManager;
 
 	@Inject
-	private WASDCameraListener inputListener;
+	private WASDCameraListenerRL inputListener;
 
 	@Getter(AccessLevel.PACKAGE)
 	@Setter(AccessLevel.PACKAGE)

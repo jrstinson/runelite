@@ -28,9 +28,9 @@ import java.awt.event.KeyEvent;
 import javax.inject.Inject;
 import net.runelite.api.Client;
 import net.runelite.client.callback.ClientThread;
-import net.runelite.client.input.KeyListener;
+import net.runelite.client.input.RLKeyListener;
 
-public class ShiftClickInputListener implements KeyListener
+public class ShiftClickInputListenerRL implements RLKeyListener
 {
 	@Inject
 	private ClientThread clientThread;

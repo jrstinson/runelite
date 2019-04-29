@@ -59,7 +59,7 @@ import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.events.OverlayMenuClicked;
 import net.runelite.client.events.PartyChanged;
-import net.runelite.client.input.KeyListener;
+import net.runelite.client.input.RLKeyListener;
 import net.runelite.client.input.KeyManager;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
@@ -85,7 +85,7 @@ import net.runelite.http.api.ws.messages.party.UserSync;
 	description = "Shows useful information about current party"
 )
 @Slf4j
-public class PartyPlugin extends Plugin implements KeyListener
+public class PartyPlugin extends Plugin implements RLKeyListener
 {
 	@Inject
 	private Client client;

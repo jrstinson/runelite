@@ -79,7 +79,7 @@ import net.runelite.client.plugins.worldhopper.ping.Ping;
 import net.runelite.client.ui.ClientToolbar;
 import net.runelite.client.ui.NavigationButton;
 import net.runelite.client.util.ExecutorServiceExceptionLogger;
-import net.runelite.client.util.HotkeyListener;
+import net.runelite.client.util.HotkeyListenerRL;
 import net.runelite.client.util.Text;
 import net.runelite.client.util.WorldUtil;
 import net.runelite.http.api.worlds.World;
@@ -149,7 +149,7 @@ public class WorldHopperPlugin extends Plugin
 	private Instant lastFetch;
 	private boolean firstRun;
 
-	private final HotkeyListener previousKeyListener = new HotkeyListener(() -> config.previousKey())
+	private final HotkeyListenerRL previousKeyListener = new HotkeyListenerRL(() -> config.previousKey())
 	{
 		@Override
 		public void hotkeyPressed()
@@ -157,7 +157,7 @@ public class WorldHopperPlugin extends Plugin
 			hop(true);
 		}
 	};
-	private final HotkeyListener nextKeyListener = new HotkeyListener(() -> config.nextKey())
+	private final HotkeyListenerRL nextKeyListener = new HotkeyListenerRL(() -> config.nextKey())
 	{
 		@Override
 		public void hotkeyPressed()

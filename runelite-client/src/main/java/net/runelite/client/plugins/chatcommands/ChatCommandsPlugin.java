@@ -128,7 +128,7 @@ public class ChatCommandsPlugin extends Plugin
 	private KeyManager keyManager;
 
 	@Inject
-	private ChatKeyboardListener chatKeyboardListener;
+	private ChatKeyboardListenerRL chatKeyboardListener;
 
 	@Override
 	public void startUp()

@@ -49,12 +49,12 @@ import net.runelite.api.widgets.WidgetPositionMode;
 import net.runelite.api.widgets.WidgetSizeMode;
 import net.runelite.api.widgets.WidgetTextAlignment;
 import net.runelite.client.callback.ClientThread;
-import net.runelite.client.input.KeyListener;
+import net.runelite.client.input.RLKeyListener;
 import net.runelite.client.input.MouseListener;
 import net.runelite.client.util.Text;
 
 @Slf4j
-public class ChatboxTextInput extends ChatboxInput implements KeyListener, MouseListener
+public class ChatboxTextInput extends ChatboxInput implements RLKeyListener, MouseListener
 {
 	private static final int CURSOR_FLASH_RATE_MILLIS = 1000;
 

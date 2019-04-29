@@ -32,9 +32,9 @@ import javax.inject.Singleton;
 @Singleton
 public class KeyManager
 {
-	private final List<KeyListener> keyListeners = new CopyOnWriteArrayList<>();
+	private final List<RLKeyListener> keyListeners = new CopyOnWriteArrayList<>();
 
-	public void registerKeyListener(KeyListener keyListener)
+	public void registerKeyListener(RLKeyListener keyListener)
 	{
 		if (!keyListeners.contains(keyListener))
 		{
@@ -42,14 +42,14 @@ public class KeyManager
 		}
 	}
 
-	public void unregisterKeyListener(KeyListener keyListener)
+	public void unregisterKeyListener(RLKeyListener keyListener)
 	{
 		keyListeners.remove(keyListener);
 	}
 
 	public void processKeyPressed(KeyEvent keyEvent)
 	{
-		for (KeyListener keyListener : keyListeners)
+		for (RLKeyListener keyListener : keyListeners)
 		{
 			keyListener.keyPressed(keyEvent);
 		}
@@ -57,7 +57,7 @@ public class KeyManager
 
 	public void processKeyReleased(KeyEvent keyEvent)
 	{
-		for (KeyListener keyListener : keyListeners)
+		for (RLKeyListener keyListener : keyListeners)
 		{
 			keyListener.keyReleased(keyEvent);
 		}
@@ -65,7 +65,7 @@ public class KeyManager
 
 	public void processKeyTyped(KeyEvent keyEvent)
 	{
-		for (KeyListener keyListener : keyListeners)
+		for (RLKeyListener keyListener : keyListeners)
 		{
 			keyListener.keyTyped(keyEvent);
 		}

@@ -48,7 +48,7 @@ import net.runelite.api.widgets.Widget;
 import net.runelite.api.widgets.WidgetInfo;
 import net.runelite.client.config.RuneLiteConfig;
 import net.runelite.client.eventbus.Subscribe;
-import net.runelite.client.input.KeyListener;
+import net.runelite.client.input.RLKeyListener;
 import net.runelite.client.input.KeyManager;
 import net.runelite.client.input.MouseAdapter;
 import net.runelite.client.input.MouseManager;
@@ -56,7 +56,7 @@ import net.runelite.client.ui.JagexColors;
 import net.runelite.client.util.ColorUtil;
 
 @Singleton
-public class OverlayRenderer extends MouseAdapter implements KeyListener
+public class OverlayRenderer extends MouseAdapter implements RLKeyListener
 {
 	private static final int BORDER = 5;
 	private static final int BORDER_TOP = BORDER + 15;

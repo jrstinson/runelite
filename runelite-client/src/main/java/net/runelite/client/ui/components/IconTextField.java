@@ -47,6 +47,7 @@ import javax.swing.event.DocumentListener;
 import javax.swing.text.Document;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import net.runelite.client.input.RLKeyListener;
 import net.runelite.client.ui.ColorScheme;
 import net.runelite.client.ui.FontManager;
 
@@ -224,7 +225,7 @@ public class IconTextField extends JPanel
 
 	public void addKeyListener(Consumer<KeyEvent> keyEventConsumer)
 	{
-		addKeyListener(new net.runelite.client.input.KeyListener()
+		addKeyListener(new RLKeyListener()
 		{
 			@Override
 			public void keyTyped(KeyEvent e)

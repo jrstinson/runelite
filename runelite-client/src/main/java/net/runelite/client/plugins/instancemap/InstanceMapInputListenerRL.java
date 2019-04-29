@@ -30,11 +30,11 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseWheelEvent;
 import javax.inject.Inject;
 import javax.swing.SwingUtilities;
-import net.runelite.client.input.KeyListener;
+import net.runelite.client.input.RLKeyListener;
 import net.runelite.client.input.MouseAdapter;
 import net.runelite.client.input.MouseWheelListener;
 
-public class InstanceMapInputListener extends MouseAdapter implements KeyListener, MouseWheelListener
+public class InstanceMapInputListenerRL extends MouseAdapter implements RLKeyListener, MouseWheelListener
 {
 	@Inject
 	private InstanceMapPlugin plugin;

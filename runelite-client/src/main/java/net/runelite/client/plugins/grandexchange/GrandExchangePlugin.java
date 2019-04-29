@@ -108,7 +108,7 @@ public class GrandExchangePlugin extends Plugin
 	private boolean hotKeyPressed;
 
 	@Inject
-	private GrandExchangeInputListener inputListener;
+	private GrandExchangeInputListenerRL inputListener;
 
 	@Inject
 	private ItemManager itemManager;

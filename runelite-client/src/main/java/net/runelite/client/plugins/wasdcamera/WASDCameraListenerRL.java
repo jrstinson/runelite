@@ -34,10 +34,10 @@ import net.runelite.api.Client;
 import net.runelite.api.GameState;
 import net.runelite.api.VarClientStr;
 import net.runelite.client.callback.ClientThread;
-import net.runelite.client.input.KeyListener;
+import net.runelite.client.input.RLKeyListener;
 import net.runelite.client.input.MouseAdapter;
 
-class WASDCameraListener extends MouseAdapter implements KeyListener
+class WASDCameraListenerRL extends MouseAdapter implements RLKeyListener
 {
 	@Inject
 	private WASDCameraPlugin plugin;

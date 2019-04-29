@@ -60,7 +60,7 @@ import net.runelite.api.events.MenuEntryAdded;
 import net.runelite.api.events.MenuOptionClicked;
 import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.Subscribe;
-import net.runelite.client.input.KeyListener;
+import net.runelite.client.input.RLKeyListener;
 import net.runelite.client.input.KeyManager;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
@@ -73,7 +73,7 @@ import net.runelite.client.ui.overlay.OverlayManager;
 	tags = {"overlay", "objects", "mark", "marker"},
 	enabledByDefault = false
 )
-public class ObjectIndicatorsPlugin extends Plugin implements KeyListener
+public class ObjectIndicatorsPlugin extends Plugin implements RLKeyListener
 {
 	private static final String CONFIG_GROUP = "objectindicators";
 	private static final String MARK = "Mark object";
