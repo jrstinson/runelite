@@ -71,4 +71,12 @@ class DeathWorldMapPoint extends WorldMapPoint
 		this.setImagePoint(worldmapHintArrowPoint);
 		this.setTooltip("Death Location");
 	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (o == this)
+			return true;
+		else
+			return false;
+	}
 }

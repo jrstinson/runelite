@@ -68,4 +68,12 @@ class ClueScrollWorldMapPoint extends WorldMapPoint
 		this.setImage(clueScrollWorldImage);
 		this.setImagePoint(clueScrollWorldImagePoint);
 	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (o == this)
+			return true;
+		else
+			return false;
+	}
 }

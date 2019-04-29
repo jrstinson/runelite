@@ -63,4 +63,12 @@ class PartyWorldMapPoint extends WorldMapPoint
 
 		return partyImage;
 	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (o == this)
+			return true;
+		else
+			return false;
+	}
 }
