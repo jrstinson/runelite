@@ -34,6 +34,4 @@ public class ItemStackTest {
         ItemStack sut2 = new ItemStack(15, 10, LocalPoint.fromScene(500, 500));
         Assert.assertNotEquals(sut, sut2);
     }
-
-
 }

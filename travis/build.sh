@@ -1,3 +1,3 @@
 #!/bin/bash
 
-mvn clean install --settings travis/settings.xml
+mvn clean jacoco:prepare-agent install jacoco:report

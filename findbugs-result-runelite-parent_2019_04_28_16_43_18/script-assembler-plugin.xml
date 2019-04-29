@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://findbugs.sourceforge.net/xsl/default.xsl"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1556483767316" analysisTimestamp="1556483766844" release="">
+  <Project projectName="runelite-parent[script-assembler-plugin]">
+    <Jar>D:\School\runelite\runelite\runelite-script-assembler-plugin\target\classes\net\runelite\script\AssembleMojo.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-script-assembler-plugin\target\classes\net\runelite\script\IndexMojo.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-script-assembler-plugin\target\classes\net\runelite\script\RuneLiteInstructions.class</Jar>
+    <AuxClasspathEntry>D:/School/runelite/runelite/runelite-script-assembler-plugin/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/http-api/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/http-api/target/test-classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/cache/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/cache/target/test-classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/runelite-api/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/runelite-api/target/test-classes</AuxClasspathEntry>
+    <SrcDir>D:/School/runelite/runelite/runelite-script-assembler-plugin/src/main/java</SrcDir>
+  </Project>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" priority="2" rank="13" abbrev="NP" category="STYLE" instanceHash="e938282652708512551fe6da902b281c" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference due to return value of called method</ShortMessage>
+    <LongMessage>Possible null pointer dereference in net.runelite.script.AssembleMojo.execute() due to return value of called method</LongMessage>
+    <Class classname="net.runelite.script.AssembleMojo" primary="true">
+      <SourceLine classname="net.runelite.script.AssembleMojo" sourcefile="AssembleMojo.java" sourcepath="net/runelite/script/AssembleMojo.java" relSourcepath="net\runelite\script\AssembleMojo.java">
+        <Message>In AssembleMojo.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.script.AssembleMojo</Message>
+    </Class>
+    <Method classname="net.runelite.script.AssembleMojo" name="execute" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.script.AssembleMojo" start="60" end="103" startBytecode="0" endBytecode="1004" sourcefile="AssembleMojo.java" sourcepath="net/runelite/script/AssembleMojo.java" relSourcepath="net\runelite\script\AssembleMojo.java"/>
+      <Message>In method net.runelite.script.AssembleMojo.execute()</Message>
+    </Method>
+    <LocalVariable name="?" register="6" pc="76" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from ?</Message>
+    </LocalVariable>
+    <SourceLine classname="net.runelite.script.AssembleMojo" primary="true" start="70" end="70" startBytecode="76" endBytecode="76" sourcefile="AssembleMojo.java" sourcepath="net/runelite/script/AssembleMojo.java" relSourcepath="net\runelite\script\AssembleMojo.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at AssembleMojo.java:[line 70]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.script.AssembleMojo" start="70" end="70" startBytecode="69" endBytecode="69" sourcefile="AssembleMojo.java" sourcepath="net/runelite/script/AssembleMojo.java" relSourcepath="net\runelite\script\AssembleMojo.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at AssembleMojo.java:[line 70]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.DEREFS_ARE_CLONED" value="true"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" rank="16" abbrev="RV" category="BAD_PRACTICE" instanceHash="fbbe37dd7225f19496af2521503d7c12" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="253">
+    <ShortMessage>Method ignores exceptional return value</ShortMessage>
+    <LongMessage>Exceptional return value of java.io.File.mkdirs() ignored in net.runelite.script.AssembleMojo.execute()</LongMessage>
+    <Class classname="net.runelite.script.AssembleMojo" primary="true">
+      <SourceLine classname="net.runelite.script.AssembleMojo" sourcefile="AssembleMojo.java" sourcepath="net/runelite/script/AssembleMojo.java" relSourcepath="net\runelite\script\AssembleMojo.java">
+        <Message>In AssembleMojo.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.script.AssembleMojo</Message>
+    </Class>
+    <Method classname="net.runelite.script.AssembleMojo" name="execute" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.script.AssembleMojo" start="60" end="103" startBytecode="0" endBytecode="1004" sourcefile="AssembleMojo.java" sourcepath="net/runelite/script/AssembleMojo.java" relSourcepath="net\runelite\script\AssembleMojo.java"/>
+      <Message>In method net.runelite.script.AssembleMojo.execute()</Message>
+    </Method>
+    <Method classname="java.io.File" name="mkdirs" signature="()Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.File" start="1340" end="1354" startBytecode="0" endBytecode="182" sourcefile="File.java" sourcepath="java/io/File.java"/>
+      <Message>Called method java.io.File.mkdirs()</Message>
+    </Method>
+    <SourceLine classname="net.runelite.script.AssembleMojo" primary="true" start="68" end="68" startBytecode="56" endBytecode="56" sourcefile="AssembleMojo.java" sourcepath="net/runelite/script/AssembleMojo.java" relSourcepath="net\runelite\script\AssembleMojo.java">
+      <Message>At AssembleMojo.java:[line 68]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.script.AssembleMojo" primary="true" start="68" end="68" startBytecode="56" endBytecode="56" sourcefile="AssembleMojo.java" sourcepath="net/runelite/script/AssembleMojo.java" relSourcepath="net\runelite\script\AssembleMojo.java">
+      <Message>At AssembleMojo.java:[line 68]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" priority="2" rank="13" abbrev="NP" category="STYLE" instanceHash="82fe6f1108e59335edebcded2fffc653" instanceOccurrenceNum="0" instanceOccurrenceMax="1" cweid="476">
+    <ShortMessage>Possible null pointer dereference due to return value of called method</ShortMessage>
+    <LongMessage>Possible null pointer dereference in net.runelite.script.IndexMojo.execute() due to return value of called method</LongMessage>
+    <Class classname="net.runelite.script.IndexMojo" primary="true">
+      <SourceLine classname="net.runelite.script.IndexMojo" sourcefile="IndexMojo.java" sourcepath="net/runelite/script/IndexMojo.java" relSourcepath="net\runelite\script\IndexMojo.java">
+        <Message>In IndexMojo.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.script.IndexMojo</Message>
+    </Class>
+    <Method classname="net.runelite.script.IndexMojo" name="execute" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.script.IndexMojo" start="54" end="84" startBytecode="0" endBytecode="672" sourcefile="IndexMojo.java" sourcepath="net/runelite/script/IndexMojo.java" relSourcepath="net\runelite\script\IndexMojo.java"/>
+      <Message>In method net.runelite.script.IndexMojo.execute()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="30" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from ?</Message>
+    </LocalVariable>
+    <SourceLine classname="net.runelite.script.IndexMojo" primary="true" start="56" end="56" startBytecode="30" endBytecode="30" sourcefile="IndexMojo.java" sourcepath="net/runelite/script/IndexMojo.java" relSourcepath="net\runelite\script\IndexMojo.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at IndexMojo.java:[line 56]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.script.IndexMojo" start="56" end="56" startBytecode="25" endBytecode="25" sourcefile="IndexMojo.java" sourcepath="net/runelite/script/IndexMojo.java" relSourcepath="net\runelite\script\IndexMojo.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at IndexMojo.java:[line 56]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" priority="2" rank="13" abbrev="NP" category="STYLE" instanceHash="82fe6f1108e59335edebcded2fffc653" instanceOccurrenceNum="1" instanceOccurrenceMax="1" cweid="476">
+    <ShortMessage>Possible null pointer dereference due to return value of called method</ShortMessage>
+    <LongMessage>Possible null pointer dereference in net.runelite.script.IndexMojo.execute() due to return value of called method</LongMessage>
+    <Class classname="net.runelite.script.IndexMojo" primary="true">
+      <SourceLine classname="net.runelite.script.IndexMojo" sourcefile="IndexMojo.java" sourcepath="net/runelite/script/IndexMojo.java" relSourcepath="net\runelite\script\IndexMojo.java">
+        <Message>In IndexMojo.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.script.IndexMojo</Message>
+    </Class>
+    <Method classname="net.runelite.script.IndexMojo" name="execute" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.script.IndexMojo" start="54" end="84" startBytecode="0" endBytecode="672" sourcefile="IndexMojo.java" sourcepath="net/runelite/script/IndexMojo.java" relSourcepath="net\runelite\script\IndexMojo.java"/>
+      <Message>In method net.runelite.script.IndexMojo.execute()</Message>
+    </Method>
+    <LocalVariable name="?" register="8" pc="76" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from ?</Message>
+    </LocalVariable>
+    <SourceLine classname="net.runelite.script.IndexMojo" primary="true" start="61" end="61" startBytecode="76" endBytecode="76" sourcefile="IndexMojo.java" sourcepath="net/runelite/script/IndexMojo.java" relSourcepath="net\runelite\script\IndexMojo.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at IndexMojo.java:[line 61]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.script.IndexMojo" start="61" end="61" startBytecode="69" endBytecode="69" sourcefile="IndexMojo.java" sourcepath="net/runelite/script/IndexMojo.java" relSourcepath="net\runelite\script\IndexMojo.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at IndexMojo.java:[line 61]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" abbrev="NP" category="STYLE">
+    <ShortDescription>Possible null pointer dereference due to return value of called method</ShortDescription>
+    <Details><![CDATA[
+      
+<p> The return value from a method is dereferenced without a null check,
+and the return value of that method is one that should generally be checked
+for null.  This may lead to a <code>NullPointerException</code> when the code is executed.
+</p>
+      
+   ]]></Details>
+  </BugPattern>
+  <BugPattern type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" abbrev="RV" category="BAD_PRACTICE" cweid="253">
+    <ShortDescription>Method ignores exceptional return value</ShortDescription>
+    <Details><![CDATA[
+
+   <p> This method returns a value that is not checked. The return value should be checked
+since it can indicate an unusual or unexpected function execution. For
+example, the <code>File.delete()</code> method returns false
+if the file could not be successfully deleted (rather than
+throwing an Exception).
+If you don't check the result, you won't notice if the method invocation
+signals unexpected behavior by returning an atypical return value.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <BugCode abbrev="RV" cweid="440">
+    <Description>Bad use of return value from method</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 28 Apr 2019 16:35:50 -0400" total_classes="3" referenced_classes="40" total_bugs="4" total_size="64" num_packages="1" java_version="1.8.0_112-release" vm_version="25.112-b6" cpu_seconds="243.81" clock_seconds="435.62" peak_mbytes="750.51" alloc_mbytes="494.94" gc_seconds="3.29" priority_2="4">
+    <FileStats path="net/runelite/script/AssembleMojo.java" bugCount="2" size="35" bugHash="30d02cf87568a40825ed25b435b29794"/>
+    <FileStats path="net/runelite/script/IndexMojo.java" bugCount="2" size="22" bugHash="2892db196713a4e527d704cf6836872c"/>
+    <FileStats path="net/runelite/script/RuneLiteInstructions.java" bugCount="0" size="7"/>
+    <PackageStats package="net.runelite.script" total_bugs="4" total_types="3" total_size="64" priority_2="4">
+      <ClassStats class="net.runelite.script.AssembleMojo" sourceFile="AssembleMojo.java" interface="false" size="35" bugs="2" priority_2="2"/>
+      <ClassStats class="net.runelite.script.IndexMojo" sourceFile="IndexMojo.java" interface="false" size="22" bugs="2" priority_2="2"/>
+      <ClassStats class="net.runelite.script.RuneLiteInstructions" sourceFile="RuneLiteInstructions.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="105" invocations="2" avgMicrosecondsPerInvocation="52864" maxMicrosecondsPerInvocation="98875" standardDeviationMircosecondsPerInvocation="46010"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="102" invocations="448" avgMicrosecondsPerInvocation="229" maxMicrosecondsPerInvocation="9942" standardDeviationMircosecondsPerInvocation="798"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="86" invocations="40" avgMicrosecondsPerInvocation="2171" maxMicrosecondsPerInvocation="66913" standardDeviationMircosecondsPerInvocation="10396"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="51" invocations="450" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="383" standardDeviationMircosecondsPerInvocation="38"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="14" invocations="114" avgMicrosecondsPerInvocation="124" maxMicrosecondsPerInvocation="727" standardDeviationMircosecondsPerInvocation="119"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

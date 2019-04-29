@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://findbugs.sourceforge.net/xsl/default.xsl"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1556483794944" analysisTimestamp="1556483793851" release="">
+  <Project projectName="runelite-parent[http-api]">
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\account\AccountClient.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\account\OAuthResponse.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\cache\Cache.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\cache\CacheArchive.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\cache\CacheIndex.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\chat\ChatClient.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\chat\Task.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\config\ConfigClient$1.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\config\ConfigClient$2.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\config\ConfigClient.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\config\ConfigEntry.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\config\Configuration.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\examine\ExamineClient$1.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\examine\ExamineClient.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\feed\FeedClient.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\feed\FeedItem.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\feed\FeedItemType.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\feed\FeedResult.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\hiscore\HiscoreClient.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\hiscore\HiscoreEndpoint.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\hiscore\HiscoreResult$1.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\hiscore\HiscoreResult.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\hiscore\HiscoreResultBuilder.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\hiscore\HiscoreSkill.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\hiscore\SingleHiscoreSkillResult.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\hiscore\Skill.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\item\Item.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\item\ItemClient$1.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\item\ItemClient.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\item\ItemEquipmentStats$ItemEquipmentStatsBuilder.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\item\ItemEquipmentStats.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\item\ItemPrice.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\item\ItemStats.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\item\ItemType.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\item\SearchResult.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\loottracker\GameItem.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\loottracker\LootRecord.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\loottracker\LootRecordType.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\loottracker\LootTrackerClient$1.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\loottracker\LootTrackerClient$2.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\loottracker\LootTrackerClient$3.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\loottracker\LootTrackerClient.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\osbuddy\GrandExchangeClient.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\osbuddy\GrandExchangeResult.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\RuneLiteAPI$1.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\RuneLiteAPI.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\worlds\World$WorldBuilder.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\worlds\World.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\worlds\WorldClient.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\worlds\WorldResult.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\worlds\WorldType.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\ws\messages\Handshake.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\ws\messages\LoginResponse.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\ws\messages\party\Join.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\ws\messages\party\Part.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\ws\messages\party\PartyMemberMessage.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\ws\messages\party\PartyMessage.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\ws\messages\party\UserJoin.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\ws\messages\party\UserPart.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\ws\messages\party\UserSync.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\ws\RuntimeTypeAdapterFactory$1.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\ws\RuntimeTypeAdapterFactory.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\ws\WebsocketGsonFactory.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\ws\WebsocketMessage.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\xp\XpClient$1.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\xp\XpClient.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\xp\XpData.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\xtea\XteaClient$1.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\xtea\XteaClient$2.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\xtea\XteaClient.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\xtea\XteaKey.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\classes\net\runelite\http\api\xtea\XteaRequest.class</Jar>
+    <Jar>D:\School\runelite\runelite\http-api\target\test-classes\net\runelite\http\api\RuneLiteAPITest.class</Jar>
+    <AuxClasspathEntry>D:/School/runelite/runelite/http-api/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/http-api/target/test-classes</AuxClasspathEntry>
+    <SrcDir>D:/School/runelite/runelite/http-api/src/main/java</SrcDir>
+    <SrcDir>D:/School/runelite/runelite/http-api/src/main/resources</SrcDir>
+    <SrcDir>D:/School/runelite/runelite/http-api/src/test/java</SrcDir>
+  </Project>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE" instanceHash="87d756dd7c4b21d6ba44783f9d0a3327" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="218">
+    <ShortMessage>Field isn&apos;t final but should be</ShortMessage>
+    <LongMessage>net.runelite.http.api.RuneLiteAPI.userAgent isn&apos;t final but should be</LongMessage>
+    <Class classname="net.runelite.http.api.RuneLiteAPI" primary="true">
+      <SourceLine classname="net.runelite.http.api.RuneLiteAPI" sourcefile="RuneLiteAPI.java" sourcepath="net/runelite/http/api/RuneLiteAPI.java" relSourcepath="main\java\net\runelite\http\api\RuneLiteAPI.java">
+        <Message>In RuneLiteAPI.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.http.api.RuneLiteAPI</Message>
+    </Class>
+    <Field classname="net.runelite.http.api.RuneLiteAPI" name="userAgent" signature="Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.http.api.RuneLiteAPI" sourcefile="RuneLiteAPI.java" sourcepath="net/runelite/http/api/RuneLiteAPI.java" relSourcepath="main\java\net\runelite\http\api\RuneLiteAPI.java">
+        <Message>In RuneLiteAPI.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.http.api.RuneLiteAPI.userAgent</Message>
+    </Field>
+    <SourceLine classname="net.runelite.http.api.RuneLiteAPI" primary="true" start="69" end="69" startBytecode="133" endBytecode="133" sourcefile="RuneLiteAPI.java" sourcepath="net/runelite/http/api/RuneLiteAPI.java" relSourcepath="main\java\net\runelite\http\api\RuneLiteAPI.java">
+      <Message>At RuneLiteAPI.java:[line 69]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="18f8d2e9e198845d5e0f10234c807df3" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in net.runelite.http.api.account.AccountClient.login(): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="net.runelite.http.api.account.AccountClient" primary="true">
+      <SourceLine classname="net.runelite.http.api.account.AccountClient" sourcefile="AccountClient.java" sourcepath="net/runelite/http/api/account/AccountClient.java" relSourcepath="main\java\net\runelite\http\api\account\AccountClient.java">
+        <Message>In AccountClient.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.http.api.account.AccountClient</Message>
+    </Class>
+    <Method classname="net.runelite.http.api.account.AccountClient" name="login" signature="()Lnet/runelite/http/api/account/OAuthResponse;" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.http.api.account.AccountClient" start="56" end="75" startBytecode="0" endBytecode="533" sourcefile="AccountClient.java" sourcepath="net/runelite/http/api/account/AccountClient.java" relSourcepath="main\java\net\runelite\http\api\account\AccountClient.java"/>
+      <Message>In method net.runelite.http.api.account.AccountClient.login()</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="net.runelite.http.api.account.AccountClient" primary="true" start="71" end="71" startBytecode="92" endBytecode="92" sourcefile="AccountClient.java" sourcepath="net/runelite/http/api/account/AccountClient.java" relSourcepath="main\java\net\runelite\http\api\account\AccountClient.java">
+      <Message>At AccountClient.java:[line 71]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.http.api.account.AccountClient" primary="true" start="71" end="71" startBytecode="92" endBytecode="92" sourcefile="AccountClient.java" sourcepath="net/runelite/http/api/account/AccountClient.java" relSourcepath="main\java\net\runelite\http\api\account\AccountClient.java">
+      <Message>At AccountClient.java:[line 71]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="19ceefdb6a8a1dd7377ea969c00b7ada" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in net.runelite.http.api.chat.ChatClient.getTask(String): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="net.runelite.http.api.chat.ChatClient" primary="true">
+      <SourceLine classname="net.runelite.http.api.chat.ChatClient" sourcefile="ChatClient.java" sourcepath="net/runelite/http/api/chat/ChatClient.java" relSourcepath="main\java\net\runelite\http\api\chat\ChatClient.java">
+        <Message>In ChatClient.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.http.api.chat.ChatClient</Message>
+    </Class>
+    <Method classname="net.runelite.http.api.chat.ChatClient" name="getTask" signature="(Ljava/lang/String;)Lnet/runelite/http/api/chat/Task;" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.http.api.chat.ChatClient" start="150" end="172" startBytecode="0" endBytecode="595" sourcefile="ChatClient.java" sourcepath="net/runelite/http/api/chat/ChatClient.java" relSourcepath="main\java\net\runelite\http\api\chat\ChatClient.java"/>
+      <Message>In method net.runelite.http.api.chat.ChatClient.getTask(String)</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="net.runelite.http.api.chat.ChatClient" primary="true" start="168" end="168" startBytecode="95" endBytecode="95" sourcefile="ChatClient.java" sourcepath="net/runelite/http/api/chat/ChatClient.java" relSourcepath="main\java\net\runelite\http\api\chat\ChatClient.java">
+      <Message>At ChatClient.java:[line 168]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.http.api.chat.ChatClient" primary="true" start="168" end="168" startBytecode="95" endBytecode="95" sourcefile="ChatClient.java" sourcepath="net/runelite/http/api/chat/ChatClient.java" relSourcepath="main\java\net\runelite\http\api\chat\ChatClient.java">
+      <Message>At ChatClient.java:[line 168]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="87a1cebea55294b4b290457349aa9f3a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in net.runelite.http.api.config.ConfigClient.get(): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="net.runelite.http.api.config.ConfigClient" primary="true">
+      <SourceLine classname="net.runelite.http.api.config.ConfigClient" sourcefile="ConfigClient.java" sourcepath="net/runelite/http/api/config/ConfigClient.java" relSourcepath="main\java\net\runelite\http\api\config\ConfigClient.java">
+        <Message>In ConfigClient.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.http.api.config.ConfigClient</Message>
+    </Class>
+    <Method classname="net.runelite.http.api.config.ConfigClient" name="get" signature="()Lnet/runelite/http/api/config/Configuration;" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.http.api.config.ConfigClient" start="58" end="76" startBytecode="0" endBytecode="524" sourcefile="ConfigClient.java" sourcepath="net/runelite/http/api/config/ConfigClient.java" relSourcepath="main\java\net\runelite\http\api\config\ConfigClient.java"/>
+      <Message>In method net.runelite.http.api.config.ConfigClient.get()</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="net.runelite.http.api.config.ConfigClient" primary="true" start="72" end="72" startBytecode="87" endBytecode="87" sourcefile="ConfigClient.java" sourcepath="net/runelite/http/api/config/ConfigClient.java" relSourcepath="main\java\net\runelite\http\api\config\ConfigClient.java">
+      <Message>At ConfigClient.java:[line 72]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.http.api.config.ConfigClient" primary="true" start="72" end="72" startBytecode="87" endBytecode="87" sourcefile="ConfigClient.java" sourcepath="net/runelite/http/api/config/ConfigClient.java" relSourcepath="main\java\net\runelite\http\api\config\ConfigClient.java">
+      <Message>At ConfigClient.java:[line 72]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="8c4e149975c4569144b9f69f8e7db448" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in net.runelite.http.api.feed.FeedClient.lookupFeed(): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="net.runelite.http.api.feed.FeedClient" primary="true">
+      <SourceLine classname="net.runelite.http.api.feed.FeedClient" sourcefile="FeedClient.java" sourcepath="net/runelite/http/api/feed/FeedClient.java" relSourcepath="main\java\net\runelite\http\api\feed\FeedClient.java">
+        <Message>In FeedClient.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.http.api.feed.FeedClient</Message>
+    </Class>
+    <Method classname="net.runelite.http.api.feed.FeedClient" name="lookupFeed" signature="()Lnet/runelite/http/api/feed/FeedResult;" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.http.api.feed.FeedClient" start="44" end="67" startBytecode="0" endBytecode="652" sourcefile="FeedClient.java" sourcepath="net/runelite/http/api/feed/FeedClient.java" relSourcepath="main\java\net\runelite\http\api\feed\FeedClient.java"/>
+      <Message>In method net.runelite.http.api.feed.FeedClient.lookupFeed()</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="net.runelite.http.api.feed.FeedClient" primary="true" start="63" end="63" startBytecode="134" endBytecode="134" sourcefile="FeedClient.java" sourcepath="net/runelite/http/api/feed/FeedClient.java" relSourcepath="main\java\net\runelite\http\api\feed\FeedClient.java">
+      <Message>At FeedClient.java:[line 63]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.http.api.feed.FeedClient" primary="true" start="63" end="63" startBytecode="134" endBytecode="134" sourcefile="FeedClient.java" sourcepath="net/runelite/http/api/feed/FeedClient.java" relSourcepath="main\java\net\runelite\http\api\feed\FeedClient.java">
+      <Message>At FeedClient.java:[line 63]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="f4d3afc8fd00b10063124407f05670e3" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in net.runelite.http.api.item.ItemClient.getPrices(): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="net.runelite.http.api.item.ItemClient" primary="true">
+      <SourceLine classname="net.runelite.http.api.item.ItemClient" sourcefile="ItemClient.java" sourcepath="net/runelite/http/api/item/ItemClient.java" relSourcepath="main\java\net\runelite\http\api\item\ItemClient.java">
+        <Message>In ItemClient.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.http.api.item.ItemClient</Message>
+    </Class>
+    <Method classname="net.runelite.http.api.item.ItemClient" name="getPrices" signature="()[Lnet/runelite/http/api/item/ItemPrice;" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.http.api.item.ItemClient" start="178" end="203" startBytecode="0" endBytecode="703" sourcefile="ItemClient.java" sourcepath="net/runelite/http/api/item/ItemClient.java" relSourcepath="main\java\net\runelite\http\api\item\ItemClient.java"/>
+      <Message>In method net.runelite.http.api.item.ItemClient.getPrices()</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="net.runelite.http.api.item.ItemClient" primary="true" start="199" end="199" startBytecode="148" endBytecode="148" sourcefile="ItemClient.java" sourcepath="net/runelite/http/api/item/ItemClient.java" relSourcepath="main\java\net\runelite\http\api\item\ItemClient.java">
+      <Message>At ItemClient.java:[line 199]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.http.api.item.ItemClient" primary="true" start="199" end="199" startBytecode="148" endBytecode="148" sourcefile="ItemClient.java" sourcepath="net/runelite/http/api/item/ItemClient.java" relSourcepath="main\java\net\runelite\http\api\item\ItemClient.java">
+      <Message>At ItemClient.java:[line 199]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="2d0ab8ed71b0b43c58bf3db216f72922" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in net.runelite.http.api.item.ItemClient.getStats(): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="net.runelite.http.api.item.ItemClient" primary="true">
+      <SourceLine classname="net.runelite.http.api.item.ItemClient" sourcefile="ItemClient.java" sourcepath="net/runelite/http/api/item/ItemClient.java" relSourcepath="main\java\net\runelite\http\api\item\ItemClient.java">
+        <Message>In ItemClient.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.http.api.item.ItemClient</Message>
+    </Class>
+    <Method classname="net.runelite.http.api.item.ItemClient" name="getStats" signature="()Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.http.api.item.ItemClient" start="209" end="237" startBytecode="0" endBytecode="738" sourcefile="ItemClient.java" sourcepath="net/runelite/http/api/item/ItemClient.java" relSourcepath="main\java\net\runelite\http\api\item\ItemClient.java"/>
+      <Message>In method net.runelite.http.api.item.ItemClient.getStats()</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="net.runelite.http.api.item.ItemClient" primary="true" start="233" end="233" startBytecode="161" endBytecode="161" sourcefile="ItemClient.java" sourcepath="net/runelite/http/api/item/ItemClient.java" relSourcepath="main\java\net\runelite\http\api\item\ItemClient.java">
+      <Message>At ItemClient.java:[line 233]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.http.api.item.ItemClient" primary="true" start="233" end="233" startBytecode="161" endBytecode="161" sourcefile="ItemClient.java" sourcepath="net/runelite/http/api/item/ItemClient.java" relSourcepath="main\java\net\runelite\http\api\item\ItemClient.java">
+      <Message>At ItemClient.java:[line 233]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="bed211dc307395fc491342083b8d99b5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in net.runelite.http.api.item.ItemClient.lookupItemPrice(int): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="net.runelite.http.api.item.ItemClient" primary="true">
+      <SourceLine classname="net.runelite.http.api.item.ItemClient" sourcefile="ItemClient.java" sourcepath="net/runelite/http/api/item/ItemClient.java" relSourcepath="main\java\net\runelite\http\api\item\ItemClient.java">
+        <Message>In ItemClient.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.http.api.item.ItemClient</Message>
+    </Class>
+    <Method classname="net.runelite.http.api.item.ItemClient" name="lookupItemPrice" signature="(I)Lnet/runelite/http/api/item/ItemPrice;" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.http.api.item.ItemClient" start="50" end="75" startBytecode="0" endBytecode="721" sourcefile="ItemClient.java" sourcepath="net/runelite/http/api/item/ItemClient.java" relSourcepath="main\java\net\runelite\http\api\item\ItemClient.java"/>
+      <Message>In method net.runelite.http.api.item.ItemClient.lookupItemPrice(int)</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="net.runelite.http.api.item.ItemClient" primary="true" start="71" end="71" startBytecode="172" endBytecode="172" sourcefile="ItemClient.java" sourcepath="net/runelite/http/api/item/ItemClient.java" relSourcepath="main\java\net\runelite\http\api\item\ItemClient.java">
+      <Message>At ItemClient.java:[line 71]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.http.api.item.ItemClient" primary="true" start="71" end="71" startBytecode="172" endBytecode="172" sourcefile="ItemClient.java" sourcepath="net/runelite/http/api/item/ItemClient.java" relSourcepath="main\java\net\runelite\http\api\item\ItemClient.java">
+      <Message>At ItemClient.java:[line 71]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="4831405754e29a03194db406ce25f358" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in net.runelite.http.api.item.ItemClient.lookupItemPrice(Integer[]): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="net.runelite.http.api.item.ItemClient" primary="true">
+      <SourceLine classname="net.runelite.http.api.item.ItemClient" sourcefile="ItemClient.java" sourcepath="net/runelite/http/api/item/ItemClient.java" relSourcepath="main\java\net\runelite\http\api\item\ItemClient.java">
+        <Message>In ItemClient.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.http.api.item.ItemClient</Message>
+    </Class>
+    <Method classname="net.runelite.http.api.item.ItemClient" name="lookupItemPrice" signature="([Ljava/lang/Integer;)[Lnet/runelite/http/api/item/ItemPrice;" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.http.api.item.ItemClient" start="81" end="111" startBytecode="0" endBytecode="823" sourcefile="ItemClient.java" sourcepath="net/runelite/http/api/item/ItemClient.java" relSourcepath="main\java\net\runelite\http\api\item\ItemClient.java"/>
+      <Message>In method net.runelite.http.api.item.ItemClient.lookupItemPrice(Integer[])</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="net.runelite.http.api.item.ItemClient" primary="true" start="107" end="107" startBytecode="197" endBytecode="197" sourcefile="ItemClient.java" sourcepath="net/runelite/http/api/item/ItemClient.java" relSourcepath="main\java\net\runelite\http\api\item\ItemClient.java">
+      <Message>At ItemClient.java:[line 107]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.http.api.item.ItemClient" primary="true" start="107" end="107" startBytecode="197" endBytecode="197" sourcefile="ItemClient.java" sourcepath="net/runelite/http/api/item/ItemClient.java" relSourcepath="main\java\net\runelite\http\api\item\ItemClient.java">
+      <Message>At ItemClient.java:[line 107]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="7132a361ea54cbfb084b8ced86aad90b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in net.runelite.http.api.item.ItemClient.search(String): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="net.runelite.http.api.item.ItemClient" primary="true">
+      <SourceLine classname="net.runelite.http.api.item.ItemClient" sourcefile="ItemClient.java" sourcepath="net/runelite/http/api/item/ItemClient.java" relSourcepath="main\java\net\runelite\http\api\item\ItemClient.java">
+        <Message>In ItemClient.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.http.api.item.ItemClient</Message>
+    </Class>
+    <Method classname="net.runelite.http.api.item.ItemClient" name="search" signature="(Ljava/lang/String;)Lnet/runelite/http/api/item/SearchResult;" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.http.api.item.ItemClient" start="147" end="172" startBytecode="0" endBytecode="712" sourcefile="ItemClient.java" sourcepath="net/runelite/http/api/item/ItemClient.java" relSourcepath="main\java\net\runelite\http\api\item\ItemClient.java"/>
+      <Message>In method net.runelite.http.api.item.ItemClient.search(String)</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="net.runelite.http.api.item.ItemClient" primary="true" start="168" end="168" startBytecode="153" endBytecode="153" sourcefile="ItemClient.java" sourcepath="net/runelite/http/api/item/ItemClient.java" relSourcepath="main\java\net\runelite\http\api\item\ItemClient.java">
+      <Message>At ItemClient.java:[line 168]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.http.api.item.ItemClient" primary="true" start="168" end="168" startBytecode="153" endBytecode="153" sourcefile="ItemClient.java" sourcepath="net/runelite/http/api/item/ItemClient.java" relSourcepath="main\java\net\runelite\http\api\item\ItemClient.java">
+      <Message>At ItemClient.java:[line 168]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="f4f7bb2d3277071ef3db7c997094d1f7" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in net.runelite.http.api.loottracker.LootTrackerClient.get(): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="net.runelite.http.api.loottracker.LootTrackerClient" primary="true">
+      <SourceLine classname="net.runelite.http.api.loottracker.LootTrackerClient" sourcefile="LootTrackerClient.java" sourcepath="net/runelite/http/api/loottracker/LootTrackerClient.java" relSourcepath="main\java\net\runelite\http\api\loottracker\LootTrackerClient.java">
+        <Message>In LootTrackerClient.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.http.api.loottracker.LootTrackerClient</Message>
+    </Class>
+    <Method classname="net.runelite.http.api.loottracker.LootTrackerClient" name="get" signature="()Ljava/util/Collection;" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.http.api.loottracker.LootTrackerClient" start="87" end="112" startBytecode="0" endBytecode="677" sourcefile="LootTrackerClient.java" sourcepath="net/runelite/http/api/loottracker/LootTrackerClient.java" relSourcepath="main\java\net\runelite\http\api\loottracker\LootTrackerClient.java"/>
+      <Message>In method net.runelite.http.api.loottracker.LootTrackerClient.get()</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="net.runelite.http.api.loottracker.LootTrackerClient" primary="true" start="106" end="106" startBytecode="138" endBytecode="138" sourcefile="LootTrackerClient.java" sourcepath="net/runelite/http/api/loottracker/LootTrackerClient.java" relSourcepath="main\java\net\runelite\http\api\loottracker\LootTrackerClient.java">
+      <Message>At LootTrackerClient.java:[line 106]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.http.api.loottracker.LootTrackerClient" primary="true" start="106" end="106" startBytecode="138" endBytecode="138" sourcefile="LootTrackerClient.java" sourcepath="net/runelite/http/api/loottracker/LootTrackerClient.java" relSourcepath="main\java\net\runelite\http\api\loottracker\LootTrackerClient.java">
+      <Message>At LootTrackerClient.java:[line 106]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="677fab5420e5ab880525cbf16123194e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in net.runelite.http.api.osbuddy.GrandExchangeClient.lookupItem(int): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="net.runelite.http.api.osbuddy.GrandExchangeClient" primary="true">
+      <SourceLine classname="net.runelite.http.api.osbuddy.GrandExchangeClient" sourcefile="GrandExchangeClient.java" sourcepath="net/runelite/http/api/osbuddy/GrandExchangeClient.java" relSourcepath="main\java\net\runelite\http\api\osbuddy\GrandExchangeClient.java">
+        <Message>In GrandExchangeClient.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.http.api.osbuddy.GrandExchangeClient</Message>
+    </Class>
+    <Method classname="net.runelite.http.api.osbuddy.GrandExchangeClient" name="lookupItem" signature="(I)Lnet/runelite/http/api/osbuddy/GrandExchangeResult;" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.http.api.osbuddy.GrandExchangeClient" start="42" end="66" startBytecode="0" endBytecode="624" sourcefile="GrandExchangeClient.java" sourcepath="net/runelite/http/api/osbuddy/GrandExchangeClient.java" relSourcepath="main\java\net\runelite\http\api\osbuddy\GrandExchangeClient.java"/>
+      <Message>In method net.runelite.http.api.osbuddy.GrandExchangeClient.lookupItem(int)</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="net.runelite.http.api.osbuddy.GrandExchangeClient" primary="true" start="62" end="62" startBytecode="130" endBytecode="130" sourcefile="GrandExchangeClient.java" sourcepath="net/runelite/http/api/osbuddy/GrandExchangeClient.java" relSourcepath="main\java\net\runelite\http\api\osbuddy\GrandExchangeClient.java">
+      <Message>At GrandExchangeClient.java:[line 62]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.http.api.osbuddy.GrandExchangeClient" primary="true" start="62" end="62" startBytecode="130" endBytecode="130" sourcefile="GrandExchangeClient.java" sourcepath="net/runelite/http/api/osbuddy/GrandExchangeClient.java" relSourcepath="main\java\net\runelite\http\api\osbuddy\GrandExchangeClient.java">
+      <Message>At GrandExchangeClient.java:[line 62]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="f36f2a4b6b0dbf25b5c0c63d9d155a69" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in net.runelite.http.api.worlds.WorldClient.lookupWorlds(): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="net.runelite.http.api.worlds.WorldClient" primary="true">
+      <SourceLine classname="net.runelite.http.api.worlds.WorldClient" sourcefile="WorldClient.java" sourcepath="net/runelite/http/api/worlds/WorldClient.java" relSourcepath="main\java\net\runelite\http\api\worlds\WorldClient.java">
+        <Message>In WorldClient.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.http.api.worlds.WorldClient</Message>
+    </Class>
+    <Method classname="net.runelite.http.api.worlds.WorldClient" name="lookupWorlds" signature="()Lnet/runelite/http/api/worlds/WorldResult;" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.http.api.worlds.WorldClient" start="46" end="69" startBytecode="0" endBytecode="652" sourcefile="WorldClient.java" sourcepath="net/runelite/http/api/worlds/WorldClient.java" relSourcepath="main\java\net\runelite\http\api\worlds\WorldClient.java"/>
+      <Message>In method net.runelite.http.api.worlds.WorldClient.lookupWorlds()</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="net.runelite.http.api.worlds.WorldClient" primary="true" start="65" end="65" startBytecode="134" endBytecode="134" sourcefile="WorldClient.java" sourcepath="net/runelite/http/api/worlds/WorldClient.java" relSourcepath="main\java\net\runelite\http\api\worlds\WorldClient.java">
+      <Message>At WorldClient.java:[line 65]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.http.api.worlds.WorldClient" primary="true" start="65" end="65" startBytecode="134" endBytecode="134" sourcefile="WorldClient.java" sourcepath="net/runelite/http/api/worlds/WorldClient.java" relSourcepath="main\java\net\runelite\http\api\worlds\WorldClient.java">
+      <Message>At WorldClient.java:[line 65]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="186932b00b6fca3abdddd033408f2166" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in net.runelite.http.api.xtea.XteaClient.get(): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="net.runelite.http.api.xtea.XteaClient" primary="true">
+      <SourceLine classname="net.runelite.http.api.xtea.XteaClient" sourcefile="XteaClient.java" sourcepath="net/runelite/http/api/xtea/XteaClient.java" relSourcepath="main\java\net\runelite\http\api\xtea\XteaClient.java">
+        <Message>In XteaClient.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.http.api.xtea.XteaClient</Message>
+    </Class>
+    <Method classname="net.runelite.http.api.xtea.XteaClient" name="get" signature="()Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.http.api.xtea.XteaClient" start="93" end="110" startBytecode="0" endBytecode="502" sourcefile="XteaClient.java" sourcepath="net/runelite/http/api/xtea/XteaClient.java" relSourcepath="main\java\net\runelite\http\api\xtea\XteaClient.java"/>
+      <Message>In method net.runelite.http.api.xtea.XteaClient.get()</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="net.runelite.http.api.xtea.XteaClient" primary="true" start="105" end="105" startBytecode="64" endBytecode="64" sourcefile="XteaClient.java" sourcepath="net/runelite/http/api/xtea/XteaClient.java" relSourcepath="main\java\net\runelite\http\api\xtea\XteaClient.java">
+      <Message>At XteaClient.java:[line 105]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.http.api.xtea.XteaClient" primary="true" start="105" end="105" startBytecode="64" endBytecode="64" sourcefile="XteaClient.java" sourcepath="net/runelite/http/api/xtea/XteaClient.java" relSourcepath="main\java\net\runelite\http\api\xtea\XteaClient.java">
+      <Message>At XteaClient.java:[line 105]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="4f36b7983113417d2412ac0f698d55e0" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in net.runelite.http.api.xtea.XteaClient.get(int): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="net.runelite.http.api.xtea.XteaClient" primary="true">
+      <SourceLine classname="net.runelite.http.api.xtea.XteaClient" sourcefile="XteaClient.java" sourcepath="net/runelite/http/api/xtea/XteaClient.java" relSourcepath="main\java\net\runelite\http\api\xtea\XteaClient.java">
+        <Message>In XteaClient.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.http.api.xtea.XteaClient</Message>
+    </Class>
+    <Method classname="net.runelite.http.api.xtea.XteaClient" name="get" signature="(I)Lnet/runelite/http/api/xtea/XteaKey;" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.http.api.xtea.XteaClient" start="116" end="132" startBytecode="0" endBytecode="528" sourcefile="XteaClient.java" sourcepath="net/runelite/http/api/xtea/XteaClient.java" relSourcepath="main\java\net\runelite\http\api\xtea\XteaClient.java"/>
+      <Message>In method net.runelite.http.api.xtea.XteaClient.get(int)</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="net.runelite.http.api.xtea.XteaClient" primary="true" start="128" end="128" startBytecode="73" endBytecode="73" sourcefile="XteaClient.java" sourcepath="net/runelite/http/api/xtea/XteaClient.java" relSourcepath="main\java\net\runelite\http\api\xtea\XteaClient.java">
+      <Message>At XteaClient.java:[line 128]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.http.api.xtea.XteaClient" primary="true" start="128" end="128" startBytecode="73" endBytecode="73" sourcefile="XteaClient.java" sourcepath="net/runelite/http/api/xtea/XteaClient.java" relSourcepath="main\java\net\runelite\http\api\xtea\XteaClient.java">
+      <Message>At XteaClient.java:[line 128]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="8cfea20ef51e5c7f14cb9ce3debb682a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>net.runelite.http.api.xtea.XteaKey.getKeys() may expose internal representation by returning XteaKey.keys</LongMessage>
+    <Class classname="net.runelite.http.api.xtea.XteaKey" primary="true">
+      <SourceLine classname="net.runelite.http.api.xtea.XteaKey" sourcefile="XteaKey.java" sourcepath="net/runelite/http/api/xtea/XteaKey.java" relSourcepath="main\java\net\runelite\http\api\xtea\XteaKey.java">
+        <Message>In XteaKey.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.http.api.xtea.XteaKey</Message>
+    </Class>
+    <Method classname="net.runelite.http.api.xtea.XteaKey" name="getKeys" signature="()[I" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.http.api.xtea.XteaKey" start="44" end="44" startBytecode="0" endBytecode="46" sourcefile="XteaKey.java" sourcepath="net/runelite/http/api/xtea/XteaKey.java" relSourcepath="main\java\net\runelite\http\api\xtea\XteaKey.java"/>
+      <Message>In method net.runelite.http.api.xtea.XteaKey.getKeys()</Message>
+    </Method>
+    <Field classname="net.runelite.http.api.xtea.XteaKey" name="keys" signature="[I" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.http.api.xtea.XteaKey" sourcefile="XteaKey.java" sourcepath="net/runelite/http/api/xtea/XteaKey.java" relSourcepath="main\java\net\runelite\http\api\xtea\XteaKey.java">
+        <Message>In XteaKey.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.http.api.xtea.XteaKey.keys</Message>
+    </Field>
+    <SourceLine classname="net.runelite.http.api.xtea.XteaKey" primary="true" start="44" end="44" startBytecode="4" endBytecode="4" sourcefile="XteaKey.java" sourcepath="net/runelite/http/api/xtea/XteaKey.java" relSourcepath="main\java\net\runelite\http\api\xtea\XteaKey.java">
+      <Message>At XteaKey.java:[line 44]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.http.api.xtea.XteaKey" primary="true" start="44" end="44" startBytecode="4" endBytecode="4" sourcefile="XteaKey.java" sourcepath="net/runelite/http/api/xtea/XteaKey.java" relSourcepath="main\java\net\runelite\http\api\xtea\XteaKey.java">
+      <Message>At XteaKey.java:[line 44]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="58524286828fd381d56302259b6212c5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>net.runelite.http.api.xtea.XteaKey.setKeys(int[]) may expose internal representation by storing an externally mutable object into XteaKey.keys</LongMessage>
+    <Class classname="net.runelite.http.api.xtea.XteaKey" primary="true">
+      <SourceLine classname="net.runelite.http.api.xtea.XteaKey" sourcefile="XteaKey.java" sourcepath="net/runelite/http/api/xtea/XteaKey.java" relSourcepath="main\java\net\runelite\http\api\xtea\XteaKey.java">
+        <Message>In XteaKey.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.http.api.xtea.XteaKey</Message>
+    </Class>
+    <Method classname="net.runelite.http.api.xtea.XteaKey" name="setKeys" signature="([I)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.http.api.xtea.XteaKey" start="49" end="50" startBytecode="0" endBytecode="61" sourcefile="XteaKey.java" sourcepath="net/runelite/http/api/xtea/XteaKey.java" relSourcepath="main\java\net\runelite\http\api\xtea\XteaKey.java"/>
+      <Message>In method net.runelite.http.api.xtea.XteaKey.setKeys(int[])</Message>
+    </Method>
+    <Field classname="net.runelite.http.api.xtea.XteaKey" name="keys" signature="[I" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.http.api.xtea.XteaKey" sourcefile="XteaKey.java" sourcepath="net/runelite/http/api/xtea/XteaKey.java" relSourcepath="main\java\net\runelite\http\api\xtea\XteaKey.java">
+        <Message>In XteaKey.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.http.api.xtea.XteaKey.keys</Message>
+    </Field>
+    <LocalVariable name="keys" register="1" pc="2" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named keys</Message>
+    </LocalVariable>
+    <SourceLine classname="net.runelite.http.api.xtea.XteaKey" primary="true" start="49" end="49" startBytecode="2" endBytecode="2" sourcefile="XteaKey.java" sourcepath="net/runelite/http/api/xtea/XteaKey.java" relSourcepath="main\java\net\runelite\http\api\xtea\XteaKey.java">
+      <Message>At XteaKey.java:[line 49]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.http.api.xtea.XteaKey" primary="true" start="49" end="49" startBytecode="2" endBytecode="2" sourcefile="XteaKey.java" sourcepath="net/runelite/http/api/xtea/XteaKey.java" relSourcepath="main\java\net\runelite\http\api\xtea\XteaKey.java">
+      <Message>At XteaKey.java:[line 49]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="EI_EXPOSE_REP2" abbrev="EI2" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by incorporating reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="EI_EXPOSE_REP" abbrev="EI" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by returning reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="MS_SHOULD_BE_FINAL" abbrev="MS" category="MALICIOUS_CODE">
+    <ShortDescription>Field isn&apos;t final but should be</ShortDescription>
+    <Details><![CDATA[
+
+   <p>
+This static field public but not final, and
+could be changed by malicious code or
+        by accident from another package.
+        The field could be made final to avoid
+        this vulnerability.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="EI">
+    <Description>Method returning array may expose internal representation</Description>
+  </BugCode>
+  <BugCode abbrev="MS" cweid="218">
+    <Description>Mutable static field</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Dubious method used</Description>
+  </BugCode>
+  <BugCode abbrev="EI2">
+    <Description>Storing reference to mutable object</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 28 Apr 2019 16:35:02 -0400" total_classes="73" referenced_classes="120" total_bugs="17" total_size="2266" num_packages="17" java_version="1.8.0_112-release" vm_version="25.112-b6" cpu_seconds="143.62" clock_seconds="407.76" peak_mbytes="749.71" alloc_mbytes="494.94" gc_seconds="1.26" priority_2="2" priority_1="15">
+    <FileStats path="net/runelite/http/api/RuneLiteAPI.java" bugCount="1" size="59" bugHash="d4a8a4c86a4cbe728e68dd6b15b95e70"/>
+    <FileStats path="net/runelite/http/api/RuneLiteAPITest.java" bugCount="0" size="19"/>
+    <FileStats path="net/runelite/http/api/account/AccountClient.java" bugCount="1" size="58" bugHash="f6d4110150cde63abff3e83557b217e5"/>
+    <FileStats path="net/runelite/http/api/account/OAuthResponse.java" bugCount="0" size="15"/>
+    <FileStats path="net/runelite/http/api/cache/Cache.java" bugCount="0" size="39"/>
+    <FileStats path="net/runelite/http/api/cache/CacheArchive.java" bugCount="0" size="37"/>
+    <FileStats path="net/runelite/http/api/cache/CacheIndex.java" bugCount="0" size="30"/>
+    <FileStats path="net/runelite/http/api/chat/ChatClient.java" bugCount="1" size="125" bugHash="52119f3c84840e3dd76f9af997dda763"/>
+    <FileStats path="net/runelite/http/api/chat/Task.java" bugCount="0" size="23"/>
+    <FileStats path="net/runelite/http/api/config/ConfigClient.java" bugCount="1" size="79" bugHash="e7ab6753bec6facd51945e49a82454cb"/>
+    <FileStats path="net/runelite/http/api/config/ConfigEntry.java" bugCount="0" size="15"/>
+    <FileStats path="net/runelite/http/api/config/Configuration.java" bugCount="0" size="9"/>
+    <FileStats path="net/runelite/http/api/examine/ExamineClient.java" bugCount="0" size="45"/>
+    <FileStats path="net/runelite/http/api/feed/FeedClient.java" bugCount="1" size="23" bugHash="e42eb7ca78e8d83a1ac16ec3a6aa439a"/>
+    <FileStats path="net/runelite/http/api/feed/FeedItem.java" bugCount="0" size="29"/>
+    <FileStats path="net/runelite/http/api/feed/FeedItemType.java" bugCount="0" size="13"/>
+    <FileStats path="net/runelite/http/api/feed/FeedResult.java" bugCount="0" size="12"/>
+    <FileStats path="net/runelite/http/api/hiscore/HiscoreClient.java" bugCount="0" size="60"/>
+    <FileStats path="net/runelite/http/api/hiscore/HiscoreEndpoint.java" bugCount="0" size="31"/>
+    <FileStats path="net/runelite/http/api/hiscore/HiscoreResult.java" bugCount="0" size="183"/>
+    <FileStats path="net/runelite/http/api/hiscore/HiscoreResultBuilder.java" bugCount="0" size="51"/>
+    <FileStats path="net/runelite/http/api/hiscore/HiscoreSkill.java" bugCount="0" size="79"/>
+    <FileStats path="net/runelite/http/api/hiscore/SingleHiscoreSkillResult.java" bugCount="0" size="44"/>
+    <FileStats path="net/runelite/http/api/hiscore/Skill.java" bugCount="0" size="39"/>
+    <FileStats path="net/runelite/http/api/item/Item.java" bugCount="0" size="23"/>
+    <FileStats path="net/runelite/http/api/item/ItemClient.java" bugCount="5" size="125" bugHash="155d8890418f0ca57839b103145b406f"/>
+    <FileStats path="net/runelite/http/api/item/ItemEquipmentStats.java" bugCount="0" size="93"/>
+    <FileStats path="net/runelite/http/api/item/ItemPrice.java" bugCount="0" size="23"/>
+    <FileStats path="net/runelite/http/api/item/ItemStats.java" bugCount="0" size="46"/>
+    <FileStats path="net/runelite/http/api/item/ItemType.java" bugCount="0" size="16"/>
+    <FileStats path="net/runelite/http/api/item/SearchResult.java" bugCount="0" size="9"/>
+    <FileStats path="net/runelite/http/api/loottracker/GameItem.java" bugCount="0" size="18"/>
+    <FileStats path="net/runelite/http/api/loottracker/LootRecord.java" bugCount="0" size="22"/>
+    <FileStats path="net/runelite/http/api/loottracker/LootRecordType.java" bugCount="0" size="15"/>
+    <FileStats path="net/runelite/http/api/loottracker/LootTrackerClient.java" bugCount="1" size="81" bugHash="1c8c7cc97354c788e70be1b92162b6b7"/>
+    <FileStats path="net/runelite/http/api/osbuddy/GrandExchangeClient.java" bugCount="1" size="24" bugHash="67ccfea41b8780470241bf2fc92fca3b"/>
+    <FileStats path="net/runelite/http/api/osbuddy/GrandExchangeResult.java" bugCount="0" size="27"/>
+    <FileStats path="net/runelite/http/api/worlds/World.java" bugCount="0" size="43"/>
+    <FileStats path="net/runelite/http/api/worlds/WorldClient.java" bugCount="1" size="23" bugHash="3c5cdb8c024e372052245faa77e00996"/>
+    <FileStats path="net/runelite/http/api/worlds/WorldResult.java" bugCount="0" size="15"/>
+    <FileStats path="net/runelite/http/api/worlds/WorldType.java" bugCount="0" size="27"/>
+    <FileStats path="net/runelite/http/api/ws/RuntimeTypeAdapterFactory.java" bugCount="0" size="78"/>
+    <FileStats path="net/runelite/http/api/ws/WebsocketGsonFactory.java" bugCount="0" size="30"/>
+    <FileStats path="net/runelite/http/api/ws/WebsocketMessage.java" bugCount="0" size="6"/>
+    <FileStats path="net/runelite/http/api/ws/messages/Handshake.java" bugCount="0" size="9"/>
+    <FileStats path="net/runelite/http/api/ws/messages/LoginResponse.java" bugCount="0" size="11"/>
+    <FileStats path="net/runelite/http/api/ws/messages/party/Join.java" bugCount="0" size="13"/>
+    <FileStats path="net/runelite/http/api/ws/messages/party/Part.java" bugCount="0" size="3"/>
+    <FileStats path="net/runelite/http/api/ws/messages/party/PartyMemberMessage.java" bugCount="0" size="8"/>
+    <FileStats path="net/runelite/http/api/ws/messages/party/PartyMessage.java" bugCount="0" size="5"/>
+    <FileStats path="net/runelite/http/api/ws/messages/party/UserJoin.java" bugCount="0" size="13"/>
+    <FileStats path="net/runelite/http/api/ws/messages/party/UserPart.java" bugCount="0" size="10"/>
+    <FileStats path="net/runelite/http/api/ws/messages/party/UserSync.java" bugCount="0" size="7"/>
+    <FileStats path="net/runelite/http/api/xp/XpClient.java" bugCount="0" size="30"/>
+    <FileStats path="net/runelite/http/api/xp/XpData.java" bugCount="0" size="200"/>
+    <FileStats path="net/runelite/http/api/xtea/XteaClient.java" bugCount="2" size="65" bugHash="6129ead1ecab85656ec130bfd797e409"/>
+    <FileStats path="net/runelite/http/api/xtea/XteaKey.java" bugCount="2" size="15" bugHash="c1de607e49448e3003bad86deeafd701"/>
+    <FileStats path="net/runelite/http/api/xtea/XteaRequest.java" bugCount="0" size="16"/>
+    <PackageStats package="net.runelite.http.api" total_bugs="1" total_types="3" total_size="78" priority_1="1">
+      <ClassStats class="net.runelite.http.api.RuneLiteAPI" sourceFile="RuneLiteAPI.java" interface="false" size="50" bugs="1" priority_1="1"/>
+      <ClassStats class="net.runelite.http.api.RuneLiteAPI$1" sourceFile="RuneLiteAPI.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.RuneLiteAPITest" sourceFile="RuneLiteAPITest.java" interface="false" size="19" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.runelite.http.api.account" total_bugs="1" total_types="2" total_size="73" priority_1="1">
+      <ClassStats class="net.runelite.http.api.account.AccountClient" sourceFile="AccountClient.java" interface="false" size="58" bugs="1" priority_1="1"/>
+      <ClassStats class="net.runelite.http.api.account.OAuthResponse" sourceFile="OAuthResponse.java" interface="false" size="15" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.runelite.http.api.cache" total_bugs="0" total_types="3" total_size="106">
+      <ClassStats class="net.runelite.http.api.cache.Cache" sourceFile="Cache.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.cache.CacheArchive" sourceFile="CacheArchive.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.cache.CacheIndex" sourceFile="CacheIndex.java" interface="false" size="30" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.runelite.http.api.chat" total_bugs="1" total_types="2" total_size="148" priority_1="1">
+      <ClassStats class="net.runelite.http.api.chat.ChatClient" sourceFile="ChatClient.java" interface="false" size="125" bugs="1" priority_1="1"/>
+      <ClassStats class="net.runelite.http.api.chat.Task" sourceFile="Task.java" interface="false" size="23" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.runelite.http.api.config" total_bugs="1" total_types="5" total_size="103" priority_1="1">
+      <ClassStats class="net.runelite.http.api.config.ConfigClient" sourceFile="ConfigClient.java" interface="false" size="54" bugs="1" priority_1="1"/>
+      <ClassStats class="net.runelite.http.api.config.ConfigClient$1" sourceFile="ConfigClient.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.config.ConfigClient$2" sourceFile="ConfigClient.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.config.ConfigEntry" sourceFile="ConfigEntry.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.config.Configuration" sourceFile="Configuration.java" interface="false" size="9" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.runelite.http.api.examine" total_bugs="0" total_types="2" total_size="45">
+      <ClassStats class="net.runelite.http.api.examine.ExamineClient" sourceFile="ExamineClient.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.examine.ExamineClient$1" sourceFile="ExamineClient.java" interface="false" size="14" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.runelite.http.api.feed" total_bugs="1" total_types="4" total_size="77" priority_1="1">
+      <ClassStats class="net.runelite.http.api.feed.FeedClient" sourceFile="FeedClient.java" interface="false" size="23" bugs="1" priority_1="1"/>
+      <ClassStats class="net.runelite.http.api.feed.FeedItem" sourceFile="FeedItem.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.feed.FeedItemType" sourceFile="FeedItemType.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.feed.FeedResult" sourceFile="FeedResult.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.runelite.http.api.hiscore" total_bugs="0" total_types="8" total_size="487">
+      <ClassStats class="net.runelite.http.api.hiscore.HiscoreClient" sourceFile="HiscoreClient.java" interface="false" size="60" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.hiscore.HiscoreEndpoint" sourceFile="HiscoreEndpoint.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.hiscore.HiscoreResult" sourceFile="HiscoreResult.java" interface="false" size="179" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.hiscore.HiscoreResult$1" sourceFile="HiscoreResult.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.hiscore.HiscoreResultBuilder" sourceFile="HiscoreResultBuilder.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.hiscore.HiscoreSkill" sourceFile="HiscoreSkill.java" interface="false" size="79" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.hiscore.SingleHiscoreSkillResult" sourceFile="SingleHiscoreSkillResult.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.hiscore.Skill" sourceFile="Skill.java" interface="false" size="39" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.runelite.http.api.item" total_bugs="5" total_types="9" total_size="335" priority_1="5">
+      <ClassStats class="net.runelite.http.api.item.Item" sourceFile="Item.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.item.ItemClient" sourceFile="ItemClient.java" interface="false" size="121" bugs="5" priority_1="5"/>
+      <ClassStats class="net.runelite.http.api.item.ItemClient$1" sourceFile="ItemClient.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.item.ItemEquipmentStats" sourceFile="ItemEquipmentStats.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.item.ItemEquipmentStats$ItemEquipmentStatsBuilder" sourceFile="ItemEquipmentStats.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.item.ItemPrice" sourceFile="ItemPrice.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.item.ItemStats" sourceFile="ItemStats.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.item.ItemType" sourceFile="ItemType.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.item.SearchResult" sourceFile="SearchResult.java" interface="false" size="9" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.runelite.http.api.loottracker" total_bugs="1" total_types="7" total_size="136" priority_1="1">
+      <ClassStats class="net.runelite.http.api.loottracker.GameItem" sourceFile="GameItem.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.loottracker.LootRecord" sourceFile="LootRecord.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.loottracker.LootRecordType" sourceFile="LootRecordType.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.loottracker.LootTrackerClient" sourceFile="LootTrackerClient.java" interface="false" size="55" bugs="1" priority_1="1"/>
+      <ClassStats class="net.runelite.http.api.loottracker.LootTrackerClient$1" sourceFile="LootTrackerClient.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.loottracker.LootTrackerClient$2" sourceFile="LootTrackerClient.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.loottracker.LootTrackerClient$3" sourceFile="LootTrackerClient.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.runelite.http.api.osbuddy" total_bugs="1" total_types="2" total_size="51" priority_1="1">
+      <ClassStats class="net.runelite.http.api.osbuddy.GrandExchangeClient" sourceFile="GrandExchangeClient.java" interface="false" size="24" bugs="1" priority_1="1"/>
+      <ClassStats class="net.runelite.http.api.osbuddy.GrandExchangeResult" sourceFile="GrandExchangeResult.java" interface="false" size="27" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.runelite.http.api.worlds" total_bugs="1" total_types="5" total_size="108" priority_1="1">
+      <ClassStats class="net.runelite.http.api.worlds.World" sourceFile="World.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.worlds.World$WorldBuilder" sourceFile="World.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.worlds.WorldClient" sourceFile="WorldClient.java" interface="false" size="23" bugs="1" priority_1="1"/>
+      <ClassStats class="net.runelite.http.api.worlds.WorldResult" sourceFile="WorldResult.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.worlds.WorldType" sourceFile="WorldType.java" interface="false" size="27" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.runelite.http.api.ws" total_bugs="0" total_types="4" total_size="114">
+      <ClassStats class="net.runelite.http.api.ws.RuntimeTypeAdapterFactory" sourceFile="RuntimeTypeAdapterFactory.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.ws.RuntimeTypeAdapterFactory$1" sourceFile="RuntimeTypeAdapterFactory.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.ws.WebsocketGsonFactory" sourceFile="WebsocketGsonFactory.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.ws.WebsocketMessage" sourceFile="WebsocketMessage.java" interface="false" size="6" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.runelite.http.api.ws.messages" total_bugs="0" total_types="2" total_size="20">
+      <ClassStats class="net.runelite.http.api.ws.messages.Handshake" sourceFile="Handshake.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.ws.messages.LoginResponse" sourceFile="LoginResponse.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.runelite.http.api.ws.messages.party" total_bugs="0" total_types="7" total_size="59">
+      <ClassStats class="net.runelite.http.api.ws.messages.party.Join" sourceFile="Join.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.ws.messages.party.Part" sourceFile="Part.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.ws.messages.party.PartyMemberMessage" sourceFile="PartyMemberMessage.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.ws.messages.party.PartyMessage" sourceFile="PartyMessage.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.ws.messages.party.UserJoin" sourceFile="UserJoin.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.ws.messages.party.UserPart" sourceFile="UserPart.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.ws.messages.party.UserSync" sourceFile="UserSync.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.runelite.http.api.xp" total_bugs="0" total_types="3" total_size="230">
+      <ClassStats class="net.runelite.http.api.xp.XpClient" sourceFile="XpClient.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.xp.XpClient$1" sourceFile="XpClient.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.xp.XpData" sourceFile="XpData.java" interface="false" size="200" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.runelite.http.api.xtea" total_bugs="4" total_types="5" total_size="96" priority_2="2" priority_1="2">
+      <ClassStats class="net.runelite.http.api.xtea.XteaClient" sourceFile="XteaClient.java" interface="false" size="48" bugs="2" priority_1="2"/>
+      <ClassStats class="net.runelite.http.api.xtea.XteaClient$1" sourceFile="XteaClient.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.xtea.XteaClient$2" sourceFile="XteaClient.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="net.runelite.http.api.xtea.XteaKey" sourceFile="XteaKey.java" interface="false" size="15" bugs="2" priority_2="2"/>
+      <ClassStats class="net.runelite.http.api.xtea.XteaRequest" sourceFile="XteaRequest.java" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="139" invocations="2" avgMicrosecondsPerInvocation="69957" maxMicrosecondsPerInvocation="127178" standardDeviationMircosecondsPerInvocation="57221"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="77" invocations="703" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="6210" standardDeviationMircosecondsPerInvocation="354"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BadSyntaxForRegularExpression" totalMilliseconds="64" invocations="73" avgMicrosecondsPerInvocation="880" maxMicrosecondsPerInvocation="59965" standardDeviationMircosecondsPerInvocation="6964"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="62" invocations="73" avgMicrosecondsPerInvocation="858" maxMicrosecondsPerInvocation="18848" standardDeviationMircosecondsPerInvocation="2852"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="55" invocations="604" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="5962" standardDeviationMircosecondsPerInvocation="351"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="38" invocations="606" avgMicrosecondsPerInvocation="64" maxMicrosecondsPerInvocation="5780" standardDeviationMircosecondsPerInvocation="318"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="36" invocations="604" avgMicrosecondsPerInvocation="61" maxMicrosecondsPerInvocation="1986" standardDeviationMircosecondsPerInvocation="163"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="36" invocations="604" avgMicrosecondsPerInvocation="60" maxMicrosecondsPerInvocation="2259" standardDeviationMircosecondsPerInvocation="186"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="35" invocations="705" avgMicrosecondsPerInvocation="49" maxMicrosecondsPerInvocation="202" standardDeviationMircosecondsPerInvocation="19"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="32" invocations="606" avgMicrosecondsPerInvocation="52" maxMicrosecondsPerInvocation="1311" standardDeviationMircosecondsPerInvocation="145"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="27" invocations="604" avgMicrosecondsPerInvocation="45" maxMicrosecondsPerInvocation="783" standardDeviationMircosecondsPerInvocation="109"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="27" invocations="256" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="1735" standardDeviationMircosecondsPerInvocation="218"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="16" invocations="120" avgMicrosecondsPerInvocation="138" maxMicrosecondsPerInvocation="1697" standardDeviationMircosecondsPerInvocation="258"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="16" invocations="810" avgMicrosecondsPerInvocation="19" maxMicrosecondsPerInvocation="538" standardDeviationMircosecondsPerInvocation="40"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="16" invocations="73" avgMicrosecondsPerInvocation="220" maxMicrosecondsPerInvocation="6369" standardDeviationMircosecondsPerInvocation="758"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizationOnSharedBuiltinConstant" totalMilliseconds="15" invocations="73" avgMicrosecondsPerInvocation="216" maxMicrosecondsPerInvocation="11591" standardDeviationMircosecondsPerInvocation="1341"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="14" invocations="120" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="1387" standardDeviationMircosecondsPerInvocation="207"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

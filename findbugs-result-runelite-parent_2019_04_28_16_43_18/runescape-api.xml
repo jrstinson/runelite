@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://findbugs.sourceforge.net/xsl/default.xsl"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1556483762097" analysisTimestamp="1556483761465" release="">
+  <Project projectName="runelite-parent[runescape-api]">
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\mapping\Construct.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\mapping\Import.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\mapping\Protect.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSActor.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSBuffer.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSBufferProvider.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSCacheableNode.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSChatLineBuffer.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSChatPlayer.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSClanMember.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSClanMemberManager.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSClassInfo.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSClient.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSCollisionData.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSCombatInfo1.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSCombatInfo2.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSCombatInfoList.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSCombatInfoListHolder.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSDecorativeObject.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSDeque.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSDynamicObject.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSFileOnDisk.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSFontTypeFace.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSFrame.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSFrameMap.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSFrames.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSFriend.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSFriendContainer.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSFriendManager.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSGameCanvas.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSGameEngine.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSGameObject.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSGrandExchangeOffer.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSGraphicsObject.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSGroundObject.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSHashTable.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSIgnore.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSIgnoreContainer.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSIndexData.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSIndexDataBase.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSIndexedSprite.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSIntegerNode.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSItem.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSItemComposition.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSItemContainer.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSItemLayer.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSIterableHashTable.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSJagexLoginType.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSKeyFocusListener.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSMainBufferProvider.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSMapElementConfig.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSMessageNode.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSModel.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSModelData.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSMouseInput.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSMouseWheelHandler.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSName.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSNameable.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSNameableContainer.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSNode.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSNodeCache.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSNPC.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSNPCComposition.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSObjectComposition.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSPacketBuffer.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSPlayer.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSPlayerComposition.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSPreferences.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSProjectile.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSRenderable.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSRenderOverview.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSRunException.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSScene.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSSceneTileModel.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSSceneTilePaint.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSScript.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSScriptEvent.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSSequence.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSSoundEffect.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSSprite.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSSpritePixels.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSTexture.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSTextureProvider.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSTile.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSVarbit.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSVarcs.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSWallObject.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSWidget.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSWidgetNode.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSWorld.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSWorldMapData.class</Jar>
+    <Jar>D:\School\runelite\runelite\runescape-api\target\classes\net\runelite\rs\api\RSWorldMapManager.class</Jar>
+    <AuxClasspathEntry>D:/School/runelite/runelite/runescape-api/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/runelite-api/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/runelite-api/target/test-classes</AuxClasspathEntry>
+    <SrcDir>D:/School/runelite/runelite/runescape-api/src/main/java</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 28 Apr 2019 16:10:33 -0400" total_classes="92" referenced_classes="180" total_bugs="0" total_size="981" num_packages="2" java_version="1.8.0_112-release" vm_version="25.112-b6" cpu_seconds="263.00" clock_seconds="437.54" peak_mbytes="745.26" alloc_mbytes="494.94" gc_seconds="3.73">
+    <FileStats path="net/runelite/mapping/Construct.java" bugCount="0" size="1"/>
+    <FileStats path="net/runelite/mapping/Import.java" bugCount="0" size="2"/>
+    <FileStats path="net/runelite/mapping/Protect.java" bugCount="0" size="1"/>
+    <FileStats path="net/runelite/rs/api/RSActor.java" bugCount="0" size="28"/>
+    <FileStats path="net/runelite/rs/api/RSBuffer.java" bugCount="0" size="3"/>
+    <FileStats path="net/runelite/rs/api/RSBufferProvider.java" bugCount="0" size="5"/>
+    <FileStats path="net/runelite/rs/api/RSCacheableNode.java" bugCount="0" size="1"/>
+    <FileStats path="net/runelite/rs/api/RSChatLineBuffer.java" bugCount="0" size="3"/>
+    <FileStats path="net/runelite/rs/api/RSChatPlayer.java" bugCount="0" size="3"/>
+    <FileStats path="net/runelite/rs/api/RSClanMember.java" bugCount="0" size="1"/>
+    <FileStats path="net/runelite/rs/api/RSClanMemberManager.java" bugCount="0" size="1"/>
+    <FileStats path="net/runelite/rs/api/RSClassInfo.java" bugCount="0" size="4"/>
+    <FileStats path="net/runelite/rs/api/RSClient.java" bugCount="0" size="289"/>
+    <FileStats path="net/runelite/rs/api/RSCollisionData.java" bugCount="0" size="2"/>
+    <FileStats path="net/runelite/rs/api/RSCombatInfo1.java" bugCount="0" size="3"/>
+    <FileStats path="net/runelite/rs/api/RSCombatInfo2.java" bugCount="0" size="2"/>
+    <FileStats path="net/runelite/rs/api/RSCombatInfoList.java" bugCount="0" size="2"/>
+    <FileStats path="net/runelite/rs/api/RSCombatInfoListHolder.java" bugCount="0" size="3"/>
+    <FileStats path="net/runelite/rs/api/RSDecorativeObject.java" bugCount="0" size="11"/>
+    <FileStats path="net/runelite/rs/api/RSDeque.java" bugCount="0" size="3"/>
+    <FileStats path="net/runelite/rs/api/RSDynamicObject.java" bugCount="0" size="5"/>
+    <FileStats path="net/runelite/rs/api/RSFileOnDisk.java" bugCount="0" size="4"/>
+    <FileStats path="net/runelite/rs/api/RSFontTypeFace.java" bugCount="0" size="3"/>
+    <FileStats path="net/runelite/rs/api/RSFrame.java" bugCount="0" size="8"/>
+    <FileStats path="net/runelite/rs/api/RSFrameMap.java" bugCount="0" size="4"/>
+    <FileStats path="net/runelite/rs/api/RSFrames.java" bugCount="0" size="2"/>
+    <FileStats path="net/runelite/rs/api/RSFriend.java" bugCount="0" size="1"/>
+    <FileStats path="net/runelite/rs/api/RSFriendContainer.java" bugCount="0" size="1"/>
+    <FileStats path="net/runelite/rs/api/RSFriendManager.java" bugCount="0" size="4"/>
+    <FileStats path="net/runelite/rs/api/RSGameCanvas.java" bugCount="0" size="1"/>
+    <FileStats path="net/runelite/rs/api/RSGameEngine.java" bugCount="0" size="10"/>
+    <FileStats path="net/runelite/rs/api/RSGameObject.java" bugCount="0" size="15"/>
+    <FileStats path="net/runelite/rs/api/RSGrandExchangeOffer.java" bugCount="0" size="7"/>
+    <FileStats path="net/runelite/rs/api/RSGraphicsObject.java" bugCount="0" size="7"/>
+    <FileStats path="net/runelite/rs/api/RSGroundObject.java" bugCount="0" size="8"/>
+    <FileStats path="net/runelite/rs/api/RSHashTable.java" bugCount="0" size="6"/>
+    <FileStats path="net/runelite/rs/api/RSIgnore.java" bugCount="0" size="1"/>
+    <FileStats path="net/runelite/rs/api/RSIgnoreContainer.java" bugCount="0" size="1"/>
+    <FileStats path="net/runelite/rs/api/RSIndexData.java" bugCount="0" size="2"/>
+    <FileStats path="net/runelite/rs/api/RSIndexDataBase.java" bugCount="0" size="2"/>
+    <FileStats path="net/runelite/rs/api/RSIndexedSprite.java" bugCount="0" size="17"/>
+    <FileStats path="net/runelite/rs/api/RSIntegerNode.java" bugCount="0" size="3"/>
+    <FileStats path="net/runelite/rs/api/RSItem.java" bugCount="0" size="10"/>
+    <FileStats path="net/runelite/rs/api/RSItemComposition.java" bugCount="0" size="14"/>
+    <FileStats path="net/runelite/rs/api/RSItemContainer.java" bugCount="0" size="3"/>
+    <FileStats path="net/runelite/rs/api/RSItemLayer.java" bugCount="0" size="13"/>
+    <FileStats path="net/runelite/rs/api/RSIterableHashTable.java" bugCount="0" size="4"/>
+    <FileStats path="net/runelite/rs/api/RSJagexLoginType.java" bugCount="0" size="1"/>
+    <FileStats path="net/runelite/rs/api/RSKeyFocusListener.java" bugCount="0" size="1"/>
+    <FileStats path="net/runelite/rs/api/RSMainBufferProvider.java" bugCount="0" size="4"/>
+    <FileStats path="net/runelite/rs/api/RSMapElementConfig.java" bugCount="0" size="4"/>
+    <FileStats path="net/runelite/rs/api/RSMessageNode.java" bugCount="0" size="9"/>
+    <FileStats path="net/runelite/rs/api/RSModel.java" bugCount="0" size="41"/>
+    <FileStats path="net/runelite/rs/api/RSModelData.java" bugCount="0" size="14"/>
+    <FileStats path="net/runelite/rs/api/RSMouseInput.java" bugCount="0" size="1"/>
+    <FileStats path="net/runelite/rs/api/RSMouseWheelHandler.java" bugCount="0" size="1"/>
+    <FileStats path="net/runelite/rs/api/RSNPC.java" bugCount="0" size="7"/>
+    <FileStats path="net/runelite/rs/api/RSNPCComposition.java" bugCount="0" size="15"/>
+    <FileStats path="net/runelite/rs/api/RSName.java" bugCount="0" size="2"/>
+    <FileStats path="net/runelite/rs/api/RSNameable.java" bugCount="0" size="3"/>
+    <FileStats path="net/runelite/rs/api/RSNameableContainer.java" bugCount="0" size="4"/>
+    <FileStats path="net/runelite/rs/api/RSNode.java" bugCount="0" size="9"/>
+    <FileStats path="net/runelite/rs/api/RSNodeCache.java" bugCount="0" size="5"/>
+    <FileStats path="net/runelite/rs/api/RSObjectComposition.java" bugCount="0" size="10"/>
+    <FileStats path="net/runelite/rs/api/RSPacketBuffer.java" bugCount="0" size="1"/>
+    <FileStats path="net/runelite/rs/api/RSPlayer.java" bugCount="0" size="13"/>
+    <FileStats path="net/runelite/rs/api/RSPlayerComposition.java" bugCount="0" size="6"/>
+    <FileStats path="net/runelite/rs/api/RSPreferences.java" bugCount="0" size="3"/>
+    <FileStats path="net/runelite/rs/api/RSProjectile.java" bugCount="0" size="18"/>
+    <FileStats path="net/runelite/rs/api/RSRenderOverview.java" bugCount="0" size="18"/>
+    <FileStats path="net/runelite/rs/api/RSRenderable.java" bugCount="0" size="7"/>
+    <FileStats path="net/runelite/rs/api/RSRunException.java" bugCount="0" size="2"/>
+    <FileStats path="net/runelite/rs/api/RSScene.java" bugCount="0" size="13"/>
+    <FileStats path="net/runelite/rs/api/RSSceneTileModel.java" bugCount="0" size="15"/>
+    <FileStats path="net/runelite/rs/api/RSSceneTilePaint.java" bugCount="0" size="7"/>
+    <FileStats path="net/runelite/rs/api/RSScript.java" bugCount="0" size="3"/>
+    <FileStats path="net/runelite/rs/api/RSScriptEvent.java" bugCount="0" size="6"/>
+    <FileStats path="net/runelite/rs/api/RSSequence.java" bugCount="0" size="8"/>
+    <FileStats path="net/runelite/rs/api/RSSoundEffect.java" bugCount="0" size="1"/>
+    <FileStats path="net/runelite/rs/api/RSSprite.java" bugCount="0" size="1"/>
+    <FileStats path="net/runelite/rs/api/RSSpritePixels.java" bugCount="0" size="10"/>
+    <FileStats path="net/runelite/rs/api/RSTexture.java" bugCount="0" size="5"/>
+    <FileStats path="net/runelite/rs/api/RSTextureProvider.java" bugCount="0" size="9"/>
+    <FileStats path="net/runelite/rs/api/RSTile.java" bugCount="0" size="23"/>
+    <FileStats path="net/runelite/rs/api/RSVarbit.java" bugCount="0" size="4"/>
+    <FileStats path="net/runelite/rs/api/RSVarcs.java" bugCount="0" size="3"/>
+    <FileStats path="net/runelite/rs/api/RSWallObject.java" bugCount="0" size="13"/>
+    <FileStats path="net/runelite/rs/api/RSWidget.java" bugCount="0" size="113"/>
+    <FileStats path="net/runelite/rs/api/RSWidgetNode.java" bugCount="0" size="2"/>
+    <FileStats path="net/runelite/rs/api/RSWorld.java" bugCount="0" size="15"/>
+    <FileStats path="net/runelite/rs/api/RSWorldMapData.java" bugCount="0" size="2"/>
+    <FileStats path="net/runelite/rs/api/RSWorldMapManager.java" bugCount="0" size="5"/>
+    <PackageStats package="net.runelite.mapping" total_bugs="0" total_types="3" total_size="4">
+      <ClassStats class="net.runelite.mapping.Construct" sourceFile="Construct.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="net.runelite.mapping.Import" sourceFile="Import.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.runelite.mapping.Protect" sourceFile="Protect.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.runelite.rs.api" total_bugs="0" total_types="89" total_size="977">
+      <ClassStats class="net.runelite.rs.api.RSActor" sourceFile="RSActor.java" interface="true" size="28" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSBuffer" sourceFile="RSBuffer.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSBufferProvider" sourceFile="RSBufferProvider.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSCacheableNode" sourceFile="RSCacheableNode.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSChatLineBuffer" sourceFile="RSChatLineBuffer.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSChatPlayer" sourceFile="RSChatPlayer.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSClanMember" sourceFile="RSClanMember.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSClanMemberManager" sourceFile="RSClanMemberManager.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSClassInfo" sourceFile="RSClassInfo.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSClient" sourceFile="RSClient.java" interface="true" size="289" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSCollisionData" sourceFile="RSCollisionData.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSCombatInfo1" sourceFile="RSCombatInfo1.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSCombatInfo2" sourceFile="RSCombatInfo2.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSCombatInfoList" sourceFile="RSCombatInfoList.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSCombatInfoListHolder" sourceFile="RSCombatInfoListHolder.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSDecorativeObject" sourceFile="RSDecorativeObject.java" interface="true" size="11" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSDeque" sourceFile="RSDeque.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSDynamicObject" sourceFile="RSDynamicObject.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSFileOnDisk" sourceFile="RSFileOnDisk.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSFontTypeFace" sourceFile="RSFontTypeFace.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSFrame" sourceFile="RSFrame.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSFrameMap" sourceFile="RSFrameMap.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSFrames" sourceFile="RSFrames.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSFriend" sourceFile="RSFriend.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSFriendContainer" sourceFile="RSFriendContainer.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSFriendManager" sourceFile="RSFriendManager.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSGameCanvas" sourceFile="RSGameCanvas.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSGameEngine" sourceFile="RSGameEngine.java" interface="true" size="10" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSGameObject" sourceFile="RSGameObject.java" interface="true" size="15" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSGrandExchangeOffer" sourceFile="RSGrandExchangeOffer.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSGraphicsObject" sourceFile="RSGraphicsObject.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSGroundObject" sourceFile="RSGroundObject.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSHashTable" sourceFile="RSHashTable.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSIgnore" sourceFile="RSIgnore.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSIgnoreContainer" sourceFile="RSIgnoreContainer.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSIndexData" sourceFile="RSIndexData.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSIndexDataBase" sourceFile="RSIndexDataBase.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSIndexedSprite" sourceFile="RSIndexedSprite.java" interface="true" size="17" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSIntegerNode" sourceFile="RSIntegerNode.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSItem" sourceFile="RSItem.java" interface="true" size="10" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSItemComposition" sourceFile="RSItemComposition.java" interface="true" size="14" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSItemContainer" sourceFile="RSItemContainer.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSItemLayer" sourceFile="RSItemLayer.java" interface="true" size="13" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSIterableHashTable" sourceFile="RSIterableHashTable.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSJagexLoginType" sourceFile="RSJagexLoginType.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSKeyFocusListener" sourceFile="RSKeyFocusListener.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSMainBufferProvider" sourceFile="RSMainBufferProvider.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSMapElementConfig" sourceFile="RSMapElementConfig.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSMessageNode" sourceFile="RSMessageNode.java" interface="true" size="9" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSModel" sourceFile="RSModel.java" interface="true" size="41" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSModelData" sourceFile="RSModelData.java" interface="true" size="14" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSMouseInput" sourceFile="RSMouseInput.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSMouseWheelHandler" sourceFile="RSMouseWheelHandler.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSNPC" sourceFile="RSNPC.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSNPCComposition" sourceFile="RSNPCComposition.java" interface="true" size="15" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSName" sourceFile="RSName.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSNameable" sourceFile="RSNameable.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSNameableContainer" sourceFile="RSNameableContainer.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSNode" sourceFile="RSNode.java" interface="true" size="9" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSNodeCache" sourceFile="RSNodeCache.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSObjectComposition" sourceFile="RSObjectComposition.java" interface="true" size="10" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSPacketBuffer" sourceFile="RSPacketBuffer.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSPlayer" sourceFile="RSPlayer.java" interface="true" size="13" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSPlayerComposition" sourceFile="RSPlayerComposition.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSPreferences" sourceFile="RSPreferences.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSProjectile" sourceFile="RSProjectile.java" interface="true" size="18" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSRenderOverview" sourceFile="RSRenderOverview.java" interface="true" size="18" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSRenderable" sourceFile="RSRenderable.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSRunException" sourceFile="RSRunException.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSScene" sourceFile="RSScene.java" interface="true" size="13" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSSceneTileModel" sourceFile="RSSceneTileModel.java" interface="true" size="15" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSSceneTilePaint" sourceFile="RSSceneTilePaint.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSScript" sourceFile="RSScript.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSScriptEvent" sourceFile="RSScriptEvent.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSSequence" sourceFile="RSSequence.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSSoundEffect" sourceFile="RSSoundEffect.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSSprite" sourceFile="RSSprite.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSSpritePixels" sourceFile="RSSpritePixels.java" interface="true" size="10" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSTexture" sourceFile="RSTexture.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSTextureProvider" sourceFile="RSTextureProvider.java" interface="true" size="9" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSTile" sourceFile="RSTile.java" interface="true" size="23" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSVarbit" sourceFile="RSVarbit.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSVarcs" sourceFile="RSVarcs.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSWallObject" sourceFile="RSWallObject.java" interface="true" size="13" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSWidget" sourceFile="RSWidget.java" interface="true" size="113" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSWidgetNode" sourceFile="RSWidgetNode.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSWorld" sourceFile="RSWorld.java" interface="true" size="15" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSWorldMapData" sourceFile="RSWorldMapData.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.runelite.rs.api.RSWorldMapManager" sourceFile="RSWorldMapManager.java" interface="true" size="5" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="211" invocations="2" avgMicrosecondsPerInvocation="105650" maxMicrosecondsPerInvocation="184143" standardDeviationMircosecondsPerInvocation="78493"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="106" invocations="11134" avgMicrosecondsPerInvocation="9" maxMicrosecondsPerInvocation="97735" standardDeviationMircosecondsPerInvocation="926"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="64" invocations="522" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="2586" standardDeviationMircosecondsPerInvocation="259"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="47" invocations="526" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="1851" standardDeviationMircosecondsPerInvocation="84"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="12" invocations="180" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="3246" standardDeviationMircosecondsPerInvocation="270"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUnsyncGet" totalMilliseconds="11" invocations="92" avgMicrosecondsPerInvocation="127" maxMicrosecondsPerInvocation="7799" standardDeviationMircosecondsPerInvocation="807"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

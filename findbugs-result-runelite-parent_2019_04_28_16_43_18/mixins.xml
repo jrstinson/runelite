@@ -1,0 +1,1520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://findbugs.sourceforge.net/xsl/default.xsl"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1556483764680" analysisTimestamp="1556483762097" release="">
+  <Project projectName="runelite-parent[mixins]">
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\api\mixins\Copy.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\api\mixins\FieldHook.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\api\mixins\Inject.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\api\mixins\MethodHook.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\api\mixins\Mixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\api\mixins\Mixins.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\api\mixins\Replace.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\api\mixins\Shadow.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\CameraMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\ClickboxMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\EntityHiderBridgeMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\EntityHiderMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\GraphicsObjectMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\MinimapMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\PlaySoundEffectMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\ProcessClientErrorMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\Rasterizer2DMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSActorMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSClanMemberMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSClientMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSDecorativeObjectMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSDynamicObjectMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSFriendManagerMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSFriendMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSGameCanvasMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSGameEngineMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSGameObjectMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSGrandExchangeOfferMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSGroundObjectMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSHashTableMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSIgnoreMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSIndexDataBaseMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSItemCompositionMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSItemContainerMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSItemLayerMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSItemMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSKeyFocusListenerMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSMainBufferProviderMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSMessageNodeMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSModelDataMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSModelMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSMouseInputMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSMouseWheelHandlerMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSNameableMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSNodeMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSNpcCompositionMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSNPCMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSPlayerCompositionMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSPlayerMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSProjectileMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSSceneMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSSceneTileModelMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSSceneTilePaintMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSSequenceMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSSpritePixelsMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSTextureMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSTextureProviderMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSTileMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSVarcsMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSWallObjectMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSWidgetMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\RSWorldMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\ScriptVMMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\SpriteMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\StretchedModeMaxSizeMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\StretchedModeMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\TileObjectMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\VarbitMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\WidgetSpriteMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\WorldHoppingMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\WorldMapManagerMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\classes\net\runelite\mixins\WorldMapMixin.class</Jar>
+    <Jar>D:\School\runelite\runelite\runelite-mixins\target\test-classes\net\runelite\mixins\RSSceneMixinTest.class</Jar>
+    <AuxClasspathEntry>D:/School/runelite/runelite/runescape-api/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/runelite-mixins/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/runelite-mixins/target/test-classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/runelite-api/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/School/runelite/runelite/runelite-api/target/test-classes</AuxClasspathEntry>
+    <SrcDir>D:/School/runelite/runelite/runelite-mixins/src/main/java</SrcDir>
+    <SrcDir>D:/School/runelite/runelite/runelite-mixins/src/test/java</SrcDir>
+  </Project>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" instanceHash="32fef8a5847a7dc61025b87538367f11" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.CameraMixin.pitchRelaxEnabled from instance method net.runelite.mixins.CameraMixin.setCameraPitchRelaxerEnabled(boolean)</LongMessage>
+    <Class classname="net.runelite.mixins.CameraMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.CameraMixin" sourcefile="CameraMixin.java" sourcepath="net/runelite/mixins/CameraMixin.java" relSourcepath="main\java\net\runelite\mixins\CameraMixin.java">
+        <Message>In CameraMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.CameraMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.CameraMixin" name="setCameraPitchRelaxerEnabled" signature="(Z)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.CameraMixin" start="54" end="67" startBytecode="0" endBytecode="143" sourcefile="CameraMixin.java" sourcepath="net/runelite/mixins/CameraMixin.java" relSourcepath="main\java\net\runelite\mixins\CameraMixin.java"/>
+      <Message>In method net.runelite.mixins.CameraMixin.setCameraPitchRelaxerEnabled(boolean)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.CameraMixin" name="pitchRelaxEnabled" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.CameraMixin" sourcefile="CameraMixin.java" sourcepath="net/runelite/mixins/CameraMixin.java" relSourcepath="main\java\net\runelite\mixins\CameraMixin.java">
+        <Message>In CameraMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.CameraMixin.pitchRelaxEnabled</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.CameraMixin" primary="true" start="58" end="58" startBytecode="9" endBytecode="9" sourcefile="CameraMixin.java" sourcepath="net/runelite/mixins/CameraMixin.java" relSourcepath="main\java\net\runelite\mixins\CameraMixin.java">
+      <Message>At CameraMixin.java:[line 58]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.CameraMixin" primary="true" start="58" end="58" startBytecode="9" endBytecode="9" sourcefile="CameraMixin.java" sourcepath="net/runelite/mixins/CameraMixin.java" relSourcepath="main\java\net\runelite\mixins\CameraMixin.java">
+      <Message>At CameraMixin.java:[line 58]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="3dbf8ca16b346e3e8641cb89535bb8a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.hideAttackers from instance method net.runelite.mixins.EntityHiderBridgeMixin.setAttackersHidden(boolean)</LongMessage>
+    <Class classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.EntityHiderBridgeMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.EntityHiderBridgeMixin" name="setAttackersHidden" signature="(Z)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" start="134" end="135" startBytecode="0" endBytecode="60" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java"/>
+      <Message>In method net.runelite.mixins.EntityHiderBridgeMixin.setAttackersHidden(boolean)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.EntityHiderBridgeMixin" name="hideAttackers" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.EntityHiderBridgeMixin.hideAttackers</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="134" end="134" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 134]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="134" end="134" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 134]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="d424751dcd8e1ff5efc7bbad93b9c8da" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.hideClanMates from instance method net.runelite.mixins.EntityHiderBridgeMixin.setClanMatesHidden(boolean)</LongMessage>
+    <Class classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.EntityHiderBridgeMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.EntityHiderBridgeMixin" name="setClanMatesHidden" signature="(Z)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" start="99" end="100" startBytecode="0" endBytecode="60" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java"/>
+      <Message>In method net.runelite.mixins.EntityHiderBridgeMixin.setClanMatesHidden(boolean)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.EntityHiderBridgeMixin" name="hideClanMates" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.EntityHiderBridgeMixin.hideClanMates</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="99" end="99" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 99]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="99" end="99" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 99]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="633dcf4a9da5c06845d919fdb42a9d66" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.hideFriends from instance method net.runelite.mixins.EntityHiderBridgeMixin.setFriendsHidden(boolean)</LongMessage>
+    <Class classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.EntityHiderBridgeMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.EntityHiderBridgeMixin" name="setFriendsHidden" signature="(Z)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" start="92" end="93" startBytecode="0" endBytecode="60" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java"/>
+      <Message>In method net.runelite.mixins.EntityHiderBridgeMixin.setFriendsHidden(boolean)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.EntityHiderBridgeMixin" name="hideFriends" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.EntityHiderBridgeMixin.hideFriends</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="92" end="92" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 92]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="92" end="92" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 92]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="32badbd90056bffc82cec6859201b62c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.isHidingEntities from instance method net.runelite.mixins.EntityHiderBridgeMixin.setIsHidingEntities(boolean)</LongMessage>
+    <Class classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.EntityHiderBridgeMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.EntityHiderBridgeMixin" name="setIsHidingEntities" signature="(Z)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" start="71" end="72" startBytecode="0" endBytecode="60" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java"/>
+      <Message>In method net.runelite.mixins.EntityHiderBridgeMixin.setIsHidingEntities(boolean)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.EntityHiderBridgeMixin" name="isHidingEntities" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.EntityHiderBridgeMixin.isHidingEntities</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="71" end="71" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 71]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="71" end="71" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 71]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="c1552f06cfcddc295c37bea159e4effb" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.hideLocalPlayer from instance method net.runelite.mixins.EntityHiderBridgeMixin.setLocalPlayerHidden(boolean)</LongMessage>
+    <Class classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.EntityHiderBridgeMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.EntityHiderBridgeMixin" name="setLocalPlayerHidden" signature="(Z)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" start="106" end="107" startBytecode="0" endBytecode="60" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java"/>
+      <Message>In method net.runelite.mixins.EntityHiderBridgeMixin.setLocalPlayerHidden(boolean)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.EntityHiderBridgeMixin" name="hideLocalPlayer" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.EntityHiderBridgeMixin.hideLocalPlayer</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="106" end="106" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 106]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="106" end="106" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 106]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="907398bfeff1b82526bd1086edc5e914" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.hideLocalPlayer2D from instance method net.runelite.mixins.EntityHiderBridgeMixin.setLocalPlayerHidden2D(boolean)</LongMessage>
+    <Class classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.EntityHiderBridgeMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.EntityHiderBridgeMixin" name="setLocalPlayerHidden2D" signature="(Z)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" start="113" end="114" startBytecode="0" endBytecode="60" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java"/>
+      <Message>In method net.runelite.mixins.EntityHiderBridgeMixin.setLocalPlayerHidden2D(boolean)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.EntityHiderBridgeMixin" name="hideLocalPlayer2D" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.EntityHiderBridgeMixin.hideLocalPlayer2D</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="113" end="113" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 113]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="113" end="113" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 113]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="d5866abc39af1cbe9140509e9a5a72cd" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.hideNPCs from instance method net.runelite.mixins.EntityHiderBridgeMixin.setNPCsHidden(boolean)</LongMessage>
+    <Class classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.EntityHiderBridgeMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.EntityHiderBridgeMixin" name="setNPCsHidden" signature="(Z)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" start="120" end="121" startBytecode="0" endBytecode="60" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java"/>
+      <Message>In method net.runelite.mixins.EntityHiderBridgeMixin.setNPCsHidden(boolean)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.EntityHiderBridgeMixin" name="hideNPCs" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.EntityHiderBridgeMixin.hideNPCs</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="120" end="120" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 120]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="120" end="120" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 120]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="2599f8564e10dc586c130e9834148cb4" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.hideNPCs2D from instance method net.runelite.mixins.EntityHiderBridgeMixin.setNPCsHidden2D(boolean)</LongMessage>
+    <Class classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.EntityHiderBridgeMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.EntityHiderBridgeMixin" name="setNPCsHidden2D" signature="(Z)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" start="127" end="128" startBytecode="0" endBytecode="60" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java"/>
+      <Message>In method net.runelite.mixins.EntityHiderBridgeMixin.setNPCsHidden2D(boolean)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.EntityHiderBridgeMixin" name="hideNPCs2D" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.EntityHiderBridgeMixin.hideNPCs2D</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="127" end="127" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 127]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="127" end="127" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 127]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="c7e4412abb003676ecc28f76da77ee2b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.hidePlayers from instance method net.runelite.mixins.EntityHiderBridgeMixin.setPlayersHidden(boolean)</LongMessage>
+    <Class classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.EntityHiderBridgeMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.EntityHiderBridgeMixin" name="setPlayersHidden" signature="(Z)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" start="78" end="79" startBytecode="0" endBytecode="60" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java"/>
+      <Message>In method net.runelite.mixins.EntityHiderBridgeMixin.setPlayersHidden(boolean)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.EntityHiderBridgeMixin" name="hidePlayers" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.EntityHiderBridgeMixin.hidePlayers</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="78" end="78" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 78]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="78" end="78" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 78]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="8e86b80d7dcc74ccd759b8d7b5c25a81" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.hidePlayers2D from instance method net.runelite.mixins.EntityHiderBridgeMixin.setPlayersHidden2D(boolean)</LongMessage>
+    <Class classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.EntityHiderBridgeMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.EntityHiderBridgeMixin" name="setPlayersHidden2D" signature="(Z)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" start="85" end="86" startBytecode="0" endBytecode="60" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java"/>
+      <Message>In method net.runelite.mixins.EntityHiderBridgeMixin.setPlayersHidden2D(boolean)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.EntityHiderBridgeMixin" name="hidePlayers2D" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.EntityHiderBridgeMixin.hidePlayers2D</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="85" end="85" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 85]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="85" end="85" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 85]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="74027364e75af4ae81f297b95aa2c8bb" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.EntityHiderBridgeMixin.hideProjectiles from instance method net.runelite.mixins.EntityHiderBridgeMixin.setProjectilesHidden(boolean)</LongMessage>
+    <Class classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.EntityHiderBridgeMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.EntityHiderBridgeMixin" name="setProjectilesHidden" signature="(Z)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" start="141" end="142" startBytecode="0" endBytecode="60" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java"/>
+      <Message>In method net.runelite.mixins.EntityHiderBridgeMixin.setProjectilesHidden(boolean)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.EntityHiderBridgeMixin" name="hideProjectiles" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+        <Message>In EntityHiderBridgeMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.EntityHiderBridgeMixin.hideProjectiles</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="141" end="141" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 141]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.EntityHiderBridgeMixin" primary="true" start="141" end="141" startBytecode="1" endBytecode="1" sourcefile="EntityHiderBridgeMixin.java" sourcepath="net/runelite/mixins/EntityHiderBridgeMixin.java" relSourcepath="main\java\net\runelite\mixins\EntityHiderBridgeMixin.java">
+      <Message>At EntityHiderBridgeMixin.java:[line 141]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NEXTINT_VIA_NEXTDOUBLE" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="996849460a87a4f7ce352868783e69eb" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Use the nextInt method of Random rather than nextDouble to generate a random integer</ShortMessage>
+    <LongMessage>net.runelite.mixins.MinimapMixin.drawInstanceMap(int) uses the nextDouble method of Random to generate a random integer; using nextInt is more efficient</LongMessage>
+    <Class classname="net.runelite.mixins.MinimapMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.MinimapMixin" sourcefile="MinimapMixin.java" sourcepath="net/runelite/mixins/MinimapMixin.java" relSourcepath="main\java\net\runelite\mixins\MinimapMixin.java">
+        <Message>In MinimapMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.MinimapMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.MinimapMixin" name="drawInstanceMap" signature="(I)Lnet/runelite/rs/api/RSSpritePixels;" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.MinimapMixin" start="41" end="99" startBytecode="0" endBytecode="850" sourcefile="MinimapMixin.java" sourcepath="net/runelite/mixins/MinimapMixin.java" relSourcepath="main\java\net\runelite\mixins\MinimapMixin.java"/>
+      <Message>In method net.runelite.mixins.MinimapMixin.drawInstanceMap(int)</Message>
+    </Method>
+    <SourceLine classname="net.runelite.mixins.MinimapMixin" primary="true" start="73" end="73" startBytecode="184" endBytecode="184" sourcefile="MinimapMixin.java" sourcepath="net/runelite/mixins/MinimapMixin.java" relSourcepath="main\java\net\runelite\mixins\MinimapMixin.java">
+      <Message>At MinimapMixin.java:[line 73]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.MinimapMixin" primary="true" start="73" end="73" startBytecode="184" endBytecode="184" sourcefile="MinimapMixin.java" sourcepath="net/runelite/mixins/MinimapMixin.java" relSourcepath="main\java\net\runelite\mixins\MinimapMixin.java">
+      <Message>At MinimapMixin.java:[line 73]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EC_UNRELATED_TYPES_USING_POINTER_EQUALITY" priority="2" rank="3" abbrev="EC" category="CORRECTNESS" instanceHash="cf0b51c71c3321c6292edeb3130608d6" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Using pointer equality to compare different types</ShortMessage>
+    <LongMessage>Using pointer equality to compare a net.runelite.rs.api.RSPlayer with a RSActorMixin in net.runelite.mixins.RSActorMixin.setCombatInfo(int, int, int, int, int, int)</LongMessage>
+    <Class classname="net.runelite.mixins.RSActorMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSActorMixin" sourcefile="RSActorMixin.java" sourcepath="net/runelite/mixins/RSActorMixin.java" relSourcepath="main\java\net\runelite\mixins\RSActorMixin.java">
+        <Message>In RSActorMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.RSActorMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.RSActorMixin" name="setCombatInfo" signature="(IIIIII)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSActorMixin" start="248" end="262" startBytecode="0" endBytecode="26" sourcefile="RSActorMixin.java" sourcepath="net/runelite/mixins/RSActorMixin.java" relSourcepath="main\java\net\runelite\mixins\RSActorMixin.java"/>
+      <Message>In method net.runelite.mixins.RSActorMixin.setCombatInfo(int, int, int, int, int, int)</Message>
+    </Method>
+    <Type descriptor="Lnet/runelite/rs/api/RSPlayer;" role="TYPE_FOUND">
+      <SourceLine classname="net.runelite.rs.api.RSPlayer" start="31" end="31" sourcefile="RSPlayer.java" sourcepath="net/runelite/rs/api/RSPlayer.java">
+        <Message>At RSPlayer.java:[line 31]</Message>
+      </SourceLine>
+      <Message>Actual type net.runelite.rs.api.RSPlayer</Message>
+    </Type>
+    <Type descriptor="Lnet/runelite/mixins/RSActorMixin;" role="TYPE_EXPECTED">
+      <SourceLine classname="net.runelite.mixins.RSActorMixin" start="62" end="285" sourcefile="RSActorMixin.java" sourcepath="net/runelite/mixins/RSActorMixin.java" relSourcepath="main\java\net\runelite\mixins\RSActorMixin.java">
+        <Message>At RSActorMixin.java:[lines 62-285]</Message>
+      </SourceLine>
+      <Message>Expected net.runelite.mixins.RSActorMixin</Message>
+    </Type>
+    <Method classname="net.runelite.rs.api.RSClient" name="getLocalPlayer" signature="()Lnet/runelite/rs/api/RSPlayer;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="net.runelite.rs.api.RSClient" sourcefile="RSClient.java" sourcepath="net/runelite/rs/api/RSClient.java"/>
+      <Message>Return value of net.runelite.rs.api.RSClient.getLocalPlayer() of type net.runelite.rs.api.RSPlayer</Message>
+    </Method>
+    <LocalVariable name="this" register="0" pc="9" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from this</Message>
+    </LocalVariable>
+    <SourceLine classname="net.runelite.mixins.RSActorMixin" primary="true" start="250" end="250" startBytecode="14" endBytecode="14" sourcefile="RSActorMixin.java" sourcepath="net/runelite/mixins/RSActorMixin.java" relSourcepath="main\java\net\runelite\mixins\RSActorMixin.java">
+      <Message>At RSActorMixin.java:[line 250]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSActorMixin" primary="true" start="250" end="250" startBytecode="14" endBytecode="14" sourcefile="RSActorMixin.java" sourcepath="net/runelite/mixins/RSActorMixin.java" relSourcepath="main\java\net\runelite\mixins\RSActorMixin.java">
+      <Message>At RSActorMixin.java:[line 250]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="3511c7027e724e34c08a52492a7c2b6a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.RSClientMixin.interpolateNpcAnimations from instance method net.runelite.mixins.RSClientMixin.setInterpolateNpcAnimations(boolean)</LongMessage>
+    <Class classname="net.runelite.mixins.RSClientMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+        <Message>In RSClientMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.RSClientMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.RSClientMixin" name="setInterpolateNpcAnimations" signature="(Z)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" start="232" end="233" startBytecode="0" endBytecode="60" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java"/>
+      <Message>In method net.runelite.mixins.RSClientMixin.setInterpolateNpcAnimations(boolean)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.RSClientMixin" name="interpolateNpcAnimations" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+        <Message>In RSClientMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.RSClientMixin.interpolateNpcAnimations</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.RSClientMixin" primary="true" start="232" end="232" startBytecode="1" endBytecode="1" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+      <Message>At RSClientMixin.java:[line 232]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSClientMixin" primary="true" start="232" end="232" startBytecode="1" endBytecode="1" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+      <Message>At RSClientMixin.java:[line 232]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="eb19c5b36562cd615880c655fab19b01" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.RSClientMixin.interpolateObjectAnimations from instance method net.runelite.mixins.RSClientMixin.setInterpolateObjectAnimations(boolean)</LongMessage>
+    <Class classname="net.runelite.mixins.RSClientMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+        <Message>In RSClientMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.RSClientMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.RSClientMixin" name="setInterpolateObjectAnimations" signature="(Z)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" start="246" end="247" startBytecode="0" endBytecode="60" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java"/>
+      <Message>In method net.runelite.mixins.RSClientMixin.setInterpolateObjectAnimations(boolean)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.RSClientMixin" name="interpolateObjectAnimations" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+        <Message>In RSClientMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.RSClientMixin.interpolateObjectAnimations</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.RSClientMixin" primary="true" start="246" end="246" startBytecode="1" endBytecode="1" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+      <Message>At RSClientMixin.java:[line 246]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSClientMixin" primary="true" start="246" end="246" startBytecode="1" endBytecode="1" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+      <Message>At RSClientMixin.java:[line 246]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="b95e993e91ca01c3eb1fc8923155ec3b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.RSClientMixin.interpolatePlayerAnimations from instance method net.runelite.mixins.RSClientMixin.setInterpolatePlayerAnimations(boolean)</LongMessage>
+    <Class classname="net.runelite.mixins.RSClientMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+        <Message>In RSClientMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.RSClientMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.RSClientMixin" name="setInterpolatePlayerAnimations" signature="(Z)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" start="218" end="219" startBytecode="0" endBytecode="60" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java"/>
+      <Message>In method net.runelite.mixins.RSClientMixin.setInterpolatePlayerAnimations(boolean)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.RSClientMixin" name="interpolatePlayerAnimations" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+        <Message>In RSClientMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.RSClientMixin.interpolatePlayerAnimations</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.RSClientMixin" primary="true" start="218" end="218" startBytecode="1" endBytecode="1" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+      <Message>At RSClientMixin.java:[line 218]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSClientMixin" primary="true" start="218" end="218" startBytecode="1" endBytecode="1" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+      <Message>At RSClientMixin.java:[line 218]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="8ef96d856170ee1522fa2d19080f8f69" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.RSClientMixin.inventoryDragDelay from instance method net.runelite.mixins.RSClientMixin.setInventoryDragDelay(int)</LongMessage>
+    <Class classname="net.runelite.mixins.RSClientMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+        <Message>In RSClientMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.RSClientMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.RSClientMixin" name="setInventoryDragDelay" signature="(I)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" start="253" end="254" startBytecode="0" endBytecode="60" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java"/>
+      <Message>In method net.runelite.mixins.RSClientMixin.setInventoryDragDelay(int)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.RSClientMixin" name="inventoryDragDelay" signature="I" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+        <Message>In RSClientMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.RSClientMixin.inventoryDragDelay</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.RSClientMixin" primary="true" start="253" end="253" startBytecode="1" endBytecode="1" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+      <Message>At RSClientMixin.java:[line 253]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSClientMixin" primary="true" start="253" end="253" startBytecode="1" endBytecode="1" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+      <Message>At RSClientMixin.java:[line 253]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="b44855be51ec3f4cf5ed3896df41abe2" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.RSClientMixin.lastItemDespawn from instance method net.runelite.mixins.RSClientMixin.setLastItemDespawn(RSItem)</LongMessage>
+    <Class classname="net.runelite.mixins.RSClientMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+        <Message>In RSClientMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.RSClientMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.RSClientMixin" name="setLastItemDespawn" signature="(Lnet/runelite/rs/api/RSItem;)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" start="1317" end="1318" startBytecode="0" endBytecode="60" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java"/>
+      <Message>In method net.runelite.mixins.RSClientMixin.setLastItemDespawn(RSItem)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.RSClientMixin" name="lastItemDespawn" signature="Lnet/runelite/rs/api/RSItem;" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+        <Message>In RSClientMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.RSClientMixin.lastItemDespawn</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.RSClientMixin" primary="true" start="1317" end="1317" startBytecode="1" endBytecode="1" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+      <Message>At RSClientMixin.java:[line 1317]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSClientMixin" primary="true" start="1317" end="1317" startBytecode="1" endBytecode="1" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+      <Message>At RSClientMixin.java:[line 1317]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="73829a737eb0950288a7bdec49542ca9" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.RSClientMixin.oldMenuEntryCount from instance method net.runelite.mixins.RSClientMixin.setMenuEntries(MenuEntry[])</LongMessage>
+    <Class classname="net.runelite.mixins.RSClientMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+        <Message>In RSClientMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.RSClientMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.RSClientMixin" name="setMenuEntries" signature="([Lnet/runelite/api/MenuEntry;)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" start="573" end="596" startBytecode="0" endBytecode="421" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java"/>
+      <Message>In method net.runelite.mixins.RSClientMixin.setMenuEntries(MenuEntry[])</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.RSClientMixin" name="oldMenuEntryCount" signature="I" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+        <Message>In RSClientMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.RSClientMixin.oldMenuEntryCount</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.RSClientMixin" primary="true" start="595" end="595" startBytecode="145" endBytecode="145" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+      <Message>At RSClientMixin.java:[line 595]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSClientMixin" primary="true" start="595" end="595" startBytecode="145" endBytecode="145" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+      <Message>At RSClientMixin.java:[line 595]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="e2555297084c6ea98549da655da987f6" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.RSClientMixin.skyboxColor from instance method net.runelite.mixins.RSClientMixin.setSkyboxColor(int)</LongMessage>
+    <Class classname="net.runelite.mixins.RSClientMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+        <Message>In RSClientMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.RSClientMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.RSClientMixin" name="setSkyboxColor" signature="(I)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" start="1405" end="1406" startBytecode="0" endBytecode="60" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java"/>
+      <Message>In method net.runelite.mixins.RSClientMixin.setSkyboxColor(int)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.RSClientMixin" name="skyboxColor" signature="I" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+        <Message>In RSClientMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.RSClientMixin.skyboxColor</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.RSClientMixin" primary="true" start="1405" end="1405" startBytecode="1" endBytecode="1" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+      <Message>At RSClientMixin.java:[line 1405]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSClientMixin" primary="true" start="1405" end="1405" startBytecode="1" endBytecode="1" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+      <Message>At RSClientMixin.java:[line 1405]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="4c32d1a86cd8df36bec5f12e62ae2276" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.RSClientMixin.tickCount from instance method net.runelite.mixins.RSClientMixin.setTickCount(int)</LongMessage>
+    <Class classname="net.runelite.mixins.RSClientMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+        <Message>In RSClientMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.RSClientMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.RSClientMixin" name="setTickCount" signature="(I)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" start="1214" end="1215" startBytecode="0" endBytecode="60" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java"/>
+      <Message>In method net.runelite.mixins.RSClientMixin.setTickCount(int)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.RSClientMixin" name="tickCount" signature="I" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSClientMixin" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+        <Message>In RSClientMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.RSClientMixin.tickCount</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.RSClientMixin" primary="true" start="1214" end="1214" startBytecode="1" endBytecode="1" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+      <Message>At RSClientMixin.java:[line 1214]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSClientMixin" primary="true" start="1214" end="1214" startBytecode="1" endBytecode="1" sourcefile="RSClientMixin.java" sourcepath="net/runelite/mixins/RSClientMixin.java" relSourcepath="main\java\net\runelite\mixins\RSClientMixin.java">
+      <Message>At RSClientMixin.java:[line 1214]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="8f09fbd17f9ddf4f5602b0a5026193bf" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.RSGameCanvasMixin.shouldNotHaveFocus from instance method net.runelite.mixins.RSGameCanvasMixin.removeFocusListener(FocusListener)</LongMessage>
+    <Class classname="net.runelite.mixins.RSGameCanvasMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSGameCanvasMixin" sourcefile="RSGameCanvasMixin.java" sourcepath="net/runelite/mixins/RSGameCanvasMixin.java" relSourcepath="main\java\net\runelite\mixins\RSGameCanvasMixin.java">
+        <Message>In RSGameCanvasMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.RSGameCanvasMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.RSGameCanvasMixin" name="removeFocusListener" signature="(Ljava/awt/event/FocusListener;)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSGameCanvasMixin" start="50" end="52" startBytecode="0" endBytecode="91" sourcefile="RSGameCanvasMixin.java" sourcepath="net/runelite/mixins/RSGameCanvasMixin.java" relSourcepath="main\java\net\runelite\mixins\RSGameCanvasMixin.java"/>
+      <Message>In method net.runelite.mixins.RSGameCanvasMixin.removeFocusListener(FocusListener)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.RSGameCanvasMixin" name="shouldNotHaveFocus" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSGameCanvasMixin" sourcefile="RSGameCanvasMixin.java" sourcepath="net/runelite/mixins/RSGameCanvasMixin.java" relSourcepath="main\java\net\runelite\mixins\RSGameCanvasMixin.java">
+        <Message>In RSGameCanvasMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.RSGameCanvasMixin.shouldNotHaveFocus</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.RSGameCanvasMixin" primary="true" start="51" end="51" startBytecode="17" endBytecode="17" sourcefile="RSGameCanvasMixin.java" sourcepath="net/runelite/mixins/RSGameCanvasMixin.java" relSourcepath="main\java\net\runelite\mixins\RSGameCanvasMixin.java">
+      <Message>At RSGameCanvasMixin.java:[line 51]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSGameCanvasMixin" primary="true" start="51" end="51" startBytecode="17" endBytecode="17" sourcefile="RSGameCanvasMixin.java" sourcepath="net/runelite/mixins/RSGameCanvasMixin.java" relSourcepath="main\java\net\runelite\mixins\RSGameCanvasMixin.java">
+      <Message>At RSGameCanvasMixin.java:[line 51]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="418ab811d5e8f7b7644bd99896575137" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in net.runelite.mixins.RSIndexDataBaseMixin.rl$getConfigData(int, int): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="net.runelite.mixins.RSIndexDataBaseMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSIndexDataBaseMixin" sourcefile="RSIndexDataBaseMixin.java" sourcepath="net/runelite/mixins/RSIndexDataBaseMixin.java" relSourcepath="main\java\net\runelite\mixins\RSIndexDataBaseMixin.java">
+        <Message>In RSIndexDataBaseMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.RSIndexDataBaseMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.RSIndexDataBaseMixin" name="rl$getConfigData" signature="(II)[B" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSIndexDataBaseMixin" start="68" end="137" startBytecode="0" endBytecode="831" sourcefile="RSIndexDataBaseMixin.java" sourcepath="net/runelite/mixins/RSIndexDataBaseMixin.java" relSourcepath="main\java\net\runelite\mixins\RSIndexDataBaseMixin.java"/>
+      <Message>In method net.runelite.mixins.RSIndexDataBaseMixin.rl$getConfigData(int, int)</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="net.runelite.mixins.RSIndexDataBaseMixin" primary="true" start="119" end="119" startBytecode="298" endBytecode="298" sourcefile="RSIndexDataBaseMixin.java" sourcepath="net/runelite/mixins/RSIndexDataBaseMixin.java" relSourcepath="main\java\net\runelite\mixins\RSIndexDataBaseMixin.java">
+      <Message>At RSIndexDataBaseMixin.java:[line 119]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSIndexDataBaseMixin" primary="true" start="119" end="119" startBytecode="298" endBytecode="298" sourcefile="RSIndexDataBaseMixin.java" sourcepath="net/runelite/mixins/RSIndexDataBaseMixin.java" relSourcepath="main\java\net\runelite\mixins\RSIndexDataBaseMixin.java">
+      <Message>At RSIndexDataBaseMixin.java:[line 119]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="51f57e9eb3ca4c3448cadd99be040762" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource</ShortMessage>
+    <LongMessage>net.runelite.mixins.RSIndexDataBaseMixin.rl$getConfigData(int, int) may fail to clean up java.io.InputStream</LongMessage>
+    <Class classname="net.runelite.mixins.RSIndexDataBaseMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSIndexDataBaseMixin" sourcefile="RSIndexDataBaseMixin.java" sourcepath="net/runelite/mixins/RSIndexDataBaseMixin.java" relSourcepath="main\java\net\runelite\mixins\RSIndexDataBaseMixin.java">
+        <Message>In RSIndexDataBaseMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.RSIndexDataBaseMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.RSIndexDataBaseMixin" name="rl$getConfigData" signature="(II)[B" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSIndexDataBaseMixin" start="68" end="137" startBytecode="0" endBytecode="831" sourcefile="RSIndexDataBaseMixin.java" sourcepath="net/runelite/mixins/RSIndexDataBaseMixin.java" relSourcepath="main\java\net\runelite\mixins\RSIndexDataBaseMixin.java"/>
+      <Message>In method net.runelite.mixins.RSIndexDataBaseMixin.rl$getConfigData(int, int)</Message>
+    </Method>
+    <Class classname="java.io.InputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.InputStream" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java">
+        <Message>In InputStream.java</Message>
+      </SourceLine>
+      <Message>Reference type java.io.InputStream</Message>
+    </Class>
+    <Int value="2" role="INT_OBLIGATIONS_REMAINING">
+      <Message>2 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="net.runelite.mixins.RSIndexDataBaseMixin" primary="true" start="78" end="78" startBytecode="77" endBytecode="77" sourcefile="RSIndexDataBaseMixin.java" sourcepath="net/runelite/mixins/RSIndexDataBaseMixin.java" relSourcepath="main\java\net\runelite\mixins\RSIndexDataBaseMixin.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at RSIndexDataBaseMixin.java:[line 78] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSIndexDataBaseMixin" start="79" end="79" startBytecode="82" endBytecode="82" sourcefile="RSIndexDataBaseMixin.java" sourcepath="net/runelite/mixins/RSIndexDataBaseMixin.java" relSourcepath="main\java\net\runelite\mixins\RSIndexDataBaseMixin.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at RSIndexDataBaseMixin.java:[line 79]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSIndexDataBaseMixin" start="85" end="85" startBytecode="112" endBytecode="112" sourcefile="RSIndexDataBaseMixin.java" sourcepath="net/runelite/mixins/RSIndexDataBaseMixin.java" relSourcepath="main\java\net\runelite\mixins\RSIndexDataBaseMixin.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at RSIndexDataBaseMixin.java:[line 85]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSIndexDataBaseMixin" start="85" end="85" startBytecode="155" endBytecode="155" sourcefile="RSIndexDataBaseMixin.java" sourcepath="net/runelite/mixins/RSIndexDataBaseMixin.java" relSourcepath="main\java\net\runelite\mixins\RSIndexDataBaseMixin.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at RSIndexDataBaseMixin.java:[line 85] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSIndexDataBaseMixin" start="86" end="86" startBytecode="160" endBytecode="160" sourcefile="RSIndexDataBaseMixin.java" sourcepath="net/runelite/mixins/RSIndexDataBaseMixin.java" relSourcepath="main\java\net\runelite\mixins\RSIndexDataBaseMixin.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at RSIndexDataBaseMixin.java:[line 86]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSIndexDataBaseMixin" start="88" end="88" startBytecode="164" endBytecode="164" sourcefile="RSIndexDataBaseMixin.java" sourcepath="net/runelite/mixins/RSIndexDataBaseMixin.java" relSourcepath="main\java\net\runelite\mixins\RSIndexDataBaseMixin.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at RSIndexDataBaseMixin.java:[line 88]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSIndexDataBaseMixin" start="90" end="90" startBytecode="169" endBytecode="169" sourcefile="RSIndexDataBaseMixin.java" sourcepath="net/runelite/mixins/RSIndexDataBaseMixin.java" relSourcepath="main\java\net\runelite\mixins\RSIndexDataBaseMixin.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at RSIndexDataBaseMixin.java:[line 90]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSIndexDataBaseMixin" start="91" end="91" startBytecode="192" endBytecode="192" sourcefile="RSIndexDataBaseMixin.java" sourcepath="net/runelite/mixins/RSIndexDataBaseMixin.java" relSourcepath="main\java\net\runelite\mixins\RSIndexDataBaseMixin.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at RSIndexDataBaseMixin.java:[line 91]</Message>
+    </SourceLine>
+    <String value="{InputStream x 2}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {InputStream x 2}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="4a8c49297acc81596b979954dc410621" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>net.runelite.mixins.RSModelMixin.getFaceTextureUCoordinates() may expose internal representation by returning RSModelMixin.rl$faceTextureUCoordinates</LongMessage>
+    <Class classname="net.runelite.mixins.RSModelMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSModelMixin" sourcefile="RSModelMixin.java" sourcepath="net/runelite/mixins/RSModelMixin.java" relSourcepath="main\java\net\runelite\mixins\RSModelMixin.java">
+        <Message>In RSModelMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.RSModelMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.RSModelMixin" name="getFaceTextureUCoordinates" signature="()[[F" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSModelMixin" start="415" end="415" startBytecode="0" endBytecode="46" sourcefile="RSModelMixin.java" sourcepath="net/runelite/mixins/RSModelMixin.java" relSourcepath="main\java\net\runelite\mixins\RSModelMixin.java"/>
+      <Message>In method net.runelite.mixins.RSModelMixin.getFaceTextureUCoordinates()</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.RSModelMixin" name="rl$faceTextureUCoordinates" signature="[[F" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSModelMixin" sourcefile="RSModelMixin.java" sourcepath="net/runelite/mixins/RSModelMixin.java" relSourcepath="main\java\net\runelite\mixins\RSModelMixin.java">
+        <Message>In RSModelMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.RSModelMixin.rl$faceTextureUCoordinates</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.RSModelMixin" primary="true" start="415" end="415" startBytecode="4" endBytecode="4" sourcefile="RSModelMixin.java" sourcepath="net/runelite/mixins/RSModelMixin.java" relSourcepath="main\java\net\runelite\mixins\RSModelMixin.java">
+      <Message>At RSModelMixin.java:[line 415]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSModelMixin" primary="true" start="415" end="415" startBytecode="4" endBytecode="4" sourcefile="RSModelMixin.java" sourcepath="net/runelite/mixins/RSModelMixin.java" relSourcepath="main\java\net\runelite\mixins\RSModelMixin.java">
+      <Message>At RSModelMixin.java:[line 415]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="bdea30433a6ad91fbcb8e2c6268e1d7e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>net.runelite.mixins.RSModelMixin.getFaceTextureVCoordinates() may expose internal representation by returning RSModelMixin.rl$faceTextureVCoordinates</LongMessage>
+    <Class classname="net.runelite.mixins.RSModelMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSModelMixin" sourcefile="RSModelMixin.java" sourcepath="net/runelite/mixins/RSModelMixin.java" relSourcepath="main\java\net\runelite\mixins\RSModelMixin.java">
+        <Message>In RSModelMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.RSModelMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.RSModelMixin" name="getFaceTextureVCoordinates" signature="()[[F" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSModelMixin" start="429" end="429" startBytecode="0" endBytecode="46" sourcefile="RSModelMixin.java" sourcepath="net/runelite/mixins/RSModelMixin.java" relSourcepath="main\java\net\runelite\mixins\RSModelMixin.java"/>
+      <Message>In method net.runelite.mixins.RSModelMixin.getFaceTextureVCoordinates()</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.RSModelMixin" name="rl$faceTextureVCoordinates" signature="[[F" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSModelMixin" sourcefile="RSModelMixin.java" sourcepath="net/runelite/mixins/RSModelMixin.java" relSourcepath="main\java\net\runelite\mixins\RSModelMixin.java">
+        <Message>In RSModelMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.RSModelMixin.rl$faceTextureVCoordinates</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.RSModelMixin" primary="true" start="429" end="429" startBytecode="4" endBytecode="4" sourcefile="RSModelMixin.java" sourcepath="net/runelite/mixins/RSModelMixin.java" relSourcepath="main\java\net\runelite\mixins\RSModelMixin.java">
+      <Message>At RSModelMixin.java:[line 429]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSModelMixin" primary="true" start="429" end="429" startBytecode="4" endBytecode="4" sourcefile="RSModelMixin.java" sourcepath="net/runelite/mixins/RSModelMixin.java" relSourcepath="main\java\net\runelite\mixins\RSModelMixin.java">
+      <Message>At RSModelMixin.java:[line 429]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="45ddc181662e639d07067fe7448d02e1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>net.runelite.mixins.RSModelMixin.setFaceTextureUCoordinates(float[][]) may expose internal representation by storing an externally mutable object into RSModelMixin.rl$faceTextureUCoordinates</LongMessage>
+    <Class classname="net.runelite.mixins.RSModelMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSModelMixin" sourcefile="RSModelMixin.java" sourcepath="net/runelite/mixins/RSModelMixin.java" relSourcepath="main\java\net\runelite\mixins\RSModelMixin.java">
+        <Message>In RSModelMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.RSModelMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.RSModelMixin" name="setFaceTextureUCoordinates" signature="([[F)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSModelMixin" start="422" end="423" startBytecode="0" endBytecode="61" sourcefile="RSModelMixin.java" sourcepath="net/runelite/mixins/RSModelMixin.java" relSourcepath="main\java\net\runelite\mixins\RSModelMixin.java"/>
+      <Message>In method net.runelite.mixins.RSModelMixin.setFaceTextureUCoordinates(float[][])</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.RSModelMixin" name="rl$faceTextureUCoordinates" signature="[[F" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSModelMixin" sourcefile="RSModelMixin.java" sourcepath="net/runelite/mixins/RSModelMixin.java" relSourcepath="main\java\net\runelite\mixins\RSModelMixin.java">
+        <Message>In RSModelMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.RSModelMixin.rl$faceTextureUCoordinates</Message>
+    </Field>
+    <LocalVariable name="faceTextureUCoordinates" register="1" pc="2" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named faceTextureUCoordinates</Message>
+    </LocalVariable>
+    <SourceLine classname="net.runelite.mixins.RSModelMixin" primary="true" start="422" end="422" startBytecode="2" endBytecode="2" sourcefile="RSModelMixin.java" sourcepath="net/runelite/mixins/RSModelMixin.java" relSourcepath="main\java\net\runelite\mixins\RSModelMixin.java">
+      <Message>At RSModelMixin.java:[line 422]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSModelMixin" primary="true" start="422" end="422" startBytecode="2" endBytecode="2" sourcefile="RSModelMixin.java" sourcepath="net/runelite/mixins/RSModelMixin.java" relSourcepath="main\java\net\runelite\mixins\RSModelMixin.java">
+      <Message>At RSModelMixin.java:[line 422]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="2f94839fa4bcb2a5d572a3fcf6b03ea7" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>net.runelite.mixins.RSModelMixin.setFaceTextureVCoordinates(float[][]) may expose internal representation by storing an externally mutable object into RSModelMixin.rl$faceTextureVCoordinates</LongMessage>
+    <Class classname="net.runelite.mixins.RSModelMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSModelMixin" sourcefile="RSModelMixin.java" sourcepath="net/runelite/mixins/RSModelMixin.java" relSourcepath="main\java\net\runelite\mixins\RSModelMixin.java">
+        <Message>In RSModelMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.RSModelMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.RSModelMixin" name="setFaceTextureVCoordinates" signature="([[F)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSModelMixin" start="436" end="437" startBytecode="0" endBytecode="61" sourcefile="RSModelMixin.java" sourcepath="net/runelite/mixins/RSModelMixin.java" relSourcepath="main\java\net\runelite\mixins\RSModelMixin.java"/>
+      <Message>In method net.runelite.mixins.RSModelMixin.setFaceTextureVCoordinates(float[][])</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.RSModelMixin" name="rl$faceTextureVCoordinates" signature="[[F" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSModelMixin" sourcefile="RSModelMixin.java" sourcepath="net/runelite/mixins/RSModelMixin.java" relSourcepath="main\java\net\runelite\mixins\RSModelMixin.java">
+        <Message>In RSModelMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.RSModelMixin.rl$faceTextureVCoordinates</Message>
+    </Field>
+    <LocalVariable name="faceTextureVCoordinates" register="1" pc="2" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named faceTextureVCoordinates</Message>
+    </LocalVariable>
+    <SourceLine classname="net.runelite.mixins.RSModelMixin" primary="true" start="436" end="436" startBytecode="2" endBytecode="2" sourcefile="RSModelMixin.java" sourcepath="net/runelite/mixins/RSModelMixin.java" relSourcepath="main\java\net\runelite\mixins\RSModelMixin.java">
+      <Message>At RSModelMixin.java:[line 436]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSModelMixin" primary="true" start="436" end="436" startBytecode="2" endBytecode="2" sourcefile="RSModelMixin.java" sourcepath="net/runelite/mixins/RSModelMixin.java" relSourcepath="main\java\net\runelite\mixins\RSModelMixin.java">
+      <Message>At RSModelMixin.java:[line 436]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" instanceHash="8f4accaafd80a33d3ef33251bad91e38" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.RSSceneMixin.rl$drawDistance from instance method net.runelite.mixins.RSSceneMixin.setDrawDistance(int)</LongMessage>
+    <Class classname="net.runelite.mixins.RSSceneMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSSceneMixin" sourcefile="RSSceneMixin.java" sourcepath="net/runelite/mixins/RSSceneMixin.java" relSourcepath="main\java\net\runelite\mixins\RSSceneMixin.java">
+        <Message>In RSSceneMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.RSSceneMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.RSSceneMixin" name="setDrawDistance" signature="(I)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSSceneMixin" start="699" end="700" startBytecode="0" endBytecode="60" sourcefile="RSSceneMixin.java" sourcepath="net/runelite/mixins/RSSceneMixin.java" relSourcepath="main\java\net\runelite\mixins\RSSceneMixin.java"/>
+      <Message>In method net.runelite.mixins.RSSceneMixin.setDrawDistance(int)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.RSSceneMixin" name="rl$drawDistance" signature="I" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSSceneMixin" sourcefile="RSSceneMixin.java" sourcepath="net/runelite/mixins/RSSceneMixin.java" relSourcepath="main\java\net\runelite\mixins\RSSceneMixin.java">
+        <Message>In RSSceneMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.RSSceneMixin.rl$drawDistance</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.RSSceneMixin" primary="true" start="699" end="699" startBytecode="1" endBytecode="1" sourcefile="RSSceneMixin.java" sourcepath="net/runelite/mixins/RSSceneMixin.java" relSourcepath="main\java\net\runelite\mixins\RSSceneMixin.java">
+      <Message>At RSSceneMixin.java:[line 699]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSSceneMixin" primary="true" start="699" end="699" startBytecode="1" endBytecode="1" sourcefile="RSSceneMixin.java" sourcepath="net/runelite/mixins/RSSceneMixin.java" relSourcepath="main\java\net\runelite\mixins\RSSceneMixin.java">
+      <Message>At RSSceneMixin.java:[line 699]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" instanceHash="4752c58152b3490cf55fe7021403cab7" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.RSSceneMixin.client from instance method net.runelite.mixins.RSSceneMixinTest.testWalkDistance()</LongMessage>
+    <Class classname="net.runelite.mixins.RSSceneMixinTest" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSSceneMixinTest" sourcefile="RSSceneMixinTest.java" sourcepath="net/runelite/mixins/RSSceneMixinTest.java" relSourcepath="test\java\net\runelite\mixins\RSSceneMixinTest.java">
+        <Message>In RSSceneMixinTest.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.RSSceneMixinTest</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.RSSceneMixinTest" name="testWalkDistance" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSSceneMixinTest" start="41" end="52" startBytecode="0" endBytecode="195" sourcefile="RSSceneMixinTest.java" sourcepath="net/runelite/mixins/RSSceneMixinTest.java" relSourcepath="test\java\net\runelite\mixins\RSSceneMixinTest.java"/>
+      <Message>In method net.runelite.mixins.RSSceneMixinTest.testWalkDistance()</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.RSSceneMixin" name="client" signature="Lnet/runelite/rs/api/RSClient;" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSSceneMixin" sourcefile="RSSceneMixin.java" sourcepath="net/runelite/mixins/RSSceneMixin.java" relSourcepath="main\java\net\runelite\mixins\RSSceneMixin.java">
+        <Message>In RSSceneMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.RSSceneMixin.client</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.RSSceneMixinTest" primary="true" start="47" end="47" startBytecode="59" endBytecode="59" sourcefile="RSSceneMixinTest.java" sourcepath="net/runelite/mixins/RSSceneMixinTest.java" relSourcepath="test\java\net\runelite\mixins\RSSceneMixinTest.java">
+      <Message>At RSSceneMixinTest.java:[line 47]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSSceneMixinTest" primary="true" start="47" end="47" startBytecode="59" endBytecode="59" sourcefile="RSSceneMixinTest.java" sourcepath="net/runelite/mixins/RSSceneMixinTest.java" relSourcepath="test\java\net\runelite\mixins\RSSceneMixinTest.java">
+      <Message>At RSSceneMixinTest.java:[line 47]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" instanceHash="b61f9715356361cea0e8155937fd8bf9" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.RSTileMixin.lastGameObject from instance method net.runelite.mixins.RSTileMixin.gameObjectsChanged(int)</LongMessage>
+    <Class classname="net.runelite.mixins.RSTileMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSTileMixin" sourcefile="RSTileMixin.java" sourcepath="net/runelite/mixins/RSTileMixin.java" relSourcepath="main\java\net\runelite\mixins\RSTileMixin.java">
+        <Message>In RSTileMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.RSTileMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.RSTileMixin" name="gameObjectsChanged" signature="(I)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSTileMixin" start="218" end="275" startBytecode="0" endBytecode="486" sourcefile="RSTileMixin.java" sourcepath="net/runelite/mixins/RSTileMixin.java" relSourcepath="main\java\net\runelite\mixins\RSTileMixin.java"/>
+      <Message>In method net.runelite.mixins.RSTileMixin.gameObjectsChanged(int)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.RSTileMixin" name="lastGameObject" signature="Lnet/runelite/api/GameObject;" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSTileMixin" sourcefile="RSTileMixin.java" sourcepath="net/runelite/mixins/RSTileMixin.java" relSourcepath="main\java\net\runelite\mixins\RSTileMixin.java">
+        <Message>In RSTileMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.RSTileMixin.lastGameObject</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.RSTileMixin" primary="true" start="238" end="238" startBytecode="44" endBytecode="44" sourcefile="RSTileMixin.java" sourcepath="net/runelite/mixins/RSTileMixin.java" relSourcepath="main\java\net\runelite\mixins\RSTileMixin.java">
+      <Message>At RSTileMixin.java:[line 238]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSTileMixin" primary="true" start="238" end="238" startBytecode="44" endBytecode="44" sourcefile="RSTileMixin.java" sourcepath="net/runelite/mixins/RSTileMixin.java" relSourcepath="main\java\net\runelite\mixins\RSTileMixin.java">
+      <Message>At RSTileMixin.java:[line 238]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" instanceHash="42bf8cb10077ecd990af9f985e293879" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.RSWidgetMixin.rl$widgetLastPosChanged from instance method net.runelite.mixins.RSWidgetMixin.onPositionChanged(int)</LongMessage>
+    <Class classname="net.runelite.mixins.RSWidgetMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSWidgetMixin" sourcefile="RSWidgetMixin.java" sourcepath="net/runelite/mixins/RSWidgetMixin.java" relSourcepath="main\java\net\runelite\mixins\RSWidgetMixin.java">
+        <Message>In RSWidgetMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.RSWidgetMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.RSWidgetMixin" name="onPositionChanged" signature="(I)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSWidgetMixin" start="480" end="498" startBytecode="0" endBytecode="209" sourcefile="RSWidgetMixin.java" sourcepath="net/runelite/mixins/RSWidgetMixin.java" relSourcepath="main\java\net\runelite\mixins\RSWidgetMixin.java"/>
+      <Message>In method net.runelite.mixins.RSWidgetMixin.onPositionChanged(int)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.RSWidgetMixin" name="rl$widgetLastPosChanged" signature="I" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.RSWidgetMixin" sourcefile="RSWidgetMixin.java" sourcepath="net/runelite/mixins/RSWidgetMixin.java" relSourcepath="main\java\net\runelite\mixins\RSWidgetMixin.java">
+        <Message>In RSWidgetMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.RSWidgetMixin.rl$widgetLastPosChanged</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.RSWidgetMixin" primary="true" start="492" end="492" startBytecode="29" endBytecode="29" sourcefile="RSWidgetMixin.java" sourcepath="net/runelite/mixins/RSWidgetMixin.java" relSourcepath="main\java\net\runelite\mixins\RSWidgetMixin.java">
+      <Message>At RSWidgetMixin.java:[line 492]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.RSWidgetMixin" primary="true" start="492" end="492" startBytecode="29" endBytecode="29" sourcefile="RSWidgetMixin.java" sourcepath="net/runelite/mixins/RSWidgetMixin.java" relSourcepath="main\java\net\runelite\mixins\RSWidgetMixin.java">
+      <Message>At RSWidgetMixin.java:[line 492]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="8599ba6fe145c7abfb55d315df94c78c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.StretchedModeMixin.cachedRealDimensions from instance method net.runelite.mixins.StretchedModeMixin.invalidateStretching(boolean)</LongMessage>
+    <Class classname="net.runelite.mixins.StretchedModeMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+        <Message>In StretchedModeMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.StretchedModeMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.StretchedModeMixin" name="invalidateStretching" signature="(Z)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" start="200" end="215" startBytecode="0" endBytecode="101" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java"/>
+      <Message>In method net.runelite.mixins.StretchedModeMixin.invalidateStretching(boolean)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.StretchedModeMixin" name="cachedRealDimensions" signature="Ljava/awt/Dimension;" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+        <Message>In StretchedModeMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.StretchedModeMixin.cachedRealDimensions</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.StretchedModeMixin" primary="true" start="200" end="200" startBytecode="1" endBytecode="1" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+      <Message>At StretchedModeMixin.java:[line 200]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.StretchedModeMixin" primary="true" start="200" end="200" startBytecode="1" endBytecode="1" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+      <Message>At StretchedModeMixin.java:[line 200]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="c74816310d3c76bae5c00eeaaf035e3f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.StretchedModeMixin.cachedStretchedDimensions from instance method net.runelite.mixins.StretchedModeMixin.invalidateStretching(boolean)</LongMessage>
+    <Class classname="net.runelite.mixins.StretchedModeMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+        <Message>In StretchedModeMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.StretchedModeMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.StretchedModeMixin" name="invalidateStretching" signature="(Z)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" start="200" end="215" startBytecode="0" endBytecode="101" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java"/>
+      <Message>In method net.runelite.mixins.StretchedModeMixin.invalidateStretching(boolean)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.StretchedModeMixin" name="cachedStretchedDimensions" signature="Ljava/awt/Dimension;" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+        <Message>In StretchedModeMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.StretchedModeMixin.cachedStretchedDimensions</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.StretchedModeMixin" primary="true" start="201" end="201" startBytecode="5" endBytecode="5" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+      <Message>At StretchedModeMixin.java:[line 201]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.StretchedModeMixin" primary="true" start="201" end="201" startBytecode="5" endBytecode="5" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+      <Message>At StretchedModeMixin.java:[line 201]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="55235265a870d2ab585976d34533336" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.StretchedModeMixin.scalingFactor from instance method net.runelite.mixins.StretchedModeMixin.setScalingFactor(int)</LongMessage>
+    <Class classname="net.runelite.mixins.StretchedModeMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+        <Message>In StretchedModeMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.StretchedModeMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.StretchedModeMixin" name="setScalingFactor" signature="(I)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" start="104" end="105" startBytecode="0" endBytecode="67" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java"/>
+      <Message>In method net.runelite.mixins.StretchedModeMixin.setScalingFactor(int)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.StretchedModeMixin" name="scalingFactor" signature="D" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+        <Message>In StretchedModeMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.StretchedModeMixin.scalingFactor</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.StretchedModeMixin" primary="true" start="104" end="104" startBytecode="8" endBytecode="8" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+      <Message>At StretchedModeMixin.java:[line 104]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.StretchedModeMixin" primary="true" start="104" end="104" startBytecode="8" endBytecode="8" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+      <Message>At StretchedModeMixin.java:[line 104]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="fe38312ab590ff05cbd1567866c9506e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.StretchedModeMixin.stretchedEnabled from instance method net.runelite.mixins.StretchedModeMixin.setStretchedEnabled(boolean)</LongMessage>
+    <Class classname="net.runelite.mixins.StretchedModeMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+        <Message>In StretchedModeMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.StretchedModeMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.StretchedModeMixin" name="setStretchedEnabled" signature="(Z)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" start="69" end="70" startBytecode="0" endBytecode="60" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java"/>
+      <Message>In method net.runelite.mixins.StretchedModeMixin.setStretchedEnabled(boolean)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.StretchedModeMixin" name="stretchedEnabled" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+        <Message>In StretchedModeMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.StretchedModeMixin.stretchedEnabled</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.StretchedModeMixin" primary="true" start="69" end="69" startBytecode="1" endBytecode="1" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+      <Message>At StretchedModeMixin.java:[line 69]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.StretchedModeMixin" primary="true" start="69" end="69" startBytecode="1" endBytecode="1" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+      <Message>At StretchedModeMixin.java:[line 69]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="9c35689651acd6286a8e5b871fb7269" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.StretchedModeMixin.stretchedFast from instance method net.runelite.mixins.StretchedModeMixin.setStretchedFast(boolean)</LongMessage>
+    <Class classname="net.runelite.mixins.StretchedModeMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+        <Message>In StretchedModeMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.StretchedModeMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.StretchedModeMixin" name="setStretchedFast" signature="(Z)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" start="83" end="84" startBytecode="0" endBytecode="60" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java"/>
+      <Message>In method net.runelite.mixins.StretchedModeMixin.setStretchedFast(boolean)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.StretchedModeMixin" name="stretchedFast" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+        <Message>In StretchedModeMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.StretchedModeMixin.stretchedFast</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.StretchedModeMixin" primary="true" start="83" end="83" startBytecode="1" endBytecode="1" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+      <Message>At StretchedModeMixin.java:[line 83]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.StretchedModeMixin" primary="true" start="83" end="83" startBytecode="1" endBytecode="1" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+      <Message>At StretchedModeMixin.java:[line 83]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="758281a3cf2066fda10706f5be43077c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.StretchedModeMixin.stretchedIntegerScaling from instance method net.runelite.mixins.StretchedModeMixin.setStretchedIntegerScaling(boolean)</LongMessage>
+    <Class classname="net.runelite.mixins.StretchedModeMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+        <Message>In StretchedModeMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.StretchedModeMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.StretchedModeMixin" name="setStretchedIntegerScaling" signature="(Z)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" start="90" end="91" startBytecode="0" endBytecode="60" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java"/>
+      <Message>In method net.runelite.mixins.StretchedModeMixin.setStretchedIntegerScaling(boolean)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.StretchedModeMixin" name="stretchedIntegerScaling" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+        <Message>In StretchedModeMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.StretchedModeMixin.stretchedIntegerScaling</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.StretchedModeMixin" primary="true" start="90" end="90" startBytecode="1" endBytecode="1" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+      <Message>At StretchedModeMixin.java:[line 90]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.StretchedModeMixin" primary="true" start="90" end="90" startBytecode="1" endBytecode="1" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+      <Message>At StretchedModeMixin.java:[line 90]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="b7f275ddd556bdd56bc73c44d35fbb4a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.StretchedModeMixin.stretchedKeepAspectRatio from instance method net.runelite.mixins.StretchedModeMixin.setStretchedKeepAspectRatio(boolean)</LongMessage>
+    <Class classname="net.runelite.mixins.StretchedModeMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+        <Message>In StretchedModeMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.StretchedModeMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.StretchedModeMixin" name="setStretchedKeepAspectRatio" signature="(Z)V" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" start="97" end="98" startBytecode="0" endBytecode="60" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java"/>
+      <Message>In method net.runelite.mixins.StretchedModeMixin.setStretchedKeepAspectRatio(boolean)</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.StretchedModeMixin" name="stretchedKeepAspectRatio" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+        <Message>In StretchedModeMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.StretchedModeMixin.stretchedKeepAspectRatio</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.StretchedModeMixin" primary="true" start="97" end="97" startBytecode="1" endBytecode="1" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+      <Message>At StretchedModeMixin.java:[line 97]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.StretchedModeMixin" primary="true" start="97" end="97" startBytecode="1" endBytecode="1" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+      <Message>At StretchedModeMixin.java:[line 97]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" instanceHash="c7c372ca67826b1d2d7bfae328cf3797" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field net.runelite.mixins.StretchedModeMixin.cachedRealDimensions from instance method net.runelite.mixins.StretchedModeMixin.getRealDimensions()</LongMessage>
+    <Class classname="net.runelite.mixins.StretchedModeMixin" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+        <Message>In StretchedModeMixin.java</Message>
+      </SourceLine>
+      <Message>In class net.runelite.mixins.StretchedModeMixin</Message>
+    </Class>
+    <Method classname="net.runelite.mixins.StretchedModeMixin" name="getRealDimensions" signature="()Ljava/awt/Dimension;" isStatic="false" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" start="111" end="146" startBytecode="0" endBytecode="379" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java"/>
+      <Message>In method net.runelite.mixins.StretchedModeMixin.getRealDimensions()</Message>
+    </Method>
+    <Field classname="net.runelite.mixins.StretchedModeMixin" name="cachedRealDimensions" signature="Ljava/awt/Dimension;" isStatic="true" primary="true">
+      <SourceLine classname="net.runelite.mixins.StretchedModeMixin" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+        <Message>In StretchedModeMixin.java</Message>
+      </SourceLine>
+      <Message>Field net.runelite.mixins.StretchedModeMixin.cachedRealDimensions</Message>
+    </Field>
+    <SourceLine classname="net.runelite.mixins.StretchedModeMixin" primary="true" start="138" end="138" startBytecode="132" endBytecode="132" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+      <Message>At StretchedModeMixin.java:[line 138]</Message>
+    </SourceLine>
+    <SourceLine classname="net.runelite.mixins.StretchedModeMixin" primary="true" start="138" end="138" startBytecode="132" endBytecode="132" sourcefile="StretchedModeMixin.java" sourcepath="net/runelite/mixins/StretchedModeMixin.java" relSourcepath="main\java\net\runelite\mixins\StretchedModeMixin.java">
+      <Message>At StretchedModeMixin.java:[line 138]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="EXPERIMENTAL">
+    <Description>Experimental</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" abbrev="ST" category="STYLE">
+    <ShortDescription>Write to static field from instance method</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This instance method writes to a static field. This is tricky to get
+correct if multiple instances are being manipulated,
+and generally bad practice.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="EI_EXPOSE_REP2" abbrev="EI2" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by incorporating reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="EI_EXPOSE_REP" abbrev="EI" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by returning reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="EC_UNRELATED_TYPES_USING_POINTER_EQUALITY" abbrev="EC" category="CORRECTNESS">
+    <ShortDescription>Using pointer equality to compare different types</ShortDescription>
+    <Details><![CDATA[
+
+<p> This method uses using pointer equality to compare two references that seem to be of
+different types.  The result of this comparison will always be false at runtime.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_NEXTINT_VIA_NEXTDOUBLE" abbrev="Dm" category="PERFORMANCE">
+    <ShortDescription>Use the nextInt method of Random rather than nextDouble to generate a random integer</ShortDescription>
+    <Details><![CDATA[
+
+  <p>If <code>r</code> is a <code>java.util.Random</code>, you can generate a random number from <code>0</code> to <code>n-1</code>
+using <code>r.nextInt(n)</code>, rather than using <code>(int)(r.nextDouble() * n)</code>.
+</p>
+<p>The argument to nextInt must be positive. If, for example, you want to generate a random
+value from -99 to 0, use <code>-r.nextInt(100)</code>.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="OBL_UNSATISFIED_OBLIGATION" abbrev="OBL" category="EXPERIMENTAL">
+    <ShortDescription>Method may fail to clean up stream or resource</ShortDescription>
+    <Details><![CDATA[
+          
+          <p>
+          This method may fail to clean up (close, dispose of) a stream,
+          database object, or other
+          resource requiring an explicit cleanup operation.
+          </p>
+
+          <p>
+          In general, if a method opens a stream or other resource,
+          the method should use a try/finally block to ensure that
+          the stream or resource is cleaned up before the method
+          returns.
+          </p>
+
+          <p>
+          This bug pattern is essentially the same as the
+          OS_OPEN_STREAM and ODR_OPEN_DATABASE_RESOURCE
+          bug patterns, but is based on a different
+          (and hopefully better) static analysis technique.
+          We are interested is getting feedback about the
+          usefulness of this bug pattern.
+          To send feedback, either:
+          </p>
+          <ul>
+            <li>send email to findbugs@cs.umd.edu</li>
+            <li>file a bug report: <a href="http://findbugs.sourceforge.net/reportingBugs.html">http://findbugs.sourceforge.net/reportingBugs.html</a></li>
+          </ul>
+
+          <p>
+          In particular,
+          the false-positive suppression heuristics for this
+          bug pattern have not been extensively tuned, so
+          reports about false positives are helpful to us.
+          </p>
+
+          <p>
+          See Weimer and Necula, <i>Finding and Preventing Run-Time Error Handling Mistakes</i>, for
+          a description of the analysis technique.
+          </p>
+          
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="ST">
+    <Description>Misuse of static fields</Description>
+  </BugCode>
+  <BugCode abbrev="EI">
+    <Description>Method returning array may expose internal representation</Description>
+  </BugCode>
+  <BugCode abbrev="OBL">
+    <Description>Unsatisfied obligation to clean up stream or resource</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Dubious method used</Description>
+  </BugCode>
+  <BugCode abbrev="EC">
+    <Description>Comparing incompatible types for equality</Description>
+  </BugCode>
+  <BugCode abbrev="EI2">
+    <Description>Storing reference to mutable object</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 28 Apr 2019 16:10:34 -0400" total_classes="73" referenced_classes="497" total_bugs="41" total_size="3651" num_packages="2" java_version="1.8.0_112-release" vm_version="25.112-b6" cpu_seconds="260.66" clock_seconds="437.27" peak_mbytes="747.51" alloc_mbytes="494.94" gc_seconds="3.60" priority_2="13" priority_1="28">
+    <FileStats path="net/runelite/api/mixins/Copy.java" bugCount="0" size="2"/>
+    <FileStats path="net/runelite/api/mixins/FieldHook.java" bugCount="0" size="3"/>
+    <FileStats path="net/runelite/api/mixins/Inject.java" bugCount="0" size="1"/>
+    <FileStats path="net/runelite/api/mixins/MethodHook.java" bugCount="0" size="3"/>
+    <FileStats path="net/runelite/api/mixins/Mixin.java" bugCount="0" size="2"/>
+    <FileStats path="net/runelite/api/mixins/Mixins.java" bugCount="0" size="2"/>
+    <FileStats path="net/runelite/api/mixins/Replace.java" bugCount="0" size="2"/>
+    <FileStats path="net/runelite/api/mixins/Shadow.java" bugCount="0" size="2"/>
+    <FileStats path="net/runelite/mixins/CameraMixin.java" bugCount="1" size="44" bugHash="672c90eae3bf6a9296ed11948a83bde3"/>
+    <FileStats path="net/runelite/mixins/ClickboxMixin.java" bugCount="0" size="172"/>
+    <FileStats path="net/runelite/mixins/EntityHiderBridgeMixin.java" bugCount="11" size="47" bugHash="43e9b78dcd80c44f43c972c8b5dfbfa0"/>
+    <FileStats path="net/runelite/mixins/EntityHiderMixin.java" bugCount="0" size="54"/>
+    <FileStats path="net/runelite/mixins/GraphicsObjectMixin.java" bugCount="0" size="9"/>
+    <FileStats path="net/runelite/mixins/MinimapMixin.java" bugCount="1" size="33" bugHash="85d83c44b0135a4339d811cd3dae23ef"/>
+    <FileStats path="net/runelite/mixins/PlaySoundEffectMixin.java" bugCount="0" size="21"/>
+    <FileStats path="net/runelite/mixins/ProcessClientErrorMixin.java" bugCount="0" size="18"/>
+    <FileStats path="net/runelite/mixins/RSActorMixin.java" bugCount="1" size="100" bugHash="42d23368227ddb576818366a8e31cc48"/>
+    <FileStats path="net/runelite/mixins/RSClanMemberMixin.java" bugCount="0" size="7"/>
+    <FileStats path="net/runelite/mixins/RSClientMixin.java" bugCount="8" size="596" bugHash="82854859cb504cd18d013ad270bd11bd"/>
+    <FileStats path="net/runelite/mixins/RSDecorativeObjectMixin.java" bugCount="0" size="25"/>
+    <FileStats path="net/runelite/mixins/RSDynamicObjectMixin.java" bugCount="0" size="19"/>
+    <FileStats path="net/runelite/mixins/RSFriendManagerMixin.java" bugCount="0" size="8"/>
+    <FileStats path="net/runelite/mixins/RSFriendMixin.java" bugCount="0" size="8"/>
+    <FileStats path="net/runelite/mixins/RSGameCanvasMixin.java" bugCount="1" size="23" bugHash="ba6f12e86633466d1b7086f224db4e6a"/>
+    <FileStats path="net/runelite/mixins/RSGameEngineMixin.java" bugCount="0" size="27"/>
+    <FileStats path="net/runelite/mixins/RSGameObjectMixin.java" bugCount="0" size="26"/>
+    <FileStats path="net/runelite/mixins/RSGrandExchangeOfferMixin.java" bugCount="0" size="22"/>
+    <FileStats path="net/runelite/mixins/RSGroundObjectMixin.java" bugCount="0" size="19"/>
+    <FileStats path="net/runelite/mixins/RSHashTableMixin.java" bugCount="0" size="13"/>
+    <FileStats path="net/runelite/mixins/RSIgnoreMixin.java" bugCount="0" size="8"/>
+    <FileStats path="net/runelite/mixins/RSIndexDataBaseMixin.java" bugCount="2" size="45" bugHash="ba490e862d1b2d8c63c37265087be702"/>
+    <FileStats path="net/runelite/mixins/RSItemCompositionMixin.java" bugCount="0" size="24"/>
+    <FileStats path="net/runelite/mixins/RSItemContainerMixin.java" bugCount="0" size="23"/>
+    <FileStats path="net/runelite/mixins/RSItemLayerMixin.java" bugCount="0" size="11"/>
+    <FileStats path="net/runelite/mixins/RSItemMixin.java" bugCount="0" size="38"/>
+    <FileStats path="net/runelite/mixins/RSKeyFocusListenerMixin.java" bugCount="0" size="27"/>
+    <FileStats path="net/runelite/mixins/RSMainBufferProviderMixin.java" bugCount="0" size="18"/>
+    <FileStats path="net/runelite/mixins/RSMessageNodeMixin.java" bugCount="0" size="24"/>
+    <FileStats path="net/runelite/mixins/RSModelDataMixin.java" bugCount="0" size="100"/>
+    <FileStats path="net/runelite/mixins/RSModelMixin.java" bugCount="4" size="193" bugHash="ba56907e16c25660556f08306c9fe2e8"/>
+    <FileStats path="net/runelite/mixins/RSMouseInputMixin.java" bugCount="0" size="71"/>
+    <FileStats path="net/runelite/mixins/RSMouseWheelHandlerMixin.java" bugCount="0" size="10"/>
+    <FileStats path="net/runelite/mixins/RSNPCMixin.java" bugCount="0" size="55"/>
+    <FileStats path="net/runelite/mixins/RSNameableMixin.java" bugCount="0" size="8"/>
+    <FileStats path="net/runelite/mixins/RSNodeMixin.java" bugCount="0" size="8"/>
+    <FileStats path="net/runelite/mixins/RSNpcCompositionMixin.java" bugCount="0" size="17"/>
+    <FileStats path="net/runelite/mixins/RSPlayerCompositionMixin.java" bugCount="0" size="13"/>
+    <FileStats path="net/runelite/mixins/RSPlayerMixin.java" bugCount="0" size="93"/>
+    <FileStats path="net/runelite/mixins/RSProjectileMixin.java" bugCount="0" size="15"/>
+    <FileStats path="net/runelite/mixins/RSSceneMixin.java" bugCount="1" size="363" bugHash="1136e3b7f724a394a71f0b5d58b47e7d"/>
+    <FileStats path="net/runelite/mixins/RSSceneMixinTest.java" bugCount="1" size="13" bugHash="4b2a0206147e17f62af75c2137fa2292"/>
+    <FileStats path="net/runelite/mixins/RSSceneTileModelMixin.java" bugCount="0" size="21"/>
+    <FileStats path="net/runelite/mixins/RSSceneTilePaintMixin.java" bugCount="0" size="21"/>
+    <FileStats path="net/runelite/mixins/RSSequenceMixin.java" bugCount="0" size="104"/>
+    <FileStats path="net/runelite/mixins/RSSpritePixelsMixin.java" bugCount="0" size="47"/>
+    <FileStats path="net/runelite/mixins/RSTextureMixin.java" bugCount="0" size="23"/>
+    <FileStats path="net/runelite/mixins/RSTextureProviderMixin.java" bugCount="0" size="11"/>
+    <FileStats path="net/runelite/mixins/RSTileMixin.java" bugCount="1" size="247" bugHash="27bfeabc6cd7fa84aafc693ca22e7500"/>
+    <FileStats path="net/runelite/mixins/RSVarcsMixin.java" bugCount="0" size="10"/>
+    <FileStats path="net/runelite/mixins/RSWallObjectMixin.java" bugCount="0" size="35"/>
+    <FileStats path="net/runelite/mixins/RSWidgetMixin.java" bugCount="1" size="225" bugHash="29dda329273184ffc169961aadcdcb1a"/>
+    <FileStats path="net/runelite/mixins/RSWorldMixin.java" bugCount="0" size="15"/>
+    <FileStats path="net/runelite/mixins/Rasterizer2DMixin.java" bugCount="0" size="108"/>
+    <FileStats path="net/runelite/mixins/ScriptVMMixin.java" bugCount="0" size="63"/>
+    <FileStats path="net/runelite/mixins/SpriteMixin.java" bugCount="0" size="19"/>
+    <FileStats path="net/runelite/mixins/StretchedModeMaxSizeMixin.java" bugCount="0" size="20"/>
+    <FileStats path="net/runelite/mixins/StretchedModeMixin.java" bugCount="8" size="74" bugHash="3bc2b417663c029b02a5a07939821294"/>
+    <FileStats path="net/runelite/mixins/TileObjectMixin.java" bugCount="0" size="21"/>
+    <FileStats path="net/runelite/mixins/VarbitMixin.java" bugCount="0" size="63"/>
+    <FileStats path="net/runelite/mixins/WidgetSpriteMixin.java" bugCount="0" size="12"/>
+    <FileStats path="net/runelite/mixins/WorldHoppingMixin.java" bugCount="0" size="10"/>
+    <FileStats path="net/runelite/mixins/WorldMapManagerMixin.java" bugCount="0" size="6"/>
+    <FileStats path="net/runelite/mixins/WorldMapMixin.java" bugCount="0" size="11"/>
+    <PackageStats package="net.runelite.api.mixins" total_bugs="0" total_types="8" total_size="17">
+      <ClassStats class="net.runelite.api.mixins.Copy" sourceFile="Copy.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.runelite.api.mixins.FieldHook" sourceFile="FieldHook.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.runelite.api.mixins.Inject" sourceFile="Inject.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="net.runelite.api.mixins.MethodHook" sourceFile="MethodHook.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.runelite.api.mixins.Mixin" sourceFile="Mixin.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.runelite.api.mixins.Mixins" sourceFile="Mixins.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.runelite.api.mixins.Replace" sourceFile="Replace.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.runelite.api.mixins.Shadow" sourceFile="Shadow.java" interface="true" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.runelite.mixins" total_bugs="41" total_types="65" total_size="3634" priority_2="13" priority_1="28">
+      <ClassStats class="net.runelite.mixins.CameraMixin" sourceFile="CameraMixin.java" interface="false" size="44" bugs="1" priority_2="1"/>
+      <ClassStats class="net.runelite.mixins.ClickboxMixin" sourceFile="ClickboxMixin.java" interface="false" size="172" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.EntityHiderBridgeMixin" sourceFile="EntityHiderBridgeMixin.java" interface="false" size="47" bugs="11" priority_1="11"/>
+      <ClassStats class="net.runelite.mixins.EntityHiderMixin" sourceFile="EntityHiderMixin.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.GraphicsObjectMixin" sourceFile="GraphicsObjectMixin.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.MinimapMixin" sourceFile="MinimapMixin.java" interface="false" size="33" bugs="1" priority_2="1"/>
+      <ClassStats class="net.runelite.mixins.PlaySoundEffectMixin" sourceFile="PlaySoundEffectMixin.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.ProcessClientErrorMixin" sourceFile="ProcessClientErrorMixin.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSActorMixin" sourceFile="RSActorMixin.java" interface="false" size="100" bugs="1" priority_2="1"/>
+      <ClassStats class="net.runelite.mixins.RSClanMemberMixin" sourceFile="RSClanMemberMixin.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSClientMixin" sourceFile="RSClientMixin.java" interface="false" size="596" bugs="8" priority_1="8"/>
+      <ClassStats class="net.runelite.mixins.RSDecorativeObjectMixin" sourceFile="RSDecorativeObjectMixin.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSDynamicObjectMixin" sourceFile="RSDynamicObjectMixin.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSFriendManagerMixin" sourceFile="RSFriendManagerMixin.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSFriendMixin" sourceFile="RSFriendMixin.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSGameCanvasMixin" sourceFile="RSGameCanvasMixin.java" interface="false" size="23" bugs="1" priority_1="1"/>
+      <ClassStats class="net.runelite.mixins.RSGameEngineMixin" sourceFile="RSGameEngineMixin.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSGameObjectMixin" sourceFile="RSGameObjectMixin.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSGrandExchangeOfferMixin" sourceFile="RSGrandExchangeOfferMixin.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSGroundObjectMixin" sourceFile="RSGroundObjectMixin.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSHashTableMixin" sourceFile="RSHashTableMixin.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSIgnoreMixin" sourceFile="RSIgnoreMixin.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSIndexDataBaseMixin" sourceFile="RSIndexDataBaseMixin.java" interface="false" size="45" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="net.runelite.mixins.RSItemCompositionMixin" sourceFile="RSItemCompositionMixin.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSItemContainerMixin" sourceFile="RSItemContainerMixin.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSItemLayerMixin" sourceFile="RSItemLayerMixin.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSItemMixin" sourceFile="RSItemMixin.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSKeyFocusListenerMixin" sourceFile="RSKeyFocusListenerMixin.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSMainBufferProviderMixin" sourceFile="RSMainBufferProviderMixin.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSMessageNodeMixin" sourceFile="RSMessageNodeMixin.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSModelDataMixin" sourceFile="RSModelDataMixin.java" interface="false" size="100" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSModelMixin" sourceFile="RSModelMixin.java" interface="false" size="193" bugs="4" priority_2="4"/>
+      <ClassStats class="net.runelite.mixins.RSMouseInputMixin" sourceFile="RSMouseInputMixin.java" interface="false" size="71" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSMouseWheelHandlerMixin" sourceFile="RSMouseWheelHandlerMixin.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSNPCMixin" sourceFile="RSNPCMixin.java" interface="false" size="55" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSNameableMixin" sourceFile="RSNameableMixin.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSNodeMixin" sourceFile="RSNodeMixin.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSNpcCompositionMixin" sourceFile="RSNpcCompositionMixin.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSPlayerCompositionMixin" sourceFile="RSPlayerCompositionMixin.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSPlayerMixin" sourceFile="RSPlayerMixin.java" interface="false" size="93" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSProjectileMixin" sourceFile="RSProjectileMixin.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSSceneMixin" sourceFile="RSSceneMixin.java" interface="false" size="363" bugs="1" priority_2="1"/>
+      <ClassStats class="net.runelite.mixins.RSSceneMixinTest" sourceFile="RSSceneMixinTest.java" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="net.runelite.mixins.RSSceneTileModelMixin" sourceFile="RSSceneTileModelMixin.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSSceneTilePaintMixin" sourceFile="RSSceneTilePaintMixin.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSSequenceMixin" sourceFile="RSSequenceMixin.java" interface="false" size="104" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSSpritePixelsMixin" sourceFile="RSSpritePixelsMixin.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSTextureMixin" sourceFile="RSTextureMixin.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSTextureProviderMixin" sourceFile="RSTextureProviderMixin.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSTileMixin" sourceFile="RSTileMixin.java" interface="false" size="247" bugs="1" priority_2="1"/>
+      <ClassStats class="net.runelite.mixins.RSVarcsMixin" sourceFile="RSVarcsMixin.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSWallObjectMixin" sourceFile="RSWallObjectMixin.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.RSWidgetMixin" sourceFile="RSWidgetMixin.java" interface="false" size="225" bugs="1" priority_2="1"/>
+      <ClassStats class="net.runelite.mixins.RSWorldMixin" sourceFile="RSWorldMixin.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.Rasterizer2DMixin" sourceFile="Rasterizer2DMixin.java" interface="false" size="108" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.ScriptVMMixin" sourceFile="ScriptVMMixin.java" interface="false" size="63" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.SpriteMixin" sourceFile="SpriteMixin.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.StretchedModeMaxSizeMixin" sourceFile="StretchedModeMaxSizeMixin.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.StretchedModeMixin" sourceFile="StretchedModeMixin.java" interface="false" size="74" bugs="8" priority_2="1" priority_1="7"/>
+      <ClassStats class="net.runelite.mixins.TileObjectMixin" sourceFile="TileObjectMixin.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.VarbitMixin" sourceFile="VarbitMixin.java" interface="false" size="63" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.WidgetSpriteMixin" sourceFile="WidgetSpriteMixin.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.WorldHoppingMixin" sourceFile="WorldHoppingMixin.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.WorldMapManagerMixin" sourceFile="WorldMapManagerMixin.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="net.runelite.mixins.WorldMapMixin" sourceFile="WorldMapMixin.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="224" invocations="1713" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="8854" standardDeviationMircosecondsPerInvocation="428"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="189" invocations="1719" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="1851" standardDeviationMircosecondsPerInvocation="69"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="186" invocations="473" avgMicrosecondsPerInvocation="394" maxMicrosecondsPerInvocation="85366" standardDeviationMircosecondsPerInvocation="3960"/>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="181" invocations="2" avgMicrosecondsPerInvocation="90733" maxMicrosecondsPerInvocation="144321" standardDeviationMircosecondsPerInvocation="53588"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="136" invocations="497" avgMicrosecondsPerInvocation="274" maxMicrosecondsPerInvocation="6074" standardDeviationMircosecondsPerInvocation="703"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="131" invocations="497" avgMicrosecondsPerInvocation="265" maxMicrosecondsPerInvocation="6800" standardDeviationMircosecondsPerInvocation="694"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="109" invocations="476" avgMicrosecondsPerInvocation="229" maxMicrosecondsPerInvocation="7802" standardDeviationMircosecondsPerInvocation="695"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="100" invocations="1125" avgMicrosecondsPerInvocation="89" maxMicrosecondsPerInvocation="6446" standardDeviationMircosecondsPerInvocation="225"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="96" invocations="502" avgMicrosecondsPerInvocation="192" maxMicrosecondsPerInvocation="10715" standardDeviationMircosecondsPerInvocation="615"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="78" invocations="475" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="6998" standardDeviationMircosecondsPerInvocation="459"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="76" invocations="495" avgMicrosecondsPerInvocation="155" maxMicrosecondsPerInvocation="7667" standardDeviationMircosecondsPerInvocation="442"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="75" invocations="371" avgMicrosecondsPerInvocation="204" maxMicrosecondsPerInvocation="16420" standardDeviationMircosecondsPerInvocation="1001"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="53" invocations="476" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="1578" standardDeviationMircosecondsPerInvocation="154"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="45" invocations="497" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="1738" standardDeviationMircosecondsPerInvocation="205"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="31" invocations="497" avgMicrosecondsPerInvocation="63" maxMicrosecondsPerInvocation="1249" standardDeviationMircosecondsPerInvocation="152"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="31" invocations="565" avgMicrosecondsPerInvocation="55" maxMicrosecondsPerInvocation="1082" standardDeviationMircosecondsPerInvocation="90"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="29" invocations="497" avgMicrosecondsPerInvocation="58" maxMicrosecondsPerInvocation="6089" standardDeviationMircosecondsPerInvocation="290"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="28" invocations="497" avgMicrosecondsPerInvocation="57" maxMicrosecondsPerInvocation="10446" standardDeviationMircosecondsPerInvocation="540"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="27" invocations="476" avgMicrosecondsPerInvocation="57" maxMicrosecondsPerInvocation="1767" standardDeviationMircosecondsPerInvocation="157"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="25" invocations="497" avgMicrosecondsPerInvocation="51" maxMicrosecondsPerInvocation="853" standardDeviationMircosecondsPerInvocation="91"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="23" invocations="516" avgMicrosecondsPerInvocation="46" maxMicrosecondsPerInvocation="7032" standardDeviationMircosecondsPerInvocation="312"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="23" invocations="1603" avgMicrosecondsPerInvocation="14" maxMicrosecondsPerInvocation="5018" standardDeviationMircosecondsPerInvocation="126"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="23" invocations="73" avgMicrosecondsPerInvocation="324" maxMicrosecondsPerInvocation="3882" standardDeviationMircosecondsPerInvocation="627"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="22" invocations="497" avgMicrosecondsPerInvocation="45" maxMicrosecondsPerInvocation="870" standardDeviationMircosecondsPerInvocation="85"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
